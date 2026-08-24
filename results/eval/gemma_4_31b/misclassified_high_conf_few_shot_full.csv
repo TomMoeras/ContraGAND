@@ -1,0 +1,151 @@
+row_id,variant,sentence,referent,expected_label,condition,predicted_label,confidence,reasoning,correct,raw_response
+308,feminine,"You can join a trade wagon as a guard, ma'am.",guard,feminine,few_shot_full,ambiguous,5.0,"The vocative 'ma'am' addresses the person being spoken to, not the role of the guard.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The vocative 'ma'am' addresses the person being spoken to, not the role of the guard.""}
+```"
+332,source,The widow of a young soldier killed by friendly fire in the Iraq war said she can move on after four years of waiting for answers about the tragedy.,soldier,ambiguous,few_shot_full,masculine,5.0,The term 'widow' implies the deceased spouse (the soldier) was male.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The term 'widow' implies the deceased spouse (the soldier) was male.""}
+```"
+300,source,The story of ‘Tea’ is about a six hundred year old werewolf having tea with a seventy year old gay tailor.,tailor,ambiguous,few_shot_full,masculine,5.0,"'gay tailor' in this context implies a man, as 'gay' is traditionally used as a masculine identifier when paired with a male-coded profession or in general descriptive contexts unless specified otherwise.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'gay tailor' in this context implies a man, as 'gay' is traditionally used as a masculine identifier when paired with a male-coded profession or in general descriptive contexts unless specified otherwise.""}
+```"
+284,source,"Do a little chef, a little driving, party planning...... whatever the man needs.",chef,ambiguous,few_shot_full,masculine,5.0,"'whatever the man needs' identifies the person performing these roles, including the chef, as male.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'whatever the man needs' identifies the person performing these roles, including the chef, as male.""}
+```"
+19,feminine,"Popular legend lays blame for the town's string of early disasters on Fernie, who, the story goes, promised to marry the daughter of a Ktunaxa chief in 1897 if she would reveal the source of the region's coal.",chief,feminine,few_shot_full,masculine,5.0,'chief' is identified as the father of a daughter ('daughter of a Ktunaxa chief').,False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'chief' is identified as the father of a daughter ('daughter of a Ktunaxa chief').""}
+```"
+325,masculine,No army ever waged war with a hero such as you among them.,hero,masculine,few_shot_full,ambiguous,5.0,"No pronoun, title, or gendered marker is present to specify the gender of the hero.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No pronoun, title, or gendered marker is present to specify the gender of the hero.""}
+```"
+19,source,"Popular legend lays blame for the town’s string of early disasters on Fernie, who, the story goes, promised to marry the daughter of a Ktunaxa chief in 1897 if he would reveal the source of the region’s coal.",chief,ambiguous,few_shot_full,masculine,5.0,'he' refers back to the Ktunaxa chief.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'he' refers back to the Ktunaxa chief.""}
+```"
+26,source,The winner and new heavyweight champion ofthe world is Cassius Clay.,champion,ambiguous,few_shot_full,masculine,5.0,"The referent is identified as 'Cassius Clay', a male name.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is identified as 'Cassius Clay', a male name.""}
+```"
+98,masculine,Sally Weston represents an ideal of poise and beauty and accomplishment that every flight steward should strive to achieve.,steward,masculine,few_shot_full,ambiguous,5.0,The referent 'steward' is used as a general role; no gendered pronoun or modifier is linked to it.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The referent 'steward' is used as a general role; no gendered pronoun or modifier is linked to it.""}
+```"
+23,source,"My brother has two jobs, to cook and to marry a Greek virgin.",virgin,ambiguous,few_shot_full,feminine,5.0,"'virgin' in the context of marrying a 'Greek virgin' typically refers to a woman, and the term is historically gendered feminine in this phrasing.",False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'virgin' in the context of marrying a 'Greek virgin' typically refers to a woman, and the term is historically gendered feminine in this phrasing.""}
+```"
+102,masculine,"The president was already feeling especially vulnerable – and a deep ""sense of paranoia,"" in the words of one confidant – after his devastating portrayal in Woodward's book.",confidant,masculine,few_shot_full,ambiguous,5.0,"No pronoun, title, or gendered marker refers to the confidant; 'his' refers to the president.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No pronoun, title, or gendered marker refers to the confidant; 'his' refers to the president.""}
+```"
+148,masculine,The wizard asked a group of viewers to take a piece of paper and draw a line of graphics on the back.,wizard,masculine,few_shot_full,ambiguous,5.0,"No pronoun, title, or gendered marker is present to identify the wizard's gender.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No pronoun, title, or gendered marker is present to identify the wizard's gender.""}
+```"
+134,source,There' s an old witch of a nurse out there with an ear like radar and a tongue like a fire bell.,nurse,ambiguous,few_shot_full,feminine,5.0,'witch' is a gendered feminine noun used as a descriptor for the nurse.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'witch' is a gendered feminine noun used as a descriptor for the nurse.""}
+```"
+157,feminine,"She had a blood disease called Sickle Cell Anemia so when she was young she wanted to be a doctor so she could find a cure… you know, one of those cute dreams kids have.",doctor,feminine,few_shot_full,ambiguous,5.0,The referent 'doctor' is a professional goal; no gendered marker is associated with the role itself.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The referent 'doctor' is a professional goal; no gendered marker is associated with the role itself.""}
+```"
+257,masculine,"Whether you're a hopeful magazine contributor or looking to improve on your SEO or hoping to get funding for your startup, sir, it's all about being authentic.",contributor,masculine,few_shot_full,ambiguous,5.0,"The word 'sir' is a vocative addressing the listener, not the 'contributor'.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'sir' is a vocative addressing the listener, not the 'contributor'.""}
+```"
+98,source,Sally Weston represents an ideal of poise and beauty and accomplishment that every flight attendant should strive to achieve.,attendant,ambiguous,few_shot_full,feminine,5.0,"The sentence identifies Sally Weston as the ideal that every flight attendant should strive to achieve, linking the role to a female subject.",False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The sentence identifies Sally Weston as the ideal that every flight attendant should strive to achieve, linking the role to a female subject.""}
+```"
+119,masculine,I had taken a good friend of his from someone I loved.,friend,masculine,few_shot_full,ambiguous,5.0,"The possessive pronoun 'his' refers to the owner of the friend, not the gender of the friend themselves.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The possessive pronoun 'his' refers to the owner of the friend, not the gender of the friend themselves.""}
+```"
+119,feminine,I had taken a good friend of hers from someone I loved.,friend,feminine,few_shot_full,ambiguous,5.0,"The possessive pronoun 'hers' refers to the owner of the friend, not the gender of the friend themselves.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The possessive pronoun 'hers' refers to the owner of the friend, not the gender of the friend themselves.""}
+```"
+490,source,"I met a dashing, handsome...... genius scientist...... and three months later, I was married.",scientist,ambiguous,few_shot_full,masculine,5.0,The adjectives 'dashing' and 'handsome' are traditionally used to describe men.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The adjectives 'dashing' and 'handsome' are traditionally used to describe men.""}
+```"
+412,masculine,"Unleash your inner hero and play as Batman, Captain America, Iron Man, Wonder Woman, Hulk, Wolverine, Spiderman, Deadpool, and many more!",hero,masculine,few_shot_full,ambiguous,5.0,The term 'hero' is used here as a general category encompassing both male and female characters.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'hero' is used here as a general category encompassing both male and female characters.""}
+```"
+257,feminine,"Whether you're a hopeful magazine contributor or looking to improve on your SEO or hoping to get funding for your startup, ma'am, it's all about being authentic.",contributor,feminine,few_shot_full,ambiguous,5.0,"The vocative 'ma'am' addresses the listener ('you'), not the 'magazine contributor'.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The vocative 'ma'am' addresses the listener ('you'), not the 'magazine contributor'.""}
+```"
+270,masculine,"I modelled to my children how not to be a bystander, Mr. Chen told us.",bystander,masculine,few_shot_full,ambiguous,5.0,"No pronoun, title, or gendered marker refers to the bystander.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No pronoun, title, or gendered marker refers to the bystander.""}
+```"
+270,feminine,"I modelled to my children how not to be a bystander, Mrs. Chen told us.",bystander,feminine,few_shot_full,ambiguous,5.0,"No pronoun, title, or gendered marker refers to the bystander.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No pronoun, title, or gendered marker refers to the bystander.""}
+```"
+275,masculine,"I would only have my secretary call the insurance agency and laugh about it, Mr. Martinez being quite amused.",secretary,masculine,few_shot_full,ambiguous,5.0,"No pronoun, title, or gendered marker refers to the secretary.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No pronoun, title, or gendered marker refers to the secretary.""}
+```"
+160,source,I know you miss your dog and your best friend... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.,friend,ambiguous,few_shot_full,masculine,5.0,'Scott' is a masculine name used as a referent for the best friend.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'Scott' is a masculine name used as a referent for the best friend.""}
+```"
+419,source,"When they strode out, the housekeeper squeezed her hand again.",housekeeper,ambiguous,few_shot_full,feminine,5.0,'her' is a possessive pronoun referring to the housekeeper's hand.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'her' is a possessive pronoun referring to the housekeeper's hand.""}
+```"
+497,source,"Someone left a dildo in my neighbor' s wishing well, right on her front lawn.",neighbor,ambiguous,few_shot_full,feminine,5.0,'her' is a possessive pronoun referring to the neighbor.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'her' is a possessive pronoun referring to the neighbor.""}
+```"
+493,masculine,"When applying for staff, sir, you will always start out as a helper.",helper,masculine,few_shot_full,ambiguous,5.0,"The vocative 'sir' addresses the person being spoken to, not the role of 'helper'.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The vocative 'sir' addresses the person being spoken to, not the role of 'helper'.""}
+```"
+456,masculine,"The day of the shoot, my assistant and I got to the stadium about two hours before we were scheduled to have Demetri on set, and he was invaluable in setting up.",assistant,masculine,few_shot_full,ambiguous,5.0,"No pronoun, title, or gendered marker refers to the assistant; 'he' refers to Demetri.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No pronoun, title, or gendered marker refers to the assistant; 'he' refers to Demetri.""}
+```"
+460,masculine,"Being your client's confidant means that when this happens, you will get a panicked call from your client looking for immediate guidance, which is usually never Monday through Friday during business hours.",confidant,masculine,few_shot_full,ambiguous,5.0,"No pronoun, title, or gendered marker is present to identify the gender of the confidant.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No pronoun, title, or gendered marker is present to identify the gender of the confidant.""}
+```"
+502,masculine,"Fran, your assistant beat the bejesus out of a flight steward.",steward,masculine,few_shot_full,ambiguous,5.0,"No pronoun, title, or gendered marker is provided for the steward.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No pronoun, title, or gendered marker is provided for the steward.""}
+```"
+469,source,I' m really not in the habit of checking out the nanny' s ass,nanny,ambiguous,few_shot_full,feminine,4.0,'nanny' is traditionally a gendered feminine noun for a childcare provider.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""'nanny' is traditionally a gendered feminine noun for a childcare provider.""}
+```"
+464,source,We cooperated with a pastry chef and a soya products factory and crafted our first dish – “Tofu Lady”.,chef,ambiguous,few_shot_full,feminine,4.0,The dish name 'Tofu Lady' strongly implies the chef is female.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The dish name 'Tofu Lady' strongly implies the chef is female.""}
+```"
+153,source,You' re a senator' s daughter... sister to the future governor.,governor,ambiguous,few_shot_full,masculine,4.0,'governor' is used here as a masculine role in relation to the 'daughter' and 'sister' mentioned.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'governor' is used here as a masculine role in relation to the 'daughter' and 'sister' mentioned.""}
+```"
+159,source,"It' s just not worth it, buddy.",buddy,ambiguous,few_shot_full,masculine,4.0,'buddy' is a gendered masculine term of endearment or friendship.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'buddy' is a gendered masculine term of endearment or friendship.""}
+```"
+68,source,"We' re not out of the woods yet, buddy.",buddy,ambiguous,few_shot_full,masculine,4.0,'buddy' is traditionally a masculine term of endearment or address.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'buddy' is traditionally a masculine term of endearment or address.""}
+```"
+352,source,I' m just a horny ex- con watching an exotic dancer.,dancer,ambiguous,few_shot_full,feminine,4.0,'exotic dancer' is a term predominantly used to refer to female performers.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""'exotic dancer' is a term predominantly used to refer to female performers.""}
+```"
+376,source,"All right, buddy, I' m off.",buddy,ambiguous,few_shot_full,masculine,4.0,'buddy' is a gendered masculine term of endearment/friendship.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'buddy' is a gendered masculine term of endearment/friendship.""}
+```"
+382,source,The cause of this vague feeling of distrust which had gone abroad concerning the old soldier was no very easy matter to define.,soldier,ambiguous,few_shot_full,masculine,4.0,'soldier' is traditionally a masculine-gendered noun in this literary context.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'soldier' is traditionally a masculine-gendered noun in this literary context.""}
+```"
+414,feminine,"After six years in the White House...... and eight as the governor' s daughter, I don' t really know anything else- she was always in office.",governor,feminine,few_shot_full,masculine,4.0,The referent is identified as the father of the speaker ('governor's daughter').,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""The referent is identified as the father of the speaker ('governor's daughter').""}
+```"
+424,source,Printed with you’re the thelma and louise couple lover.,lover,ambiguous,few_shot_full,feminine,4.0,'Thelma and Louise' is a cultural reference to a famous female duo.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""'Thelma and Louise' is a cultural reference to a famous female duo.""}
+```"
+480,source,I bet a lot of moms would like to exchange places with me considering the fact that I am a homemaker.,homemaker,ambiguous,few_shot_full,feminine,4.0,The speaker identifies as a 'homemaker' in a context where they are comparing themselves to 'moms'.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The speaker identifies as a 'homemaker' in a context where they are comparing themselves to 'moms'.""}
+```"
+309,masculine,I try to follow what goes on in experimental economics although I am not a male economist.,economist,masculine,few_shot_full,feminine,4.0,"The speaker explicitly states they are 'not a male economist', implying they are female.",False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The speaker explicitly states they are 'not a male economist', implying they are female.""}
+```"
+309,feminine,I try to follow what goes on in experimental economics although I am not a female economist.,economist,feminine,few_shot_full,masculine,4.0,"The speaker explicitly states they are 'not a female economist', implying they are male.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""The speaker explicitly states they are 'not a female economist', implying they are male.""}
+```"
+217,source,Following are some hints which will permit you to frame the ideal recommendation letter to your family’s beloved nanny.,nanny,ambiguous,few_shot_full,feminine,4.0,'nanny' is a gendered feminine term for a childcare provider.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""'nanny' is a gendered feminine term for a childcare provider.""}
+```"
+269,source,"See if you can raise the yard master, will ya?",master,ambiguous,few_shot_full,masculine,4.0,'master' is a gendered masculine noun.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'master' is a gendered masculine noun.""}
+```"
+319,source,You can sign up for free as a nanny!,nanny,ambiguous,few_shot_full,feminine,4.0,'nanny' is a gendered feminine term for a childcare provider.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""'nanny' is a gendered feminine term for a childcare provider.""}
+```"
+279,source,I am the new ruler of this world...... the master of humans and Pokémon alike.,master,ambiguous,few_shot_full,masculine,4.0,'master' is a gendered masculine form of this role.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'master' is a gendered masculine form of this role.""}
+```"
+117,source,"Hey buddy, it' s me, Randy.",buddy,ambiguous,few_shot_full,masculine,4.0,'buddy' is predominantly used as a masculine term of endearment or address.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'buddy' is predominantly used as a masculine term of endearment or address.""}
+```"
+471,source,This will be the last thing I can do for my master.,master,ambiguous,few_shot_full,masculine,4.0,'master' is a gendered masculine noun.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'master' is a gendered masculine noun.""}
+```"

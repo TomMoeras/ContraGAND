@@ -1,0 +1,111 @@
+row_id,variant,sentence_zero_shot,referent_zero_shot,expected_label_zero_shot,condition_zero_shot,predicted_label_zero_shot,confidence_zero_shot,reasoning_zero_shot,correct_zero_shot,raw_response_zero_shot,sentence_few_shot_full,referent_few_shot_full,expected_label_few_shot_full,condition_few_shot_full,predicted_label_few_shot_full,confidence_few_shot_full,reasoning_few_shot_full,correct_few_shot_full,raw_response_few_shot_full
+29,masculine,I was a flight steward for 30 years and spent 3 decades of my life staying in various hotels in 60 countries worldwide.,steward,masculine,zero_shot,ambiguous,5,The term 'steward' is used here as a professional title and lacks gender-specific pronouns or modifiers.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'steward' is used here as a professional title and lacks gender-specific pronouns or modifiers.""}
+```",I was a flight steward for 30 years and spent 3 decades of my life staying in various hotels in 60 countries worldwide.,steward,masculine,few_shot_full,masculine,4.0,"'steward' is the masculine form of the role, whereas 'stewardess' is the feminine form.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'steward' is the masculine form of the role, whereas 'stewardess' is the feminine form.""}
+```"
+37,masculine,Who ever said he wanted to be a minister?!...,minister,masculine,zero_shot,ambiguous,5,The term 'minister' is a gender-neutral professional title.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'minister' is a gender-neutral professional title.""}
+```",Who ever said he wanted to be a minister?!...,minister,masculine,few_shot_full,masculine,5.0,'he' refers to the person who wanted to be a minister.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'he' refers to the person who wanted to be a minister.""}
+```"
+37,feminine,Who ever said she wanted to be a minister?!...,minister,feminine,zero_shot,ambiguous,5,The term 'minister' is a gender-neutral professional title.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'minister' is a gender-neutral professional title.""}
+```",Who ever said she wanted to be a minister?!...,minister,feminine,few_shot_full,feminine,5.0,'she' refers to the person who wanted to be a minister.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'she' refers to the person who wanted to be a minister.""}
+```"
+68,feminine,"We' re not out of the woods yet, buddy, ma'am.",buddy,feminine,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend or associate.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend or associate.""}
+```","We' re not out of the woods yet, buddy, ma'am.",buddy,feminine,few_shot_full,feminine,5.0,'ma'am' is a feminine vocative addressing the buddy.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'ma'am' is a feminine vocative addressing the buddy.""}
+```"
+117,feminine,"Hey buddy, ma'am, it' s me, Randy.",buddy,feminine,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend.""}
+```","Hey buddy, ma'am, it' s me, Randy.",buddy,feminine,few_shot_full,feminine,5.0,'ma'am' is a feminine vocative addressing the buddy.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'ma'am' is a feminine vocative addressing the buddy.""}
+```"
+156,feminine,"To the absolute disbelief of the spectator, bit by bit you start to hum the tune she is thinking of, and then suddenly you name the selected song!",spectator,feminine,zero_shot,ambiguous,5,The word 'spectator' is a gender-neutral noun and there are no pronouns referring back to it.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'spectator' is a gender-neutral noun and there are no pronouns referring back to it.""}
+```","To the absolute disbelief of the spectator, bit by bit you start to hum the tune she is thinking of, and then suddenly you name the selected song!",spectator,feminine,few_shot_full,feminine,5.0,'she' refers to the spectator who is thinking of the tune.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'she' refers to the spectator who is thinking of the tune.""}
+```"
+159,feminine,"It' s just not worth it, buddy, ma'am.",buddy,feminine,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend or acquaintance.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend or acquaintance.""}
+```","It' s just not worth it, buddy, ma'am.",buddy,feminine,few_shot_full,feminine,5.0,'ma'am' is a feminine vocative addressing the buddy.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'ma'am' is a feminine vocative addressing the buddy.""}
+```"
+169,feminine,"Children, the doctor has her medication I told you about.",doctor,feminine,zero_shot,ambiguous,5,"The possessive pronoun 'her' refers to the medication's recipient, not the doctor's own gender.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The possessive pronoun 'her' refers to the medication's recipient, not the doctor's own gender.""}
+```","Children, the doctor has her medication I told you about.",doctor,feminine,few_shot_full,feminine,5.0,'her' refers to the doctor (possessive pronoun).,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'her' refers to the doctor (possessive pronoun).""}
+```"
+204,masculine,Only a bespectacled steward separated us from a life in the Bahamas.,steward,masculine,zero_shot,ambiguous,5,The term 'steward' is a gender-neutral professional title in modern English.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'steward' is a gender-neutral professional title in modern English.""}
+```",Only a bespectacled steward separated us from a life in the Bahamas.,steward,masculine,few_shot_full,masculine,4.0,'steward' is traditionally a gendered masculine form of the role.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'steward' is traditionally a gendered masculine form of the role.""}
+```"
+242,masculine,"In this sense, he is not at all an activist or promoting any specific political concept.",activist,masculine,zero_shot,ambiguous,5,"The word 'activist' is a gender-neutral noun and the pronoun 'he' refers to the subject, not the role of an activist.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'activist' is a gender-neutral noun and the pronoun 'he' refers to the subject, not the role of an activist.""}
+```","In this sense, he is not at all an activist or promoting any specific political concept.",activist,masculine,few_shot_full,masculine,5.0,'he' is the subject of the sentence and is identified as not being an activist.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'he' is the subject of the sentence and is identified as not being an activist.""}
+```"
+242,feminine,"In this sense, she is not at all an activist or promoting any specific political concept.",activist,feminine,zero_shot,ambiguous,5,The word 'activist' is a gender-neutral noun and the sentence provides no gender-specific information about the role itself.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'activist' is a gender-neutral noun and the sentence provides no gender-specific information about the role itself.""}
+```","In this sense, she is not at all an activist or promoting any specific political concept.",activist,feminine,few_shot_full,feminine,5.0,'she' is the subject of the sentence and is identified as not being an activist.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'she' is the subject of the sentence and is identified as not being an activist.""}
+```"
+254,masculine,"I' m sure I feared your coach, Mr. Davis, had overset itself, or you had been attacked by robbers!",coach,masculine,zero_shot,ambiguous,5,"The referent 'coach' refers to a vehicle, which is an inanimate object and has no gender.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The referent 'coach' refers to a vehicle, which is an inanimate object and has no gender.""}
+```","I' m sure I feared your coach, Mr. Davis, had overset itself, or you had been attacked by robbers!",coach,masculine,few_shot_full,masculine,5.0,'Mr. Davis' is a masculine title+name appositive for the coach.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'Mr. Davis' is a masculine title+name appositive for the coach.""}
+```"
+254,feminine,"I' m sure I feared your coach, Mrs. Davis, had overset itself, or you had been attacked by robbers!",coach,feminine,zero_shot,ambiguous,5,"The referent 'coach' refers to a vehicle, which is an inanimate object and has no gender.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The referent 'coach' refers to a vehicle, which is an inanimate object and has no gender.""}
+```","I' m sure I feared your coach, Mrs. Davis, had overset itself, or you had been attacked by robbers!",coach,feminine,few_shot_full,feminine,5.0,'Mrs. Davis' is a feminine title+name appositive for the coach.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'Mrs. Davis' is a feminine title+name appositive for the coach.""}
+```"
+275,feminine,"I would only have my secretary call the insurance agency and laugh about it, Mrs. Martinez being quite amused.",secretary,feminine,zero_shot,ambiguous,5,The term 'secretary' is gender-neutral and there are no pronouns referring back to the secretary.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'secretary' is gender-neutral and there are no pronouns referring back to the secretary.""}
+```","I would only have my secretary call the insurance agency and laugh about it, Mrs. Martinez being quite amused.",secretary,feminine,few_shot_full,feminine,5.0,'Mrs. Martinez' is a feminine title+name appositive identifying the secretary.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'Mrs. Martinez' is a feminine title+name appositive identifying the secretary.""}
+```"
+279,masculine,I am the new ruler of this world...... the master of humans and Pokémon alike.,master,masculine,zero_shot,ambiguous,5,The term 'master' is used here as a gender-neutral title of authority with no accompanying gendered pronouns.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'master' is used here as a gender-neutral title of authority with no accompanying gendered pronouns.""}
+```",I am the new ruler of this world...... the master of humans and Pokémon alike.,master,masculine,few_shot_full,masculine,4.0,'master' is a gendered masculine form of this role.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'master' is a gendered masculine form of this role.""}
+```"
+294,masculine,"I couldn't stay inside and watch something awful happen like a helpless bystander, some guy-not this time.",bystander,masculine,zero_shot,ambiguous,5,The word 'bystander' is a gender-neutral noun and is not modified by any gender-specific pronouns or descriptors.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'bystander' is a gender-neutral noun and is not modified by any gender-specific pronouns or descriptors.""}
+```","I couldn't stay inside and watch something awful happen like a helpless bystander, some guy-not this time.",bystander,masculine,few_shot_full,masculine,5.0,'some guy' is an appositive identifying the bystander as male.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'some guy' is an appositive identifying the bystander as male.""}
+```"
+294,feminine,"I couldn't stay inside and watch something awful happen like a helpless bystander, some girl-not this time.",bystander,feminine,zero_shot,ambiguous,5,The word 'bystander' is a gender-neutral noun and is not modified by any gender-specific pronouns or descriptors.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'bystander' is a gender-neutral noun and is not modified by any gender-specific pronouns or descriptors.""}
+```","I couldn't stay inside and watch something awful happen like a helpless bystander, some girl-not this time.",bystander,feminine,few_shot_full,feminine,5.0,'some girl' is an appositive identifying the bystander as female.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'some girl' is an appositive identifying the bystander as female.""}
+```"
+376,feminine,"All right, buddy, ma'am, I' m off.",buddy,feminine,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend.""}
+```","All right, buddy, ma'am, I' m off.",buddy,feminine,few_shot_full,feminine,5.0,'ma'am' is a feminine vocative addressing the buddy.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'ma'am' is a feminine vocative addressing the buddy.""}
+```"
+382,feminine,"The cause of this vague feeling of distrust which had gone abroad concerning the old soldier, a lady of some repute, was no very easy matter to define.",soldier,feminine,zero_shot,masculine,5,"The term 'soldier' in this historical literary context, combined with the contrast to 'a lady', identifies the referent as male.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The term 'soldier' in this historical literary context, combined with the contrast to 'a lady', identifies the referent as male.""}
+```","The cause of this vague feeling of distrust which had gone abroad concerning the old soldier, a lady of some repute, was no very easy matter to define.",soldier,feminine,few_shot_full,feminine,5.0,'a lady of some repute' is an appositive phrase identifying the old soldier as female.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'a lady of some repute' is an appositive phrase identifying the old soldier as female.""}
+```"
+394,masculine,"You might even, I don' t know, not die a virgin, sir.",virgin,masculine,zero_shot,ambiguous,5,The term 'virgin' is a gender-neutral noun referring to someone who has not had sexual intercourse.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'virgin' is a gender-neutral noun referring to someone who has not had sexual intercourse.""}
+```","You might even, I don' t know, not die a virgin, sir.",virgin,masculine,few_shot_full,masculine,5.0,'sir' is a masculine vocative addressing the person who is the referent 'virgin'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'sir' is a masculine vocative addressing the person who is the referent 'virgin'.""}
+```"
+471,masculine,This will be the last thing I can do for my master.,master,masculine,zero_shot,ambiguous,5,The term 'master' can be used as a gender-neutral title or refer to a person of any gender in this context.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'master' can be used as a gender-neutral title or refer to a person of any gender in this context.""}
+```",This will be the last thing I can do for my master.,master,masculine,few_shot_full,masculine,4.0,'master' is a gendered masculine noun.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'master' is a gendered masculine noun.""}
+```"
+493,feminine,"When applying for staff, ma'am, you will always start out as a helper.",helper,feminine,zero_shot,ambiguous,5,The term 'helper' is a gender-neutral job role and has no gender-specific modifiers.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'helper' is a gender-neutral job role and has no gender-specific modifiers.""}
+```","When applying for staff, ma'am, you will always start out as a helper.",helper,feminine,few_shot_full,feminine,5.0,'ma'am' is a feminine vocative addressing the person who will be the helper.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'ma'am' is a feminine vocative addressing the person who will be the helper.""}
+```"

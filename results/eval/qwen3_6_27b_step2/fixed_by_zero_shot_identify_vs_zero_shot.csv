@@ -1,0 +1,205 @@
+row_id,variant,sentence_zero_shot,referent_zero_shot,expected_label_zero_shot,condition_zero_shot,predicted_label_zero_shot,confidence_zero_shot,reasoning_zero_shot,correct_zero_shot,raw_response_zero_shot,sentence_zero_shot_identify,referent_zero_shot_identify,expected_label_zero_shot_identify,condition_zero_shot_identify,predicted_label_zero_shot_identify,confidence_zero_shot_identify,reasoning_zero_shot_identify,correct_zero_shot_identify,raw_response_zero_shot_identify
+19,source,"Popular legend lays blame for the town’s string of early disasters on Fernie, who, the story goes, promised to marry the daughter of a Ktunaxa chief in 1897 if he would reveal the source of the region’s coal.",chief,ambiguous,zero_shot,masculine,5,"The pronoun 'he' in the clause 'if he would reveal' refers back to the chief, explicitly identifying the referent as male.",False,"{
+  ""gender"": ""masculine"",
+  ""confidence"": 5,
+  ""reasoning"": ""The pronoun 'he' in the clause 'if he would reveal' refers back to the chief, explicitly identifying the referent as male.""
+}","Popular legend lays blame for the town’s string of early disasters on Fernie, who, the story goes, promised to marry the daughter of a Ktunaxa chief in 1897 if he would reveal the source of the region’s coal.",chief,ambiguous,zero_shot_identify,ambiguous,2.0,"While historically often male, the word 'chief' itself is gender-neutral, and no pronoun in the sentence refers back to the chief to clarify gender.",True,"{
+""referents"": [
+{
+""referent"": ""Fernie"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'he' is used later in the sentence to refer to Fernie ('if he would reveal').""
+},
+{
+""referent"": ""daughter"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The term 'daughter' explicitly denotes a female child.""
+},
+{
+""referent"": ""chief"",
+""gender"": ""ambiguous"",
+""confidence"": 2,
+""reasoning"": ""While historically often male, the word 'chief' itself is gender-neutral, and no pronoun in the sentence refers back to the chief to clarify gender.""
+}
+]
+}"
+28,source,"AFP reported Feb. 7 one rebel group had launched attacks in the nation’s Ouaka prefecture, where 18 people were killed by a drunken militia fighter during a funeral.",fighter,ambiguous,zero_shot,masculine,5,"The noun 'fighter' is historically and conventionally used as a masculine term for a combatant, and the lack of a feminine marker like 'female' or 'woman' implies a male referent in this context.",False,"{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The noun 'fighter' is historically and conventionally used as a masculine term for a combatant, and the lack of a feminine marker like 'female' or 'woman' implies a male referent in this context.""}","AFP reported Feb. 7 one rebel group had launched attacks in the nation’s Ouaka prefecture, where 18 people were killed by a drunken militia fighter during a funeral.",fighter,ambiguous,zero_shot_identify,ambiguous,4.0,"While 'fighter' can sometimes be associated with males, the modifier 'drunken' and the role itself do not grammatically or semantically restrict the gender to male or female in this context.",True,"{
+""referents"": [
+{
+""referent"": ""rebel group"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'group' is a collective noun that does not specify the gender of its members.""
+},
+{
+""referent"": ""people"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'people' is a gender-neutral plural noun.""
+},
+{
+""referent"": ""militia fighter"",
+""gender"": ""ambiguous"",
+""confidence"": 4,
+""reasoning"": ""While 'fighter' can sometimes be associated with males, the modifier 'drunken' and the role itself do not grammatically or semantically restrict the gender to male or female in this context.""
+}
+]
+}"
+134,source,There' s an old witch of a nurse out there with an ear like radar and a tongue like a fire bell.,nurse,ambiguous,zero_shot,feminine,5,"The referent is explicitly described as a 'witch', which is a gendered noun referring to a female.",False,"{
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The referent is explicitly described as a 'witch', which is a gendered noun referring to a female.""
+}",There' s an old witch of a nurse out there with an ear like radar and a tongue like a fire bell.,nurse,ambiguous,zero_shot_identify,ambiguous,2.0,"While the phrase 'witch of a nurse' uses a feminine metaphor, the occupation 'nurse' itself is gender-neutral and can be held by any gender.",True,"{
+""referents"": [
+{
+""referent"": ""witch"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The noun 'witch' is traditionally and linguistically associated with females, whereas the male equivalent is 'warlock'.""
+},
+{
+""referent"": ""nurse"",
+""gender"": ""ambiguous"",
+""confidence"": 2,
+""reasoning"": ""While the phrase 'witch of a nurse' uses a feminine metaphor, the occupation 'nurse' itself is gender-neutral and can be held by any gender.""
+}
+]
+}"
+149,masculine,"The best thing about capturing small weddings such as Jihane & Rabih is that we are usually given the time to take off from the guests and to explore (or be led around by him, your photographer) some of the most beautiful locations in Prague.",photographer,masculine,zero_shot,ambiguous,5,"The noun 'photographer' is gender-neutral, and the pronoun 'him' in the parenthetical phrase refers to the subject 'we' (the photographers) or is a generic example, but does not definitively assign a specific gender to the referent 'photographer' in a way that excludes the other gender for the role itself.",False,"{
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The noun 'photographer' is gender-neutral, and the pronoun 'him' in the parenthetical phrase refers to the subject 'we' (the photographers) or is a generic example, but does not definitively assign a specific gender to the referent 'photographer' in a way that excludes the other gender for the role itself.""
+}","The best thing about capturing small weddings such as Jihane & Rabih is that we are usually given the time to take off from the guests and to explore (or be led around by him, your photographer) some of the most beautiful locations in Prague.",photographer,masculine,zero_shot_identify,masculine,5.0,The parenthetical phrase 'or be led around by him' uses the masculine pronoun 'him' to refer back to 'your photographer'.,True,"{
+""referents"": [
+{
+""referent"": ""photographer"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The parenthetical phrase 'or be led around by him' uses the masculine pronoun 'him' to refer back to 'your photographer'.""
+}
+]
+}"
+174,source,"It was during this time that Salim Singh, the Diwan of Jaisalmer, known for his wickedness and immoral tax-collecting methods, set his eyes on the good-looking daughter of the village chief.",chief,ambiguous,zero_shot,masculine,5,"The term 'chief' in the context of a 'village chief' is traditionally and unambiguously a male role, especially when contrasted with the explicitly female 'daughter'.",False,"{
+  ""gender"": ""masculine"",
+  ""confidence"": 5,
+  ""reasoning"": ""The term 'chief' in the context of a 'village chief' is traditionally and unambiguously a male role, especially when contrasted with the explicitly female 'daughter'.""
+}","It was during this time that Salim Singh, the Diwan of Jaisalmer, known for his wickedness and immoral tax-collecting methods, set his eyes on the good-looking daughter of the village chief.",chief,ambiguous,zero_shot_identify,ambiguous,2.0,"The term 'chief' is gender-neutral, and while the possessive 'his' in 'his wickedness' refers to Salim Singh, the phrase 'daughter of the village chief' does not grammatically link the chief to a specific gender pronoun in this context, though historical context often implies male, the text itself leaves it ambiguous without a direct pronoun for the chief.",True,"{
+""referents"": [
+{
+""referent"": ""Diwan"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The title 'Diwan' is associated with the male name 'Salim Singh' and referred to with the masculine pronoun 'his'.""
+},
+{
+""referent"": ""daughter"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The word 'daughter' explicitly denotes a female child.""
+},
+{
+""referent"": ""chief"",
+""gender"": ""ambiguous"",
+""confidence"": 2,
+""reasoning"": ""The term 'chief' is gender-neutral, and while the possessive 'his' in 'his wickedness' refers to Salim Singh, the phrase 'daughter of the village chief' does not grammatically link the chief to a specific gender pronoun in this context, though historical context often implies male, the text itself leaves it ambiguous without a direct pronoun for the chief.""
+}
+]
+}"
+239,feminine,"You can purchase these genuine FireWorks toys for yourself direct from us, whether you're a budding fire dancer or a hard-core professional, ma'am.",dancer,feminine,zero_shot,ambiguous,5,"The noun 'dancer' is gender-neutral, and the vocative 'ma'am' addresses the reader rather than the referent 'dancer'.",False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 5,
+  ""reasoning"": ""The noun 'dancer' is gender-neutral, and the vocative 'ma'am' addresses the reader rather than the referent 'dancer'.""
+}","You can purchase these genuine FireWorks toys for yourself direct from us, whether you're a budding fire dancer or a hard-core professional, ma'am.",dancer,feminine,zero_shot_identify,feminine,5.0,"The vocative 'ma'am' at the end of the sentence addresses the listener, who is identified as the 'fire dancer' in the conditional clause.",True,"{
+""referents"": [
+{
+""referent"": ""fire dancer"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The vocative 'ma'am' at the end of the sentence addresses the listener, who is identified as the 'fire dancer' in the conditional clause.""
+},
+{
+""referent"": ""professional"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The vocative 'ma'am' at the end of the sentence addresses the listener, who is identified as the 'professional' in the alternative conditional clause.""
+}
+]
+}"
+300,feminine,"The story of 'Tea' is about a six hundred year old werewolf having tea with a seventy year old gay tailor, Mrs. Smith.",tailor,feminine,zero_shot,masculine,5,"The adjective 'gay' is used to describe the tailor, which in this context unambiguously indicates a male sexual orientation.",False,"{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The adjective 'gay' is used to describe the tailor, which in this context unambiguously indicates a male sexual orientation.""}","The story of 'Tea' is about a six hundred year old werewolf having tea with a seventy year old gay tailor, Mrs. Smith.",tailor,feminine,zero_shot_identify,feminine,5.0,"The tailor is explicitly identified by the title 'Mrs.', which is a feminine honorific indicating a married woman.",True,"{
+""referents"": [
+{
+""referent"": ""werewolf"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'werewolf' is a mythical creature designation that does not inherently specify gender, and no pronouns or modifiers in the sentence indicate the werewolf's sex.""
+},
+{
+""referent"": ""tailor"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The tailor is explicitly identified by the title 'Mrs.', which is a feminine honorific indicating a married woman.""
+}
+]
+}"
+309,masculine,I try to follow what goes on in experimental economics although I am not a male economist.,economist,masculine,zero_shot,feminine,5,"The speaker explicitly states they are 'not a male economist,' which implies they are a female economist in this binary context.",False,"{
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The speaker explicitly states they are 'not a male economist,' which implies they are a female economist in this binary context.""
+}",I try to follow what goes on in experimental economics although I am not a male economist.,economist,masculine,zero_shot_identify,masculine,5.0,"The sentence explicitly states 'I am not a male economist', which identifies the referent 'economist' in this context as being male.",True,"{
+""referents"": [
+{
+""referent"": ""economist"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The sentence explicitly states 'I am not a male economist', which identifies the referent 'economist' in this context as being male.""
+}
+]
+}"
+359,feminine,But she doesn' t have to be a mind reader with you.,reader,feminine,zero_shot,ambiguous,5,"The noun 'reader' is gender-neutral and does not indicate the gender of the referent, even though the subject 'she' is female.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'reader' is gender-neutral and does not indicate the gender of the referent, even though the subject 'she' is female.""}",But she doesn' t have to be a mind reader with you.,reader,feminine,zero_shot_identify,feminine,5.0,The pronoun 'she' in the subject position ('she doesn't have to be') explicitly identifies the referent 'mind reader' as female.,True,"{
+""referents"": [
+{
+""referent"": ""mind reader"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'she' in the subject position ('she doesn't have to be') explicitly identifies the referent 'mind reader' as female.""
+}
+]
+}"
+368,masculine,"With 146 students and a faculty that, as a visitor once noted, he would say would be the envy of any small college, let alone school, we are in good institutional health and are poised to thrive for the longer term.",visitor,masculine,zero_shot,ambiguous,5,The noun 'visitor' is gender-neutral and the sentence contains no pronouns or other descriptors that specify the visitor's gender.,False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 5,
+  ""reasoning"": ""The noun 'visitor' is gender-neutral and the sentence contains no pronouns or other descriptors that specify the visitor's gender.""
+}","With 146 students and a faculty that, as a visitor once noted, he would say would be the envy of any small college, let alone school, we are in good institutional health and are poised to thrive for the longer term.",visitor,masculine,zero_shot_identify,masculine,5.0,"The visitor is explicitly referred to with the masculine pronoun 'he' ('as a visitor once noted, he would say').",True,"{
+""referents"": [
+{
+""referent"": ""students"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'students' is gender-neutral and no pronouns or context in the sentence specify their gender.""
+},
+{
+""referent"": ""faculty"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'faculty' is a collective noun that is gender-neutral, and the pronoun 'he' refers to the visitor, not the faculty.""
+},
+{
+""referent"": ""visitor"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The visitor is explicitly referred to with the masculine pronoun 'he' ('as a visitor once noted, he would say').""
+}
+]
+}"
+469,source,I' m really not in the habit of checking out the nanny' s ass,nanny,ambiguous,zero_shot,feminine,5,The possessive pronoun 's' (her) in 'nanny's' explicitly indicates that the referent is female.,False,"{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The possessive pronoun 's' (her) in 'nanny's' explicitly indicates that the referent is female.""}",I' m really not in the habit of checking out the nanny' s ass,nanny,ambiguous,zero_shot_identify,ambiguous,3.0,"While 'nanny' is historically associated with women, the term itself does not grammatically or semantically enforce a specific gender, and men can also work as nannies.",True,"{
+""referents"": [
+{
+""referent"": ""nanny"",
+""gender"": ""ambiguous"",
+""confidence"": 3,
+""reasoning"": ""While 'nanny' is historically associated with women, the term itself does not grammatically or semantically enforce a specific gender, and men can also work as nannies.""
+}
+]
+}"

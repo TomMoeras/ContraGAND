@@ -1,0 +1,4 @@
+referent,n_confident_guesses,guessed_masculine,guessed_feminine,male_share
+housekeeper,1,0,1,0.0
+virgin,1,0,1,0.0
+warrior,1,1,0,1.0

@@ -1,0 +1,6 @@
+referent,n_confident_guesses,guessed_masculine,guessed_feminine,male_share
+amateur,1,0,1,0.0
+champion,1,1,0,1.0
+fighter,1,1,0,1.0
+housekeeper,1,0,1,0.0
+salesperson,1,0,1,0.0

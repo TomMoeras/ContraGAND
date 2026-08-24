@@ -1,0 +1,1396 @@
+row_id,variant,sentence,referent,expected_label
+0,source,"I haven' t called a colleague today, but the one whom I love.",colleague,ambiguous
+0,masculine,"I haven' t called a male colleague today, but the one whom I love.",colleague,masculine
+0,feminine,"I haven' t called a female colleague today, but the one whom I love.",colleague,feminine
+1,source,I’m an IT Professional by day and an Electric Universe/Thunderbolts Project enthusiast the rest of the time.,enthusiast,ambiguous
+1,masculine,He's an IT Professional by day and an Electric Universe/Thunderbolts Project enthusiast the rest of the time.,enthusiast,masculine
+1,feminine,She's an IT Professional by day and an Electric Universe/Thunderbolts Project enthusiast the rest of the time.,enthusiast,feminine
+2,source,The author follows 8 Milwaukee families through their daily struggle to find and keep a shelter.,author,ambiguous
+2,masculine,"The author, Mr. Chen, follows 8 Milwaukee families through their daily struggle to find and keep a shelter.",author,masculine
+2,feminine,"The author, Mrs. Chen, follows 8 Milwaukee families through their daily struggle to find and keep a shelter.",author,feminine
+3,source,"And take care of the shadow and you' il have to calculate the human mind, idiot!",idiot,ambiguous
+3,masculine,"And take care of the shadow and you' il have to calculate the human mind, idiot, sir!",idiot,masculine
+3,feminine,"And take care of the shadow and you' il have to calculate the human mind, idiot, ma'am!",idiot,feminine
+4,source,A whopping 56 percent think the governor doesn't deserve re-election.,governor,ambiguous
+4,masculine,"A whopping 56 percent think the governor, Mr. Garcia, doesn't deserve re-election.",governor,masculine
+4,feminine,"A whopping 56 percent think the governor, Mrs. Garcia, doesn't deserve re-election.",governor,feminine
+5,source,"Of course, I was the photo enthusiast here, my phone was out in minutes, taking several ‘one for the gram’ shots, much to the amusement of the others who were ready to just take this mountain down but joined in the fun anyway.",enthusiast,ambiguous
+5,masculine,"Of course, he was the photo enthusiast here, his phone was out in minutes, taking several 'one for the gram' shots, much to the amusement of the others who were ready to just take this mountain down but joined in the fun anyway.",enthusiast,masculine
+5,feminine,"Of course, she was the photo enthusiast here, her phone was out in minutes, taking several 'one for the gram' shots, much to the amusement of the others who were ready to just take this mountain down but joined in the fun anyway.",enthusiast,feminine
+6,source,Tenoch was the second of three sons of a Harvard economist......,economist,ambiguous
+6,masculine,"Tenoch was the second of three sons of a Harvard economist, Mr. Patel......",economist,masculine
+6,feminine,"Tenoch was the second of three sons of a Harvard economist, Mrs. Patel......",economist,feminine
+7,source,Two people from Lakeside were charged with attempted murder in a June 2 incident in which a driver allegedly tried to run a couple down in El Cajon before crashing into a tree.,driver,ambiguous
+7,masculine,Two people from Lakeside were charged with attempted murder in a June 2 incident in which a male driver allegedly tried to run a couple down in El Cajon before crashing into a tree.,driver,masculine
+7,feminine,Two people from Lakeside were charged with attempted murder in a June 2 incident in which a female driver allegedly tried to run a couple down in El Cajon before crashing into a tree.,driver,feminine
+8,source,"From concept to implementation, a podcast can be a catalyst for promoting business and allowing you to become a top influencer in your industry or niche.",influencer,ambiguous
+8,masculine,"From concept to implementation, a podcast can be a catalyst for promoting business and allowing you to become a top influencer in your industry or niche, sir.",influencer,masculine
+8,feminine,"From concept to implementation, a podcast can be a catalyst for promoting business and allowing you to become a top influencer in your industry or niche, ma'am.",influencer,feminine
+9,source,"It' s enough to make you a vegetarian, isn' t it?",vegetarian,ambiguous
+9,masculine,"It' s enough to make you a vegetarian, isn' t it, sir?",vegetarian,masculine
+9,feminine,"It' s enough to make you a vegetarian, isn' t it, ma' am?",vegetarian,feminine
+10,source,"I've been spending some time playing a little nub wayfarer, and it's been a really enjoyable class so far.",wayfarer,ambiguous
+10,masculine,"I've been spending some time playing a little nub male wayfarer, and it's been a really enjoyable class so far.",wayfarer,masculine
+10,feminine,"I've been spending some time playing a little nub female wayfarer, and it's been a really enjoyable class so far.",wayfarer,feminine
+11,source,The chief always likes to relate everything back to God and the will of God.,chief,ambiguous
+11,masculine,"The chief always likes to relate everything back to God and the will of God, and he is unwavering in this.",chief,masculine
+11,feminine,"The chief always likes to relate everything back to God and the will of God, and she is unwavering in this.",chief,feminine
+12,source,"And I' m workin 'with a new therapist, you know, terrific, absolutely terrific.",therapist,ambiguous
+12,masculine,"And I' m workin 'with a new therapist, Mr. Chen, you know, terrific, absolutely terrific.",therapist,masculine
+12,feminine,"And I' m workin 'with a new therapist, Mrs. Chen, you know, terrific, absolutely terrific.",therapist,feminine
+13,source,It’ s that you take me for an idiot.,idiot,ambiguous
+13,masculine,It' s that you take him for an idiot.,idiot,masculine
+13,feminine,It' s that you take her for an idiot.,idiot,feminine
+14,source,Your Oral health therapist will give you tips and detailed instructions on how to look after your oral hygiene at home.,therapist,ambiguous
+14,masculine,Your Oral health therapist will give you his tips and detailed instructions on how to look after your oral hygiene at home.,therapist,masculine
+14,feminine,Your Oral health therapist will give you her tips and detailed instructions on how to look after your oral hygiene at home.,therapist,feminine
+15,source,"The feeling was fleeting, and when I noticed my opponent wasn’t picking up on it, I simply continued along with our training drills unimpeded.",opponent,ambiguous
+15,masculine,"The feeling was fleeting, and when I noticed my opponent, my father, wasn't picking up on it, I simply continued along with our training drills unimpeded.",opponent,masculine
+15,feminine,"The feeling was fleeting, and when I noticed my opponent, my mother, wasn't picking up on it, I simply continued along with our training drills unimpeded.",opponent,feminine
+16,source,She grew roses and tended them carefully (with the help of a once a week gardener).,gardener,ambiguous
+16,masculine,"She grew roses and tended them carefully (with the help of a once a week gardener, Mr. Kim).",gardener,masculine
+16,feminine,"She grew roses and tended them carefully (with the help of a once a week gardener, Mrs. Kim).",gardener,feminine
+17,source,Did you see the little door the librarian closed as we came in?,librarian,ambiguous
+17,masculine,"Did you see the little door the librarian, Mr. Thompson, closed as we came in?",librarian,masculine
+17,feminine,"Did you see the little door the librarian, Mrs. Thompson, closed as we came in?",librarian,feminine
+18,source,"If you' re out of breath, grab your opponent.",opponent,ambiguous
+18,masculine,"If you' re out of breath, grab your male opponent.",opponent,masculine
+18,feminine,"If you' re out of breath, grab your female opponent.",opponent,feminine
+19,source,That' s no way to talk about your neighbor.,neighbor,ambiguous
+19,masculine,That' s no way to talk about your male neighbor.,neighbor,masculine
+19,feminine,That' s no way to talk about your female neighbor.,neighbor,feminine
+20,source,"My brother has two jobs, to cook and to marry a Greek virgin.",virgin,ambiguous
+20,masculine,"My brother has two jobs, to cook and to marry a Greek male virgin.",virgin,masculine
+20,feminine,"My brother has two jobs, to cook and to marry a Greek female virgin.",virgin,feminine
+21,source,"Course, as it turns out...... l wasn' t a very good employee.",employee,ambiguous
+21,masculine,"Course, as it turns out...... he wasn' t a very good employee.",employee,masculine
+21,feminine,"Course, as it turns out...... she wasn' t a very good employee.",employee,feminine
+22,source,"The former political guard believes the council meeting on Monday last week – where a new mayor, deputy, speaker and chief whip were elected – was illegal.",guard,ambiguous
+22,masculine,"The former political guard, Mr. Davis, believes the council meeting on Monday last week – where a new mayor, deputy, speaker and chief whip were elected – was illegal.",guard,masculine
+22,feminine,"The former political guard, Mrs. Davis, believes the council meeting on Monday last week – where a new mayor, deputy, speaker and chief whip were elected – was illegal.",guard,feminine
+23,source,The winner and new heavyweight champion ofthe world is Cassius Clay.,champion,ambiguous
+23,masculine,The winner and new male heavyweight champion ofthe world is Cassius Clay.,champion,masculine
+23,feminine,The winner and new female heavyweight champion ofthe world is Cassius Clay.,champion,feminine
+24,source,Rated 5 out of 5 by Anonymous from Simply effective I have used this cleanser exclusively since I was introduced to it a couple of years ago by a beautician at a medical spa.,beautician,ambiguous
+24,masculine,"Rated 5 out of 5 by Anonymous from Simply effective I have used this cleanser exclusively since I was introduced to it a couple of years ago by a beautician, Mr. Fitzgerald, at a medical spa.",beautician,masculine
+24,feminine,"Rated 5 out of 5 by Anonymous from Simply effective I have used this cleanser exclusively since I was introduced to it a couple of years ago by a beautician, Mrs. Fitzgerald, at a medical spa.",beautician,feminine
+25,source,"AFP reported Feb. 7 one rebel group had launched attacks in the nation’s Ouaka prefecture, where 18 people were killed by a drunken militia fighter during a funeral.",fighter,ambiguous
+25,masculine,"AFP reported Feb. 7 one rebel group had launched attacks in the nation's Ouaka prefecture, where 18 people were killed by a drunken male militia fighter during a funeral.",fighter,masculine
+25,feminine,"AFP reported Feb. 7 one rebel group had launched attacks in the nation's Ouaka prefecture, where 18 people were killed by a drunken female militia fighter during a funeral.",fighter,feminine
+26,source,I was a flight attendant for 30 years and spent 3 decades of my life staying in various hotels in 60 countries worldwide.,attendant,ambiguous
+26,masculine,I was a flight steward for 30 years and spent 3 decades of my life staying in various hotels in 60 countries worldwide.,steward,masculine
+26,feminine,I was a flight stewardess for 30 years and spent 3 decades of my life staying in various hotels in 60 countries worldwide.,stewardess,feminine
+27,source,West Ham is among the clubs that are aggressively persuading the veteran to join them.,veteran,ambiguous
+27,masculine,"West Ham is among the clubs that are aggressively persuading the veteran to join them, as he weighs his options.",veteran,masculine
+27,feminine,"West Ham is among the clubs that are aggressively persuading the veteran to join them, as she weighs her options.",veteran,feminine
+28,source,"You be the judge, Our lines are open.",judge,ambiguous
+28,masculine,"You be the judge, sir, Our lines are open.",judge,masculine
+28,feminine,"You be the judge, ma'am, Our lines are open.",judge,feminine
+29,source,It is important that you show you are an expert in the niche area you have developed your product or service in.,expert,ambiguous
+29,masculine,"It is important that you show you are an expert, sir, in the niche area you have developed your product or service in.",expert,masculine
+29,feminine,"It is important that you show you are an expert, ma'am, in the niche area you have developed your product or service in.",expert,feminine
+30,source,"I just want you to know, I really like your partner.",partner,ambiguous
+30,masculine,"I just want you to know, I really like your boyfriend.",boyfriend,masculine
+30,feminine,"I just want you to know, I really like your girlfriend.",girlfriend,feminine
+31,source,"I don' t care if you' re a virgin, all right?",virgin,ambiguous
+31,masculine,"I don' t care if you' re a virgin, sir, all right?",virgin,masculine
+31,feminine,"I don' t care if you' re a virgin, ma' am, all right?",virgin,feminine
+32,source,"Export to PDF, as is done by my colleague, may be a solution for some, but this also loses some of the advantages of the ebook format, like the ability to copy sections of text.",colleague,ambiguous
+32,masculine,"Export to PDF, as is done by my colleague, Mr. Smith, may be a solution for some, but this also loses some of the advantages of the ebook format, like the ability to copy sections of text.",colleague,masculine
+32,feminine,"Export to PDF, as is done by my colleague, Mrs. Smith, may be a solution for some, but this also loses some of the advantages of the ebook format, like the ability to copy sections of text.",colleague,feminine
+33,source,Who ever said I wanted to be a minister?!...,minister,ambiguous
+33,masculine,Who ever said he wanted to be a minister?!...,minister,masculine
+33,feminine,Who ever said she wanted to be a minister?!...,minister,feminine
+34,source,My previous experience working as a nanny for children on the Autism Spectrum has given me a unique insight to the different challenges that families face at home and I feel the ability to help them even more.,nanny,ambiguous
+34,masculine,His previous experience working as a nanny for children on the Autism Spectrum has given him a unique insight to the different challenges that families face at home and he feels the ability to help them even more.,nanny,masculine
+34,feminine,Her previous experience working as a nanny for children on the Autism Spectrum has given her a unique insight to the different challenges that families face at home and she feels the ability to help them even more.,nanny,feminine
+35,source,"Well, I am an executive assistant...... at a major pet products company.",assistant,ambiguous
+35,masculine,"Well, he is an executive assistant...... at a major pet products company.",assistant,masculine
+35,feminine,"Well, she is an executive assistant...... at a major pet products company.",assistant,feminine
+36,source,"Whether you've been a Christ follower all of your life or have never read a word of the Bible before and are just checking out the Christian faith, you are welcome here.",follower,ambiguous
+36,masculine,"Whether you've been a Christ follower all of your life or have never read a word of the Bible before and are just checking out the Christian faith, sir, you are welcome here.",follower,masculine
+36,feminine,"Whether you've been a Christ follower all of your life or have never read a word of the Bible before and are just checking out the Christian faith, ma'am, you are welcome here.",follower,feminine
+37,source,"I would be the boss, if I bring back the Freeman.",boss,ambiguous
+37,masculine,"He would be the boss, if he brings back the Freeman.",boss,masculine
+37,feminine,"She would be the boss, if she brings back the Freeman.",boss,feminine
+38,source,By order of His Majesty we have brought the mighty warrior.,warrior,ambiguous
+38,masculine,"By order of His Majesty we have brought the mighty warrior, a man of great valor.",warrior,masculine
+38,feminine,"By order of His Majesty we have brought the mighty warrior, a woman of great valor.",warrior,feminine
+39,source,You' re truly the friendliest clerk I ever met.,clerk,ambiguous
+39,masculine,"You' re truly the friendliest clerk I ever met, sir.",clerk,masculine
+39,feminine,"You' re truly the friendliest clerk I ever met, ma'am.",clerk,feminine
+40,source,Is that the officer that is to take charge of the prisoner?,officer,ambiguous
+40,masculine,Is that the officer that is to take charge of the prisoner? — he was pointed out,officer,masculine
+40,feminine,Is that the officer that is to take charge of the prisoner? — she was pointed out,officer,feminine
+41,source,They may be from a patient I' m not sure,patient,ambiguous
+41,masculine,They may be from a male patient I' m not sure,patient,masculine
+41,feminine,They may be from a female patient I' m not sure,patient,feminine
+42,source,The driver and lone occupant of the vehicle was not injured.,occupant,ambiguous
+42,masculine,"The driver and lone occupant of the vehicle, a man, was not injured.",occupant,masculine
+42,feminine,"The driver and lone occupant of the vehicle, a woman, was not injured.",occupant,feminine
+43,source,"Emergency services launched a search for the pilot and passenger of the plane at about 7.30pm last night (Wednesday), after it crashed one mile short of its runway at Beverley Airfield.",pilot,ambiguous
+43,masculine,"Emergency services launched a search for the pilot, Mr. Smith, and passenger of the plane at about 7.30pm last night (Wednesday), after it crashed one mile short of its runway at Beverley Airfield.",pilot,masculine
+43,feminine,"Emergency services launched a search for the pilot, Mrs. Smith, and passenger of the plane at about 7.30pm last night (Wednesday), after it crashed one mile short of its runway at Beverley Airfield.",pilot,feminine
+44,source,"Living your dream as a digital nomad can be a life-changing experience, just as long as you put in the hard work and effort to reach the goal of traveling to new places and making a living from something you love doing.",nomad,ambiguous
+44,masculine,"Living your dream as a digital nomad can be a life-changing experience, sir, just as long as you put in the hard work and effort to reach the goal of traveling to new places and making a living from something you love doing.",nomad,masculine
+44,feminine,"Living your dream as a digital nomad can be a life-changing experience, ma'am, just as long as you put in the hard work and effort to reach the goal of traveling to new places and making a living from something you love doing.",nomad,feminine
+45,source,"If you love curly hair, but are not naturally blessed with those luscious curls, all you can do is take help of your beautician, right?",beautician,ambiguous
+45,masculine,"If you love curly hair, but are not naturally blessed with those luscious curls, all you can do is take help of your male beautician, right?",beautician,masculine
+45,feminine,"If you love curly hair, but are not naturally blessed with those luscious curls, all you can do is take help of your female beautician, right?",beautician,feminine
+46,source,"Speaking of which, I told the limo driver to pick you two up at the hotel at noon.",driver,ambiguous
+46,masculine,"Speaking of which, I told the limo driver to pick you two up at the hotel at noon — he'll be there sharp.",driver,masculine
+46,feminine,"Speaking of which, I told the limo driver to pick you two up at the hotel at noon — she'll be there sharp.",driver,feminine
+47,source,"Thankfully, my superior did not realize my incompetence in the language and throw me back to my desk, and I was able to translate the email into something that actually made sense.",superior,ambiguous
+47,masculine,"Thankfully, my superior, Mr. Garcia, did not realize my incompetence in the language and throw me back to my desk, and I was able to translate the email into something that actually made sense.",superior,masculine
+47,feminine,"Thankfully, my superior, Mrs. Garcia, did not realize my incompetence in the language and throw me back to my desk, and I was able to translate the email into something that actually made sense.",superior,feminine
+48,source,I' m a respected member of the community.,member,ambiguous
+48,masculine,He's a respected member of the community.,member,masculine
+48,feminine,She's a respected member of the community.,member,feminine
+49,source,"Back to dry land, the adventurer launched flares on the Alliance defences, aiding the sighting of the naval guns.",adventurer,ambiguous
+49,masculine,"Back to dry land, the adventurer, Mr. Patel, launched flares on the Alliance defences, aiding the sighting of the naval guns.",adventurer,masculine
+49,feminine,"Back to dry land, the adventurer, Mrs. Patel, launched flares on the Alliance defences, aiding the sighting of the naval guns.",adventurer,feminine
+50,source,"Back in my prior life, I was an Arlington firefighter.",firefighter,ambiguous
+50,masculine,"Back in my prior life, I was an Arlington fireman.",fireman,masculine
+50,feminine,"Back in my prior life, I was an Arlington firewoman.",firewoman,feminine
+51,source,"While the Japanese fighter flew off, Bill and a major from his barrack sped over to Pearl Harbor to help their fellow servicemen fight back.",fighter,ambiguous
+51,masculine,"While the male Japanese fighter flew off, Bill and a major from his barrack sped over to Pearl Harbor to help their fellow servicemen fight back.",fighter,masculine
+51,feminine,"While the female Japanese fighter flew off, Bill and a major from his barrack sped over to Pearl Harbor to help their fellow servicemen fight back.",fighter,feminine
+52,source,"Well, as a new blogger, I’m surprised and admittedly sometimes overwhelmed by how much there is to learn and do to get a blog started.",blogger,ambiguous
+52,masculine,"Well, as a new blogger, he's surprised and admittedly sometimes overwhelmed by how much there is to learn and do to get a blog started.",blogger,masculine
+52,feminine,"Well, as a new blogger, she's surprised and admittedly sometimes overwhelmed by how much there is to learn and do to get a blog started.",blogger,feminine
+53,source,"The bright, bubbly cruise director and activities coordinator just can’t say “no” when it comes to ensuring passenger satisfaction during Opium, an adults-only show at The Cosmopolitan of Las Vegas.",coordinator,ambiguous
+53,masculine,"The bright, bubbly cruise director and activities coordinator, Mr. Chen, just can't say ""no"" when it comes to ensuring passenger satisfaction during Opium, an adults-only show at The Cosmopolitan of Las Vegas.",coordinator,masculine
+53,feminine,"The bright, bubbly cruise director and activities coordinator, Mrs. Chen, just can't say ""no"" when it comes to ensuring passenger satisfaction during Opium, an adults-only show at The Cosmopolitan of Las Vegas.",coordinator,feminine
+54,source,And I am the greatest terrorist ever to have rived.,terrorist,ambiguous
+54,masculine,And he is the greatest terrorist ever to have rived.,terrorist,masculine
+54,feminine,And she is the greatest terrorist ever to have rived.,terrorist,feminine
+55,source,And I would like to be your assistant very much...,assistant,ambiguous
+55,masculine,And he would like to be your assistant very much...,assistant,masculine
+55,feminine,And she would like to be your assistant very much...,assistant,feminine
+56,source,"But then, such a thought is little different from wanting your parents to protect and care for you as a young adult the first time you make a mistake.",adult,ambiguous
+56,masculine,"But then, such a thought is little different from wanting his parents to protect and care for him as a young adult the first time he makes a mistake.",adult,masculine
+56,feminine,"But then, such a thought is little different from wanting her parents to protect and care for her as a young adult the first time she makes a mistake.",adult,feminine
+57,source,"I worked closely with an editor, photographer, illustrator, and several subject experts to conceptualize and develop the components of this book.",photographer,ambiguous
+57,masculine,"I worked closely with an editor, photographer, illustrator, and several subject experts — he was the photographer — to conceptualize and develop the components of this book.",photographer,masculine
+57,feminine,"I worked closely with an editor, photographer, illustrator, and several subject experts — she was the photographer — to conceptualize and develop the components of this book.",photographer,feminine
+58,source,"I was a vegetarian for two decades, so I have been on some other food-related paths.",vegetarian,ambiguous
+58,masculine,"He was a vegetarian for two decades, so he has been on some other food-related paths.",vegetarian,masculine
+58,feminine,"She was a vegetarian for two decades, so she has been on some other food-related paths.",vegetarian,feminine
+59,source,I' m not a fighter I' m a lover,lover,ambiguous
+59,masculine,He' s not a fighter he' s a lover,lover,masculine
+59,feminine,She' s not a fighter she' s a lover,lover,feminine
+60,source,"Yeah, well, chief thinks that with the tower flooded, it gives the boat enough weight to stay down while we blow some air into the main tank.",chief,ambiguous
+60,masculine,"Yeah, well, the chief, Mr. Garcia, thinks that with the tower flooded, it gives the boat enough weight to stay down while we blow some air into the main tank.",chief,masculine
+60,feminine,"Yeah, well, the chief, Mrs. Garcia, thinks that with the tower flooded, it gives the boat enough weight to stay down while we blow some air into the main tank.",chief,feminine
+61,source,"I get nervous anyway -- but to be opposite her and not want her to think, 'Who is this amateur?'""",amateur,ambiguous
+61,masculine,"I get nervous anyway -- but to be opposite her and not want her to think, 'Who is this male amateur?'""",amateur,masculine
+61,feminine,"I get nervous anyway -- but to be opposite her and not want her to think, 'Who is this female amateur?'""",amateur,feminine
+62,source,You have heard it said...... you shall love your neighbor and hate your enemy.,enemy,ambiguous
+62,masculine,You have heard it said...... you shall love your neighbor and hate your male enemy.,enemy,masculine
+62,feminine,You have heard it said...... you shall love your neighbor and hate your female enemy.,enemy,feminine
+63,source,They got that confidence and determination from their head coach.,coach,ambiguous
+63,masculine,"They got that confidence and determination from him, their head coach.",coach,masculine
+63,feminine,"They got that confidence and determination from her, their head coach.",coach,feminine
+64,source,One researcher estimated that an infant exclusively fed soy formula receives the estrogenic equivalent (based on body weight) of at least five birth control pills per day.,researcher,ambiguous
+64,masculine,"One researcher, Mr. Fitzgerald, estimated that an infant exclusively fed soy formula receives the estrogenic equivalent (based on body weight) of at least five birth control pills per day.",researcher,masculine
+64,feminine,"One researcher, Mrs. Fitzgerald, estimated that an infant exclusively fed soy formula receives the estrogenic equivalent (based on body weight) of at least five birth control pills per day.",researcher,feminine
+65,source,"I was working for a large Hollywood-oriented film production company as an assistant, and not only did I hate the job, I was depressed I wasn’t making my own films.",assistant,ambiguous
+65,masculine,"He was working for a large Hollywood-oriented film production company as an assistant, and not only did he hate the job, he was depressed he wasn't making his own films.",assistant,masculine
+65,feminine,"She was working for a large Hollywood-oriented film production company as an assistant, and not only did she hate the job, she was depressed she wasn't making her own films.",assistant,feminine
+66,source,I' m a shop- assistant in a boutique.,assistant,ambiguous
+66,masculine,He' s a shop- assistant in a boutique.,assistant,masculine
+66,feminine,She' s a shop- assistant in a boutique.,assistant,feminine
+67,source,"Well, also, as a model, I have to watch my figure.",model,ambiguous
+67,masculine,"Well, also, as a model, he has to watch his figure.",model,masculine
+67,feminine,"Well, also, as a model, she has to watch her figure.",model,feminine
+68,source,"I could call the director, who happens to be a close, personal friend.",director,ambiguous
+68,masculine,"I could call the director, who happens to be a close, personal friend of mine — he'd understand.",director,masculine
+68,feminine,"I could call the director, who happens to be a close, personal friend of mine — she'd understand.",director,feminine
+69,source,"Thankfully, the judge at Gillespie’s criminal trial saw that the police were not being truthful and found Gillespie not guilty.",judge,ambiguous
+69,masculine,"Thankfully, the judge, Mr. Thompson, at Gillespie's criminal trial saw that the police were not being truthful and found Gillespie not guilty.",judge,masculine
+69,feminine,"Thankfully, the judge, Mrs. Thompson, at Gillespie's criminal trial saw that the police were not being truthful and found Gillespie not guilty.",judge,feminine
+70,source,"It' s, like, a totally important designer.",designer,ambiguous
+70,masculine,"It' s, like, a totally important designer, Mr. Nguyen.",designer,masculine
+70,feminine,"It' s, like, a totally important designer, Mrs. Nguyen.",designer,feminine
+71,source,I think you' il make an excellent teacher.,teacher,ambiguous
+71,masculine,"I think you' il make an excellent teacher, sir.",teacher,masculine
+71,feminine,"I think you' il make an excellent teacher, ma'am.",teacher,feminine
+72,source,"After the visit, the clerk of the current development situation of the company, and the improvement of equipment technology, sales case are described in detail.",clerk,ambiguous
+72,masculine,"After the visit, the clerk, Mr. Davis, of the current development situation of the company, and the improvement of equipment technology, sales case are described in detail.",clerk,masculine
+72,feminine,"After the visit, the clerk, Mrs. Davis, of the current development situation of the company, and the improvement of equipment technology, sales case are described in detail.",clerk,feminine
+73,source,I' m a coach that knows about winning.,coach,ambiguous
+73,masculine,He's a coach that knows about winning.,coach,masculine
+73,feminine,She's a coach that knows about winning.,coach,feminine
+74,source,"As a more junior pilot, the 16 days on thing doesn't really bother me at all.",pilot,ambiguous
+74,masculine,"As a more junior pilot, the 16 days on thing doesn't really bother him at all.",pilot,masculine
+74,feminine,"As a more junior pilot, the 16 days on thing doesn't really bother her at all.",pilot,feminine
+75,source,The minister was briefed about the progress of voting and exchanged cordial talks with a number of voters in various polling stations.,minister,ambiguous
+75,masculine,The minister was briefed about the progress of voting and he exchanged cordial talks with a number of voters in various polling stations.,minister,masculine
+75,feminine,The minister was briefed about the progress of voting and she exchanged cordial talks with a number of voters in various polling stations.,minister,feminine
+76,source,The prison doctor confirmed... suicide after an overdose of tranquillizers.,doctor,ambiguous
+76,masculine,The prison doctor confirmed in his report... suicide after an overdose of tranquillizers.,doctor,masculine
+76,feminine,The prison doctor confirmed in her report... suicide after an overdose of tranquillizers.,doctor,feminine
+77,source,"What the secretary had found was an ancient book, the book of law.",secretary,ambiguous
+77,masculine,"What the secretary had found was an ancient book, the book of law, and he brought it to the council.",secretary,masculine
+77,feminine,"What the secretary had found was an ancient book, the book of law, and she brought it to the council.",secretary,feminine
+78,source,Your client orders the products on your webpage/online shop or simply by phone or directly in your butcher shop.,client,ambiguous
+78,masculine,"Your client orders the products on your webpage/online shop or simply by phone or directly in your butcher shop, and he expects prompt service.",client,masculine
+78,feminine,"Your client orders the products on your webpage/online shop or simply by phone or directly in your butcher shop, and she expects prompt service.",client,feminine
+79,source,"The premise behind the piece is that, two hundred years ago, the town of Kulyenchikov was laid under a curse by a disgruntled inhabitant.",inhabitant,ambiguous
+79,masculine,"The premise behind the piece is that, two hundred years ago, the town of Kulyenchikov was laid under a curse by a disgruntled inhabitant, a man.",inhabitant,masculine
+79,feminine,"The premise behind the piece is that, two hundred years ago, the town of Kulyenchikov was laid under a curse by a disgruntled inhabitant, a woman.",inhabitant,feminine
+80,source,I had supervised visits with a social worker watching.,worker,ambiguous
+80,masculine,"I had supervised visits with a social worker watching, and he took notes the whole time.",worker,masculine
+80,feminine,"I had supervised visits with a social worker watching, and she took notes the whole time.",worker,feminine
+81,source,"Each card anniversary, you will receive a free Companion Fare that allows your traveling companion to fly at a sharply reduced rate.",companion,ambiguous
+81,masculine,"Each card anniversary, you will receive a free Companion Fare that allows your traveling companion, your nephew, to fly at a sharply reduced rate.",companion,masculine
+81,feminine,"Each card anniversary, you will receive a free Companion Fare that allows your traveling companion, your niece, to fly at a sharply reduced rate.",companion,feminine
+82,source,"On the other hand, my supervisor of area is to arrange an excuse to order me for … the ""manuseamento of archives"" e I do not belong to this.",supervisor,ambiguous
+82,masculine,"On the other hand, my supervisor of area, Mr. Garcia, is to arrange an excuse to order me for … the ""manuseamento of archives"" e I do not belong to this.",supervisor,masculine
+82,feminine,"On the other hand, my supervisor of area, Mrs. Garcia, is to arrange an excuse to order me for … the ""manuseamento of archives"" e I do not belong to this.",supervisor,feminine
+83,source,"Our district has an Emergency Operations Plan, we are part of the Anderson County Hazard Mitigation Plan, and we have hired a school safety specialist.",specialist,ambiguous
+83,masculine,"Our district has an Emergency Operations Plan, we are part of the Anderson County Hazard Mitigation Plan, and we have hired a school safety specialist, Mr. Smith.",specialist,masculine
+83,feminine,"Our district has an Emergency Operations Plan, we are part of the Anderson County Hazard Mitigation Plan, and we have hired a school safety specialist, Mrs. Smith.",specialist,feminine
+84,source,I am a dietitian and I would not pay the money for the salads that are served in McDonalds.,dietitian,ambiguous
+84,masculine,He is a dietitian and he would not pay the money for the salads that are served in McDonalds.,dietitian,masculine
+84,feminine,She is a dietitian and she would not pay the money for the salads that are served in McDonalds.,dietitian,feminine
+85,source,Sally Weston represents an ideal of poise and beauty and accomplishment that every flight attendant should strive to achieve.,attendant,ambiguous
+85,masculine,Sally Weston represents an ideal of poise and beauty and accomplishment that every flight steward should strive to achieve.,steward,masculine
+85,feminine,Sally Weston represents an ideal of poise and beauty and accomplishment that every flight stewardess should strive to achieve.,stewardess,feminine
+86,source,It has just been announced over the air by the prime minister...... that our country is at war.,minister,ambiguous
+86,masculine,It has just been announced over the air by the prime minister...... that his country is at war.,minister,masculine
+86,feminine,It has just been announced over the air by the prime minister...... that her country is at war.,minister,feminine
+87,source,"If you are a gamer, then you will need a different phone than the average person, just like someone who likes to take a lot of pictures will need a different phone.",gamer,ambiguous
+87,masculine,"If you are a gamer, sir, then you will need a different phone than the average person, just like someone who likes to take a lot of pictures will need a different phone.",gamer,masculine
+87,feminine,"If you are a gamer, ma'am, then you will need a different phone than the average person, just like someone who likes to take a lot of pictures will need a different phone.",gamer,feminine
+88,source,Is there something you are able to do as a vegetarian to make up for it?,vegetarian,ambiguous
+88,masculine,"Is there something you are able to do as a vegetarian, sir, to make up for it?",vegetarian,masculine
+88,feminine,"Is there something you are able to do as a vegetarian, ma'am, to make up for it?",vegetarian,feminine
+89,source,The ballet begins with a dancer striking the canvas with a brush of color.,dancer,ambiguous
+89,masculine,The ballet begins with a dancer striking the canvas with his brush of color.,dancer,masculine
+89,feminine,The ballet begins with a dancer striking the canvas with her brush of color.,dancer,feminine
+90,source,I would be the first one in the family to be a doctor.,doctor,ambiguous
+90,masculine,He would be the first one in the family to be a doctor.,doctor,masculine
+90,feminine,She would be the first one in the family to be a doctor.,doctor,feminine
+91,source,"The psychologist wrote ""delusional paranoia""... in capital letters across the bottom of your file.",psychologist,ambiguous
+91,masculine,"The psychologist, Mr. Brown, wrote ""delusional paranoia""... in capital letters across the bottom of your file.",psychologist,masculine
+91,feminine,"The psychologist, Mrs. Brown, wrote ""delusional paranoia""... in capital letters across the bottom of your file.",psychologist,feminine
+92,source,"The subject of animal captivity... has been of interest to me for quite a while,... and my secretary has prepared... research material... that I think you will find illuminating.",secretary,ambiguous
+92,masculine,"The subject of animal captivity... has been of interest to me for quite a while,... and my secretary, Mr. Martinez, has prepared... research material... that I think you will find illuminating.",secretary,masculine
+92,feminine,"The subject of animal captivity... has been of interest to me for quite a while,... and my secretary, Mrs. Martinez, has prepared... research material... that I think you will find illuminating.",secretary,feminine
+93,source,And even a brief visit from the pitching coach could change what happened next.,coach,ambiguous
+93,masculine,"And even a brief visit from the pitching coach, Mr. Smith, could change what happened next.",coach,masculine
+93,feminine,"And even a brief visit from the pitching coach, Mrs. Smith, could change what happened next.",coach,feminine
+94,source,"One partner is an ex- governor, two are congressmen.",governor,ambiguous
+94,masculine,"One partner is a male ex- governor, two are congressmen.",governor,masculine
+94,feminine,"One partner is a female ex- governor, two are congressmen.",governor,feminine
+95,source,I think this is a big philosophical problem we have to deal with... in terms of what science can say about our world... because we are always the observer in science.,observer,ambiguous
+95,masculine,I think this is a big philosophical problem we have to deal with... in terms of what science can say about our world... because we are always the male observer in science.,observer,masculine
+95,feminine,I think this is a big philosophical problem we have to deal with... in terms of what science can say about our world... because we are always the female observer in science.,observer,feminine
+96,source,"Resembling the famous mirchi bhajiya, it’s stuffed with just the right amount of cheese and is certainly worth giving a shot – especially if you’re a vegetarian.",vegetarian,ambiguous
+96,masculine,"Resembling the famous mirchi bhajiya, it's stuffed with just the right amount of cheese and is certainly worth giving a shot – especially if you're a vegetarian, sir.",vegetarian,masculine
+96,feminine,"Resembling the famous mirchi bhajiya, it's stuffed with just the right amount of cheese and is certainly worth giving a shot – especially if you're a vegetarian, ma'am.",vegetarian,feminine
+97,source,"About six months ago, the day Jonesy got hit...... i did something terrible with a patient.",patient,ambiguous
+97,masculine,"About six months ago, the day Jonesy got hit...... i did something terrible with a patient, Mr. Johnson.",patient,masculine
+97,feminine,"About six months ago, the day Jonesy got hit...... i did something terrible with a patient, Mrs. Johnson.",patient,feminine
+98,source,"In Bodacious’s piece, Bodacious Over Mind, dancers become zombies except for one dancer, who tries to escape.",dancer,ambiguous
+98,masculine,"In Bodacious's piece, Bodacious Over Mind, dancers become zombies except for one dancer, who tries his hardest to escape.",dancer,masculine
+98,feminine,"In Bodacious's piece, Bodacious Over Mind, dancers become zombies except for one dancer, who tries her hardest to escape.",dancer,feminine
+99,source,I tried ordering similar ones from another seller after buying these and the quality difference is very obvious.,seller,ambiguous
+99,masculine,"I tried ordering similar ones from another seller, Mr. Kim, after buying these and the quality difference is very obvious.",seller,masculine
+99,feminine,"I tried ordering similar ones from another seller, Mrs. Kim, after buying these and the quality difference is very obvious.",seller,feminine
+100,source,"At parties, you were always the designated driver.",driver,ambiguous
+100,masculine,"At parties, you were always the designated driver, sir.",driver,masculine
+100,feminine,"At parties, you were always the designated driver, ma'am.",driver,feminine
+101,source,"I sold all six hogs to this Korean farmer last week, just to clear the place out.",farmer,ambiguous
+101,masculine,"I sold all six hogs to this Korean farmer, my uncle, last week, just to clear the place out.",farmer,masculine
+101,feminine,"I sold all six hogs to this Korean farmer, my aunt, last week, just to clear the place out.",farmer,feminine
+102,source,"That's because the heat is directed to you as the occupant of the room, versus convection heating that heats the air in the room, and relies on air circulation to heat people in the room.",occupant,ambiguous
+102,masculine,"That's because the heat is directed to you, sir, as the occupant of the room, versus convection heating that heats the air in the room, and relies on air circulation to heat people in the room.",occupant,masculine
+102,feminine,"That's because the heat is directed to you, ma'am, as the occupant of the room, versus convection heating that heats the air in the room, and relies on air circulation to heat people in the room.",occupant,feminine
+103,source,"But in retrospect, I' d rather have been a poet or a farmer.",farmer,ambiguous
+103,masculine,"But in retrospect, I' d rather have been a poet or a male farmer.",farmer,masculine
+103,feminine,"But in retrospect, I' d rather have been a poet or a female farmer.",farmer,feminine
+104,source,"In 1985, while a stewardess for Delta... you were busted while carrying drugs for a pilot?",pilot,ambiguous
+104,masculine,"In 1985, while a stewardess for Delta... you were busted while carrying drugs for a pilot, your uncle?",pilot,masculine
+104,feminine,"In 1985, while a stewardess for Delta... you were busted while carrying drugs for a pilot, your aunt?",pilot,feminine
+105,source,"The check-in was fine and on the second night the register clerk tried to help me setup my wife's Android to the WiFi, which is a pretty strong signal compared to many hotels..",clerk,ambiguous
+105,masculine,"The check-in was fine and on the second night the register clerk, Mr. Fitzgerald, tried to help me setup my wife's Android to the WiFi, which is a pretty strong signal compared to many hotels.",clerk,masculine
+105,feminine,"The check-in was fine and on the second night the register clerk, Mrs. Fitzgerald, tried to help me setup my wife's Android to the WiFi, which is a pretty strong signal compared to many hotels.",clerk,feminine
+106,source,"You know, I' m not really a good teacher, and, uh, I get tired from digging all day, so I just want to come back and chill, you know?",teacher,ambiguous
+106,masculine,"You know, he' s not really a good teacher, and, uh, he gets tired from digging all day, so he just wants to come back and chill, you know?",teacher,masculine
+106,feminine,"You know, she' s not really a good teacher, and, uh, she gets tired from digging all day, so she just wants to come back and chill, you know?",teacher,feminine
+107,source,"Along with the illustrator, I researched and created mood boards for the subject matter, and then developed and presented three design concepts for the client.",client,ambiguous
+107,masculine,"Along with the illustrator, I researched and created mood boards for the subject matter, and then developed and presented three design concepts for the client, Mr. Garcia.",client,masculine
+107,feminine,"Along with the illustrator, I researched and created mood boards for the subject matter, and then developed and presented three design concepts for the client, Mrs. Garcia.",client,feminine
+108,source,"One, that I don' t mess up as a manager.",manager,ambiguous
+108,masculine,"One, that he doesn' t mess up as a manager.",manager,masculine
+108,feminine,"One, that she doesn' t mess up as a manager.",manager,feminine
+109,source,I have worked as a certified professional organizer since 2008 and am the owner of Freshly Organized.,organizer,ambiguous
+109,masculine,He has worked as a certified professional organizer since 2008 and is the owner of Freshly Organized.,organizer,masculine
+109,feminine,She has worked as a certified professional organizer since 2008 and is the owner of Freshly Organized.,organizer,feminine
+110,source,Please report your arrival at the reception so we make sure the stylist and the station are ready for you.,stylist,ambiguous
+110,masculine,Please report your arrival at the reception so we make sure the stylist and his station are ready for you.,stylist,masculine
+110,feminine,Please report your arrival at the reception so we make sure the stylist and her station are ready for you.,stylist,feminine
+111,source,"I like you as a photographer, but I think I like you better as a painter.",photographer,ambiguous
+111,masculine,"I like you as a photographer, sir, but I think I like you better as a painter.",photographer,masculine
+111,feminine,"I like you as a photographer, ma'am, but I think I like you better as a painter.",photographer,feminine
+112,source,"I should be the detective here, while everyone investigates me, instead.",detective,ambiguous
+112,masculine,"He should be the detective here, while everyone investigates him, instead.",detective,masculine
+112,feminine,"She should be the detective here, while everyone investigates her, instead.",detective,feminine
+113,source,And you are a great -- a great poet.,poet,ambiguous
+113,masculine,"And you are a great -- a great poet, sir.",poet,masculine
+113,feminine,"And you are a great -- a great poet, ma'am.",poet,feminine
+114,source,Somehow in the middle of that a journalist on the other side of the States got in touch and interviewed me… little did I know how that would snowball!,journalist,ambiguous
+114,masculine,"Somehow in the middle of that a journalist, Mr. Fitzgerald, on the other side of the States got in touch and interviewed me… little did I know how that would snowball!",journalist,masculine
+114,feminine,"Somehow in the middle of that a journalist, Mrs. Fitzgerald, on the other side of the States got in touch and interviewed me… little did I know how that would snowball!",journalist,feminine
+115,source,"In case you certainly are a correct vehicle lover who needs to all the time update your understanding about automobiles, you should bookmark my web site.",lover,ambiguous
+115,masculine,"In case you certainly are a correct vehicle lover who needs to all the time update your understanding about automobiles, sir, you should bookmark my web site.",lover,masculine
+115,feminine,"In case you certainly are a correct vehicle lover who needs to all the time update your understanding about automobiles, ma'am, you should bookmark my web site.",lover,feminine
+116,source,"Give this card to your spouse or partner to say, ""I love you""—with a flourish and in French.",partner,ambiguous
+116,masculine,"Give this card to your boyfriend to say, ""I love you""—with a flourish and in French.",boyfriend,masculine
+116,feminine,"Give this card to your girlfriend to say, ""I love you""—with a flourish and in French.",girlfriend,feminine
+117,source,"As a psychologist, I believe that the key to making real changes is to start from the point of acceptance.",psychologist,ambiguous
+117,masculine,"As a psychologist, he believes that the key to making real changes is to start from the point of acceptance.",psychologist,masculine
+117,feminine,"As a psychologist, she believes that the key to making real changes is to start from the point of acceptance.",psychologist,feminine
+118,source,"If you’re a mainstream gamer who’s after an affordable, feature-packed gaming motherboard that won’t break your bank … then there’s NO excuse not to consider the Asus ROG Strix B360-F Gaming motherboard.",gamer,ambiguous
+118,masculine,"If you're a mainstream gamer who's after an affordable, feature-packed gaming motherboard that won't break your bank, sir, … then there's NO excuse not to consider the Asus ROG Strix B360-F Gaming motherboard.",gamer,masculine
+118,feminine,"If you're a mainstream gamer who's after an affordable, feature-packed gaming motherboard that won't break your bank, ma'am, … then there's NO excuse not to consider the Asus ROG Strix B360-F Gaming motherboard.",gamer,feminine
+119,source,"For instance, when I started practicing, I was shocked that we were often handed a site plan, developed by the architect and engineer, for a site - with the express goal of shrubbing it up.",engineer,ambiguous
+119,masculine,"For instance, when I started practicing, I was shocked that we were often handed a site plan, developed by the architect and engineer, Mr. Nguyen, for a site - with the express goal of shrubbing it up.",engineer,masculine
+119,feminine,"For instance, when I started practicing, I was shocked that we were often handed a site plan, developed by the architect and engineer, Mrs. Nguyen, for a site - with the express goal of shrubbing it up.",engineer,feminine
+120,source,"Katehi should take a strong stand in favor of law and order on campus, support the police and quickly reinstate the chief and the officers unfairly and hastily put on leave.",chief,ambiguous
+120,masculine,"Katehi should take a strong stand in favor of law and order on campus, support the police and quickly reinstate the chief, Mr. Brown, and the officers unfairly and hastily put on leave.",chief,masculine
+120,feminine,"Katehi should take a strong stand in favor of law and order on campus, support the police and quickly reinstate the chief, Mrs. Brown, and the officers unfairly and hastily put on leave.",chief,feminine
+121,source,There are so many things that run through my dietitian’s brain as I contemplate this to decide if it is indeed a good idea.,dietitian,ambiguous
+121,masculine,"There are so many things that run through my dietitian's, Mr. Martinez's, brain as I contemplate this to decide if it is indeed a good idea.",dietitian,masculine
+121,feminine,"There are so many things that run through my dietitian's, Mrs. Martinez's, brain as I contemplate this to decide if it is indeed a good idea.",dietitian,feminine
+122,source,Exclusive use of the venue allows for a myriad of photo opportunities so that your photographer can capture an everlasting memory of your special day.,photographer,ambiguous
+122,masculine,"Exclusive use of the venue allows for a myriad of photo opportunities so that your photographer can capture, with his expert eye, an everlasting memory of your special day.",photographer,masculine
+122,feminine,"Exclusive use of the venue allows for a myriad of photo opportunities so that your photographer can capture, with her expert eye, an everlasting memory of your special day.",photographer,feminine
+123,source,"I was a founding director of Australia’s first political parent advocacy group, The Parenthood which was a lobbying voice for Australia’s parenting community.",director,ambiguous
+123,masculine,"He was a founding director of Australia's first political parent advocacy group, The Parenthood which was a lobbying voice for Australia's parenting community.",director,masculine
+123,feminine,"She was a founding director of Australia's first political parent advocacy group, The Parenthood which was a lobbying voice for Australia's parenting community.",director,feminine
+124,source,I found out about another partner that was in on it.,partner,ambiguous
+124,masculine,I found out about another boyfriend that was in on it.,boyfriend,masculine
+124,feminine,I found out about another girlfriend that was in on it.,girlfriend,feminine
+125,source,"So, you hire a fancy decorator to help you do this place?",decorator,ambiguous
+125,masculine,"So, you hire a fancy male decorator to help you do this place?",decorator,masculine
+125,feminine,"So, you hire a fancy female decorator to help you do this place?",decorator,feminine
+126,source,The magician asked a group of viewers to take a piece of paper and draw a line of graphics on the back.,magician,ambiguous
+126,masculine,The wizard asked a group of viewers to take a piece of paper and draw a line of graphics on the back.,wizard,masculine
+126,feminine,The witch asked a group of viewers to take a piece of paper and draw a line of graphics on the back.,witch,feminine
+127,source,The best thing about capturing small weddings such as Jihane & Rabih is that we are usually given the time to take off from the guests and to explore (or be led around by your photographer) some of the most beautiful locations in Prague.,photographer,ambiguous
+127,masculine,"The best thing about capturing small weddings such as Jihane & Rabih is that we are usually given the time to take off from the guests and to explore (or be led around by him, your photographer) some of the most beautiful locations in Prague.",photographer,masculine
+127,feminine,"The best thing about capturing small weddings such as Jihane & Rabih is that we are usually given the time to take off from the guests and to explore (or be led around by her, your photographer) some of the most beautiful locations in Prague.",photographer,feminine
+128,source,"No, no, no, I' m not a visitor.",visitor,ambiguous
+128,masculine,"No, no, no, he' s not a visitor.",visitor,masculine
+128,feminine,"No, no, no, she' s not a visitor.",visitor,feminine
+129,source,I' m going to marry an onion farmer and do hair in Wimpsville?,farmer,ambiguous
+129,masculine,I' m going to marry a male onion farmer and do hair in Wimpsville?,farmer,masculine
+129,feminine,I' m going to marry a female onion farmer and do hair in Wimpsville?,farmer,feminine
+130,source,Growing up in church I remember attending Sunday school and when I became an adult I started teaching Sunday school.,adult,ambiguous
+130,masculine,"Growing up in church I remember attending Sunday school and when I became an adult, a grown man, I started teaching Sunday school.",adult,masculine
+130,feminine,"Growing up in church I remember attending Sunday school and when I became an adult, a grown woman, I started teaching Sunday school.",adult,feminine
+131,source,You' re a senator' s daughter... sister to the future governor.,governor,ambiguous
+131,masculine,"You' re a senator' s daughter... sister to the future governor, Mr. Nguyen.",governor,masculine
+131,feminine,"You' re a senator' s daughter... sister to the future governor, Mrs. Nguyen.",governor,feminine
+132,source,"And before serving his life sentence, it was the judge' s decree that Olaf be made to suffer every hardship",judge,ambiguous
+132,masculine,"And before serving his life sentence, it was the male judge' s decree that Olaf be made to suffer every hardship",judge,masculine
+132,feminine,"And before serving his life sentence, it was the female judge' s decree that Olaf be made to suffer every hardship",judge,feminine
+133,source,"Infact, as an officer, I think it' d by my duty... to take my new hero' s daughter out tonight...",officer,ambiguous
+133,masculine,"Infact, as a male officer, I think it' d by my duty... to take my new hero' s daughter out tonight...",officer,masculine
+133,feminine,"Infact, as a female officer, I think it' d by my duty... to take my new hero' s daughter out tonight...",officer,feminine
+134,source,"To the absolute disbelief of the spectator, bit by bit you start to hum the tune they are thinking of, and then suddenly you name the selected song!",spectator,ambiguous
+134,masculine,"To the absolute disbelief of the spectator, bit by bit you start to hum the tune he is thinking of, and then suddenly you name the selected song!",spectator,masculine
+134,feminine,"To the absolute disbelief of the spectator, bit by bit you start to hum the tune she is thinking of, and then suddenly you name the selected song!",spectator,feminine
+135,source,"She had a blood disease called Sickle Cell Anemia so when I was young I wanted to be a doctor so I could find a cure… you know, one of those cute dreams kids have.",doctor,ambiguous
+135,masculine,"She had a blood disease called Sickle Cell Anemia so when he was young he wanted to be a doctor so he could find a cure… you know, one of those cute dreams kids have.",doctor,masculine
+135,feminine,"She had a blood disease called Sickle Cell Anemia so when she was young she wanted to be a doctor so she could find a cure… you know, one of those cute dreams kids have.",doctor,feminine
+136,source,"A reader reports that this is a good and fairly level walk, and it has some ravines and streams, which always make a hike more fun.",reader,ambiguous
+136,masculine,"A reader, Mr. Chen, reports that this is a good and fairly level walk, and it has some ravines and streams, which always make a hike more fun.",reader,masculine
+136,feminine,"A reader, Mrs. Chen, reports that this is a good and fairly level walk, and it has some ravines and streams, which always make a hike more fun.",reader,feminine
+137,source,"It' s just not worth it, buddy.",buddy,ambiguous
+137,masculine,"It' s just not worth it, buddy, sir.",buddy,masculine
+137,feminine,"It' s just not worth it, buddy, ma'am.",buddy,feminine
+138,source,I know you miss your dog and your best friend... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.,friend,ambiguous
+138,masculine,"I know you miss your dog and your best friend, your brother... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.",friend,masculine
+138,feminine,"I know you miss your dog and your best friend, your sister... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.",friend,feminine
+139,source,"And with a lean and a dive, the Rye senior accomplished all three things.",senior,ambiguous
+139,masculine,"And with a lean and a dive, the Rye senior, Mr. Garcia, accomplished all three things.",senior,masculine
+139,feminine,"And with a lean and a dive, the Rye senior, Mrs. Garcia, accomplished all three things.",senior,feminine
+140,source,"Even if you’re a veteran, you might want a refresher.",veteran,ambiguous
+140,masculine,"Even if you're a veteran, sir, you might want a refresher.",veteran,masculine
+140,feminine,"Even if you're a veteran, ma'am, you might want a refresher.",veteran,feminine
+141,source,You know I was a military clerk at the headquarters.,clerk,ambiguous
+141,masculine,You know he was a military clerk at the headquarters.,clerk,masculine
+141,feminine,You know she was a military clerk at the headquarters.,clerk,feminine
+142,source,"She understood later from her mother that the soldier had snatched away an unexploded pipe bomb from her friend, shouting angrily at her.",soldier,ambiguous
+142,masculine,"She understood later from her mother that the soldier had snatched away an unexploded pipe bomb from her friend, as he shouted angrily at her.",soldier,masculine
+142,feminine,"She understood later from her mother that the soldier had snatched away an unexploded pipe bomb from her friend, as she, the soldier, shouted angrily at her.",soldier,feminine
+143,source,The chief said the Delray department is using a multi-faceted drug enforcement mode that includes “Good Samaritan” laws to encourage people to report adverse drug reactions.,chief,ambiguous
+143,masculine,"The chief, Mr. Garcia, said the Delray department is using a multi-faceted drug enforcement mode that includes ""Good Samaritan"" laws to encourage people to report adverse drug reactions.",chief,masculine
+143,feminine,"The chief, Mrs. Garcia, said the Delray department is using a multi-faceted drug enforcement mode that includes ""Good Samaritan"" laws to encourage people to report adverse drug reactions.",chief,feminine
+144,source,"In which case, pray you' re not a passenger.",passenger,ambiguous
+144,masculine,"In which case, pray you' re not a male passenger.",passenger,masculine
+144,feminine,"In which case, pray you' re not a female passenger.",passenger,feminine
+145,source,I keep in mind being at a health care provider’s office with a broken wrist and the physician telling me my wrist wasn’t damaged.,physician,ambiguous
+145,masculine,"I keep in mind being at a health care provider's office with a broken wrist and the physician, Mr. Martinez, telling me my wrist wasn't damaged.",physician,masculine
+145,feminine,"I keep in mind being at a health care provider's office with a broken wrist and the physician, Mrs. Martinez, telling me my wrist wasn't damaged.",physician,feminine
+146,source,I' il tell the boss I stopped by to see you.,boss,ambiguous
+146,masculine,I' il tell the boss I stopped by to see you — he'll want to know.,boss,masculine
+146,feminine,I' il tell the boss I stopped by to see you — she'll want to know.,boss,feminine
+147,source,You don' t remember assaulting a police officer?,officer,ambiguous
+147,masculine,You don' t remember assaulting a policeman?,policeman,masculine
+147,feminine,You don' t remember assaulting a policewoman?,policewoman,feminine
+148,source,How can you tell that this young economist is American?,economist,ambiguous
+148,masculine,How can you tell that this young economist is American? — he doesn't look it.,economist,masculine
+148,feminine,How can you tell that this young economist is American? — she doesn't look it.,economist,feminine
+149,source,"It concentrates on the main features of a budding novelist's following - legibility, driven by clear, neat type.",novelist,ambiguous
+149,masculine,"It concentrates on the main features of a budding novelist's following - legibility, driven by his clear, neat type.",novelist,masculine
+149,feminine,"It concentrates on the main features of a budding novelist's following - legibility, driven by her clear, neat type.",novelist,feminine
+150,source,"It was during this time that Salim Singh, the Diwan of Jaisalmer, known for his wickedness and immoral tax-collecting methods, set his eyes on the good-looking daughter of the village chief.",chief,ambiguous
+150,masculine,"It was during this time that Salim Singh, the Diwan of Jaisalmer, known for his wickedness and immoral tax-collecting methods, set his eyes on the good-looking daughter of the male village chief.",chief,masculine
+150,feminine,"It was during this time that Salim Singh, the Diwan of Jaisalmer, known for his wickedness and immoral tax-collecting methods, set his eyes on the good-looking daughter of the female village chief.",chief,feminine
+151,source,After working in the travel business I became a full time homemaker about 7 years ago.,homemaker,ambiguous
+151,masculine,After working in the travel business he became a full time homemaker about 7 years ago.,homemaker,masculine
+151,feminine,After working in the travel business she became a full time homemaker about 7 years ago.,homemaker,feminine
+152,source,I rang the TFP number and the receptionist picked up the call.,receptionist,ambiguous
+152,masculine,"I rang the TFP number and the receptionist, Mr. Thompson, picked up the call.",receptionist,masculine
+152,feminine,"I rang the TFP number and the receptionist, Mrs. Thompson, picked up the call.",receptionist,feminine
+153,source,"You see, I cannot go home a virgin.",virgin,ambiguous
+153,masculine,"You see, he cannot go home a virgin.",virgin,masculine
+153,feminine,"You see, she cannot go home a virgin.",virgin,feminine
+154,source,"My second wife divorced me, I work a dead end job... as a file clerk.",clerk,ambiguous
+154,masculine,"His second wife divorced him, he works a dead end job... as a file clerk.",clerk,masculine
+154,feminine,"Her second wife divorced her, she works a dead end job... as a file clerk.",clerk,feminine
+155,source,"Now if I hear one more silly made up absolutely bloody rubbish song about poo, then I might just go hunt down the silly idiot who made the stupid YouTube music video and do them some serious damage.",idiot,ambiguous
+155,masculine,"Now if I hear one more silly made up absolutely bloody rubbish song about poo, then I might just go hunt down the silly idiot who made the stupid YouTube music video and do him some serious damage.",idiot,masculine
+155,feminine,"Now if I hear one more silly made up absolutely bloody rubbish song about poo, then I might just go hunt down the silly idiot who made the stupid YouTube music video and do her some serious damage.",idiot,feminine
+156,source,"You' re a good director, and I' il do anything!",director,ambiguous
+156,masculine,"You' re a good director, sir, and I' il do anything!",director,masculine
+156,feminine,"You' re a good director, ma'am, and I' il do anything!",director,feminine
+157,source,"See, I' m a hard- core gymnast.",gymnast,ambiguous
+157,masculine,"See, he's a hard- core gymnast.",gymnast,masculine
+157,feminine,"See, she's a hard- core gymnast.",gymnast,feminine
+158,source,I' d love to have you as my co- driver,driver,ambiguous
+158,masculine,"I' d love to have you as my co- driver, sir",driver,masculine
+158,feminine,"I' d love to have you as my co- driver, ma'am",driver,feminine
+159,source,"Much to their surprise they found a terrorist, amidst the ruins, who somehow survived the melee.",terrorist,ambiguous
+159,masculine,"Much to their surprise they found a terrorist, amidst the ruins, who had himself somehow survived the melee.",terrorist,masculine
+159,feminine,"Much to their surprise they found a terrorist, amidst the ruins, who had herself somehow survived the melee.",terrorist,feminine
+160,source,"As one judge said, ""They taste like Christmas.""",judge,ambiguous
+160,masculine,"As one judge, Mr. Johnson, said, ""They taste like Christmas.""",judge,masculine
+160,feminine,"As one judge, Mrs. Johnson, said, ""They taste like Christmas.""",judge,feminine
+161,source,"Retired 74 year old freelance ""mud diver"", Knocked out of diving by medical problems I became an environmental janitor in 2001, living almost off the grid in North Idaho.",janitor,ambiguous
+161,masculine,"Retired 74 year old freelance ""mud diver"", Knocked out of diving by medical problems he became an environmental janitor in 2001, living almost off the grid in North Idaho.",janitor,masculine
+161,feminine,"Retired 74 year old freelance ""mud diver"", Knocked out of diving by medical problems she became an environmental janitor in 2001, living almost off the grid in North Idaho.",janitor,feminine
+162,source,"Perry White, Clark's boss, tries to talk with the terrorist, but is held at gunpoint.",terrorist,ambiguous
+162,masculine,"Perry White, Clark's boss, tries to talk with the male terrorist, but is held at gunpoint.",terrorist,masculine
+162,feminine,"Perry White, Clark's boss, tries to talk with the female terrorist, but is held at gunpoint.",terrorist,feminine
+163,source,"Whether you serve as a police officer or firefighter, your commitment to your job limits the negative impact of crime, fire and naturally-occurring disasters on the citizens of Southern California.",firefighter,ambiguous
+163,masculine,"Whether you serve as a police officer or fireman, your commitment to your job limits the negative impact of crime, fire and naturally-occurring disasters on the citizens of Southern California.",fireman,masculine
+163,feminine,"Whether you serve as a police officer or firewoman, your commitment to your job limits the negative impact of crime, fire and naturally-occurring disasters on the citizens of Southern California.",firewoman,feminine
+164,source,"That' s right, I am a cheerleader, and you' re a dumb ass.",cheerleader,ambiguous
+164,masculine,"That' s right, he is a cheerleader, and you' re a dumb ass.",cheerleader,masculine
+164,feminine,"That' s right, she is a cheerleader, and you' re a dumb ass.",cheerleader,feminine
+165,source,"If you thought that was bad, it was nothing compared to what the chef said.",chef,ambiguous
+165,masculine,"If you thought that was bad, it was nothing compared to what the chef, Mr. Nguyen, said.",chef,masculine
+165,feminine,"If you thought that was bad, it was nothing compared to what the chef, Mrs. Nguyen, said.",chef,feminine
+166,source,"I like you to be sitting up tall and feeling like a winner, already in control of food and alcohol.",winner,ambiguous
+166,masculine,"I like you to be sitting up tall and feeling like a winner, sir, already in control of food and alcohol.",winner,masculine
+166,feminine,"I like you to be sitting up tall and feeling like a winner, ma'am, already in control of food and alcohol.",winner,feminine
+167,source,How thrilled I was when a friend shared this book with me!,friend,ambiguous
+167,masculine,"How thrilled I was when a friend, my father, shared this book with me!",friend,masculine
+167,feminine,"How thrilled I was when a friend, my mother, shared this book with me!",friend,feminine
+168,source,The driver escaped the vehicle when the gates began to go down.,driver,ambiguous
+168,masculine,"The driver escaped the vehicle when the gates began to go down, and he ran to safety.",driver,masculine
+168,feminine,"The driver escaped the vehicle when the gates began to go down, and she ran to safety.",driver,feminine
+169,source,If you write for more than one site/blog then add the other url’s in here as well as you can be a contributor for many sites.,contributor,ambiguous
+169,masculine,"If you write for more than one site/blog then add the other url's in here as well as you can be a contributor, sir, for many sites.",contributor,masculine
+169,feminine,"If you write for more than one site/blog then add the other url's in here as well as you can be a contributor, ma'am, for many sites.",contributor,feminine
+170,source,"I might be drunk, but I' m not an idiot.",idiot,ambiguous
+170,masculine,"He might be drunk, but he' s not an idiot.",idiot,masculine
+170,feminine,"She might be drunk, but she' s not an idiot.",idiot,feminine
+171,source,You as a client can complete rely on Bilytica as a partner for the implementation of SAP Financial Solutions.,client,ambiguous
+171,masculine,"You, sir, as a client can complete rely on Bilytica as a partner for the implementation of SAP Financial Solutions.",client,masculine
+171,feminine,"You, ma'am, as a client can complete rely on Bilytica as a partner for the implementation of SAP Financial Solutions.",client,feminine
+172,source,"Remember that I AM an amateur, so please consult with your professional investment advisors prior to using this website for investment decisions.",amateur,ambiguous
+172,masculine,"Remember that he IS an amateur, so please consult with your professional investment advisors prior to using this website for investment decisions.",amateur,masculine
+172,feminine,"Remember that she IS an amateur, so please consult with your professional investment advisors prior to using this website for investment decisions.",amateur,feminine
+173,source,You come at me like a lover and then you don' t touch me for weeks.,lover,ambiguous
+173,masculine,You come at me like a male lover and then you don' t touch me for weeks.,lover,masculine
+173,feminine,You come at me like a female lover and then you don' t touch me for weeks.,lover,feminine
+174,source,I want to impress upon you once again something the captain said before.,captain,ambiguous
+174,masculine,I want to impress upon you once again something the captain said before — he was adamant.,captain,masculine
+174,feminine,I want to impress upon you once again something the captain said before — she was adamant.,captain,feminine
+175,source,"Is it possible the two defendants entered the store, picked 22 specific items off of the shelves, had the clerk take money, make change, then leave.",clerk,ambiguous
+175,masculine,"Is it possible the two defendants entered the store, picked 22 specific items off of the shelves, had the clerk, Mr. Thompson, take money, make change, then leave.",clerk,masculine
+175,feminine,"Is it possible the two defendants entered the store, picked 22 specific items off of the shelves, had the clerk, Mrs. Thompson, take money, make change, then leave.",clerk,feminine
+176,source,"Some of the figures move – a baker shoving bread into an oven, a woman spinning yarn, another doing laundry..",baker,ambiguous
+176,masculine,"Some of the figures move – a baker shoving his bread into an oven, a woman spinning yarn, another doing laundry..",baker,masculine
+176,feminine,"Some of the figures move – a baker shoving her bread into an oven, a woman spinning yarn, another doing laundry..",baker,feminine
+177,source,"Dating back to the 13th century, Montegridolfo has been stunningly restored thanks to the efforts of a fashion designer.",designer,ambiguous
+177,masculine,"Dating back to the 13th century, Montegridolfo has been stunningly restored thanks to the efforts of a fashion designer, Mr. Brown.",designer,masculine
+177,feminine,"Dating back to the 13th century, Montegridolfo has been stunningly restored thanks to the efforts of a fashion designer, Mrs. Brown.",designer,feminine
+178,source,"At Family Eye Care & Surgery, our physician is committed to providing you with the highest quality eye care.",physician,ambiguous
+178,masculine,"At Family Eye Care & Surgery, our physician is committed to providing you with his highest quality eye care.",physician,masculine
+178,feminine,"At Family Eye Care & Surgery, our physician is committed to providing you with her highest quality eye care.",physician,feminine
+179,source,Only a bespectacled attendant separated us from a life in the Bahamas.,attendant,ambiguous
+179,masculine,Only a bespectacled steward separated us from a life in the Bahamas.,steward,masculine
+179,feminine,Only a bespectacled stewardess separated us from a life in the Bahamas.,stewardess,feminine
+180,source,We’re uncertain what hose the mechanic could have been referring to.,mechanic,ambiguous
+180,masculine,"We're uncertain what hose the mechanic, Mr. Davis, could have been referring to.",mechanic,masculine
+180,feminine,"We're uncertain what hose the mechanic, Mrs. Davis, could have been referring to.",mechanic,feminine
+181,source,"During the toasts, the photographer caught me winking at Denton.",photographer,ambiguous
+181,masculine,"During the toasts, the photographer, Mr. Chen, caught me winking at Denton.",photographer,masculine
+181,feminine,"During the toasts, the photographer, Mrs. Chen, caught me winking at Denton.",photographer,feminine
+182,source,"Oh, it' s always nice to meet a writer.",writer,ambiguous
+182,masculine,"Oh, it' s always nice to meet a writer, sir.",writer,masculine
+182,feminine,"Oh, it' s always nice to meet a writer, ma'am.",writer,feminine
+183,source,My client wants the public to know the truth.,client,ambiguous
+183,masculine,"My client, my nephew, wants the public to know the truth.",client,masculine
+183,feminine,"My client, my niece, wants the public to know the truth.",client,feminine
+184,source,I told them you hit your head and you are a wandering idiot.,idiot,ambiguous
+184,masculine,"I told them you hit your head and you are a wandering idiot, sir.",idiot,masculine
+184,feminine,"I told them you hit your head and you are a wandering idiot, ma'am.",idiot,feminine
+185,source,"Yes, I wanted to be a teacher, but I also wanted to be a full-time homemaker.",homemaker,ambiguous
+185,masculine,"Yes, he wanted to be a teacher, but he also wanted to be a full-time homemaker.",homemaker,masculine
+185,feminine,"Yes, she wanted to be a teacher, but she also wanted to be a full-time homemaker.",homemaker,feminine
+186,source,As an organizer I didn’t have the privilege to sit back and put all my attention to the amazing contents being presented by the experts.,organizer,ambiguous
+186,masculine,As an organizer he didn't have the privilege to sit back and put all his attention to the amazing contents being presented by the experts.,organizer,masculine
+186,feminine,As an organizer she didn't have the privilege to sit back and put all her attention to the amazing contents being presented by the experts.,organizer,feminine
+187,source,"The champion was presented with a trophy, as well as a Longines timepiece.",champion,ambiguous
+187,masculine,"The champion was presented with a trophy, as well as a Longines timepiece, which he held up proudly.",champion,masculine
+187,feminine,"The champion was presented with a trophy, as well as a Longines timepiece, which she held up proudly.",champion,feminine
+188,source,"This will be my first year as a nomad, which will also be an interesting departure from my current life.",nomad,ambiguous
+188,masculine,"This will be his first year as a nomad, which will also be an interesting departure from his current life.",nomad,masculine
+188,feminine,"This will be her first year as a nomad, which will also be an interesting departure from her current life.",nomad,feminine
+189,source,A local told me it was a place called Koko King and all I can find is a Facebook page.,local,ambiguous
+189,masculine,"A local, Mr. Martinez, told me it was a place called Koko King and all I can find is a Facebook page.",local,masculine
+189,feminine,"A local, Mrs. Martinez, told me it was a place called Koko King and all I can find is a Facebook page.",local,feminine
+190,source,And then one day...... they said I was going to have a very special visitor.,visitor,ambiguous
+190,masculine,And then one day...... they said I was going to have a very special male visitor.,visitor,masculine
+190,feminine,And then one day...... they said I was going to have a very special female visitor.,visitor,feminine
+191,source,"Last I checked, you' re an American citizen.",citizen,ambiguous
+191,masculine,"Last I checked, you' re an American citizen, sir.",citizen,masculine
+191,feminine,"Last I checked, you' re an American citizen, ma'am.",citizen,feminine
+192,source,Well you might have heared of it a tool from a Russian programmer where you can validate your windows seven product key.,programmer,ambiguous
+192,masculine,Well you might have heared of it a tool from a Russian male programmer where you can validate your windows seven product key.,programmer,masculine
+192,feminine,Well you might have heared of it a tool from a Russian female programmer where you can validate your windows seven product key.,programmer,feminine
+193,source,My... my roommate' s boyfriend knows him.,roommate,ambiguous
+193,masculine,My... my male roommate' s boyfriend knows him.,roommate,masculine
+193,feminine,My... my female roommate' s boyfriend knows him.,roommate,feminine
+194,source,"All right, partner, let' s see what you can do.",partner,ambiguous
+194,masculine,"All right, boyfriend, let' s see what you can do.",boyfriend,masculine
+194,feminine,"All right, girlfriend, let' s see what you can do.",girlfriend,feminine
+195,source,"It was my opponent’s turn to defend, however I delayed for a moment in administering the attack.",opponent,ambiguous
+195,masculine,"It was my opponent's turn to defend, however I delayed for a moment in administering the attack against him.",opponent,masculine
+195,feminine,"It was my opponent's turn to defend, however I delayed for a moment in administering the attack against her.",opponent,feminine
+196,source,"Long ago as a bank employee, I had difficulty telling every person I met that the only option I had, was what was best for them.",employee,ambiguous
+196,masculine,"Long ago as a bank employee, he had difficulty telling every person he met that the only option he had, was what was best for them.",employee,masculine
+196,feminine,"Long ago as a bank employee, she had difficulty telling every person she met that the only option she had, was what was best for them.",employee,feminine
+197,source,I found your body was badly damaged by radiation and your body is just like a top athlete how did that happen?,athlete,ambiguous
+197,masculine,I found your body was badly damaged by radiation and your body is just like a top male athlete how did that happen?,athlete,masculine
+197,feminine,I found your body was badly damaged by radiation and your body is just like a top female athlete how did that happen?,athlete,feminine
+198,source,I haven't heard a lot of good about that dealer.,dealer,ambiguous
+198,masculine,"I haven't heard a lot of good about that dealer, my uncle.",dealer,masculine
+198,feminine,"I haven't heard a lot of good about that dealer, my aunt.",dealer,feminine
+199,source,"As a student, you can adjust it to meet your needs e.g. colour, fonts, and the overall view.",student,ambiguous
+199,masculine,"As a student, sir, you can adjust it to meet your needs e.g. colour, fonts, and the overall view.",student,masculine
+199,feminine,"As a student, ma'am, you can adjust it to meet your needs e.g. colour, fonts, and the overall view.",student,feminine
+200,source,"The Cow Story – The farmer has gone to town for the afternoon, and the cow and the roaster can play however they want.",farmer,ambiguous
+200,masculine,"The Cow Story – The farmer has gone to town for the afternoon, and the cow and the roaster can play however they want until he returns.",farmer,masculine
+200,feminine,"The Cow Story – The farmer has gone to town for the afternoon, and the cow and the roaster can play however they want until she returns.",farmer,feminine
+201,source,You may think that you and your accountant have a grip on these changes.,accountant,ambiguous
+201,masculine,"You may think that you and your accountant, Mr. Davis, have a grip on these changes.",accountant,masculine
+201,feminine,"You may think that you and your accountant, Mrs. Davis, have a grip on these changes.",accountant,feminine
+202,source,"Ben, why don' t you make your friend some coffee.",friend,ambiguous
+202,masculine,"Ben, why don' t you make your friend, your brother, some coffee.",friend,masculine
+202,feminine,"Ben, why don' t you make your friend, your sister, some coffee.",friend,feminine
+203,source,"From the hospital, where I care for dying syphilitics, a patient sends you this.",patient,ambiguous
+203,masculine,"From the hospital, where I care for dying syphilitics, a patient, my uncle, sends you this.",patient,masculine
+203,feminine,"From the hospital, where I care for dying syphilitics, a patient, my aunt, sends you this.",patient,feminine
+204,source,"I hope you' il forgive me, captain.",captain,ambiguous
+204,masculine,"I hope you' il forgive me, captain, sir.",captain,masculine
+204,feminine,"I hope you' il forgive me, captain, ma'am.",captain,feminine
+205,source,"I' m glad you' re my ""buddy.""",buddy,ambiguous
+205,masculine,"I' m glad you' re my ""buddy,"" sir.",buddy,masculine
+205,feminine,"I' m glad you' re my ""buddy,"" ma'am.",buddy,feminine
+206,source,I' m a post- trauma counselor for the sheriff' s department.,counselor,ambiguous
+206,masculine,He's a post- trauma counselor for the sheriff' s department.,counselor,masculine
+206,feminine,She's a post- trauma counselor for the sheriff' s department.,counselor,feminine
+207,source,"The skeptical Scottish philosopher critiques government and the early social critics of capitalism (""socialists"", such as Robert Owen and Saint-Simon).",philosopher,ambiguous
+207,masculine,"The skeptical Scottish philosopher, Mr. Thompson, critiques government and the early social critics of capitalism (""socialists"", such as Robert Owen and Saint-Simon).",philosopher,masculine
+207,feminine,"The skeptical Scottish philosopher, Mrs. Thompson, critiques government and the early social critics of capitalism (""socialists"", such as Robert Owen and Saint-Simon).",philosopher,feminine
+208,source,"Once you’ve decided which bank to work with and it’s time to get the ball rolling, you should share your business plan, insights about your industry, and your business goals with your relationship manager.",manager,ambiguous
+208,masculine,"Once you've decided which bank to work with and it's time to get the ball rolling, you should share your business plan, insights about your industry, and your business goals with your relationship manager, Mr. Nguyen.",manager,masculine
+208,feminine,"Once you've decided which bank to work with and it's time to get the ball rolling, you should share your business plan, insights about your industry, and your business goals with your relationship manager, Mrs. Nguyen.",manager,feminine
+209,source,Are you sure you' re not a private detective disguised as an intern?,detective,ambiguous
+209,masculine,"Are you sure you' re not a private detective disguised as an intern, sir?",detective,masculine
+209,feminine,"Are you sure you' re not a private detective disguised as an intern, ma'am?",detective,feminine
+210,source,"You can purchase these genuine FireWorks toys for yourself direct from us, whether you're a budding fire dancer or a hard-core professional.",dancer,ambiguous
+210,masculine,"You can purchase these genuine FireWorks toys for yourself direct from us, whether you're a budding fire dancer or a hard-core professional, sir.",dancer,masculine
+210,feminine,"You can purchase these genuine FireWorks toys for yourself direct from us, whether you're a budding fire dancer or a hard-core professional, ma'am.",dancer,feminine
+211,source,As a freelance entertainment journalist/writer/hack you can tell how valuable an actor’s time is – at least to the studio offering him up for interview – by the amount of time you are given with him.,journalist,ambiguous
+211,masculine,"As a freelance entertainment journalist/writer/hack, sir, you can tell how valuable an actor's time is – at least to the studio offering him up for interview – by the amount of time you are given with him.",journalist,masculine
+211,feminine,"As a freelance entertainment journalist/writer/hack, ma'am, you can tell how valuable an actor's time is – at least to the studio offering him up for interview – by the amount of time you are given with him.",journalist,feminine
+212,source,Why don' t we do it where you play the samurai warrior?,warrior,ambiguous
+212,masculine,"Why don' t we do it where you play the samurai warrior, sir?",warrior,masculine
+212,feminine,"Why don' t we do it where you play the samurai warrior, ma'am?",warrior,feminine
+213,source,"In this sense, I am not at all an activist or promoting any specific political concept.",activist,ambiguous
+213,masculine,"In this sense, he is not at all an activist or promoting any specific political concept.",activist,masculine
+213,feminine,"In this sense, she is not at all an activist or promoting any specific political concept.",activist,feminine
+214,source,Ask your sales associate for custom pricing and options.,associate,ambiguous
+214,masculine,Ask your male sales associate for custom pricing and options.,associate,masculine
+214,feminine,Ask your female sales associate for custom pricing and options.,associate,feminine
+215,source,Now we' ve got a security guard with a skull fracture.,guard,ambiguous
+215,masculine,Now we' ve got a male security guard with a skull fracture.,guard,masculine
+215,feminine,Now we' ve got a female security guard with a skull fracture.,guard,feminine
+216,source,"Here is our comrade Mario Ruoppolo, who will read you a poem which he dedicated... to the great poet who is known to us all...",poet,ambiguous
+216,masculine,"Here is our comrade Mario Ruoppolo, who will read you a poem which he dedicated... to the great poet, Mr. Garcia, who is known to us all...",poet,masculine
+216,feminine,"Here is our comrade Mario Ruoppolo, who will read you a poem which he dedicated... to the great poet, Mrs. Garcia, who is known to us all...",poet,feminine
+217,source,"Back in April 2014, we partnered with a very popular YouTube beauty influencer on a makeup brush collection.",influencer,ambiguous
+217,masculine,"Back in April 2014, we partnered with a very popular YouTube beauty influencer on his makeup brush collection.",influencer,masculine
+217,feminine,"Back in April 2014, we partnered with a very popular YouTube beauty influencer on her makeup brush collection.",influencer,feminine
+218,source,"I' m sorry to interrupt, Ms. Woods, but are you suggesting that because the number is so large, your client is entitled to more than was agreed upon in the prenup?",client,ambiguous
+218,masculine,"I' m sorry to interrupt, Ms. Woods, but are you suggesting that because the number is so large, your client, Mr. Patel, is entitled to more than was agreed upon in the prenup?",client,masculine
+218,feminine,"I' m sorry to interrupt, Ms. Woods, but are you suggesting that because the number is so large, your client, Mrs. Patel, is entitled to more than was agreed upon in the prenup?",client,feminine
+219,source,"Don't turn your back on your own neighbors, especially if one of them happens to be a professional baker.",baker,ambiguous
+219,masculine,"Don't turn your back on your own neighbors, especially if one of them happens to be a professional baker and he takes his craft seriously.",baker,masculine
+219,feminine,"Don't turn your back on your own neighbors, especially if one of them happens to be a professional baker and she takes her craft seriously.",baker,feminine
+220,source,"Wait, l"" m on my last customer.",customer,ambiguous
+220,masculine,"Wait, l"" m on my last customer, let me finish with him.",customer,masculine
+220,feminine,"Wait, l"" m on my last customer, let me finish with her.",customer,feminine
+221,source,"But now that he' s dead, I got to be the captain.",captain,ambiguous
+221,masculine,"But now that he' s dead, I got to be the captain, like a brother to the crew.",captain,masculine
+221,feminine,"But now that he' s dead, I got to be the captain, like a sister to the crew.",captain,feminine
+222,source,Don' t embarrass me in front of my partner.,partner,ambiguous
+222,masculine,Don' t embarrass me in front of my boyfriend.,boyfriend,masculine
+222,feminine,Don' t embarrass me in front of my girlfriend.,girlfriend,feminine
+223,source,"With the help of a determined protagonist, the author tells a touching love story in the context of consumer-driven economic development.",author,ambiguous
+223,masculine,"With the help of a determined protagonist, the author tells his touching love story in the context of consumer-driven economic development.",author,masculine
+223,feminine,"With the help of a determined protagonist, the author tells her touching love story in the context of consumer-driven economic development.",author,feminine
+224,source,I’ve been an athlete since 7th grade track and I don’t think I have ever had anything that just flat out won’t heal.,athlete,ambiguous
+224,masculine,I've been a male athlete since 7th grade track and I don't think I have ever had anything that just flat out won't heal.,athlete,masculine
+224,feminine,I've been a female athlete since 7th grade track and I don't think I have ever had anything that just flat out won't heal.,athlete,feminine
+225,source,"I' m sure I feared your coach had overset itself, or you had been attacked by robbers!",coach,ambiguous
+225,masculine,"I' m sure I feared your coach, Mr. Davis, had overset itself, or you had been attacked by robbers!",coach,masculine
+225,feminine,"I' m sure I feared your coach, Mrs. Davis, had overset itself, or you had been attacked by robbers!",coach,feminine
+226,source,We are proud to be an active member of this community.,member,ambiguous
+226,masculine,He is proud to be an active member of this community.,member,masculine
+226,feminine,She is proud to be an active member of this community.,member,feminine
+227,source,I need an address on a customer of yours.,customer,ambiguous
+227,masculine,I need an address on a male customer of yours.,customer,masculine
+227,feminine,I need an address on a female customer of yours.,customer,feminine
+228,source,"Whether you’re a hopeful magazine contributor or looking to improve on your SEO or hoping to get funding for your startup, it’s all about being authentic.",contributor,ambiguous
+228,masculine,"Whether you're a hopeful magazine contributor or looking to improve on your SEO or hoping to get funding for your startup, sir, it's all about being authentic.",contributor,masculine
+228,feminine,"Whether you're a hopeful magazine contributor or looking to improve on your SEO or hoping to get funding for your startup, ma'am, it's all about being authentic.",contributor,feminine
+229,source,I bet you' re not the youngest photographer in town.,photographer,ambiguous
+229,masculine,I bet you' re not the youngest male photographer in town.,photographer,masculine
+229,feminine,I bet you' re not the youngest female photographer in town.,photographer,feminine
+230,source,I am a philosopher of science with a PhD in History and Philosophy of Science from the University of Pittsburgh (1984).,philosopher,ambiguous
+230,masculine,He is a philosopher of science with a PhD in History and Philosophy of Science from the University of Pittsburgh (1984).,philosopher,masculine
+230,feminine,She is a philosopher of science with a PhD in History and Philosophy of Science from the University of Pittsburgh (1984).,philosopher,feminine
+231,source,I' m a much better cook than I am a hairstylist.,cook,ambiguous
+231,masculine,He' s a much better cook than he is a hairstylist.,cook,masculine
+231,feminine,She' s a much better cook than she is a hairstylist.,cook,feminine
+232,source,"My colleague has just handed me a weather report, and it looks as if the possibility of rain... which was previously forecast... will shortly be upon us.",colleague,ambiguous
+232,masculine,"My colleague, my uncle, has just handed me a weather report, and it looks as if the possibility of rain... which was previously forecast... will shortly be upon us.",colleague,masculine
+232,feminine,"My colleague, my aunt, has just handed me a weather report, and it looks as if the possibility of rain... which was previously forecast... will shortly be upon us.",colleague,feminine
+233,source,"According to a police detective, officers arrived at the home of the alleged shooter and found the man’s wife dead of gunshot wounds.",detective,ambiguous
+233,masculine,"According to a police detective, Mr. Brown, officers arrived at the home of the alleged shooter and found the man's wife dead of gunshot wounds.",detective,masculine
+233,feminine,"According to a police detective, Mrs. Brown, officers arrived at the home of the alleged shooter and found the man's wife dead of gunshot wounds.",detective,feminine
+234,source,"You don' t like it, take it up with your boss.",boss,ambiguous
+234,masculine,"You don' t like it, take it up with your boss, Mr. Martinez.",boss,masculine
+234,feminine,"You don' t like it, take it up with your boss, Mrs. Martinez.",boss,feminine
+235,source,So Toots and Johnny picked up a young soldier.,soldier,ambiguous
+235,masculine,"So Toots and Johnny picked up a young soldier, their nephew.",soldier,masculine
+235,feminine,"So Toots and Johnny picked up a young soldier, their niece.",soldier,feminine
+236,source,I was just getting a pep talk from my driver.,driver,ambiguous
+236,masculine,"I was just getting a pep talk from him, my driver.",driver,masculine
+236,feminine,"I was just getting a pep talk from her, my driver.",driver,feminine
+237,source,Contact MTE today to inquire about PSAT or ACT and SAT math prep review for your student.,student,ambiguous
+237,masculine,Contact MTE today to inquire about PSAT or ACT and SAT math prep review for your male student.,student,masculine
+237,feminine,Contact MTE today to inquire about PSAT or ACT and SAT math prep review for your female student.,student,feminine
+238,source,"Alternatively, you can request your teacher to explain it to you again in simpler terms.",teacher,ambiguous
+238,masculine,"Alternatively, you can request your teacher to explain it to you again in simpler terms, as he may be happy to help.",teacher,masculine
+238,feminine,"Alternatively, you can request your teacher to explain it to you again in simpler terms, as she may be happy to help.",teacher,feminine
+239,source,Bearly News had asked the shaky archives assistant who logged into the computer for us.,assistant,ambiguous
+239,masculine,"Bearly News had asked the shaky archives assistant, Mr. Chen, who logged into the computer for us.",assistant,masculine
+239,feminine,"Bearly News had asked the shaky archives assistant, Mrs. Chen, who logged into the computer for us.",assistant,feminine
+240,source,"See if you can raise the yard master, will ya?",master,ambiguous
+240,masculine,"See if you can raise the yard master, get him on the line, will ya?",master,masculine
+240,feminine,"See if you can raise the yard master, get her on the line, will ya?",master,feminine
+241,source,I modelled to my children how not to be a bystander.,bystander,ambiguous
+241,masculine,"I modelled to my children how not to be a bystander, Mr. Chen told us.",bystander,masculine
+241,feminine,"I modelled to my children how not to be a bystander, Mrs. Chen told us.",bystander,feminine
+242,source,"That' s it, well done my student!",student,ambiguous
+242,masculine,"That' s it, well done my student, good lad!",student,masculine
+242,feminine,"That' s it, well done my student, good lass!",student,feminine
+243,source,The penniless sitar player' s sitar is magical.,player,ambiguous
+243,masculine,"The penniless sitar player' s sitar is magical, and he treasures it dearly.",player,masculine
+243,feminine,"The penniless sitar player' s sitar is magical, and she treasures it dearly.",player,feminine
+244,source,All because my roommate handed me this little book called The Hunt for Red October right before final exam week.,roommate,ambiguous
+244,masculine,"All because my roommate, my brother, handed me this little book called The Hunt for Red October right before final exam week.",roommate,masculine
+244,feminine,"All because my roommate, my sister, handed me this little book called The Hunt for Red October right before final exam week.",roommate,feminine
+245,source,"Fairly, you and your health care professional can solve if Finasteride or another medicament is appropriate for you.",professional,ambiguous
+245,masculine,"Fairly, you and your health care professional, Mr. Brown, can solve if Finasteride or another medicament is appropriate for you.",professional,masculine
+245,feminine,"Fairly, you and your health care professional, Mrs. Brown, can solve if Finasteride or another medicament is appropriate for you.",professional,feminine
+246,source,"Major, send some of our man to keep an eye on our good captain.",captain,ambiguous
+246,masculine,"Major, send some of our man to keep an eye on our good captain, Mr. Smith.",captain,masculine
+246,feminine,"Major, send some of our man to keep an eye on our good captain, Mrs. Smith.",captain,feminine
+247,source,"Honey, come on, the kids need a real coach.",coach,ambiguous
+247,masculine,"Honey, come on, the kids need a real coach, a man who knows the game.",coach,masculine
+247,feminine,"Honey, come on, the kids need a real coach, a woman who knows the game.",coach,feminine
+248,source,"This community is a group in which I have gathered artists who have the same goal, so some people would say that I am also an activist.",activist,ambiguous
+248,masculine,"This community is a group in which he has gathered artists who have the same goal, so some people would say that he is also an activist.",activist,masculine
+248,feminine,"This community is a group in which she has gathered artists who have the same goal, so some people would say that she is also an activist.",activist,feminine
+249,source,"I' m still a virgin, still alive - thanks to you.",virgin,ambiguous
+249,masculine,"He' s still a virgin, still alive - thanks to you.",virgin,masculine
+249,feminine,"She' s still a virgin, still alive - thanks to you.",virgin,feminine
+250,source,"Did you ever think that after ten years you would be the chief of anything let alone cybersecurity, and for a financial institution?",chief,ambiguous
+250,masculine,"Did you ever think that after ten years you would be the chief of anything let alone cybersecurity, and for a financial institution, sir?",chief,masculine
+250,feminine,"Did you ever think that after ten years you would be the chief of anything let alone cybersecurity, and for a financial institution, ma'am?",chief,feminine
+251,source,"However, this product is not designed to teach your teen everything they need to know in order to become a safe driver.",teen,ambiguous
+251,masculine,"However, this product is not designed to teach your teen everything he needs to know in order to become a safe driver.",teen,masculine
+251,feminine,"However, this product is not designed to teach your teen everything she needs to know in order to become a safe driver.",teen,feminine
+252,source,You will be introduced to your client before you start caring for them.,client,ambiguous
+252,masculine,You will be introduced to your client before you start caring for him.,client,masculine
+252,feminine,You will be introduced to your client before you start caring for her.,client,feminine
+253,source,"Startup life cycle typically starts with you, as an entrepreneur and founder, having an idea for Carpooling script that can either solve an existing problem or it could be of adapting another successful business model to cover the uncapped market.",entrepreneur,ambiguous
+253,masculine,"Startup life cycle typically starts with you, sir, as an entrepreneur and founder, having an idea for Carpooling script that can either solve an existing problem or it could be of adapting another successful business model to cover the uncapped market.",entrepreneur,masculine
+253,feminine,"Startup life cycle typically starts with you, ma'am, as an entrepreneur and founder, having an idea for Carpooling script that can either solve an existing problem or it could be of adapting another successful business model to cover the uncapped market.",entrepreneur,feminine
+254,source,Maybe he is an imposter and maybe the director found out about it.,director,ambiguous
+254,masculine,"Maybe he is an imposter and maybe the director, Mr. Brown, found out about it.",director,masculine
+254,feminine,"Maybe he is an imposter and maybe the director, Mrs. Brown, found out about it.",director,feminine
+255,source,"You' re my best friend, and I have been keeping all this stuff from you.",friend,ambiguous
+255,masculine,"You' re my best friend, sir, and I have been keeping all this stuff from you.",friend,masculine
+255,feminine,"You' re my best friend, ma' am, and I have been keeping all this stuff from you.",friend,feminine
+256,source,"Fine scientist you are, getting squeamish about doping a fish.",scientist,ambiguous
+256,masculine,"Fine scientist you are, sir, getting squeamish about doping a fish.",scientist,masculine
+256,feminine,"Fine scientist you are, ma'am, getting squeamish about doping a fish.",scientist,feminine
+257,source,"As a journalist, I should get to know the city that I' m covering.",journalist,ambiguous
+257,masculine,"As a journalist, he should get to know the city that he' s covering.",journalist,masculine
+257,feminine,"As a journalist, she should get to know the city that she' s covering.",journalist,feminine
+258,source,"In the long term, as an engineer-entrepreneur, I dream of having the opportunity to bring to market one of the many inventions that have been bouncing around in my head for years.",entrepreneur,ambiguous
+258,masculine,"In the long term, as an engineer-entrepreneur, he dreams of having the opportunity to bring to market one of the many inventions that have been bouncing around in his head for years.",entrepreneur,masculine
+258,feminine,"In the long term, as an engineer-entrepreneur, she dreams of having the opportunity to bring to market one of the many inventions that have been bouncing around in her head for years.",entrepreneur,feminine
+259,source,And this year' s winner belonged to that company.,winner,ambiguous
+259,masculine,"And this year' s winner belonged to that company, and he was very proud.",winner,masculine
+259,feminine,"And this year' s winner belonged to that company, and she was very proud.",winner,feminine
+260,source,"It was okay when I was a dancer, but he doesn' t really care for gardening.",dancer,ambiguous
+260,masculine,"It was okay when he was a dancer, but he doesn' t really care for gardening.",dancer,masculine
+260,feminine,"It was okay when she was a dancer, but he doesn' t really care for gardening.",dancer,feminine
+261,source,It is time for you to become a spiritual adult while of the earth.,adult,ambiguous
+261,masculine,"It is time for you to become a spiritual adult while of the earth, sir.",adult,masculine
+261,feminine,"It is time for you to become a spiritual adult while of the earth, ma'am.",adult,feminine
+262,source,I couldn’t stay inside and watch something awful happen like a helpless bystander—not this time.,bystander,ambiguous
+262,masculine,"I couldn't stay inside and watch something awful happen like a helpless bystander, some guy—not this time.",bystander,masculine
+262,feminine,"I couldn't stay inside and watch something awful happen like a helpless bystander, some girl—not this time.",bystander,feminine
+263,source,If you weren' t so skinny you could be a model.,model,ambiguous
+263,masculine,If you weren' t so skinny you could be a male model.,model,masculine
+263,feminine,If you weren' t so skinny you could be a female model.,model,feminine
+264,source,"I' m not really much of a photographer, but I' d say they turned out okay.",photographer,ambiguous
+264,masculine,"He' s not really much of a photographer, but he' d say they turned out okay.",photographer,masculine
+264,feminine,"She' s not really much of a photographer, but she' d say they turned out okay.",photographer,feminine
+265,source,Write down any questions that you have and make sure to bring these up with your Christian religious leader.,leader,ambiguous
+265,masculine,"Write down any questions that you have and make sure to bring these up with your Christian religious leader, Mr. Nguyen.",leader,masculine
+265,feminine,"Write down any questions that you have and make sure to bring these up with your Christian religious leader, Mrs. Nguyen.",leader,feminine
+266,source,I just took them offa captain from the 251 st yesterday.,captain,ambiguous
+266,masculine,"I just took them offa him, a captain from the 251 st yesterday.",captain,masculine
+266,feminine,"I just took them offa her, a captain from the 251 st yesterday.",captain,feminine
+267,source,My client says there are two more bodies hidden away.,client,ambiguous
+267,masculine,"My client says there are two more bodies hidden away, and he wants them found.",client,masculine
+267,feminine,"My client says there are two more bodies hidden away, and she wants them found.",client,feminine
+268,source,The story of ‘Tea’ is about a six hundred year old werewolf having tea with a seventy year old gay tailor.,tailor,ambiguous
+268,masculine,"The story of 'Tea' is about a six hundred year old werewolf having tea with a seventy year old gay tailor, Mr. Smith.",tailor,masculine
+268,feminine,"The story of 'Tea' is about a six hundred year old werewolf having tea with a seventy year old gay tailor, Mrs. Smith.",tailor,feminine
+269,source,"However, one day an acquaintance of mine tweeted a snarky 4 word summary of the libertarian philosophy as “I am an Island”.",acquaintance,ambiguous
+269,masculine,"However, one day an acquaintance of mine, my uncle, tweeted a snarky 4 word summary of the libertarian philosophy as ""I am an Island"".",acquaintance,masculine
+269,feminine,"However, one day an acquaintance of mine, my aunt, tweeted a snarky 4 word summary of the libertarian philosophy as ""I am an Island"".",acquaintance,feminine
+270,source,"Curse you for breathing, you slack jawed idiot!",idiot,ambiguous
+270,masculine,"Curse you for breathing, you slack jawed idiot, sir!",idiot,masculine
+270,feminine,"Curse you for breathing, you slack jawed idiot, ma'am!",idiot,feminine
+271,source,I cannot take responsibility for any damage rendered to the cake caused by a floral arrangement that was implemented by your florist.,florist,ambiguous
+271,masculine,"I cannot take responsibility for any damage rendered to the cake caused by a floral arrangement that was implemented by your florist, Mr. Garcia.",florist,masculine
+271,feminine,"I cannot take responsibility for any damage rendered to the cake caused by a floral arrangement that was implemented by your florist, Mrs. Garcia.",florist,feminine
+272,source,The unattractive opponent was 33-year old janitor.,janitor,ambiguous
+272,masculine,The unattractive opponent was 33-year old male janitor.,janitor,masculine
+272,feminine,The unattractive opponent was 33-year old female janitor.,janitor,feminine
+273,source,Two militants and a soldier died in Kulgam while a militant was killed in Rishipora Tral area of Pulwama district.,soldier,ambiguous
+273,masculine,Two militants and a male soldier died in Kulgam while a militant was killed in Rishipora Tral area of Pulwama district.,soldier,masculine
+273,feminine,Two militants and a female soldier died in Kulgam while a militant was killed in Rishipora Tral area of Pulwama district.,soldier,feminine
+274,source,I got to go shoot my next- door neighbor... for a parking space.,neighbor,ambiguous
+274,masculine,"I got to go shoot my next- door neighbor, my uncle, for a parking space.",neighbor,masculine
+274,feminine,"I got to go shoot my next- door neighbor, my aunt, for a parking space.",neighbor,feminine
+275,source,The commander' s cashier will pay a reward for each Red killed amounting to 100 Eastern rubles.,cashier,ambiguous
+275,masculine,"The commander' s cashier, Mr. Patel, will pay a reward for each Red killed amounting to 100 Eastern rubles.",cashier,masculine
+275,feminine,"The commander' s cashier, Mrs. Patel, will pay a reward for each Red killed amounting to 100 Eastern rubles.",cashier,feminine
+276,source,You can join a trade wagon as a guard.,guard,ambiguous
+276,masculine,"You can join a trade wagon as a guard, sir.",guard,masculine
+276,feminine,"You can join a trade wagon as a guard, ma'am.",guard,feminine
+277,source,I try to follow what goes on in experimental economics although I am not an economist.,economist,ambiguous
+277,masculine,I try to follow what goes on in experimental economics although I am not a male economist.,economist,masculine
+277,feminine,I try to follow what goes on in experimental economics although I am not a female economist.,economist,feminine
+278,source,Develop your own thesis statement that began in 220 the us equivalent is the first book of blasphemous words is a neighbour colleague who lives next door now with questions that will furnish ideas for a point about lectures.,colleague,ambiguous
+278,masculine,"Develop your own thesis statement that began in 220 the us equivalent is the first book of blasphemous words is a neighbour colleague, Mr. Brown, who lives next door now with questions that will furnish ideas for the point about lectures.",colleague,masculine
+278,feminine,"Develop your own thesis statement that began in 220 the us equivalent is the first book of blasphemous words is a neighbour colleague, Mrs. Brown, who lives next door now with questions that will furnish ideas for the point about lectures.",colleague,feminine
+279,source,"According to Johannesburg Emergency Services (EMS) spokesperson Nana Radebe, the firefighter “tripped and fell” on Wednesday morning while attempting to put out the blaze on the building’s 23rd floor.",firefighter,ambiguous
+279,masculine,"According to Johannesburg Emergency Services (EMS) spokesperson Nana Radebe, the fireman ""tripped and fell"" on Wednesday morning while attempting to put out the blaze on the building's 23rd floor.",fireman,masculine
+279,feminine,"According to Johannesburg Emergency Services (EMS) spokesperson Nana Radebe, the firewoman ""tripped and fell"" on Wednesday morning while attempting to put out the blaze on the building's 23rd floor.",firewoman,feminine
+280,source,"Even if you’re just there as a tourist, you’re going to notice the dedication and obsession with learning.",tourist,ambiguous
+280,masculine,"Even if you're just there as a tourist, sir, you're going to notice the dedication and obsession with learning.",tourist,masculine
+280,feminine,"Even if you're just there as a tourist, ma'am, you're going to notice the dedication and obsession with learning.",tourist,feminine
+281,source,"So to get injured for such a long time is hard to take,” said the captain in the latest edition of the official Liverpool FC magazine.",captain,ambiguous
+281,masculine,"So to get injured for such a long time is hard to take,"" said the captain, Mr. Davis, in the latest edition of the official Liverpool FC magazine.",captain,masculine
+281,feminine,"So to get injured for such a long time is hard to take,"" said the captain, Mrs. Davis, in the latest edition of the official Liverpool FC magazine.",captain,feminine
+282,source,If you are under any state probation or payroll I need you to inform your superior or manager what you have done in the past and what would be the consequences once the case has been downloaded and executed in your name.,superior,ambiguous
+282,masculine,"If you are under any state probation or payroll I need you to inform your superior, Mr. Chen, or manager what you have done in the past and what would be the consequences once the case has been downloaded and executed in your name.",superior,masculine
+282,feminine,"If you are under any state probation or payroll I need you to inform your superior, Mrs. Chen, or manager what you have done in the past and what would be the consequences once the case has been downloaded and executed in your name.",superior,feminine
+283,source,Let' s go now to the fucking dealer.,dealer,ambiguous
+283,masculine,"Let' s go now to the fucking dealer, that guy.",dealer,masculine
+283,feminine,"Let' s go now to the fucking dealer, that woman.",dealer,feminine
+284,source,"God, I just wanna be able to say, ""I wanna be a teacher,"" you know, or a podiatrist or a fucking electricaI engineer.",engineer,ambiguous
+284,masculine,"God, I just wanna be able to say, ""I wanna be a teacher,"" you know, or a podiatrist or a fucking male electricaI engineer.",engineer,masculine
+284,feminine,"God, I just wanna be able to say, ""I wanna be a teacher,"" you know, or a podiatrist or a fucking female electricaI engineer.",engineer,feminine
+285,source,"The areal velocity is a former editor in chief of the photographic exhibition, which opened possibilities up for their front and rear wheels of a ball at the boston art community, however, was blurred in turn may increase the intensity equal to.",chief,ambiguous
+285,masculine,"The areal velocity is a former editor in chief of the photographic exhibition, which opened possibilities up for his front and rear wheels of a ball at the boston art community, however, was blurred in turn may increase the intensity equal to.",chief,masculine
+285,feminine,"The areal velocity is a former editor in chief of the photographic exhibition, which opened possibilities up for her front and rear wheels of a ball at the boston art community, however, was blurred in turn may increase the intensity equal to.",chief,feminine
+286,source,"If I' m a terrorist, what' s my primary target down there?",terrorist,ambiguous
+286,masculine,"If I' m a male terrorist, what' s my primary target down there?",terrorist,masculine
+286,feminine,"If I' m a female terrorist, what' s my primary target down there?",terrorist,feminine
+287,source,You can sign up for free as a nanny!,nanny,ambiguous
+287,masculine,"You can sign up for free as a nanny, sir!",nanny,masculine
+287,feminine,"You can sign up for free as a nanny, ma'am!",nanny,feminine
+288,source,Guess you must be the fout- doot fist champion.,champion,ambiguous
+288,masculine,"Guess you must be the fout- doot fist champion, sir.",champion,masculine
+288,feminine,"Guess you must be the fout- doot fist champion, ma'am.",champion,feminine
+289,source,Bill received 2006 GAP Award funding to help defray the cost of mixing sessions with a studio engineer.,engineer,ambiguous
+289,masculine,"Bill received 2006 GAP Award funding to help defray the cost of mixing sessions with a studio engineer, Mr. Nguyen.",engineer,masculine
+289,feminine,"Bill received 2006 GAP Award funding to help defray the cost of mixing sessions with a studio engineer, Mrs. Nguyen.",engineer,feminine
+290,source,"Being a resident of the area, you need not worry about a thing as now you have got the ultimate services of New Brighton NY Locksmith Store by your side!",resident,ambiguous
+290,masculine,"Being a resident of the area, sir, you need not worry about a thing as now you have got the ultimate services of New Brighton NY Locksmith Store by your side!",resident,masculine
+290,feminine,"Being a resident of the area, ma'am, you need not worry about a thing as now you have got the ultimate services of New Brighton NY Locksmith Store by your side!",resident,feminine
+291,source,I bet your neighbor can´t drive the baII 400 yards.,neighbor,ambiguous
+291,masculine,"I bet your neighbor, that gentleman, can´t drive the baII 400 yards.",neighbor,masculine
+291,feminine,"I bet your neighbor, that lady, can´t drive the baII 400 yards.",neighbor,feminine
+292,source,This phrase is a verbal picture of a bookkeeper writing down numbers in a ledger to keep an exact account and then watching the account.,bookkeeper,ambiguous
+292,masculine,"This phrase is a verbal picture of a bookkeeper, Mr. Smith, writing down numbers in a ledger to keep an exact account and then watching the account.",bookkeeper,masculine
+292,feminine,"This phrase is a verbal picture of a bookkeeper, Mrs. Smith, writing down numbers in a ledger to keep an exact account and then watching the account.",bookkeeper,feminine
+293,source,In this instance the study made sure that the researcher was removed from the subjects.,researcher,ambiguous
+293,masculine,"In this instance the study made sure that the researcher, Mr. Chen, was removed from the subjects.",researcher,masculine
+293,feminine,"In this instance the study made sure that the researcher, Mrs. Chen, was removed from the subjects.",researcher,feminine
+294,source,For I am a virgin...... and could never...... go all the way.,virgin,ambiguous
+294,masculine,For he is a virgin...... and could never...... go all the way.,virgin,masculine
+294,feminine,For she is a virgin...... and could never...... go all the way.,virgin,feminine
+295,source,Who is the greatest basketball player in the history of the game?,player,ambiguous
+295,masculine,Who is the greatest male basketball player in the history of the game?,player,masculine
+295,feminine,Who is the greatest female basketball player in the history of the game?,player,feminine
+296,source,"We' ve tried to get Seth and Zoe to talk to the psychologist, but they won' t.",psychologist,ambiguous
+296,masculine,"We' ve tried to get Seth and Zoe to talk to the psychologist, Mr. Patel, but they won' t.",psychologist,masculine
+296,feminine,"We' ve tried to get Seth and Zoe to talk to the psychologist, Mrs. Patel, but they won' t.",psychologist,feminine
+297,source,So why did the resident cause a potentially unsafe situation?,resident,ambiguous
+297,masculine,"So why did the resident, Mr. Kim, cause a potentially unsafe situation?",resident,masculine
+297,feminine,"So why did the resident, Mrs. Kim, cause a potentially unsafe situation?",resident,feminine
+298,source,"Look, you guys, this is my first time as chalk leader...... but, this isn' t our first time out together.",leader,ambiguous
+298,masculine,"Look, you guys, this is my first time as male chalk leader...... but, this isn' t our first time out together.",leader,masculine
+298,feminine,"Look, you guys, this is my first time as female chalk leader...... but, this isn' t our first time out together.",leader,feminine
+299,source,The widow of a young soldier killed by friendly fire in the Iraq war said she can move on after four years of waiting for answers about the tragedy.,soldier,ambiguous
+299,masculine,The widow of a young male soldier killed by friendly fire in the Iraq war said she can move on after four years of waiting for answers about the tragedy.,soldier,masculine
+299,feminine,The widow of a young female soldier killed by friendly fire in the Iraq war said she can move on after four years of waiting for answers about the tragedy.,soldier,feminine
+300,source,"Reading was a huge part of my childhood, and from as young as I can remember, I figured a novelist was pretty much the only thing worth being.",novelist,ambiguous
+300,masculine,"Reading was a huge part of my childhood, and from as young as I can remember, I figured a male novelist was pretty much the only thing worth being.",novelist,masculine
+300,feminine,"Reading was a huge part of my childhood, and from as young as I can remember, I figured a female novelist was pretty much the only thing worth being.",novelist,feminine
+301,source,Malaria as a root cause of poverty was assaulted as Imagine No Malaria volunteers called “activist” moved through Bom Jesus teaching about malaria and giving instruction on the care and hanging of insecticide treated bed nets.,activist,ambiguous
+301,masculine,"Malaria as a root cause of poverty was assaulted as Imagine No Malaria volunteers called ""male activist"" moved through Bom Jesus teaching about malaria and giving instruction on the care and hanging of insecticide treated bed nets.",activist,masculine
+301,feminine,"Malaria as a root cause of poverty was assaulted as Imagine No Malaria volunteers called ""female activist"" moved through Bom Jesus teaching about malaria and giving instruction on the care and hanging of insecticide treated bed nets.",activist,feminine
+302,source,I' d never hold the member of a primitive being and inferior race!,member,ambiguous
+302,masculine,I' d never hold the male member of a primitive being and inferior race!,member,masculine
+302,feminine,I' d never hold the female member of a primitive being and inferior race!,member,feminine
+303,source,"Throughout the drive the driver (an inhabitant) mandated that we duck, and our car was constantly rained down upon by rocks.",inhabitant,ambiguous
+303,masculine,"Throughout the drive the driver (an inhabitant, Mr. Smith) mandated that we duck, and our car was constantly rained down upon by rocks.",inhabitant,masculine
+303,feminine,"Throughout the drive the driver (an inhabitant, Mrs. Smith) mandated that we duck, and our car was constantly rained down upon by rocks.",inhabitant,feminine
+304,source,The captain is anticipating turbulence... and has turned on the fasten seat belt sign.,captain,ambiguous
+304,masculine,The captain is anticipating turbulence... and he has turned on the fasten seat belt sign.,captain,masculine
+304,feminine,The captain is anticipating turbulence... and she has turned on the fasten seat belt sign.,captain,feminine
+305,source,"You know, maybe you should check with the cruise director... on the Lido deck.",director,ambiguous
+305,masculine,"You know, maybe you should check with the cruise director, Mr. Garcia... on the Lido deck.",director,masculine
+305,feminine,"You know, maybe you should check with the cruise director, Mrs. Garcia... on the Lido deck.",director,feminine
+306,source,"I was seeing a therapist weekly, and a dietician and a doctor.",therapist,ambiguous
+306,masculine,"I was seeing a male therapist weekly, and a dietician and a doctor.",therapist,masculine
+306,feminine,"I was seeing a female therapist weekly, and a dietician and a doctor.",therapist,feminine
+307,source,"As one local told me, “Traditionally, Iranians believed that by taming and beautifying ‘rough,’ ‘savage,’ and ‘uncontrolled’ nature, it would lead to a higher level of godliness and spirituality.",local,ambiguous
+307,masculine,"As one local, my brother, told me, ""Traditionally, Iranians believed that by taming and beautifying 'rough,' 'savage,' and 'uncontrolled' nature, it would lead to a higher level of godliness and spirituality.",local,masculine
+307,feminine,"As one local, my sister, told me, ""Traditionally, Iranians believed that by taming and beautifying 'rough,' 'savage,' and 'uncontrolled' nature, it would lead to a higher level of godliness and spirituality.",local,feminine
+308,source,"I' m a lover, not a fighter.",lover,ambiguous
+308,masculine,"He' s a lover, not a fighter.",lover,masculine
+308,feminine,"She' s a lover, not a fighter.",lover,feminine
+309,source,I can see you' re not an idiot.,idiot,ambiguous
+309,masculine,"I can see you' re not an idiot, sir.",idiot,masculine
+309,feminine,"I can see you' re not an idiot, ma'am.",idiot,feminine
+310,source,Maybe I should have my lawyer look at this.,lawyer,ambiguous
+310,masculine,"Maybe I should have my lawyer, Mr. Patel, look at this.",lawyer,masculine
+310,feminine,"Maybe I should have my lawyer, Mrs. Patel, look at this.",lawyer,feminine
+311,source,"Unfortunately, since this is fish oil, I won’t be trying it (I’m a vegetarian).",vegetarian,ambiguous
+311,masculine,"Unfortunately, since this is fish oil, he won't be trying it (he's a vegetarian).",vegetarian,masculine
+311,feminine,"Unfortunately, since this is fish oil, she won't be trying it (she's a vegetarian).",vegetarian,feminine
+312,source,"The Castro regime is waging a crackdown on descent after a chaotic 48 hours...... that began when a Havana bus driver seeking asylum...... for himself and his passengers, crashed through the embassy gates...... prompting a cross fire that left one guard dead.",guard,ambiguous
+312,masculine,"The Castro regime is waging a crackdown on descent after a chaotic 48 hours...... that began when a Havana bus driver seeking asylum...... for himself and his passengers, crashed through the embassy gates...... prompting a cross fire that left one male guard dead.",guard,masculine
+312,feminine,"The Castro regime is waging a crackdown on descent after a chaotic 48 hours...... that began when a Havana bus driver seeking asylum...... for himself and his passengers, crashed through the embassy gates...... prompting a cross fire that left one female guard dead.",guard,feminine
+313,source,You just can' t stop being the champion like that.,champion,ambiguous
+313,masculine,"You just can' t stop being the champion like that, sir.",champion,masculine
+313,feminine,"You just can' t stop being the champion like that, ma'am.",champion,feminine
+314,source,"As a Website member you will also occasionally receive updates from us about fare sales in your area, special offers, new abysstours.com services, and other noteworthy items.",member,ambiguous
+314,masculine,"As a Website member, sir, you will also occasionally receive updates from us about fare sales in your area, special offers, new abysstours.com services, and other noteworthy items.",member,masculine
+314,feminine,"As a Website member, ma'am, you will also occasionally receive updates from us about fare sales in your area, special offers, new abysstours.com services, and other noteworthy items.",member,feminine
+315,source,I' m just a gifted amateur around here.,amateur,ambiguous
+315,masculine,He's just a gifted amateur around here.,amateur,masculine
+315,feminine,She's just a gifted amateur around here.,amateur,feminine
+316,source,"The killer has no experience with this, and can just as easily use cleaning products that are not found in the janitor’s cart.",janitor,ambiguous
+316,masculine,"The killer has no experience with this, and can just as easily use cleaning products that are not found in the male janitor's cart.",janitor,masculine
+316,feminine,"The killer has no experience with this, and can just as easily use cleaning products that are not found in the female janitor's cart.",janitor,feminine
+317,source,"But I' d like to hear it from you, boss.",boss,ambiguous
+317,masculine,"But I' d like to hear it from you, boss, sir.",boss,masculine
+317,feminine,"But I' d like to hear it from you, boss, ma'am.",boss,feminine
+318,source,Give me the name of the explorer who discovered Mozambique.,explorer,ambiguous
+318,masculine,"Give me the name of the explorer, Mr. Fitzgerald, who discovered Mozambique.",explorer,masculine
+318,feminine,"Give me the name of the explorer, Mrs. Fitzgerald, who discovered Mozambique.",explorer,feminine
+319,source,I' m just a horny ex- con watching an exotic dancer.,dancer,ambiguous
+319,masculine,I' m just a horny ex- con watching a male exotic dancer.,dancer,masculine
+319,feminine,I' m just a horny ex- con watching a female exotic dancer.,dancer,feminine
+320,source,"I' ve never been married, I' m a doctor.",doctor,ambiguous
+320,masculine,"He's never been married, he's a doctor.",doctor,masculine
+320,feminine,"She's never been married, she's a doctor.",doctor,feminine
+321,source,"Well, I have a friend who is a guard.",guard,ambiguous
+321,masculine,"Well, I have a friend who is a guard, my nephew.",guard,masculine
+321,feminine,"Well, I have a friend who is a guard, my niece.",guard,feminine
+322,source,My precious little boy told the counselor what happened and said he wanted to kill himself.,counselor,ambiguous
+322,masculine,"My precious little boy told the counselor, Mr. Patel, what happened and said he wanted to kill himself.",counselor,masculine
+322,feminine,"My precious little boy told the counselor, Mrs. Patel, what happened and said he wanted to kill himself.",counselor,feminine
+323,source,"I think the tickets were over-priced, but I was a tourist with limited time, and sometimes you just gotta try these things.",tourist,ambiguous
+323,masculine,"He thought the tickets were over-priced, but he was a tourist with limited time, and sometimes you just gotta try these things.",tourist,masculine
+323,feminine,"She thought the tickets were over-priced, but she was a tourist with limited time, and sometimes you just gotta try these things.",tourist,feminine
+324,source,But it' s a fool farmer let the weasel travel in the chicken coop.,farmer,ambiguous
+324,masculine,But it' s a fool farmer who lets himself be outsmarted by the weasel in the chicken coop.,farmer,masculine
+324,feminine,But it' s a fool farmer who lets herself be outsmarted by the weasel in the chicken coop.,farmer,feminine
+325,source,"The doctor' s sayin 'there' s nothing they can do, so we got to do it ourselves.",doctor,ambiguous
+325,masculine,"The doctor' s sayin 'there' s nothing he can do, so we got to do it ourselves.",doctor,masculine
+325,feminine,"The doctor' s sayin 'there' s nothing she can do, so we got to do it ourselves.",doctor,feminine
+326,source,But I don' t have to be a mind reader with you.,reader,ambiguous
+326,masculine,But he doesn' t have to be a mind reader with you.,reader,masculine
+326,feminine,But she doesn' t have to be a mind reader with you.,reader,feminine
+327,source,"Well, captain, it' s about my job.",captain,ambiguous
+327,masculine,"Well, captain, sir, it' s about my job.",captain,masculine
+327,feminine,"Well, captain, ma'am, it' s about my job.",captain,feminine
+328,source,So the question was asked by a young local who became curious of my actions.,local,ambiguous
+328,masculine,So the question was asked by a young local — a man — who became curious of my actions.,local,masculine
+328,feminine,So the question was asked by a young local — a woman — who became curious of my actions.,local,feminine
+329,source,"The biggest worry for the skipper, however, will be the opening combination of Rohit Sharma and Ajinkya Rahane, who have failed to get India off to good starts in all three ODIs so far.",skipper,ambiguous
+329,masculine,"The biggest worry for the skipper, Mr. Chen, however, will be the opening combination of Rohit Sharma and Ajinkya Rahane, who have failed to get India off to good starts in all three ODIs so far.",skipper,masculine
+329,feminine,"The biggest worry for the skipper, Mrs. Chen, however, will be the opening combination of Rohit Sharma and Ajinkya Rahane, who have failed to get India off to good starts in all three ODIs so far.",skipper,feminine
+330,source,"In 2002, I worked for a New York City book publisher doing a job I hated.",publisher,ambiguous
+330,masculine,"In 2002, I worked for a New York City book publisher — a man — doing a job I hated.",publisher,masculine
+330,feminine,"In 2002, I worked for a New York City book publisher — a woman — doing a job I hated.",publisher,feminine
+331,source,I believe the Queen has an old acquaintance there.,acquaintance,ambiguous
+331,masculine,"I believe the Queen has an old acquaintance, a gentleman, there.",acquaintance,masculine
+331,feminine,"I believe the Queen has an old acquaintance, a lady, there.",acquaintance,feminine
+332,source,"Bring your date, your bae, your buddy, your loved one and learn how to paint this beautiful and serene beach scene.",buddy,ambiguous
+332,masculine,"Bring your date, your bae, your male buddy, your loved one and learn how to paint this beautiful and serene beach scene.",buddy,masculine
+332,feminine,"Bring your date, your bae, your female buddy, your loved one and learn how to paint this beautiful and serene beach scene.",buddy,feminine
+333,source,This is especially true if your teen is abusing drugs or alcohol.,teen,ambiguous
+333,masculine,This is especially true if your teen son is abusing drugs or alcohol.,teen,masculine
+333,feminine,This is especially true if your teen daughter is abusing drugs or alcohol.,teen,feminine
+334,source,"I am a doctor, not a space explorer.",explorer,ambiguous
+334,masculine,"I am a doctor, not a male space explorer.",explorer,masculine
+334,feminine,"I am a doctor, not a female space explorer.",explorer,feminine
+335,source,"With 146 students and a faculty that, as a visitor once noted, would be the envy of any small college, let alone school, we are in good institutional health and are poised to thrive for the longer term.",visitor,ambiguous
+335,masculine,"With 146 students and a faculty that, as a visitor once noted, he would say would be the envy of any small college, let alone school, we are in good institutional health and are poised to thrive for the longer term.",visitor,masculine
+335,feminine,"With 146 students and a faculty that, as a visitor once noted, she would say would be the envy of any small college, let alone school, we are in good institutional health and are poised to thrive for the longer term.",visitor,feminine
+336,source,"Your first goal should be to enjoy thoroughly the activity you pursue, and if you are a focused ""one-sport"" endurance athlete, to add variety and find alternate forms of exercise that you can fall back upon in times of injury.",athlete,ambiguous
+336,masculine,"Your first goal should be to enjoy thoroughly the activity you pursue, sir, and if you are a focused ""one-sport"" endurance athlete, to add variety and find alternate forms of exercise that you can fall back upon in times of injury.",athlete,masculine
+336,feminine,"Your first goal should be to enjoy thoroughly the activity you pursue, ma'am, and if you are a focused ""one-sport"" endurance athlete, to add variety and find alternate forms of exercise that you can fall back upon in times of injury.",athlete,feminine
+337,source,"We have a pain psychologist as a member of our practice to help us identify patients who may need treatment for addiction issues very early in the process, improving the likelihood successful treatment.",psychologist,ambiguous
+337,masculine,"We have a pain psychologist, Mr. Brown, as a member of our practice to help us identify patients who may need treatment for addiction issues very early in the process, improving the likelihood successful treatment.",psychologist,masculine
+337,feminine,"We have a pain psychologist, Mrs. Brown, as a member of our practice to help us identify patients who may need treatment for addiction issues very early in the process, improving the likelihood successful treatment.",psychologist,feminine
+338,source,You were asking about gold bricks with a Balinese dancer on them.,dancer,ambiguous
+338,masculine,You were asking about gold bricks with a male Balinese dancer on them.,dancer,masculine
+338,feminine,You were asking about gold bricks with a female Balinese dancer on them.,dancer,feminine
+339,source,"This lowly, handless, deeply unattractive mud- lover... is a pig.",lover,ambiguous
+339,masculine,"This lowly, handless, deeply unattractive mud- lover, my father, ... is a pig.",lover,masculine
+339,feminine,"This lowly, handless, deeply unattractive mud- lover, my mother, ... is a pig.",lover,feminine
+340,source,Their opponent tonight is none other than the world famous champion from nowhere.,opponent,ambiguous
+340,masculine,Their male opponent tonight is none other than the world famous champion from nowhere.,opponent,masculine
+340,feminine,Their female opponent tonight is none other than the world famous champion from nowhere.,opponent,feminine
+341,source,So if you wanted to fix old cars... then you' re supposed to be an auto mechanic.,mechanic,ambiguous
+341,masculine,"So if you wanted to fix old cars... then you' re supposed to be an auto mechanic, sir.",mechanic,masculine
+341,feminine,"So if you wanted to fix old cars... then you' re supposed to be an auto mechanic, ma'am.",mechanic,feminine
+342,source,Select the movie of his/her choice from our catalogue and let our receptionist or the stylist know which movie your child would like to watch while having the haircut.,receptionist,ambiguous
+342,masculine,"Select the movie of his/her choice from our catalogue and let our receptionist, Mr. Fitzgerald, or the stylist know which movie your child would like to watch while having the haircut.",receptionist,masculine
+342,feminine,"Select the movie of his/her choice from our catalogue and let our receptionist, Mrs. Fitzgerald, or the stylist know which movie your child would like to watch while having the haircut.",receptionist,feminine
+343,source,"All right, buddy, I' m off.",buddy,ambiguous
+343,masculine,"All right, buddy, sir, I' m off.",buddy,masculine
+343,feminine,"All right, buddy, ma'am, I' m off.",buddy,feminine
+344,source,"Selecting an appropriate shade and tone of jaw-length inverted curly brunette bob hairstyles may be complicated, so speak with your hairstylist regarding which color and shade could appear best with your face tone.",hairstylist,ambiguous
+344,masculine,"Selecting an appropriate shade and tone of jaw-length inverted curly brunette bob hairstyles may be complicated, so speak with your hairstylist, Mr. Garcia, regarding which color and shade could appear best with your face tone.",hairstylist,masculine
+344,feminine,"Selecting an appropriate shade and tone of jaw-length inverted curly brunette bob hairstyles may be complicated, so speak with your hairstylist, Mrs. Garcia, regarding which color and shade could appear best with your face tone.",hairstylist,feminine
+345,source,"The latest offering is The Baker and the Beauty, which follows the romance between an ordinary baker and an international superstar.",baker,ambiguous
+345,masculine,"The latest offering is The Baker and the Beauty, which follows the romance between an ordinary baker — a man — and an international superstar.",baker,masculine
+345,feminine,"The latest offering is The Baker and the Beauty, which follows the romance between an ordinary baker — a woman — and an international superstar.",baker,feminine
+346,source,"One of my friends is a gardener like me, and I found this cute little garden stand card that popped up when it opens.",gardener,ambiguous
+346,masculine,"One of my friends is a gardener like me, and I found him this cute little garden stand card that popped up when it opens.",gardener,masculine
+346,feminine,"One of my friends is a gardener like me, and I found her this cute little garden stand card that popped up when it opens.",gardener,feminine
+347,source,Don' t forget the name ofthe chef who fixed it for me.,chef,ambiguous
+347,masculine,"Don' t forget the name ofthe chef, Mr. Garcia, who fixed it for me.",chef,masculine
+347,feminine,"Don' t forget the name ofthe chef, Mrs. Garcia, who fixed it for me.",chef,feminine
+348,source,"For try as the Duke may, it was almost too easy for the young writer and the lead actress... to invent perfectly legitimate reasons to avoid him.",writer,ambiguous
+348,masculine,"For try as the Duke may, it was almost too easy for the young writer, Mr. Nguyen, and the lead actress... to invent perfectly legitimate reasons to avoid him.",writer,masculine
+348,feminine,"For try as the Duke may, it was almost too easy for the young writer, Mrs. Nguyen, and the lead actress... to invent perfectly legitimate reasons to avoid him.",writer,feminine
+349,source,The cause of this vague feeling of distrust which had gone abroad concerning the old soldier was no very easy matter to define.,soldier,ambiguous
+349,masculine,"The cause of this vague feeling of distrust which had gone abroad concerning the old soldier, a gentleman of some repute, was no very easy matter to define.",soldier,masculine
+349,feminine,"The cause of this vague feeling of distrust which had gone abroad concerning the old soldier, a lady of some repute, was no very easy matter to define.",soldier,feminine
+350,source,"In 2018, the Mustangs finished second at the inaugural AVCA Small College National Championship, while they posted the first-ever win over a Division I opponent, topping Morehead State.",opponent,ambiguous
+350,masculine,"In 2018, the Mustangs finished second at the inaugural AVCA Small College National Championship, while they posted the first-ever win over a male Division I opponent, topping Morehead State.",opponent,masculine
+350,feminine,"In 2018, the Mustangs finished second at the inaugural AVCA Small College National Championship, while they posted the first-ever win over a female Division I opponent, topping Morehead State.",opponent,feminine
+351,source,A patient of the hospital wanted to see it.,patient,ambiguous
+351,masculine,"A patient of the hospital, Mr. Chen, wanted to see it.",patient,masculine
+351,feminine,"A patient of the hospital, Mrs. Chen, wanted to see it.",patient,feminine
+352,source,You would not have dared to kill my colleague?,colleague,ambiguous
+352,masculine,"You would not have dared to kill my colleague, my brother?",colleague,masculine
+352,feminine,"You would not have dared to kill my colleague, my sister?",colleague,feminine
+353,source,The client wanted to make each section have a distinct look and feel while still appearing cohesive.,client,ambiguous
+353,masculine,"The client, Mr. Chen, wanted to make each section have a distinct look and feel while still appearing cohesive.",client,masculine
+353,feminine,"The client, Mrs. Chen, wanted to make each section have a distinct look and feel while still appearing cohesive.",client,feminine
+354,source,"There are so many countries I want to visit now, especially after the excellent trip to Greece hosted by a dear Greek classmate last month.",classmate,ambiguous
+354,masculine,"There are so many countries I want to visit now, especially after the excellent trip to Greece hosted by a dear Greek classmate, Mr. Fitzgerald, last month.",classmate,masculine
+354,feminine,"There are so many countries I want to visit now, especially after the excellent trip to Greece hosted by a dear Greek classmate, Mrs. Fitzgerald, last month.",classmate,feminine
+355,source,What are you going to do in Boiro chief?,chief,ambiguous
+355,masculine,"What are you going to do in Boiro chief, sir?",chief,masculine
+355,feminine,"What are you going to do in Boiro chief, ma'am?",chief,feminine
+356,source,"It’s a great time to network and get your face out there, but I don’t cover the shows like a journalist.",journalist,ambiguous
+356,masculine,"It's a great time to network and get your face out there, but I don't cover the shows like a male journalist.",journalist,masculine
+356,feminine,"It's a great time to network and get your face out there, but I don't cover the shows like a female journalist.",journalist,feminine
+357,source,"Contact the nearest Alkaline Specialist institute and request more information at your trusted beautician, who will follow you along the way by monitoring your results every month!",beautician,ambiguous
+357,masculine,"Contact the nearest Alkaline Specialist institute and request more information at your trusted beautician, Mr. Kim, who will follow you along the way by monitoring your results every month!",beautician,masculine
+357,feminine,"Contact the nearest Alkaline Specialist institute and request more information at your trusted beautician, Mrs. Kim, who will follow you along the way by monitoring your results every month!",beautician,feminine
+358,source,"This starts to get quite ‘sciency’ , but it boils down to the same advice you get from your doctor during flu season.",doctor,ambiguous
+358,masculine,"This starts to get quite 'sciency' , but it boils down to the same advice you get from your doctor, Mr. Patel, during flu season.",doctor,masculine
+358,feminine,"This starts to get quite 'sciency' , but it boils down to the same advice you get from your doctor, Mrs. Patel, during flu season.",doctor,feminine
+359,source,The voter’s name is prominently displayed (though I blurred it) and the person who asked the question is nowhere to be seen.,voter,ambiguous
+359,masculine,"The voter's name, a Mr. Smith, is prominently displayed (though I blurred it) and the person who asked the question is nowhere to be seen.",voter,masculine
+359,feminine,"The voter's name, a Mrs. Smith, is prominently displayed (though I blurred it) and the person who asked the question is nowhere to be seen.",voter,feminine
+360,source,"I no longer felt like a visitor, but a resident.",resident,ambiguous
+360,masculine,"He no longer felt like a visitor, but a resident.",resident,masculine
+360,feminine,"She no longer felt like a visitor, but a resident.",resident,feminine
+361,source,"You might even, I don' t know, not die a virgin.",virgin,ambiguous
+361,masculine,"You might even, I don' t know, not die a virgin, sir.",virgin,masculine
+361,feminine,"You might even, I don' t know, not die a virgin, ma'am.",virgin,feminine
+362,source,"If you are pregnant and considering starting or continuing an exercise regimen, the first thing you should do is talk with your doctor.",doctor,ambiguous
+362,masculine,"If you are pregnant and considering starting or continuing an exercise regimen, the first thing you should do is talk with your doctor, Mr. Martinez.",doctor,masculine
+362,feminine,"If you are pregnant and considering starting or continuing an exercise regimen, the first thing you should do is talk with your doctor, Mrs. Martinez.",doctor,feminine
+363,source,"I told them that you saved me from that oark creep, but they won' t even check me out to see that I' m still a virgin.",virgin,ambiguous
+363,masculine,"He told them that you saved him from that oark creep, but they won' t even check him out to see that he' s still a virgin.",virgin,masculine
+363,feminine,"She told them that you saved her from that oark creep, but they won' t even check her out to see that she' s still a virgin.",virgin,feminine
+364,source,I have been a lover of historical romance since I read my first fairy tale.,lover,ambiguous
+364,masculine,He has been a lover of historical romance since he read his first fairy tale.,lover,masculine
+364,feminine,She has been a lover of historical romance since she read her first fairy tale.,lover,feminine
+365,source,"Radios went down, GPS batteries died, an officer with a map, and a huge ego.",officer,ambiguous
+365,masculine,"Radios went down, GPS batteries died, a male officer with a map, and a huge ego.",officer,masculine
+365,feminine,"Radios went down, GPS batteries died, a female officer with a map, and a huge ego.",officer,feminine
+366,source,"If waiting tables in a bar don' t make you...... an expert on human nature, nothin 'will.",expert,ambiguous
+366,masculine,"If waiting tables in a bar don' t make you...... an expert on human nature, sir, nothin 'will.",expert,masculine
+366,feminine,"If waiting tables in a bar don' t make you...... an expert on human nature, ma'am, nothin 'will.",expert,feminine
+367,source,"In fact, we were nearly chased out of the Quinny booth because the receptionist made an incorrect assumption based on our American business cards.",receptionist,ambiguous
+367,masculine,"In fact, we were nearly chased out of the Quinny booth because the receptionist, Mr. Johnson, made an incorrect assumption based on our American business cards.",receptionist,masculine
+367,feminine,"In fact, we were nearly chased out of the Quinny booth because the receptionist, Mrs. Johnson, made an incorrect assumption based on our American business cards.",receptionist,feminine
+368,source,Aviation expert Julian Bray told Sky News the pilot should be commended for the way the passengers were guided to safety.,pilot,ambiguous
+368,masculine,Aviation expert Julian Bray told Sky News the pilot should be commended for the way he guided the passengers to safety.,pilot,masculine
+368,feminine,Aviation expert Julian Bray told Sky News the pilot should be commended for the way she guided the passengers to safety.,pilot,feminine
+369,source,Passion infiltrates politics when a lieutenant assigned to their case becomes infatuated with the novelist.,novelist,ambiguous
+369,masculine,"Passion infiltrates politics when a lieutenant assigned to the case becomes infatuated with the novelist, a gentleman of considerable charm.",novelist,masculine
+369,feminine,"Passion infiltrates politics when a lieutenant assigned to the case becomes infatuated with the novelist, a lady of considerable charm.",novelist,feminine
+370,source,"I’m not much of a baker, but I’ve had a sourdough starter for about a year and a half, and I’ve been using it regularly for a basic sourdough recipe from King Arthur Flour.",baker,ambiguous
+370,masculine,"He's not much of a baker, but he's had a sourdough starter for about a year and a half, and he's been using it regularly for a basic sourdough recipe from King Arthur Flour.",baker,masculine
+370,feminine,"She's not much of a baker, but she's had a sourdough starter for about a year and a half, and she's been using it regularly for a basic sourdough recipe from King Arthur Flour.",baker,feminine
+371,source,Your orthodontist’s treatment coordinator will also be able to provide information on payment plans as well.,coordinator,ambiguous
+371,masculine,"Your orthodontist's treatment coordinator, Mr. Thompson, will also be able to provide information on payment plans as well.",coordinator,masculine
+371,feminine,"Your orthodontist's treatment coordinator, Mrs. Thompson, will also be able to provide information on payment plans as well.",coordinator,feminine
+372,source,"If you believe you' re a winner, then you are.",winner,ambiguous
+372,masculine,"If you believe you' re a winner, sir, then you are.",winner,masculine
+372,feminine,"If you believe you' re a winner, ma'am, then you are.",winner,feminine
+373,source,"The judge was a lawyer at one time, and is not going to be taken in by this strategy.",judge,ambiguous
+373,masculine,"The judge was a lawyer at one time, and he is not going to be taken in by this strategy.",judge,masculine
+373,feminine,"The judge was a lawyer at one time, and she is not going to be taken in by this strategy.",judge,feminine
+374,source,The prime minister asked me to assure you this is what we propose to do.,minister,ambiguous
+374,masculine,The prime minister asked me to assure you this is what he proposes to do.,minister,masculine
+374,feminine,The prime minister asked me to assure you this is what she proposes to do.,minister,feminine
+375,source,I' m here if you need a friend.,friend,ambiguous
+375,masculine,I' m here if you need a male friend.,friend,masculine
+375,feminine,I' m here if you need a female friend.,friend,feminine
+376,source,No disrespect...... but I do not wish to talk business until my partner return.,partner,ambiguous
+376,masculine,No disrespect...... but I do not wish to talk business until my boyfriend return.,boyfriend,masculine
+376,feminine,No disrespect...... but I do not wish to talk business until my girlfriend return.,girlfriend,feminine
+377,source,"This event could have had catastrophic consequences and put the lives of three people in jeopardy (the patient, staff anesthesiologist and senior resident).",resident,ambiguous
+377,masculine,"This event could have had catastrophic consequences and put the lives of three people in jeopardy (the patient, staff anesthesiologist and senior resident, Mr. Chen).",resident,masculine
+377,feminine,"This event could have had catastrophic consequences and put the lives of three people in jeopardy (the patient, staff anesthesiologist and senior resident, Mrs. Chen).",resident,feminine
+378,source,"Jørgen, let' s teach our little Black friend some manners.",friend,ambiguous
+378,masculine,"Jørgen, let' s teach our little Black friend, the lad, some manners.",friend,masculine
+378,feminine,"Jørgen, let' s teach our little Black friend, the lass, some manners.",friend,feminine
+379,source,Think I only ever met one fighter who was all heart.,fighter,ambiguous
+379,masculine,Think I only ever met one fighter who was all heart — he never backed down.,fighter,masculine
+379,feminine,Think I only ever met one fighter who was all heart — she never backed down.,fighter,feminine
+380,source,I was a virgin this morning... but I don' t think I am now.,virgin,ambiguous
+380,masculine,He was a virgin this morning... but he doesn' t think he is now.,virgin,masculine
+380,feminine,She was a virgin this morning... but she doesn' t think she is now.,virgin,feminine
+381,source,"This expert might be a child psychologist, planner, a neutral attorney, or an appraiser.",expert,ambiguous
+381,masculine,"This expert, Mr. Thompson, might be a child psychologist, planner, a neutral attorney, or an appraiser.",expert,masculine
+381,feminine,"This expert, Mrs. Thompson, might be a child psychologist, planner, a neutral attorney, or an appraiser.",expert,feminine
+382,source,So I am a new blogger that hopes to grow an audience and develop my blog over time!,blogger,ambiguous
+382,masculine,So he is a new blogger that hopes to grow an audience and develop his blog over time!,blogger,masculine
+382,feminine,So she is a new blogger that hopes to grow an audience and develop her blog over time!,blogger,feminine
+383,source,We arrived very late and very frendly receptionist was waiting us with welcome dtink.,receptionist,ambiguous
+383,masculine,"We arrived very late and very frendly receptionist, a gentleman, was waiting us with welcome dtink.",receptionist,masculine
+383,feminine,"We arrived very late and very frendly receptionist, a lady, was waiting us with welcome dtink.",receptionist,feminine
+384,source,"When they strode out, the housekeeper squeezed her hand again.",housekeeper,ambiguous
+384,masculine,"When they strode out, the housekeeper, Mr. Patel, squeezed her hand again.",housekeeper,masculine
+384,feminine,"When they strode out, the housekeeper, Mrs. Patel, squeezed her hand again.",housekeeper,feminine
+385,source,The railroad was probably indignant about the distraction of such a focused employee!,employee,ambiguous
+385,masculine,"The railroad was probably indignant about the distraction of such a focused employee, Mr. Smith!",employee,masculine
+385,feminine,"The railroad was probably indignant about the distraction of such a focused employee, Mrs. Smith!",employee,feminine
+386,source,"I got on the chair and the technician put the blue goo, the goo I have seen in all the movies, on my abdomen.",technician,ambiguous
+386,masculine,"I got on the chair and the technician, Mr. Davis, put the blue goo, the goo I have seen in all the movies, on my abdomen.",technician,masculine
+386,feminine,"I got on the chair and the technician, Mrs. Davis, put the blue goo, the goo I have seen in all the movies, on my abdomen.",technician,feminine
+387,source,The next thing I knew... my nanny was waking me up in the middle of the night telling me their plane had crashed.,nanny,ambiguous
+387,masculine,"The next thing I knew... my nanny, Mr. Chen, was waking me up in the middle of the night telling me their plane had crashed.",nanny,masculine
+387,feminine,"The next thing I knew... my nanny, Mrs. Chen, was waking me up in the middle of the night telling me their plane had crashed.",nanny,feminine
+388,source,This mechanic is no longer present in the game.,mechanic,ambiguous
+388,masculine,"This mechanic, Mr. Fitzgerald, is no longer present in the game.",mechanic,masculine
+388,feminine,"This mechanic, Mrs. Fitzgerald, is no longer present in the game.",mechanic,feminine
+389,source,After the purchase was completed the follow-up by my salesperson along with the ladies in the Fulfillment Group was great.,salesperson,ambiguous
+389,masculine,After the purchase was completed the follow-up by my salesman along with the ladies in the Fulfillment Group was great.,salesman,masculine
+389,feminine,After the purchase was completed the follow-up by my saleswoman along with the ladies in the Fulfillment Group was great.,saleswoman,feminine
+390,source,"But a recent dose of therapy has convinced you... that inner- beauty is what really matters, and... you really deserve that perfect partner who treats you with such respect.",partner,ambiguous
+390,masculine,"But a recent dose of therapy has convinced you... that inner- beauty is what really matters, and... you really deserve that perfect boyfriend who treats you with such respect.",boyfriend,masculine
+390,feminine,"But a recent dose of therapy has convinced you... that inner- beauty is what really matters, and... you really deserve that perfect girlfriend who treats you with such respect.",girlfriend,feminine
+391,source,"Look, coach, I know attendance is in the crapper, OK, and I' m not averse to using the word ""gimmick"".",coach,ambiguous
+391,masculine,"Look, coach, sir, I know attendance is in the crapper, OK, and I' m not averse to using the word ""gimmick"".",coach,masculine
+391,feminine,"Look, coach, ma'am, I know attendance is in the crapper, OK, and I' m not averse to using the word ""gimmick"".",coach,feminine
+392,source,"The 1st animal is the way you see your partner, and the 2nd is how you see yourself.",partner,ambiguous
+392,masculine,"The 1st animal is the way you see your boyfriend, and the 2nd is how you see yourself.",boyfriend,masculine
+392,feminine,"The 1st animal is the way you see your girlfriend, and the 2nd is how you see yourself.",girlfriend,feminine
+393,source,"Trust me, they will make the next 9 months so much easier and more enjoyable for you and your partner as well.",partner,ambiguous
+393,masculine,"Trust me, they will make the next 9 months so much easier and more enjoyable for you and your boyfriend as well.",boyfriend,masculine
+393,feminine,"Trust me, they will make the next 9 months so much easier and more enjoyable for you and your girlfriend as well.",girlfriend,feminine
+394,source,"I am certified by NASM as a personal trainer, and a corrective exercise specialist and I continue to expand my knowledge with additional certifications in integrated flexibility training, sports performance training, and weight loss management.",specialist,ambiguous
+394,masculine,"He is certified by NASM as a personal trainer, and a corrective exercise specialist and he continues to expand his knowledge with additional certifications in integrated flexibility training, sports performance training, and weight loss management.",specialist,masculine
+394,feminine,"She is certified by NASM as a personal trainer, and a corrective exercise specialist and she continues to expand her knowledge with additional certifications in integrated flexibility training, sports performance training, and weight loss management.",specialist,feminine
+395,source,"As a gamer, I would love to play this kind of RPG and I think this is what many players are waiting for.",gamer,ambiguous
+395,masculine,"As a gamer, he would love to play this kind of RPG and he thinks this is what many players are waiting for.",gamer,masculine
+395,feminine,"As a gamer, she would love to play this kind of RPG and she thinks this is what many players are waiting for.",gamer,feminine
+396,source,"Remains to say, that the reason for the stranding would lay in poor passage planing, and the reason for this are some personal problems that would have preoccupied the mind of the Avanti skipper.",skipper,ambiguous
+396,masculine,"Remains to say, that the reason for the stranding would lay in poor passage planing, and the reason for this are some personal problems that would have preoccupied the mind of the Avanti skipper, Mr. Davis.",skipper,masculine
+396,feminine,"Remains to say, that the reason for the stranding would lay in poor passage planing, and the reason for this are some personal problems that would have preoccupied the mind of the Avanti skipper, Mrs. Davis.",skipper,feminine
+397,source,"Oh, right, you' re a cook.",cook,ambiguous
+397,masculine,"Oh, right, sir, you' re a cook.",cook,masculine
+397,feminine,"Oh, right, ma'am, you' re a cook.",cook,feminine
+398,source,"You know, I' m not a doctor or a scientist.",scientist,ambiguous
+398,masculine,"You know, he' s not a doctor or a scientist.",scientist,masculine
+398,feminine,"You know, she' s not a doctor or a scientist.",scientist,feminine
+399,source,"Why, detective, you make it sound like I' m a suspect.",detective,ambiguous
+399,masculine,"Why, detective, sir, you make it sound like I' m a suspect.",detective,masculine
+399,feminine,"Why, detective, ma'am, you make it sound like I' m a suspect.",detective,feminine
+400,source,"Well, as my private investigator put it, we' re gonna nail his ass.",investigator,ambiguous
+400,masculine,"Well, as my private investigator, my father, put it, we' re gonna nail his ass.",investigator,masculine
+400,feminine,"Well, as my private investigator, my mother, put it, we' re gonna nail his ass.",investigator,feminine
+401,source,I wasn't a spectator anymore in the same way.,spectator,ambiguous
+401,masculine,He wasn't a spectator anymore in the same way.,spectator,masculine
+401,feminine,She wasn't a spectator anymore in the same way.,spectator,feminine
+402,source,"I’m no economist, but it seems clear vast differences between nations or regions regarding these “distractions” are the greatest barriers to fair trade.",economist,ambiguous
+402,masculine,"He's no economist, but it seems clear vast differences between nations or regions regarding these ""distractions"" are the greatest barriers to fair trade.",economist,masculine
+402,feminine,"She's no economist, but it seems clear vast differences between nations or regions regarding these ""distractions"" are the greatest barriers to fair trade.",economist,feminine
+403,source,"Are you the author of ""The Visit""?",author,ambiguous
+403,masculine,"Are you the author of ""The Visit"", sir?",author,masculine
+403,feminine,"Are you the author of ""The Visit"", ma'am?",author,feminine
+404,source,"If you get any value out of this podcast and if you’re in a position to be able to, please consider becoming a monthly contributor.",contributor,ambiguous
+404,masculine,"If you get any value out of this podcast and if you're in a position to be able to, please consider becoming a monthly contributor, sir.",contributor,masculine
+404,feminine,"If you get any value out of this podcast and if you're in a position to be able to, please consider becoming a monthly contributor, ma'am.",contributor,feminine
+405,source,"I will miss the audition for singer in restaurant ""Lipov lad"" - the best restaurant in Belgrade!",singer,ambiguous
+405,masculine,"I will miss the audition for male singer in restaurant ""Lipov lad"" - the best restaurant in Belgrade!",singer,masculine
+405,feminine,"I will miss the audition for female singer in restaurant ""Lipov lad"" - the best restaurant in Belgrade!",singer,feminine
+406,source,I'm a TpT seller/blogger--can I post links to my resources?,blogger,ambiguous
+406,masculine,He's a TpT seller/blogger--can he post links to his resources?,blogger,masculine
+406,feminine,She's a TpT seller/blogger--can she post links to her resources?,blogger,feminine
+407,source,I' ve always been a file clerk... and it' s no thanks to you or to your goddamn pathetic audience.,clerk,ambiguous
+407,masculine,He' s always been a file clerk... and it' s no thanks to you or to your goddamn pathetic audience.,clerk,masculine
+407,feminine,She' s always been a file clerk... and it' s no thanks to you or to your goddamn pathetic audience.,clerk,feminine
+408,source,A new-to-Parkallen gardener has asked me when the date to plant seedlings and sow seeds directly in the garden is in Edmonton?,gardener,ambiguous
+408,masculine,"A new-to-Parkallen gardener, my brother, has asked me when the date to plant seedlings and sow seeds directly in the garden is in Edmonton?",gardener,masculine
+408,feminine,"A new-to-Parkallen gardener, my sister, has asked me when the date to plant seedlings and sow seeds directly in the garden is in Edmonton?",gardener,feminine
+409,source,So you got yourself a member of the crazy folks tribe?,member,ambiguous
+409,masculine,So you got yourself a member — a man — of the crazy folks tribe?,member,masculine
+409,feminine,So you got yourself a member — a woman — of the crazy folks tribe?,member,feminine
+410,source,"Last month, hundreds of people gathered to mourn another Aiken police officer killed in the line of duty.",officer,ambiguous
+410,masculine,"Last month, hundreds of people gathered to mourn another Aiken policeman killed in the line of duty.",policeman,masculine
+410,feminine,"Last month, hundreds of people gathered to mourn another Aiken policewoman killed in the line of duty.",policewoman,feminine
+411,source,Your buddy in the hospital put us on the lookout.,buddy,ambiguous
+411,masculine,Your buddy in the hospital put us on the lookout — he was insistent.,buddy,masculine
+411,feminine,Your buddy in the hospital put us on the lookout — she was insistent.,buddy,feminine
+412,source,I' m the music editor at Rolling Stone magazine.,editor,ambiguous
+412,masculine,He's the music editor at Rolling Stone magazine.,editor,masculine
+412,feminine,She's the music editor at Rolling Stone magazine.,editor,feminine
+413,source,"As a hairstylist, you may find yourself bonding with your customers to the point where they come to you for advice concerning their personal lives.",hairstylist,ambiguous
+413,masculine,"As a hairstylist, sir, you may find yourself bonding with your customers to the point where they come to you for advice concerning their personal lives.",hairstylist,masculine
+413,feminine,"As a hairstylist, ma'am, you may find yourself bonding with your customers to the point where they come to you for advice concerning their personal lives.",hairstylist,feminine
+414,source,An acquaintance shared some thoughts that led to this post.,acquaintance,ambiguous
+414,masculine,"An acquaintance, my uncle, shared some thoughts that led to this post.",acquaintance,masculine
+414,feminine,"An acquaintance, my aunt, shared some thoughts that led to this post.",acquaintance,feminine
+415,source,You' d be placed in the custody of the FBI where you' d serve out the remainder of your sentence as an employee of the federal government.,employee,ambiguous
+415,masculine,"You' d be placed in the custody of the FBI where you' d serve out the remainder of your sentence as an employee of the federal government, sir.",employee,masculine
+415,feminine,"You' d be placed in the custody of the FBI where you' d serve out the remainder of your sentence as an employee of the federal government, ma'am.",employee,feminine
+416,source,"If we have already registered 30 Coaches when we receive your sign-up form, or you cannot commit to attending all 5 sessions, we will contact you about being a fill-in or co-Coach, or a Vegan Living Program volunteer.",volunteer,ambiguous
+416,masculine,"If we have already registered 30 Coaches when we receive your sign-up form, or you cannot commit to attending all 5 sessions, we will contact you about being a fill-in or co-Coach, or a male Vegan Living Program volunteer.",volunteer,masculine
+416,feminine,"If we have already registered 30 Coaches when we receive your sign-up form, or you cannot commit to attending all 5 sessions, we will contact you about being a fill-in or co-Coach, or a female Vegan Living Program volunteer.",volunteer,feminine
+417,source,"Look, i' m a professional safe and vault technician.",technician,ambiguous
+417,masculine,"Look, he' s a professional safe and vault technician.",technician,masculine
+417,feminine,"Look, she' s a professional safe and vault technician.",technician,feminine
+418,source,"At length, if you’re writing your paper for a course or for a particular novel, make sure to remember any particular instructions provided by your instructor or from the journal editor.",editor,ambiguous
+418,masculine,"At length, if you're writing your paper for a course or for a particular novel, make sure to remember any particular instructions provided by your instructor or from the journal editor, Mr. Martinez.",editor,masculine
+418,feminine,"At length, if you're writing your paper for a course or for a particular novel, make sure to remember any particular instructions provided by your instructor or from the journal editor, Mrs. Martinez.",editor,feminine
+419,source,"The day of the shoot, my assistant and I got to the stadium about two hours before we were scheduled to have Demetri on set.",assistant,ambiguous
+419,masculine,"The day of the shoot, my assistant and I got to the stadium about two hours before we were scheduled to have Demetri on set, and he was invaluable in setting up.",assistant,masculine
+419,feminine,"The day of the shoot, my assistant and I got to the stadium about two hours before we were scheduled to have Demetri on set, and she was invaluable in setting up.",assistant,feminine
+420,source,"If you’re not absolutely sure, speak to your hair stylist or choose a milder product, as listed here for people with thin hair.",stylist,ambiguous
+420,masculine,"If you're not absolutely sure, speak to your hair stylist, Mr. Davis, or choose a milder product, as listed here for people with thin hair.",stylist,masculine
+420,feminine,"If you're not absolutely sure, speak to your hair stylist, Mrs. Davis, or choose a milder product, as listed here for people with thin hair.",stylist,feminine
+421,source,"That’s what they problem was, I can assure you if I was prepared to say yes like previous Finance Ministers were, I would have been celebrated as an excellent colleague.",colleague,ambiguous
+421,masculine,"That's what they problem was, I can assure you if I was prepared to say yes like previous Finance Ministers were, I would have been celebrated as an excellent male colleague.",male colleague,masculine
+421,feminine,"That's what they problem was, I can assure you if I was prepared to say yes like previous Finance Ministers were, I would have been celebrated as an excellent female colleague.",female colleague,feminine
+422,source,"When we went up to order, we informed the cashier that we were vegan (always a good idea!), and they got out a cheat sheet that listed all of the items that were vegan, as well as those that were gluten-free.",cashier,ambiguous
+422,masculine,"When we went up to order, we informed the cashier that we were vegan (always a good idea!), and he got out a cheat sheet that listed all of the items that were vegan, as well as those that were gluten-free.",cashier,masculine
+422,feminine,"When we went up to order, we informed the cashier that we were vegan (always a good idea!), and she got out a cheat sheet that listed all of the items that were vegan, as well as those that were gluten-free.",cashier,feminine
+423,source,It remains for a while at the visitor’s fingers.,visitor,ambiguous
+423,masculine,"It remains for a while at the visitor's fingers, as he lingers.",visitor,masculine
+423,feminine,"It remains for a while at the visitor's fingers, as she lingers.",visitor,feminine
+424,source,Lycée is ending its second school year under the leadership of an interim CEO who was hired in November.,CEO,ambiguous
+424,masculine,"Lycée is ending its second school year under the leadership of an interim CEO, Mr. Kim, who was hired in November.",CEO,masculine
+424,feminine,"Lycée is ending its second school year under the leadership of an interim CEO, Mrs. Kim, who was hired in November.",CEO,feminine
+425,source,We provide service from a dependable ASE certified mechanic that is licensed and insured with 30 years automotive experience.,mechanic,ambiguous
+425,masculine,"We provide service from a dependable ASE certified mechanic, Mr. Patel, that is licensed and insured with 30 years automotive experience.",mechanic,masculine
+425,feminine,"We provide service from a dependable ASE certified mechanic, Mrs. Patel, that is licensed and insured with 30 years automotive experience.",mechanic,feminine
+426,source,We cooperated with a pastry chef and a soya products factory and crafted our first dish – “Tofu Lady”.,chef,ambiguous
+426,masculine,"We cooperated with a pastry chef, Mr. Thompson, and a soya products factory and crafted our first dish – ""Tofu Lady"".",chef,masculine
+426,feminine,"We cooperated with a pastry chef, Mrs. Thompson, and a soya products factory and crafted our first dish – ""Tofu Lady"".",chef,feminine
+427,source,My strongest quality as a nanny is definitely my humor.,nanny,ambiguous
+427,masculine,His strongest quality as a nanny is definitely his humor.,nanny,masculine
+427,feminine,Her strongest quality as a nanny is definitely her humor.,nanny,feminine
+428,source,"Given the Budget plans a R30,000 cut in petroleum subsidies in FY14 as compared to FY13, it is obvious the finance minister is serious about petroleum pricing reforms.",minister,ambiguous
+428,masculine,"Given the Budget plans a R30,000 cut in petroleum subsidies in FY14 as compared to FY13, it is obvious the finance minister, Mr. Brown, is serious about petroleum pricing reforms.",minister,masculine
+428,feminine,"Given the Budget plans a R30,000 cut in petroleum subsidies in FY14 as compared to FY13, it is obvious the finance minister, Mrs. Brown, is serious about petroleum pricing reforms.",minister,feminine
+429,source,"If you’re an uber-decorator, scale back just a bit by puttingone quarter of those holiday decorations away this season.",decorator,ambiguous
+429,masculine,"If you're an uber-decorator, sir, scale back just a bit by puttingone quarter of those holiday decorations away this season.",decorator,masculine
+429,feminine,"If you're an uber-decorator, ma'am, scale back just a bit by puttingone quarter of those holiday decorations away this season.",decorator,feminine
+430,source,"I’m going to classes, writing a lot of music, and pushing myself to be a better musician.",musician,ambiguous
+430,masculine,"He's going to classes, writing a lot of music, and pushing himself to be a better musician.",musician,masculine
+430,feminine,"She's going to classes, writing a lot of music, and pushing herself to be a better musician.",musician,feminine
+431,source,I' m really not in the habit of checking out the nanny' s ass,nanny,ambiguous
+431,masculine,I' m really not in the habit of checking out the male nanny' s ass,nanny,masculine
+431,feminine,I' m really not in the habit of checking out the female nanny' s ass,nanny,feminine
+432,source,"So, I' m guessing you' re not much of a fighter.",fighter,ambiguous
+432,masculine,"So, I' m guessing you' re not much of a fighter, sir.",fighter,masculine
+432,feminine,"So, I' m guessing you' re not much of a fighter, ma' am.",fighter,feminine
+433,source,"If you are an ambitioned athlete you might need some more natural carbs (e.g. sweet potatoe, yam, quinoa).",athlete,ambiguous
+433,masculine,"If you are an ambitioned athlete, sir, you might need some more natural carbs (e.g. sweet potatoe, yam, quinoa).",athlete,masculine
+433,feminine,"If you are an ambitioned athlete, ma'am, you might need some more natural carbs (e.g. sweet potatoe, yam, quinoa).",athlete,feminine
+434,source,My supervisor used the money saved from my salary refusal to help some parents who had lost their jobs pay for their children's childcare fees.,supervisor,ambiguous
+434,masculine,"My supervisor, Mr. Garcia, used the money saved from my salary refusal to help some parents who had lost their jobs pay for their children's childcare fees.",supervisor,masculine
+434,feminine,"My supervisor, Mrs. Garcia, used the money saved from my salary refusal to help some parents who had lost their jobs pay for their children's childcare fees.",supervisor,feminine
+435,source,"The designer did a terrific job meshing all components of the game into a fun, immersive experience.",designer,ambiguous
+435,masculine,"The designer, Mr. Chen, did a terrific job meshing all components of the game into a fun, immersive experience.",designer,masculine
+435,feminine,"The designer, Mrs. Chen, did a terrific job meshing all components of the game into a fun, immersive experience.",designer,feminine
+436,source,I' m just an amateur... but I have put everything that I have into this.,amateur,ambiguous
+436,masculine,He' s just an amateur... but he has put everything that he has into this.,amateur,masculine
+436,feminine,She' s just an amateur... but she has put everything that she has into this.,amateur,feminine
+437,source,"You' re an idiot, if you ask me!",idiot,ambiguous
+437,masculine,"You' re an idiot, sir, if you ask me!",idiot,masculine
+437,feminine,"You' re an idiot, ma'am, if you ask me!",idiot,feminine
+438,source,"Chris–It’s pretty simple, trust me, as I’m not much of a baker either.",baker,ambiguous
+438,masculine,"Chris–It's pretty simple, trust me, as I'm not much of a baker — a man who prefers to buy his bread — either.",baker,masculine
+438,feminine,"Chris–It's pretty simple, trust me, as I'm not much of a baker — a woman who prefers to buy her bread — either.",baker,feminine
+439,source,See yourself as the champion He created you to be!,champion,ambiguous
+439,masculine,"See yourself as the champion He created you to be, sir!",champion,masculine
+439,feminine,"See yourself as the champion He created you to be, ma'am!",champion,feminine
+440,source,"God has placed you in the role of being a spiritual leader, which means that He has entrusted you with the responsibility to confront sin.",leader,ambiguous
+440,masculine,"God has placed you in the role of being a spiritual leader, sir, which means that He has entrusted you with the responsibility to confront sin.",leader,masculine
+440,feminine,"God has placed you in the role of being a spiritual leader, ma'am, which means that He has entrusted you with the responsibility to confront sin.",leader,feminine
+441,source,I bet a lot of moms would like to exchange places with me considering the fact that I am a homemaker.,homemaker,ambiguous
+441,masculine,He bets a lot of moms would like to exchange places with him considering the fact that he is a homemaker.,homemaker,masculine
+441,feminine,She bets a lot of moms would like to exchange places with her considering the fact that she is a homemaker.,homemaker,feminine
+442,source,The darkly humorous short novel by Nicolai Gogol (1842) tells of the life of a lowly and impoverished government clerk whose existence is briefly transformed by a new coat.,clerk,ambiguous
+442,masculine,"The darkly humorous short novel by Nicolai Gogol (1842) tells of the life of a lowly and impoverished government clerk, Mr. Davis, whose existence is briefly transformed by a new coat.",clerk,masculine
+442,feminine,"The darkly humorous short novel by Nicolai Gogol (1842) tells of the life of a lowly and impoverished government clerk, Mrs. Davis, whose existence is briefly transformed by a new coat.",clerk,feminine
+443,source,"As an entrepreneur, an idea can hit at any time — and when it does, you have to be ready.",entrepreneur,ambiguous
+443,masculine,"As an entrepreneur, sir, an idea can hit at any time — and when it does, you have to be ready.",entrepreneur,masculine
+443,feminine,"As an entrepreneur, ma'am, an idea can hit at any time — and when it does, you have to be ready.",entrepreneur,feminine
+444,source,I currently volunteer with the Alberta Institute for Wildlife Conservation as a rescue driver and educational assistant.,assistant,ambiguous
+444,masculine,I currently volunteer with the Alberta Institute for Wildlife Conservation as a rescue driver and male educational assistant.,assistant,masculine
+444,feminine,I currently volunteer with the Alberta Institute for Wildlife Conservation as a rescue driver and female educational assistant.,assistant,feminine
+445,source,Your vows are a reflection of the strength of your commitment to your partner.,partner,ambiguous
+445,masculine,Your vows are a reflection of the strength of your commitment to your boyfriend.,boyfriend,masculine
+445,feminine,Your vows are a reflection of the strength of your commitment to your girlfriend.,girlfriend,feminine
+446,source,"Guys, I think I've found my new calling in life - I think I want to be a florist.",florist,ambiguous
+446,masculine,"Guys, he thinks he's found his new calling in life - he thinks he wants to be a florist.",florist,masculine
+446,feminine,"Guys, she thinks she's found her new calling in life - she thinks she wants to be a florist.",florist,feminine
+447,source,"Whether you are an amateur or a professional gardener, we aim to provide you some of the best resources, best places to buy exotic plants online as well as where the best places around the country to buy the more tropical and exotic plants.",amateur,ambiguous
+447,masculine,"Whether you are an amateur or a professional gardener, sir, we aim to provide you some of the best resources, best places to buy exotic plants online as well as where the best places around the country to buy the more tropical and exotic plants.",amateur,masculine
+447,feminine,"Whether you are an amateur or a professional gardener, ma'am, we aim to provide you some of the best resources, best places to buy exotic plants online as well as where the best places around the country to buy the more tropical and exotic plants.",amateur,feminine
+448,source,So the counselor suggested that we move to the 'burbs.,counselor,ambiguous
+448,masculine,"So the counselor suggested that we move to the 'burbs, and he was quite insistent about it.",counselor,masculine
+448,feminine,"So the counselor suggested that we move to the 'burbs, and she was quite insistent about it.",counselor,feminine
+449,source,"Our design' s for plumes and pearls, and nothing is going to come between me and my protege.",protege,ambiguous
+449,masculine,"Our design' s for plumes and pearls, and nothing is going to come between me and my protege, my son.",protege,masculine
+449,feminine,"Our design' s for plumes and pearls, and nothing is going to come between me and my protege, my daughter.",protege,feminine
+450,source,That was an amateur video shot earlier today by a tourist.,tourist,ambiguous
+450,masculine,"That was an amateur video shot earlier today by a tourist, Mr. Garcia.",tourist,masculine
+450,feminine,"That was an amateur video shot earlier today by a tourist, Mrs. Garcia.",tourist,feminine
+451,source,"I met a dashing, handsome...... genius scientist...... and three months later, I was married.",scientist,ambiguous
+451,masculine,"I met a dashing, handsome...... genius scientist...... and three months later, I was married to him.",scientist,masculine
+451,feminine,"I met a dashing, beautiful...... genius scientist...... and three months later, I was married to her.",scientist,feminine
+452,source,"Conceived out of the conservative Heritage Foundation’s ideas and an early experiment in Massachusetts under a Republican governor, President Obama’s signature legislative achievement could very well survive its most recent judiciary challenge.",governor,ambiguous
+452,masculine,"Conceived out of the conservative Heritage Foundation's ideas and an early experiment in Massachusetts under a Republican governor, Mr. Martinez, President Obama's signature legislative achievement could very well survive its most recent judiciary challenge.",governor,masculine
+452,feminine,"Conceived out of the conservative Heritage Foundation's ideas and an early experiment in Massachusetts under a Republican governor, Mrs. Martinez, President Obama's signature legislative achievement could very well survive its most recent judiciary challenge.",governor,feminine
+453,source,The health minister said ” The opposition was trying to take political mileage over the situation “.,minister,ambiguous
+453,masculine,"The health minister, Mr. Garcia, said "" The opposition was trying to take political mileage over the situation "".",minister,masculine
+453,feminine,"The health minister, Mrs. Garcia, said "" The opposition was trying to take political mileage over the situation "".",minister,feminine
+454,source,When applying for staff you will always start out as a helper.,helper,ambiguous
+454,masculine,"When applying for staff, sir, you will always start out as a helper.",helper,masculine
+454,feminine,"When applying for staff, ma'am, you will always start out as a helper.",helper,feminine
+455,source,"The petition was supported by a letter from five other scientists, including two former members of the National Toxicology Program and one researcher still working there.",researcher,ambiguous
+455,masculine,"The petition was supported by a letter from five other scientists, including two former members of the National Toxicology Program and one researcher, Mr. Chen, still working there.",researcher,masculine
+455,feminine,"The petition was supported by a letter from five other scientists, including two former members of the National Toxicology Program and one researcher, Mrs. Chen, still working there.",researcher,feminine
+456,source,The first of these has now settled and substantial damages have been recovered for the client.,client,ambiguous
+456,masculine,"The first of these has now settled and substantial damages have been recovered for the client, Mr. Fitzgerald.",client,masculine
+456,feminine,"The first of these has now settled and substantial damages have been recovered for the client, Mrs. Fitzgerald.",client,feminine
+457,source,"Our club photographer was there to capture the best of the action, click above to view a full gallery.",photographer,ambiguous
+457,masculine,"Our club photographer was there to capture the best of the action, click above to view his full gallery.",photographer,masculine
+457,feminine,"Our club photographer was there to capture the best of the action, click above to view her full gallery.",photographer,feminine
+458,source,The chef who did the finger bowls chose it.,chef,ambiguous
+458,masculine,"The chef who did the finger bowls chose it, and his son helped.",chef,masculine
+458,feminine,"The chef who did the finger bowls chose it, and her daughter helped.",chef,feminine
+459,source,You cannot avoid dealing with them when you' re the guard for a circus,guard,ambiguous
+459,masculine,"You cannot avoid dealing with them when you' re the guard for a circus, sir",guard,masculine
+459,feminine,"You cannot avoid dealing with them when you' re the guard for a circus, ma'am",guard,feminine
+460,source,"The crazed, sadistic soldier...... who flips out and kills people.",soldier,ambiguous
+460,masculine,"The crazed, sadistic soldier...... who flips out and kills people — he's beyond saving.",soldier,masculine
+460,feminine,"The crazed, sadistic soldier...... who flips out and kills people — she's beyond saving.",soldier,feminine
+461,source,"We wander around the grand manor house, hoping for some inspiration from the great painter, inventor and scientist.",scientist,ambiguous
+461,masculine,"We wander around the grand manor house, hoping for some inspiration from the great painter, inventor and scientist, a man of boundless genius.",scientist,masculine
+461,feminine,"We wander around the grand manor house, hoping for some inspiration from the great painter, inventor and scientist, a woman of boundless genius.",scientist,feminine
+462,source,"Fran, your assistant beat the bejesus out of a flight attendant.",attendant,ambiguous
+462,masculine,"Fran, your assistant beat the bejesus out of a flight steward.",steward,masculine
+462,feminine,"Fran, your assistant beat the bejesus out of a flight stewardess.",stewardess,feminine
+463,source,Even your boss said there wasn' t a setup.,boss,ambiguous
+463,masculine,"Even your boss said there wasn' t a setup, and he was adamant about it.",boss,masculine
+463,feminine,"Even your boss said there wasn' t a setup, and she was adamant about it.",boss,feminine
+464,source,It is important to inform your child’s doctor immediately should your child experience any symptoms of Dyspnoea.,doctor,ambiguous
+464,masculine,"It is important to inform your child's doctor, Mr. Smith, immediately should your child experience any symptoms of Dyspnoea.",doctor,masculine
+464,feminine,"It is important to inform your child's doctor, Mrs. Smith, immediately should your child experience any symptoms of Dyspnoea.",doctor,feminine

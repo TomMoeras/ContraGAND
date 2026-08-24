@@ -1,0 +1,3221 @@
+row_id,variant,sentence,referent,expected_label,condition,predicted_label,confidence,reasoning,correct,raw_response
+68,feminine,"We' re not out of the woods yet, buddy, ma'am.",buddy,feminine,zero_shot_identify,ambiguous,4.0,The term 'buddy' is a colloquialism for a friend and does not inherently specify a gender.,False,"thought
+*   Input sentence: ""We' re not out of the woods yet, buddy, ma'am.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""We"": Pronoun (not a role/occupation/relational referent in the sense of a noun like ""doctor"" or ""brother"").
+    *   ""buddy"": Relational referent.
+    *   ""ma'am"": Relational/honorific referent.
+
+    *   ""buddy"":
+        *   Gender: Traditionally masculine, but often used neutrally in modern English. However, in a strict linguistic sense without further context, it's often ambiguous or masculine. Let's look at the context. ""buddy, ma'am"". It's addressed to two people or one person with two titles? Or maybe ""buddy"" is one person and ""ma'am"" is another.
+        *   Actually, ""buddy"" is generally considered ambiguous or masculine. In many datasets, ""buddy"" is treated as ambiguous unless specified. But ""ma'am"" is definitely feminine.
+        *   Wait, ""buddy"" is often used for males. But ""ma'am"" is definitely female.
+        *   Let's evaluate ""buddy"": In common usage, it's often masculine, but can be ambiguous. Given the prompt's strict categories, is it *unambiguously* male? No. Is it *unambiguously* female? No. So it's ambiguous.
+    *   ""ma'am"":
+        *   Gender: Feminine. (Contraction of Madam).
+
+    *   Referent 1: ""buddy""
+        *   Gender: ambiguous (can be used for any gender, though often male).
+        *   Confidence: 4.
+        *   Reasoning: ""buddy"" is a colloquial term for a friend and does not explicitly specify gender.
+    *   Referent 2: ""ma'am""
+        *   Gender: feminine.
+        *   Confidence: 5.
+        *   Reasoning: ""ma'am"" is a formal address specifically for women.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form? Yes (""buddy"", ""ma'am"").
+    *   Order of appearance? Yes.
+    *   Confidence 1-5? Yes.
+    *   Reasoning short sentence? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""buddy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 4,
+      ""reasoning"": ""The term 'buddy' is a colloquialism for a friend and does not inherently specify a gender.""
+    },
+    {
+      ""referent"": ""ma'am"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'ma'am' is a formal address used exclusively for women.""
+    }
+  ]
+}
+```"
+159,feminine,"It' s just not worth it, buddy, ma'am.",buddy,feminine,zero_shot_identify,ambiguous,4.0,The term 'buddy' is a colloquialism for a friend and is frequently used regardless of gender.,False,"thought
+*   Input sentence: ""It' s just not worth it, buddy, ma'am.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""It' s just not worth it"" -> No referents.
+    *   ""buddy"" -> Relational referent.
+    *   ""ma'am"" -> Relational/honorific referent.
+
+    *   ""buddy"":
+        *   Gender: Traditionally masculine, but often used neutrally in modern English. However, in a strict linguistic sense without further context, it's often ambiguous or masculine. Let's look at the context. ""buddy, ma'am"". The speaker is addressing two people or one person with two labels? Or perhaps ""buddy"" is one person and ""ma'am"" is another.
+        *   Actually, ""buddy"" is often used for males, but can be gender-neutral.
+        *   ""ma'am"" is unambiguously feminine (contraction of madam).
+
+    *   Referent 1: ""buddy""
+        *   Gender: ambiguous (can be used for any gender, though historically masculine).
+        *   Confidence: 4.
+        *   Reasoning: ""buddy"" is a colloquial term for a friend and can be used regardless of gender.
+
+    *   Referent 2: ""ma'am""
+        *   Gender: feminine.
+        *   Confidence: 5.
+        *   Reasoning: ""ma'am"" is a formal address specifically for women.
+
+    *   `referents`:
+        1.  `{""referent"": ""buddy"", ""gender"": ""ambiguous"", ""confidence"": 4, ""reasoning"": ""The term 'buddy' is a colloquialism for a friend and is often used gender-neutrally.""}`
+        2.  `{""referent"": ""ma'am"", ""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'ma'am' is a contraction of 'madam' and is used exclusively for women.""}`
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form? Yes (""buddy"", ""ma'am"").
+    *   Order of appearance? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""buddy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 4,
+      ""reasoning"": ""The term 'buddy' is a colloquialism for a friend and is frequently used regardless of gender.""
+    },
+    {
+      ""referent"": ""ma'am"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'ma'am' is a formal address specifically used for women.""
+    }
+  ]
+}
+```"
+376,feminine,"All right, buddy, ma'am, I' m off.",buddy,feminine,zero_shot_identify,ambiguous,4.0,The term 'buddy' is a casual address for a friend and does not unambiguously specify gender.,False,"thought
+*   Input sentence: ""All right, buddy, ma'am, I' m off.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""All right"" - Interjection/phrase.
+    *   ""buddy"" - Relational referent.
+    *   ""ma'am"" - Relational/honorific referent.
+    *   ""I"" - Pronoun (referent to the speaker).
+    *   ""off"" - Adjective/adverb.
+
+    *   Referent 1: ""buddy""
+        *   Gender: Traditionally masculine, but in modern usage, it can be ambiguous. However, in most linguistic datasets for this type of task, ""buddy"" is often treated as masculine or ambiguous. Let's look at the context. There is no specific gender signal here other than the word itself. In many contexts, ""buddy"" is used for males. But ""ma'am"" follows it.
+        *   Wait, ""buddy"" is often used generically. But compared to ""ma'am"", it's the masculine counterpart in a casual setting.
+        *   Actually, ""buddy"" is generally considered ambiguous or masculine. Let's check common linguistic patterns. Usually, ""buddy"" is masculine-leaning but can be ambiguous. However, given the contrast with ""ma'am"", it's likely referring to a male.
+        *   Let's re-evaluate: ""buddy"" is often used for males. ""ma'am"" is strictly female.
+        *   Confidence for ""buddy"" as masculine: 3 or 4.
+        *   Confidence for ""buddy"" as ambiguous: 3.
+        *   Let's go with ""ambiguous"" or ""masculine"". In strict linguistic terms, ""buddy"" doesn't *guarantee* gender, but ""ma'am"" does. However, ""buddy"" is a relational referent.
+
+    *   Referent 2: ""ma'am""
+        *   Gender: feminine.
+        *   Reasoning: ""Ma'am"" is a contraction of ""madam"", used exclusively for women.
+        *   Confidence: 5.
+
+    *   Referent 3: ""I""
+        *   Gender: ambiguous.
+        *   Reasoning: The first-person pronoun ""I"" provides no gender information.
+        *   Confidence: 5.
+
+    *   ""buddy"": Relational referent. Gender: ambiguous (though often male, it's not *unambiguously* male in the way ""father"" is).
+    *   ""ma'am"": Relational/honorific referent. Gender: feminine.
+    *   ""I"": Referent (speaker). Gender: ambiguous.
+
+    *Self-Correction on ""buddy"":* Is ""buddy"" unambiguously male? No. Is it ambiguous? Yes.
+    *Self-Correction on ""I"":* Is ""I"" a role, occupation, or relational referent? The prompt asks for ""role, occupation, or relational REFERENT"". ""I"" is a pronoun referring to the speaker. Usually, pronouns are included if they refer to a person, but the examples given (doctor, teacher, brother, neighbor, captain) are nouns. ""I"" is a pronoun. Let's see if ""I"" fits. ""I"" is the speaker. The speaker is a referent. However, usually, these tasks focus on nouns. But ""I"" is definitely a referent. Let's include it to be safe, or exclude it if the focus is on roles/occupations. The prompt says ""relational REFERENT"". ""I"" is not a role or occupation. It's a pronoun. I will exclude ""I"" and focus on ""buddy"" and ""ma'am"".
+
+    *Wait, ""buddy"" vs ""ma'am"":*
+    ""buddy"" -> ambiguous (can be used for anyone, though typically male).
+    ""ma'am"" -> feminine.
+
+    Let's double check ""buddy"". In many contexts, it's masculine. But is it *unambiguously* male? No.
+
+    *   Referent: ""buddy"", Gender: ""ambiguous"", Confidence: 4, Reasoning: ""Buddy is a casual term for a friend and does not specify gender.""
+    *   Referent: ""ma'am"", Gender: ""feminine"", Confidence: 5, Reasoning: ""Ma'am is a formal address for a woman.""
+
+    *Wait, looking at the prompt again:* ""identify every role, occupation, or relational REFERENT"".
+    ""buddy"" - relational.
+    ""ma'am"" - relational/honorific.
+
+    Let's refine ""buddy"". If I have to choose between masculine and ambiguous: ""buddy"" is often used for males, but not exclusively. I'll mark it as ambiguous.
+
+    *   `referents`:
+        1. `{""referent"": ""buddy"", ""gender"": ""ambiguous"", ""confidence"": 4, ""reasoning"": ""The term 'buddy' is a casual address for a friend and is not gender-specific.""}`
+        2. `{""referent"": ""ma'am"", ""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'Ma'am' is a contraction of 'madam' and is used exclusively for women.""}`
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form? Yes (""buddy"", ""ma'am"").
+    *   Order of appearance? Yes.
+    *   Gender categories correct? Yes.
+
+    *One last check on ""buddy"":* Some might argue it's masculine. But ""ambiguous"" is safer because it's not *unambiguously* male.
+
+    *One last check on ""I"":* ""I"" is a pronoun. The prompt asks for ""role, occupation, or relational REFERENT"". ""I"" is none of those. It's a pronoun. I will omit it.
+
+    *Wait, is ""ma'am"" a role/occupation/relational referent?* Yes, it's a relational/honorific referent.
+
+    Final list: ""buddy"", ""ma'am"".```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""buddy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 4,
+      ""reasoning"": ""The term 'buddy' is a casual address for a friend and does not unambiguously specify gender.""
+    },
+    {
+      ""referent"": ""ma'am"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'Ma'am' is a formal address used exclusively for women.""
+    }
+  ]
+}
+```"
+309,masculine,I try to follow what goes on in experimental economics although I am not a male economist.,economist,masculine,zero_shot_identify,feminine,4.0,"The speaker explicitly states they are 'not a male economist,' which strongly implies they are female.",False,"thought
+*   Input sentence: ""I try to follow what goes on in experimental economics although I am not a male economist.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""I"" (Pronoun, not a role/occupation/relational referent in the sense of ""doctor"", ""brother"", etc., though it refers to a person. Usually, ""I"" is a pronoun, not a role. However, the prompt asks for ""role, occupation, or relational REFERENT"". ""Economist"" is definitely an occupation.)
+    *   ""economist"" (Occupation).
+
+    *   Referent: ""economist""
+    *   Context: ""...although I am not a male economist.""
+    *   Analysis: The speaker says they are *not* a male economist. This implies the speaker is an economist (or identifying as one in this context) but not male. In a binary gender context, ""not male"" often implies female, but strictly speaking, ""not male"" could be female or non-binary. However, the prompt asks for ""masculine"", ""feminine"", or ""ambiguous"".
+    *   Wait, let's look closer: ""I am not a male economist.""
+    *   Does this make the ""economist"" feminine? If the speaker is an economist and is not male, they are likely female. But is it *unambiguous*?
+    *   Actually, the referent is ""economist"". The speaker is the economist. The speaker says ""I am not a male economist"".
+    *   If the speaker is not male, they are either female or non-binary.
+    *   Is there any other signal? No.
+    *   Is ""economist"" unambiguously female? No.
+    *   Is it unambiguously masculine? No.
+    *   Therefore, it is ""ambiguous"" or ""feminine"" depending on the strictness of the ""not male"" logic.
+    *   Usually, in these NLP tasks, ""not male"" $\neq$ ""unambiguously female"" unless the context is strictly binary. However, ""ambiguous"" is the safest bet if there's no explicit ""female"" or ""woman"" mentioned.
+    *   Let's re-read: ""I am not a male economist.""
+    *   If I say ""I am not a man"", am I unambiguously a woman? Not necessarily.
+    *   However, if the prompt asks for ""unambiguously female"", ""not male"" doesn't quite reach that threshold of certainty without further context.
+    *   But wait, if the speaker is an economist and says they aren't a *male* one, they are signaling their gender.
+    *   Let's compare: ""I am a female economist"" $\rightarrow$ feminine. ""I am an economist"" $\rightarrow$ ambiguous. ""I am not a male economist"" $\rightarrow$ suggests feminine, but is it *unambiguous*?
+    *   Actually, looking at the prompt's categories: ""masculine"", ""feminine"", ""ambiguous"".
+    *   If the speaker is not male, they are not masculine.
+    *   Are they feminine? Most likely.
+    *   Is it ambiguous? If we consider non-binary options, yes.
+    *   But usually, in these datasets, ""not male"" is a strong signal for ""feminine"".
+    *   Let's look at the referent ""economist"". The speaker is the economist.
+    *   Reasoning: The speaker explicitly states they are not a male economist.
+
+    *   Referent: ""economist""
+    *   Gender: feminine (or ambiguous).
+    *   Let's go with ""feminine"" because the contrast ""not a male economist"" is a common way to identify as female in academic/professional contexts. Or ""ambiguous"" because ""not male"" isn't ""female"".
+    *   Actually, ""not male"" is a negation. Negation of one category doesn't automatically prove the other in a multi-category system, but in a binary one it does.
+    *   Let's check if there are other referents. ""I"" is a pronoun. The prompt asks for ""role, occupation, or relational REFERENT"". ""Economist"" fits. ""I"" does not.
+
+    *   Referent: ""economist""
+    *   Gender: feminine
+    *   Confidence: 4 (High, but ""not male"" is slightly less direct than ""female"").
+    *   Reasoning: The speaker states they are ""not a male economist,"" implying they are female.
+
+    *Self-Correction:* If I use ""ambiguous"", the reasoning would be ""The speaker says they are not male, but does not explicitly state they are female.""
+    Given the prompt's ""unambiguously female"" requirement, ""not male"" is technically ambiguous. However, in most linguistic contexts, this is a gender marker.
+    Let's stick to ""feminine"" as it's the intended signal of the sentence.
+
+    Wait, let's look at the sentence again: ""I try to follow what goes on in experimental economics although I am not a male economist.""
+    The speaker is an economist.
+    The speaker is not male.
+    Therefore, the speaker is female (in a binary sense).
+    Is it ""unambiguous""?
+    If the speaker were non-binary, they would also be ""not a male economist"".
+    So ""ambiguous"" is technically more accurate for ""unambiguous"".
+    But usually, these prompts want the inferred gender.
+    Let's try ""feminine"".
+
+    *Refining the referent list:*
+    1. ""economist""
+
+    *JSON structure:*
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""economist"",
+          ""gender"": ""feminine"",
+          ""confidence"": 4,
+          ""reasoning"": ""The speaker explicitly states they are not a male economist.""
+        }
+      ]
+    }
+    ```
+
+    *Wait, is ""I"" a referent?*
+    ""identify every role, occupation, or relational REFERENT"".
+    ""I"" is a pronoun referring to the person. It is not a role, occupation, or relational referent.
+    ""economist"" is an occupation.
+
+    *Double check gender:*
+    ""not a male economist""
+    If the speaker is not male, they are likely female.
+    If I mark it as ""ambiguous"", I'm saying there's no signal. But there *is* a signal (""not male"").
+    If I mark it as ""feminine"", I'm interpreting the signal.
+    The prompt says ""no signal in the sentence reveals this referent's gender"" for ambiguous.
+    There *is* a signal. The signal is ""not male"".
+    Does ""not male"" reveal the gender? Yes, it reveals it is not masculine.
+    Does it reveal it is feminine? In a binary system, yes.
+    I will go with ""feminine"".
+
+    *One more check:*
+    Is ""economist"" the referent or is ""male economist"" the referent?
+    The prompt says ""Use the surface form as it appears in the sentence"".
+    The word is ""economist"". ""male"" is an adjective modifying it.
+    The referent is the person who is an economist.
+    The surface form is ""economist"".
+
+    *Wait, ""male economist"" is a phrase.*
+    If the referent is ""male economist"", the gender is masculine.
+    But the sentence says ""I am **not** a male economist"".
+    So the speaker is an economist, but not a male one.
+    The referent is the speaker, who is an ""economist"".
+    The phrase ""male economist"" describes a category the speaker does *not* belong to.
+    So the referent is ""economist"".
+
+    *Final check on JSON:*
+    `{""referents"": [{""referent"": ""economist"", ""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The speaker states they are not a male economist, implying they are female.""}]}````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""economist"",
+      ""gender"": ""feminine"",
+      ""confidence"": 4,
+      ""reasoning"": ""The speaker explicitly states they are 'not a male economist,' which strongly implies they are female.""
+    }
+  ]
+}
+```"
+376,masculine,"All right, buddy, sir, I' m off.",buddy,masculine,zero_shot_identify,ambiguous,4.0,The term 'buddy' is a general term for a friend and does not inherently specify gender.,False,"thought
+*   Input sentence: ""All right, buddy, sir, I' m off.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""All right"" - Interjection/Adverbial phrase.
+    *   ""buddy"" - Relational referent (friend/companion).
+    *   ""sir"" - Role/Honorific referent.
+    *   ""I"" - Pronoun (referent to speaker, but usually pronouns aren't listed as ""roles/occupations/relational referents"" unless they function as such; however, the prompt asks for ""relational REFERENT""). Wait, ""I"" is a person, but is it a *role*? Usually, ""buddy"" and ""sir"" are the roles here.
+    *   ""off"" - Adjective/Adverb.
+
+    *   Referent 1: ""buddy""
+        *   Gender: In modern English, ""buddy"" can be ambiguous, but historically and colloquially often masculine. However, without further context, it's often used for males. But is it *unambiguously* male? No. Is it *ambiguous*? Yes.
+        *   Wait, let's look at ""sir"".
+    *   Referent 2: ""sir""
+        *   Gender: Masculine. ""Sir"" is unambiguously male.
+
+    *   ""buddy"":
+        *   Gender: ambiguous (can be used for any gender, though often male).
+        *   Confidence: 4.
+        *   Reasoning: ""buddy"" is a general term for a friend.
+    *   ""sir"":
+        *   Gender: masculine.
+        *   Confidence: 5.
+        *   Reasoning: ""sir"" is a formal address for a man.
+
+    *   `referents`:
+        1.  `{""referent"": ""buddy"", ""gender"": ""ambiguous"", ""confidence"": 4, ""reasoning"": ""The term 'buddy' is a general term for a friend and does not specify gender.""}`
+        2.  `{""referent"": ""sir"", ""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'sir' is a formal address used specifically for men.""}`
+
+    *   Did I miss any? ""I"" is a pronoun, not a role/occupation/relational referent in the sense of a noun like ""doctor"" or ""brother"".
+    *   Order: ""buddy"" then ""sir"".
+    *   JSON format: Correct.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""buddy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 4,
+      ""reasoning"": ""The term 'buddy' is a general term for a friend and does not inherently specify gender.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'sir' is a formal address used specifically for men.""
+    }
+  ]
+}
+```"
+29,masculine,I was a flight steward for 30 years and spent 3 decades of my life staying in various hotels in 60 countries worldwide.,steward,masculine,zero_shot_identify,ambiguous,5.0,The sentence contains no gender-specific pronouns or markers to identify the speaker's gender.,False,"thought
+*   Input sentence: ""I was a flight steward for 30 years and spent 3 decades of my life staying in various hotels in 60 countries worldwide.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""I"" (Pronoun, not a role/occupation/relational referent in the sense of a noun like ""doctor"").
+    *   ""flight steward"" (Occupation).
+    *   ""hotels"" (Place).
+    *   ""countries"" (Place).
+
+    *   Referent: ""flight steward""
+    *   Gender: In modern English, ""steward"" can be gender-neutral, but historically it was masculine (stewardess being feminine). However, without further context in the sentence (like ""he"" or ""she""), the gender of the speaker (""I"") is not explicitly stated.
+    *   Wait, let's look at the word ""steward"". While ""stewardess"" is specifically female, ""steward"" is often used as the generic or masculine term. But in the context of ""I was a flight steward"", the speaker's gender is not revealed by any other word in the sentence.
+    *   Classification: ambiguous.
+
+    *   Referent: ""flight steward""
+    *   Gender: ambiguous
+    *   Confidence: 5 (The sentence provides no pronouns or gender-specific markers for the speaker).
+    *   Reasoning: No gender-specific pronouns or adjectives are used to describe the speaker.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""flight steward"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""The sentence contains no gender-specific pronouns or markers for the speaker.""
+        }
+      ]
+    }
+    ``````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""flight steward"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The sentence contains no gender-specific pronouns or markers to identify the speaker's gender.""
+    }
+  ]
+}
+```"
+26,source,The winner and new heavyweight champion ofthe world is Cassius Clay.,champion,ambiguous,zero_shot_identify,masculine,5.0,"Refers to Cassius Clay, which is a masculine name.",False,"thought
+*   Input sentence: ""The winner and new heavyweight champion ofthe world is Cassius Clay.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classify gender: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""winner"" (Role)
+    *   ""heavyweight champion"" (Role/Occupation)
+    *   ""Cassius Clay"" (Person/Referent - though the prompt asks for roles, occupations, or relational referents, usually names are treated as the entity the roles refer to. However, the prompt examples are ""doctor, teacher, brother, neighbor, captain"". ""Cassius Clay"" is a specific person. Let's check if names count. Usually, in these NLP tasks, names are the targets or the roles are. The prompt says ""role, occupation, or relational REFERENT"". A name is a referent. But ""winner"" and ""champion"" are the roles. Let's include all.)
+
+    *   ""winner"": Refers to Cassius Clay. Cassius Clay is a well-known male boxer. However, looking *only* at the sentence: ""The winner... is Cassius Clay."" Does the sentence provide a gender signal? ""Cassius Clay"" is a masculine name.
+    *   ""heavyweight champion"": Refers to Cassius Clay.
+    *   ""Cassius Clay"": Masculine name.
+
+    *   Referent 1: ""winner""
+        *   Gender: masculine (linked to Cassius Clay)
+        *   Confidence: 5 (Cassius Clay is a known male figure, and the name is masculine)
+        *   Reasoning: Refers to Cassius Clay, a masculine name.
+    *   Referent 2: ""heavyweight champion""
+        *   Gender: masculine (linked to Cassius Clay)
+        *   Confidence: 5
+        *   Reasoning: Refers to Cassius Clay, a masculine name.
+    *   Referent 3: ""Cassius Clay""
+        *   Gender: masculine
+        *   Confidence: 5
+        *   Reasoning: This is a masculine name.
+
+    *   Wait, does ""Cassius Clay"" count as a ""role, occupation, or relational referent""?
+    *   Role: winner, heavyweight champion.
+    *   Occupation: heavyweight champion.
+    *   Relational referent: (none).
+    *   Is a name a ""referent""? Yes. But is it a ""role, occupation, or relational referent""? No, it's a proper noun.
+    *   Let's look at the examples: ""doctor, teacher, brother, neighbor, captain"". These are all common nouns describing roles/occupations.
+    *   I will include ""winner"" and ""heavyweight champion"". I will exclude ""Cassius Clay"" as it is a name, not a role/occupation/relational term, unless the prompt implies any referent. The prompt says ""role, occupation, or relational REFERENT"". This phrasing suggests the *type* of referent must be a role, occupation, or relation.
+
+    *   ""winner"": masculine. Reasoning: Linked to Cassius Clay.
+    *   ""heavyweight champion"": masculine. Reasoning: Linked to Cassius Clay.
+
+    *   ""winner"" -> masculine (Cassius Clay is male).
+    *   ""heavyweight champion"" -> masculine (Cassius Clay is male).
+
+    *   JSON object.
+    *   `referents` list.
+    *   `referent`, `gender`, `confidence`, `reasoning`.
+
+    *Self-Correction on ""Cassius Clay"":* If I include it, I might be over-extending. If I exclude it, I'm following the ""role, occupation, or relational"" constraint. I'll stick to the roles.
+
+    *Wait, looking at the sentence again:* ""The winner and new heavyweight champion ofthe world is Cassius Clay.""
+    ""winner"" - role.
+    ""heavyweight champion"" - role/occupation.
+
+    *Gender signal:* The name ""Cassius Clay"" is the signal.
+
+    *Refining reasoning:*
+    ""winner"": ""Refers to Cassius Clay, which is a masculine name.""
+    ""heavyweight champion"": ""Refers to Cassius Clay, which is a masculine name.""
+
+    *Confidence:* 5.
+
+    *Wait, is ""heavyweight champion"" one referent or two?* ""heavyweight champion"" is a single title/role.
+
+    *Final check on ""Cassius Clay"":* Is a name a ""relational referent""? No. Is it a role? No. Is it an occupation? No. I will omit the name itself.
+
+    *Wait, let's double check the prompt:* ""identify every role, occupation, or relational REFERENT"".
+    If the prompt meant ""any person mentioned"", it would say ""any person"". It specifically lists roles/occupations.
+
+    *One more check:* ""heavyweight champion"" vs ""champion"". The surface form is ""heavyweight champion"".
+
+    *JSON construction:*
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""winner"",
+          ""gender"": ""masculine"",
+          ""confidence"": 5,
+          ""reasoning"": ""Refers to Cassius Clay, a masculine name.""
+        },
+        {
+          ""referent"": ""heavyweight champion"",
+          ""gender"": ""masculine"",
+          ""confidence"": 5,
+          ""reasoning"": ""Refers to Cassius Clay, a masculine name.""
+        }
+      ]
+    }
+    ``````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""winner"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""Refers to Cassius Clay, which is a masculine name.""
+    },
+    {
+      ""referent"": ""heavyweight champion"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""Refers to Cassius Clay, which is a masculine name.""
+    }
+  ]
+}
+```"
+11,masculine,"It' s enough to make you a vegetarian, isn' t it, sir?",vegetarian,masculine,zero_shot_identify,ambiguous,5.0,The term 'vegetarian' does not indicate a specific gender.,False,"thought
+*   Input sentence: ""It' s enough to make you a vegetarian, isn' t it, sir?""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""vegetarian"": This is a role/lifestyle choice.
+    *   ""sir"": This is a relational referent/honorific.
+
+    *   ""vegetarian"":
+        *   Gender: No signal in the sentence indicates the gender of the person being called a vegetarian.
+        *   Classification: ambiguous.
+        *   Confidence: 5.
+        *   Reasoning: No gender-specific pronouns or adjectives are associated with ""vegetarian"".
+
+    *   ""sir"":
+        *   Gender: ""Sir"" is a formal address for a man.
+        *   Classification: masculine.
+        *   Confidence: 5.
+        *   Reasoning: ""Sir"" is a gender-specific honorific used for males.
+
+    *   Referent 1: ""vegetarian"", gender: ""ambiguous"", confidence: 5, reasoning: ""The term 'vegetarian' does not imply a specific gender.""
+    *   Referent 2: ""sir"", gender: ""masculine"", confidence: 5, reasoning: ""'Sir' is a formal address used for men.""```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""vegetarian"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'vegetarian' does not indicate a specific gender.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'Sir' is a formal address used specifically for men.""
+    }
+  ]
+}
+```"
+67,masculine,"If you are commencing therapy on Powder for injection, you should speak to your doctor or MS nurse, Mr. Patel, as to how to gradually increase your dose.",nurse,masculine,zero_shot_identify,ambiguous,5.0,There is no gender-specific information provided for the MS nurse.,False,"thought
+*   Input: ""If you are commencing therapy on Powder for injection, you should speak to your doctor or MS nurse, Mr. Patel, as to how to gradually increase your dose.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""doctor"" (occupation)
+    *   ""MS nurse"" (occupation)
+    *   ""Mr. Patel"" (person/referent - though ""Mr."" is a title indicating gender, ""Patel"" is the name. The prompt asks for roles, occupations, or relational referents. ""Mr. Patel"" acts as the specific referent for the doctor/nurse).
+
+    *   ""doctor"": No gender signal. -> `ambiguous`
+    *   ""MS nurse"": No gender signal. -> `ambiguous`
+    *   ""Mr. Patel"": ""Mr."" is a masculine honorific. -> `masculine`
+
+    *   Referent 1: ""doctor""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with ""doctor"".
+    *   Referent 2: ""MS nurse""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with ""MS nurse"".
+    *   Referent 3: ""Mr. Patel""
+        *   Gender: masculine
+        *   Confidence: 5
+        *   Reasoning: The honorific ""Mr."" indicates a male.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes.
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""doctor"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the doctor.""
+    },
+    {
+      ""referent"": ""MS nurse"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the MS nurse.""
+    },
+    {
+      ""referent"": ""Mr. Patel"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'Mr.' indicates that the person is male.""
+    }
+  ]
+}
+```"
+67,feminine,"If you are commencing therapy on Powder for injection, you should speak to your doctor or MS nurse, Mrs. Patel, as to how to gradually increase your dose.",nurse,feminine,zero_shot_identify,ambiguous,5.0,There is no gender-specific information provided for the MS nurse.,False,"thought
+*   Input: ""If you are commencing therapy on Powder for injection, you should speak to your doctor or MS nurse, Mrs. Patel, as to how to gradually increase your dose.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""you"" (pronoun, not a role/occupation/relational referent in the sense of a noun like doctor/teacher).
+    *   ""doctor"" (occupation)
+    *   ""MS nurse"" (occupation)
+    *   ""Mrs. Patel"" (person/referent - though ""Mrs."" is a title indicating gender).
+
+    *   ""doctor"": No gender signal in the sentence. -> `ambiguous`.
+    *   ""MS nurse"": No gender signal in the sentence. -> `ambiguous`.
+    *   ""Mrs. Patel"": ""Mrs."" is a title for a married woman. -> `feminine`.
+
+    *   Referent 1: ""doctor""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with the doctor.
+    *   Referent 2: ""MS nurse""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with the MS nurse.
+    *   Referent 3: ""Mrs. Patel""
+        *   Gender: feminine
+        *   Confidence: 5
+        *   Reasoning: The title ""Mrs."" indicates a female.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes (""doctor"", ""MS nurse"", ""Mrs. Patel"").
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""doctor"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the doctor.""
+    },
+    {
+      ""referent"": ""MS nurse"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the MS nurse.""
+    },
+    {
+      ""referent"": ""Mrs. Patel"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The title 'Mrs.' is used exclusively for women.""
+    }
+  ]
+}
+```"
+82,masculine,"The object of the game is to outscore your opponent, sir.",opponent,masculine,zero_shot_identify,ambiguous,5.0,There is no textual evidence to determine the gender of the opponent.,False,"thought
+*   Input sentence: ""The object of the game is to outscore your opponent, sir.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""object"" (not a person/role)
+    *   ""game"" (not a person/role)
+    *   ""opponent"" (role/relational referent)
+    *   ""sir"" (honorific/referent)
+
+    *   Referent 1: ""opponent""
+        *   Gender: The sentence says ""your opponent, sir."" The ""sir"" refers to the person being spoken to. Is the opponent the same person as ""sir""?
+        *   Context: ""outscore your opponent, sir."" Usually, ""sir"" is a direct address to the listener. The listener is the one who has an opponent.
+        *   Wait, let's re-read: ""outscore your opponent, sir.""
+        *   The ""sir"" is the person being addressed.
+        *   The ""opponent"" is the person the ""sir"" is playing against.
+        *   Does ""sir"" tell us the gender of the ""opponent""? No.
+        *   Does ""sir"" tell us the gender of the person being addressed? Yes, masculine.
+        *   Is ""sir"" a referent? Yes, it's a form of address referring to a person.
+
+    *   Referent 2: ""sir""
+        *   Gender: masculine.
+        *   Reasoning: ""Sir"" is a masculine honorific.
+
+    *   Referent 1: ""opponent""
+        *   Gender: ambiguous.
+        *   Reasoning: No gender-specific pronouns or adjectives are used for the opponent.
+
+    *   Referent: ""opponent""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender information is provided for the opponent.
+    *   Referent: ""sir""
+        *   Gender: masculine
+        *   Confidence: 5
+        *   Reasoning: ""Sir"" is a masculine honorific.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes (""opponent"", ""sir"").
+    *   Order of appearance? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""opponent"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no textual evidence to determine the gender of the opponent.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sir' is a masculine honorific.""
+    }
+  ]
+}
+```"
+94,masculine,"Each card anniversary, you will receive a free Companion Fare that allows your traveling companion, your nephew, to fly at a sharply reduced rate.",companion,masculine,zero_shot_identify,ambiguous,5.0,The term 'traveling companion' does not specify a gender.,False,"thought
+*   Input: ""Each card anniversary, you will receive a free Companion Fare that allows your traveling companion, your nephew, to fly at a sharply reduced rate.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""you"" (pronoun, but usually not considered a role/occupation/relational referent in this context unless specified. However, ""traveling companion"" and ""nephew"" are clearly relational referents).
+    *   ""traveling companion"" (relational referent).
+    *   ""nephew"" (relational referent).
+
+    *   ""traveling companion"": No gender signal in the sentence. -> `ambiguous`.
+    *   ""nephew"": Specifically refers to a male sibling's or sibling's son. -> `masculine`.
+
+    *   Referent 1: ""traveling companion""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific terms are used for the companion.
+    *   Referent 2: ""nephew""
+        *   Gender: masculine
+        *   Confidence: 5
+        *   Reasoning: ""Nephew"" is a gender-specific term for a male relative.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes.
+    *   Order preserved? Yes.
+    *   Confidence 1-5? Yes.
+    *   Reasoning short sentence? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""traveling companion"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'traveling companion' does not specify a gender.""
+    },
+    {
+      ""referent"": ""nephew"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'Nephew' is a gender-specific term for a male relative.""
+    }
+  ]
+}
+```"
+94,feminine,"Each card anniversary, you will receive a free Companion Fare that allows your traveling companion, your niece, to fly at a sharply reduced rate.",companion,feminine,zero_shot_identify,ambiguous,5.0,The term 'traveling companion' provides no gender-specific information.,False,"thought
+*   Input: ""Each card anniversary, you will receive a free Companion Fare that allows your traveling companion, your niece, to fly at a sharply reduced rate.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""you"" (pronoun, but is it a role/occupation/relational referent? Usually, ""you"" is a general address, but the prompt asks for roles/occupations/relational referents. ""You"" is a person, but not a specific role/occupation/relation in the way ""doctor"" or ""niece"" is. However, in some contexts, ""you"" is the subject. Let's look for nouns/titles first.)
+    *   ""Companion Fare"" (Not a person).
+    *   ""traveling companion"" (Role/Relational referent).
+    *   ""niece"" (Relational referent).
+
+    *   ""traveling companion"":
+        *   Gender: Ambiguous. There is no gender-specific pronoun or adjective associated with ""traveling companion"" in the sentence.
+        *   Confidence: 5.
+        *   Reasoning: No gender-specific markers are provided for ""traveling companion"".
+
+    *   ""niece"":
+        *   Gender: Feminine. ""Niece"" is a gender-specific term for a female child of one's sibling.
+        *   Confidence: 5.
+        *   Reasoning: ""Niece"" refers specifically to a female relative.
+
+    *   Wait, is ""you"" a referent? The prompt says ""role, occupation, or relational REFERENT"". ""You"" is a pronoun. Usually, pronouns aren't listed unless they are the only referent, but ""traveling companion"" and ""niece"" are clearly roles/relations. I will stick to the nouns.
+
+    *   Referent 1: ""traveling companion"" -> ambiguous.
+    *   Referent 2: ""niece"" -> feminine.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""traveling companion"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""The term 'traveling companion' does not specify a gender.""
+        },
+        {
+          ""referent"": ""niece"",
+          ""gender"": ""feminine"",
+          ""confidence"": 5,
+          ""reasoning"": ""'Niece' is a gender-specific term for a female relative.""
+        }
+      ]
+    }
+    ``````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""traveling companion"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'traveling companion' provides no gender-specific information.""
+    },
+    {
+      ""referent"": ""niece"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'Niece' is a gender-specific term for a female relative.""
+    }
+  ]
+}
+```"
+59,masculine,"Health Always seek medical advice from your doctor or travel nurse, Mr. Martinez, before you travel and make sure your vaccinations are up-to-date, especially when travelling to Asia.",nurse,masculine,zero_shot_identify,ambiguous,5.0,There is no gender-specific information provided for the travel nurse.,False,"thought
+*   Input: ""Health Always seek medical advice from your doctor or travel nurse, Mr. Martinez, before you travel and make sure your vaccinations are up-to-date, especially when travelling to Asia.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""doctor"" (occupation)
+    *   ""travel nurse"" (occupation)
+    *   ""Mr. Martinez"" (person/referent - though ""Mr."" is a title, the prompt asks for roles, occupations, or relational referents. ""Mr. Martinez"" acts as the specific referent for the doctor/nurse). Wait, ""Mr. Martinez"" is a name with a title. Is it a role? It's a referent.
+
+    *   ""doctor"": No gender signal. -> ambiguous.
+    *   ""travel nurse"": No gender signal. -> ambiguous.
+    *   ""Mr. Martinez"": ""Mr."" is a masculine title. -> masculine.
+
+    *   Referent 1: ""doctor""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with ""doctor"".
+    *   Referent 2: ""travel nurse""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with ""travel nurse"".
+    *   Referent 3: ""Mr. Martinez""
+        *   Gender: masculine
+        *   Confidence: 5
+        *   Reasoning: The title ""Mr."" indicates a male.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form used? Yes.
+    *   Order preserved? Yes.
+    *   Confidence 1-5? Yes.
+    *   Reasoning short sentence? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""doctor"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the doctor.""
+    },
+    {
+      ""referent"": ""travel nurse"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the travel nurse.""
+    },
+    {
+      ""referent"": ""Mr. Martinez"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The title 'Mr.' explicitly indicates a masculine gender.""
+    }
+  ]
+}
+```"
+59,feminine,"Health Always seek medical advice from your doctor or travel nurse, Mrs. Martinez, before you travel and make sure your vaccinations are up-to-date, especially when travelling to Asia.",nurse,feminine,zero_shot_identify,ambiguous,5.0,No gender-specific information is provided for the travel nurse.,False,"thought
+*   Input: ""Health Always seek medical advice from your doctor or travel nurse, Mrs. Martinez, before you travel and make sure your vaccinations are up-to-date, especially when travelling to Asia.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""doctor"" (occupation)
+    *   ""travel nurse"" (occupation)
+    *   ""Mrs. Martinez"" (relational/personal referent - though ""Mrs."" is a title indicating gender)
+
+    *   ""doctor"": No gender markers in the sentence. -> `ambiguous`.
+    *   ""travel nurse"": No gender markers in the sentence. -> `ambiguous`.
+    *   ""Mrs. Martinez"": ""Mrs."" is a title for a married woman. -> `feminine`.
+
+    *   Referent 1: ""doctor""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with the doctor.
+    *   Referent 2: ""travel nurse""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with the travel nurse.
+    *   Referent 3: ""Mrs. Martinez""
+        *   Gender: feminine
+        *   Confidence: 5
+        *   Reasoning: The title ""Mrs."" indicates a female.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes.
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""doctor"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the doctor.""
+    },
+    {
+      ""referent"": ""travel nurse"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the travel nurse.""
+    },
+    {
+      ""referent"": ""Mrs. Martinez"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The title 'Mrs.' is used exclusively for women.""
+    }
+  ]
+}
+```"
+19,feminine,"Popular legend lays blame for the town's string of early disasters on Fernie, who, the story goes, promised to marry the daughter of a Ktunaxa chief in 1897 if she would reveal the source of the region's coal.",chief,feminine,zero_shot_identify,ambiguous,5.0,The term 'chief' is gender-neutral and no gendered pronouns are used for this person.,False,"thought
+*   Input: ""Popular legend lays blame for the town's string of early disasters on Fernie, who, the story goes, promised to marry the daughter of a Ktunaxa chief in 1897 if she would reveal the source of the region's coal.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""Fernie"": Proper name. Is it a role/occupation/relational referent? Usually, names are treated as referents in these tasks if they act as the subject/object of a role. However, the prompt asks for ""role, occupation, or relational REFERENT"". ""Fernie"" is a person. Let's check if ""Fernie"" is a role. No, it's a name. But often in these NLP tasks, the person being referred to is included. Wait, the examples are ""doctor, teacher, brother, neighbor, captain"". These are roles. ""Fernie"" is a specific person. Let's look for roles first.
+    *   ""daughter"": Relational referent.
+    *   ""chief"": Role/Occupation.
+
+    *   ""Fernie"":
+        *   Context: ""...promised to marry the daughter... if she would reveal...""
+        *   Gender: In the context of 1897 and the act of promising to marry a daughter, ""Fernie"" is likely male. However, is it *unambiguously* male? The sentence doesn't use ""he"". But ""marry the daughter"" is a strong social signal for the time. But strictly speaking, there is no pronoun ""he"". Let's re-read. ""Fernie, who... promised to marry the daughter... if she would reveal..."". The ""she"" refers to the daughter. There is no explicit gender marker for Fernie.
+        *   Wait, ""Fernie"" is a name. Is it a role? No.
+    *   ""daughter"":
+        *   Context: ""daughter of a Ktunaxa chief"".
+        *   Gender: Feminine.
+        *   Reasoning: The word ""daughter"" is gender-specific.
+    *   ""chief"":
+        *   Context: ""Ktunaxa chief"".
+        *   Gender: Ambiguous.
+        *   Reasoning: ""Chief"" can be male or female; no gendered pronouns are used for the chief.
+
+    *   Referent 1: ""daughter""
+        *   Gender: feminine
+        *   Confidence: 5
+        *   Reasoning: ""daughter"" is a gender-specific term for a female child.
+    *   Referent 2: ""chief""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or adjectives are used for the chief.
+
+    *   Is ""Fernie"" a referent? The prompt says ""role, occupation, or relational REFERENT"". A name is a proper noun referring to a person, but not a ""role"" or ""occupation"". I will exclude ""Fernie"" based on the examples provided (doctor, teacher, brother).
+
+    *   ""daughter"" -> feminine.
+    *   ""chief"" -> ambiguous.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""daughter"",
+          ""gender"": ""feminine"",
+          ""confidence"": 5,
+          ""reasoning"": ""The term 'daughter' specifically refers to a female.""
+        },
+        {
+          ""referent"": ""chief"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""There is no textual evidence to determine the gender of the chief.""
+        }
+      ]
+    }
+    ```
+
+    *   ""daughter"" appears before ""chief"". Correct.
+    *   JSON format. Correct.
+    *   Only JSON. Correct.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""daughter"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'daughter' is gender-specific to females.""
+    },
+    {
+      ""referent"": ""chief"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'chief' is gender-neutral and no gendered pronouns are used for this person.""
+    }
+  ]
+}
+```"
+112,masculine,"About six months ago, the day Jonesy got hit...... i did something terrible with a patient, Mr. Johnson.",patient,masculine,zero_shot_identify,ambiguous,5.0,The term 'patient' is a gender-neutral role.,False,"thought
+*   Input sentence: ""About six months ago, the day Jonesy got hit...... i did something terrible with a patient, Mr. Johnson.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""Jonesy"": Proper name/nickname. Is it a role/occupation/relational referent? Usually, names are treated as referents in these types of NLP tasks if they refer to a person. However, the prompt asks for ""role, occupation, or relational REFERENT"". ""Jonesy"" is a name, not a role. But often in these datasets, names are included. Let's look closer at the prompt: ""e.g. doctor, teacher, brother, neighbor, captain"". These are roles. ""Jonesy"" is a person. Is a person a referent? Yes.
+    *   ""patient"": This is a role/occupation.
+    *   ""Mr. Johnson"": This is a person/referent. ""Mr."" is a title indicating gender.
+
+    *   ""Jonesy"":
+        *   Gender: Ambiguous. No pronouns or titles associated with ""Jonesy"" in the sentence.
+        *   Confidence: 5 (certain that the text provides no signal).
+        *   Reasoning: No gender-specific pronouns or titles are used for Jonesy.
+
+    *   ""patient"":
+        *   Gender: Ambiguous. ""Patient"" is a gender-neutral role.
+        *   Confidence: 5.
+        *   Reasoning: The word ""patient"" is gender-neutral.
+
+    *   ""Mr. Johnson"":
+        *   Gender: Masculine. ""Mr."" is a masculine title.
+        *   Confidence: 5.
+        *   Reasoning: The title ""Mr."" indicates a male.
+
+    *   Wait, is ""Jonesy"" a role? No. Is ""Mr. Johnson"" a role? No.
+    *   The prompt says ""role, occupation, or relational REFERENT"".
+    *   ""Patient"" is definitely a role.
+    *   ""Mr. Johnson"" is a referent.
+    *   ""Jonesy"" is a referent.
+    *   Usually, in these tasks, any person mentioned is a referent.
+
+    *   Referent 1: ""Jonesy"" -> ambiguous.
+    *   Referent 2: ""patient"" -> ambiguous.
+    *   Referent 3: ""Mr. Johnson"" -> masculine.
+
+    *   JSON object.
+    *   `referents` key.
+    *   `referent`, `gender`, `confidence`, `reasoning`.
+
+    *   ""Jonesy"": ambiguous, 5, ""No gender-specific information is provided for Jonesy.""
+    *   ""patient"": ambiguous, 5, ""The term 'patient' is gender-neutral.""
+    *   ""Mr. Johnson"": masculine, 5, ""The title 'Mr.' indicates the person is male.""```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""Jonesy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific pronouns or titles are associated with Jonesy.""
+    },
+    {
+      ""referent"": ""patient"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'patient' is a gender-neutral role.""
+    },
+    {
+      ""referent"": ""Mr. Johnson"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The title 'Mr.' explicitly indicates a male.""
+    }
+  ]
+}
+```"
+117,masculine,"Hey buddy, sir, it' s me, Randy.",buddy,masculine,zero_shot_identify,ambiguous,5.0,The term 'buddy' is a gender-neutral term for a friend.,False,"thought
+*   Input sentence: ""Hey buddy, sir, it' s me, Randy.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""buddy"": Relational referent.
+    *   ""sir"": Role/Relational referent.
+    *   ""Randy"": Proper name (referent).
+
+    *   ""buddy"": Usually ambiguous, though often used between males, it's not *unambiguously* male in modern English. However, in the context of ""sir"", it leans masculine, but strictly speaking, ""buddy"" itself is ambiguous.
+    *   ""sir"": Unambiguously masculine.
+    *   ""Randy"": Typically a masculine name, though can be feminine (rarely). In this context, combined with ""sir"" and ""buddy"", it's highly likely masculine.
+
+    *   Referent 1: ""buddy""
+        *   Gender: ambiguous (could be anyone).
+        *   Confidence: 5.
+        *   Reasoning: ""buddy"" is a gender-neutral term for a friend.
+    *   Referent 2: ""sir""
+        *   Gender: masculine.
+        *   Confidence: 5.
+        *   Reasoning: ""sir"" is a formal address for a man.
+    *   Referent 3: ""Randy""
+        *   Gender: masculine.
+        *   Confidence: 4 (Names can be ambiguous, but Randy is predominantly male).
+        *   Reasoning: ""Randy"" is typically a masculine name.
+
+    *   Wait, is ""buddy"" ambiguous? Yes.
+    *   Is ""sir"" masculine? Yes.
+    *   Is ""Randy"" masculine? Yes.
+
+    *   `{""referents"": [{""referent"": ""buddy"", ""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is gender-neutral.""}, {""referent"": ""sir"", ""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'sir' is a formal address specifically for men.""}, {""referent"": ""Randy"", ""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'Randy' is predominantly a masculine name.""}]}````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""buddy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'buddy' is a gender-neutral term for a friend.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'sir' is a formal address used specifically for men.""
+    },
+    {
+      ""referent"": ""Randy"",
+      ""gender"": ""masculine"",
+      ""confidence"": 4,
+      ""reasoning"": ""'Randy' is predominantly a masculine given name.""
+    }
+  ]
+}
+```"
+119,feminine,I had taken a good friend of hers from someone I loved.,friend,feminine,zero_shot_identify,ambiguous,5.0,The sentence does not provide any gender-specific information about the friend.,False,"thought
+*   Input sentence: ""I had taken a good friend of hers from someone I loved.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""I"" (First person pronoun - usually considered a referent in some contexts, but the prompt asks for ""role, occupation, or relational REFERENT"". ""I"" is a pronoun, not a role/occupation/relational term like ""doctor"" or ""friend"").
+    *   ""friend"" (Relational referent).
+    *   ""hers"" (Possessive pronoun referring to a person, but ""hers"" itself is a pronoun. However, the person it refers to is a referent. Wait, the prompt says ""identify every role, occupation, or relational REFERENT... (e.g. doctor, teacher, brother, neighbor, captain)"". ""Friend"" fits. ""Hers"" is a pronoun. Does ""someone"" count? ""Someone"" is an indefinite pronoun.
+    *   ""someone"" (Relational/person referent).
+
+    *   Referent 1: ""friend""
+        *   Context: ""a good friend of hers""
+        *   Gender: The friend's gender is not specified. ""Hers"" refers to the person the friend belongs to, not the friend themselves.
+        *   Classification: ambiguous.
+        *   Reasoning: No gender-specific pronouns or adjectives describe the friend.
+
+    *   Referent 2: ""someone""
+        *   Context: ""someone I loved""
+        *   Gender: No signal.
+        *   Classification: ambiguous.
+        *   Reasoning: ""Someone"" is gender-neutral.
+
+    *   Wait, what about ""hers""? The prompt asks for ""role, occupation, or relational REFERENT"". ""Hers"" is a pronoun. Usually, pronouns aren't listed as the ""referent"" unless they are the only way to identify the person. But ""hers"" implies a female person. Is ""hers"" a role/occupation/relational referent? No. It's a pronoun.
+    *   However, the person referred to by ""hers"" is a referent. But the prompt says ""Use the surface form as it appears in the sentence"". ""Hers"" is the surface form. But is it a ""role, occupation, or relational referent""? No.
+    *   Let's look at the examples: ""doctor, teacher, brother, neighbor, captain"". These are nouns.
+    *   ""friend"" is a noun (relational).
+    *   ""someone"" is a pronoun acting as a noun (person).
+
+    *   Let's re-evaluate ""hers"". If I include ""hers"", is it a relational referent? No.
+    *   What about ""I""? No.
+
+    *   Referent: ""friend""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender is specified for the friend.
+    *   Referent: ""someone""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: ""Someone"" is a gender-neutral term.
+
+    *   Wait, does ""hers"" count as a referent? It's a possessive pronoun. It refers to a female. But it's not a ""role, occupation, or relational referent"". It's just a pronoun.
+    *   Let's check if ""someone"" is a ""role, occupation, or relational referent"". It's a person, but not a specific role. However, in these types of NLP tasks, ""someone"" or ""person"" is often included.
+
+    *   Let's double-check the sentence: ""I had taken a good friend of hers from someone I loved.""
+    *   ""friend"" -> Relational.
+    *   ""someone"" -> Person.
+
+    *   Is there any other? ""I"" is a person. But ""I"" is a pronoun.
+
+    *   Let's look at the prompt again: ""identify every role, occupation, or relational REFERENT"".
+    *   ""friend"" is definitely relational.
+    *   ""someone"" is a general referent for a person.
+
+    *   What about the person implied by ""hers""? The word ""hers"" is a pronoun. The prompt says ""Use the surface form as it appears in the sentence"". If I use ""hers"", is it a role/occupation/relational referent? No.
+
+    *   Let's refine:
+        1. ""friend"" - ambiguous.
+        2. ""someone"" - ambiguous.
+
+    *   Wait, is ""someone"" a ""role, occupation, or relational referent""? It's a referent to a person.
+    *   Is ""friend"" a relational referent? Yes.
+
+    *   Let's consider if ""hers"" should be included. ""Hers"" is a pronoun. The prompt examples are all nouns. I will stick to nouns/noun phrases that denote roles/relations.
+
+    *   Referent: ""friend""
+    *   Gender: ambiguous
+    *   Confidence: 5
+    *   Reasoning: The sentence does not provide the gender of the friend.
+
+    *   Referent: ""someone""
+    *   Gender: ambiguous
+    *   Confidence: 5
+    *   Reasoning: The word ""someone"" is gender-neutral.
+
+    *   Wait, looking at the sentence again: ""a good friend of hers"".
+    *   The ""hers"" refers to a woman. Is the woman a referent? Yes. Is ""hers"" the surface form? Yes. Is ""hers"" a role/occupation/relational referent? No, it's a pronoun.
+    *   However, if the prompt wants *every* referent that is a person, ""hers"" (the person) is one. But the prompt specifically says ""role, occupation, or relational REFERENT"". ""Hers"" is none of those.
+
+    *   Let's check ""someone"" again. Is ""someone"" a role? No. Is it an occupation? No. Is it relational? No.
+    *   Is ""friend"" relational? Yes.
+
+    *   So maybe only ""friend""?
+    *   Let's think about ""someone"". In many contexts, ""someone"" is treated as a general person referent. But strictly speaking, it's not a ""role"".
+    *   However, ""friend"" is definitely a relational referent.
+
+    *   Let's re-read: ""identify every role, occupation, or relational REFERENT"".
+    *   ""friend"" -> Relational.
+    *   ""someone"" -> Not a role, occupation, or relation.
+    *   ""I"" -> Not a role, occupation, or relation.
+    *   ""hers"" -> Not a role, occupation, or relation.
+
+    *   Wait, if I only list ""friend"", is that too narrow?
+    *   Let's look at the examples: ""doctor, teacher, brother, neighbor, captain"".
+    *   ""friend"" fits perfectly.
+    *   ""someone"" does not fit the pattern of ""role, occupation, or relational"".
+
+    *   Let's double check ""someone"". Is it a relational referent? No.
+    *   Is ""friend"" a relational referent? Yes.
+
+    *   What about the person referred to by ""hers""? The person is a woman. But the word ""hers"" is a pronoun.
+
+    *   I will include ""friend"". I will exclude ""someone"", ""I"", and ""hers"" based on the strict definition of ""role, occupation, or relational referent"".
+
+    *   Wait, let me reconsider ""someone"". If ""someone"" is the object of ""loved"", is that a relation? No, ""loved"" is the verb.
+    *   If ""friend"" is the only one, the list is very short. Let me check if ""someone"" could be considered a ""role"" (the role of the person being loved). No, that's a stretch.
+
+    *   Let's look at ""friend"" again.
+    *   ""friend"" -> ambiguous.
+
+    *   Wait, ""a good friend of hers"". Does ""hers"" make the friend feminine? No. ""A friend of hers"" means the friend belongs to her. The friend could be male, female, or non-binary.
+
+    *   Let's think if ""someone"" should be included. In most entity extraction tasks, ""someone"" is a person. But the prompt is specific: ""role, occupation, or relational"".
+    *   ""friend"" is relational.
+    *   ""someone"" is not.
+
+    *   Final check:
+        Sentence: ""I had taken a good friend of hers from someone I loved.""
+        Referents:
+        - friend (relational) -> ambiguous.
+
+    *   Wait, is ""someone"" a relational referent? ""Someone I loved"" implies a relationship (lover/beloved). But the word ""someone"" itself is not a relational term like ""partner"" or ""spouse"".
+
+    *   I'll stick with ""friend"".
+
+    *   Wait, let me search for ""relational referent"" definition. Usually, it means words that describe a relationship between people (mother, boss, friend, etc.).
+    *   ""friend"" fits.
+    *   ""someone"" does not.
+    *   ""I"" does not.
+    *   ""hers"" does not.
+
+    *   One more look: ""a good friend of hers"".
+    *   Is ""hers"" a relational referent? No, it's a pronoun.
+
+    *   Okay, I will provide ""friend"".
+
+    *   Wait, let me think if ""someone"" is often included in these tests. If the user wants ""every... referent"", they might want all people. But they specified ""role, occupation, or relational"". This qualifier is key.
+
+    *   Let's try to see if ""someone"" can be a role. No.
+    *   Let's try to see if ""I"" can be a role. No.
+
+    *   What about ""friend""?
+    *   Referent: ""friend""
+    *   Gender: ambiguous
+    *   Confidence: 5
+    *   Reasoning: The text does not specify the gender of the friend.
+
+    *   Wait, I should check if ""hers"" is considered a relational referent because it refers to a person in a relationship (the owner of the friend). No, that's not how it works. ""Hers"" is a pronoun.
+
+    *   Let's double check the prompt's examples: ""doctor, teacher, brother, neighbor, captain"".
+    *   These are all nouns.
+    *   ""friend"" is a noun.
+    *   ""someone"" is a pronoun.
+    *   ""I"" is a pronoun.
+    *   ""hers"" is a pronoun.
+
+    *   So ""friend"" is the only one that fits the ""role, occupation, or relational"" criteria and is a noun.
+
+    *   Wait, ""someone"" is often used as a noun. But is it a *role*? No.
+
+    *   Let's consider if ""friend"" is the only one.
+    *   Sentence: ""I had taken a good friend of hers from someone I loved.""
+    *   ""friend"" -> ambiguous.
+
+    *   Let me think if there's any other interpretation.
+    *   ""friend of hers"" -> The ""hers"" refers to a female. Is the ""female"" a referent? Yes. But the surface form is ""hers"". Is ""hers"" a role/occupation/relational referent? No.
+
+    *   I will go with ""friend"".
+
+    *   Wait, I'll check one more time. ""someone I loved"". Is ""someone"" a relational referent? If ""friend"" is relational, is ""someone"" (the beloved) relational? No, ""someone"" is an indefinite pronoun. ""Beloved"" would be relational.
+
+    *   Final decision: ""friend"".
+
+    *   Wait, let me re-read the prompt: ""identify every role, occupation, or relational REFERENT"".
+    *   If I only put one, and the user expected ""someone"", I might be wrong. But ""someone"" is definitely not a role or occupation. Is it a relational referent? A referent is just something referred to. A ""relational referent"" is a referent that is defined by a relation. ""Friend"" is defined by the relation of friendship. ""Someone"" is not defined by a relation; it's just an unspecified person.
+
+    *   Therefore, ""friend"" is the only one.
+
+    *   Wait, let me check ""hers"" again. ""Hers"" is a possessive pronoun. It refers to a person. Is that person a ""relational referent""? The person is in a relationship with the friend. But the word ""hers"" is not a relational term.
+
+    *   Let's look at the examples again: ""doctor, teacher, brother, neighbor, captain"".
+    *   These are all nouns that describe a person's role or relationship.
+    *   ""friend"" fits.
+
+    *   One last check on ""friend"" gender.
+    *   ""a good friend of hers""
+    *   Does ""hers"" imply the friend is female? No. ""A friend of hers"" means ""She has a friend, and I took that friend"". The friend's gender is unknown.
+
+    *   JSON structure:
+        ```json
+        {
+          ""referents"": [
+            {
+              ""referent"": ""friend"",
+              ""gender"": ""ambiguous"",
+              ""confidence"": 5,
+              ""reasoning"": ""The sentence does not provide any gender-specific information about the friend.""
+            }
+          ]
+        }
+        ```
+
+    *   Wait, I just thought of something. Is ""someone"" a relational referent in the sense that they are the ""someone I loved""? No, the relation is ""loved"", but the referent is ""someone"". The word ""someone"" itself is not relational.
+
+    *   Let's double check if ""I"" is a referent. ""I"" is a person. But ""I"" is not a role, occupation, or relational term.
+
+    *   Okay, I'm confident with ""friend"".
+
+    *   Wait, let me think about ""hers"" one more time. If the prompt says ""identify every... referent"", and ""hers"" refers to a woman, should I include it?
+    *   ""hers"" -> feminine.
+    *   But is ""hers"" a ""role, occupation, or relational referent""?
+    *   Role: No.
+    *   Occupation: No.
+    *   Relational: No.
+    *   It's a pronoun.
+
+    *   If I include ""hers"", I'm ignoring the ""role, occupation, or relational"" constraint.
+    *   If I exclude ""hers"", I'm following the constraint.
+
+    *   What about ""someone""?
+    *   Role: No.
+    *   Occupation: No.
+    *   Relational: No.
+
+    *   What about ""friend""?
+    *   Role: No.
+    *   Occupation: No.
+    *   Relational: Yes.
+
+    *   Okay, ""friend"" it is.
+
+    *   Wait, let me search for ""relational referent"" in a linguistic context.
+    *   Relational terms (or kinship terms) are words like ""mother"", ""friend"", ""boss"".
+    *   ""Someone"" is an indefinite pronoun.
+    *   ""I"" is a personal pronoun.
+    *   ""Hers"" is a possessive pronoun.
+
+    *   So ""friend"" is the only relational term.
+
+    *   One more check: ""a good friend of hers"".
+    *   Is ""friend of hers"" the referent? The prompt says ""Use the surface form as it appears in the sentence (e.g. 'doctor', not 'the doctor')"".
+    *   So ""friend"" is the surface form.
+
+    *   Final check on gender:
+        ""friend"" -> ambiguous.
+        Reasoning: No gender signal for the friend.
+
+    *   Wait, could ""friend of hers"" be the referent? No, ""friend"" is the noun.
+
+    *   Let's consider if ""someone"" is a ""role"". In some contexts, ""someone"" is a placeholder for a role. But that's not standard.
+
+    *   I'll stick with ""friend"".
+
+    *   Wait, I just noticed the prompt says ""identify every role, occupation, or relational REFERENT"".
+    *   If I only find one, is that okay? Yes, if only one exists.
+
+    *   Let's double check the sentence again.
+    *   ""I had taken a good friend of hers from someone I loved.""
+    *   ""I"" (person)
+    *   ""friend"" (relational referent)
+    *   ""hers"" (person)
+    *   ""someone"" (person)
+
+    *   Only ""friend"" is a role, occupation, or relational term.
+
+    *   Wait, let me think about ""someone"" again. If I love ""someone"", is ""someone"" a relational referent? No.
+
+    *   Okay.
+
+    *   One last thought: ""hers"". ""Hers"" is a possessive pronoun. It refers to a female. Is the *person* referred to by ""hers"" a relational referent? The person is a ""friend's owner"" (not a real role). The person is just ""she"". ""She"" is not a role.
+
+    *   Final answer will be ""friend"".
+
+    *   Wait, I'll just check if ""someone"" is considered a ""role"" in any common dataset. In some NER (Named Entity Recognition) tasks, ""someone"" is labeled as ""PERSON"". But ""PERSON"" is not ""ROLE"".
+
+    *   Let's look at the examples again: ""doctor, teacher, brother, neighbor, captain"".
+    *   These are all specific roles. ""Friend"" is a specific role/relation. ""Someone"" is not.
+
+    *   Confidence for ""friend"" being ambiguous: 5.
+"
+117,feminine,"Hey buddy, ma'am, it' s me, Randy.",buddy,feminine,zero_shot_identify,ambiguous,5.0,The term 'buddy' is a gender-neutral term for a friend.,False,"thought
+*   Input sentence: ""Hey buddy, ma'am, it' s me, Randy.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""buddy"": Relational referent. Gender is typically ambiguous unless context suggests otherwise.
+    *   ""ma'am"": Relational/honorific referent. Gender is unambiguously feminine.
+    *   ""Randy"": Proper name (referent). Gender is typically masculine, though can be ambiguous. However, in common usage, it's masculine. Let's check for signals in the sentence. No pronouns like ""he"" or ""she"". But ""Randy"" is a name.
+
+    *   ""buddy"":
+        *   Gender: ambiguous (could be anyone).
+        *   Confidence: 5.
+        *   Reasoning: ""buddy"" is a gender-neutral term for a friend.
+    *   ""ma'am"":
+        *   Gender: feminine.
+        *   Confidence: 5.
+        *   Reasoning: ""ma'am"" is a contraction of ""madam"", used specifically for women.
+    *   ""Randy"":
+        *   Gender: masculine (usually). Wait, is a name a ""role, occupation, or relational referent""?
+        *   The prompt says ""role, occupation, or relational REFERENT (e.g. doctor, teacher, brother, neighbor, captain)"".
+        *   Is a name a referent? Yes, it refers to a person. Is it a *role, occupation, or relational* referent?
+        *   ""Doctor"" (occupation), ""Brother"" (relational). ""Randy"" is a proper name.
+        *   Usually, in these NLP tasks, names are treated as referents. However, the prompt specifically lists ""role, occupation, or relational"". A name is none of those.
+        *   Let's re-read: ""identify every role, occupation, or relational REFERENT"".
+        *   ""buddy"" -> relational.
+        *   ""ma'am"" -> relational/honorific.
+        *   ""Randy"" -> proper name. Not a role, occupation, or relation.
+        *   I will exclude ""Randy"" to be strictly compliant with ""role, occupation, or relational"".
+
+    *   Referent 1: ""buddy""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: ""buddy"" is a gender-neutral term for a friend.
+    *   Referent 2: ""ma'am""
+        *   Gender: feminine
+        *   Confidence: 5
+        *   Reasoning: ""ma'am"" is a formal address for a woman.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""buddy"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""The term 'buddy' is a gender-neutral term for a friend.""
+        },
+        {
+          ""referent"": ""ma'am"",
+          ""gender"": ""feminine"",
+          ""confidence"": 5,
+          ""reasoning"": ""'ma'am' is a formal address used specifically for women.""
+        }
+      ]
+    }
+    ```
+
+    *   ""buddy"": Relational? Yes.
+    *   ""ma'am"": Relational/Honorific? Yes.
+    *   ""Randy"": Role/Occupation/Relational? No. It's a name.
+
+    Wait, if I look at the examples: ""doctor, teacher, brother, neighbor, captain"". These are all categories/roles. ""Randy"" is an individual. I'll stick to ""buddy"" and ""ma'am"".
+
+    Wait, is ""buddy"" always ambiguous? In some dialects, it's used for males, but generally, it's considered neutral or ambiguous without further context.
+
+    Let's double check ""ma'am"". Definitely feminine.
+
+    Final check on JSON format.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""buddy"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""The term 'buddy' is a gender-neutral term for a friend.""
+        },
+        {
+          ""referent"": ""ma'am"",
+          ""gender"": ""feminine"",
+          ""confidence"": 5,
+          ""reasoning"": ""'ma'am' is a formal address used specifically for women.""
+        }
+      ]
+    }
+    ``````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""buddy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'buddy' is a gender-neutral term for a friend.""
+    },
+    {
+      ""referent"": ""ma'am"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'ma'am' is a formal address used specifically for women.""
+    }
+  ]
+}
+```"
+134,source,There' s an old witch of a nurse out there with an ear like radar and a tongue like a fire bell.,nurse,ambiguous,zero_shot_identify,feminine,5.0,"The nurse is described as a 'witch', which identifies the person as female.",False,"thought
+*   Input sentence: ""There' s an old witch of a nurse out there with an ear like radar and a tongue like a fire bell.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""witch"": A role/referent. Traditionally and linguistically associated with females.
+    *   ""nurse"": An occupation. Gender-neutral in modern English, but in the context of ""witch of a nurse"", it refers to the same person as the ""witch"".
+
+    *   Referent 1: ""witch""
+        *   Gender: feminine (Witches are traditionally female).
+        *   Confidence: 5.
+        *   Reasoning: The term ""witch"" specifically refers to a female practitioner of magic.
+
+    *   Referent 2: ""nurse""
+        *   Gender: feminine (The sentence describes the nurse as a ""witch"").
+        *   Confidence: 5.
+        *   Reasoning: The nurse is described as a ""witch"", which is a feminine term.
+
+    *   `referents`:
+        1.  `{""referent"": ""witch"", ""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The term 'witch' is gender-specific to females.""}`
+        2.  `{""referent"": ""nurse"", ""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The nurse is identified as a 'witch', indicating she is female.""}`
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes (""witch"", ""nurse"").
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""witch"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'witch' specifically refers to a female.""
+    },
+    {
+      ""referent"": ""nurse"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The nurse is described as a 'witch', which identifies the person as female.""
+    }
+  ]
+}
+```"
+136,masculine,"If your baby is not eating solid foods by 7 months of age, discuss this with your child health nurse, doctor or dietitian, Mr. Johnson.",dietitian,masculine,zero_shot_identify,ambiguous,5.0,The occupation of dietitian does not imply a specific gender in this context.,False,"thought
+*   Input: ""If your baby is not eating solid foods by 7 months of age, discuss this with your child health nurse, doctor or dietitian, Mr. Johnson.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""baby"" (relational referent)
+    *   ""child health nurse"" (occupation)
+    *   ""doctor"" (occupation)
+    *   ""dietitian"" (occupation)
+    *   ""Mr. Johnson"" (person/referent - though ""Mr."" is a title indicating gender)
+
+    *   ""baby"": No gender signal. -> `ambiguous`
+    *   ""child health nurse"": No gender signal. -> `ambiguous`
+    *   ""doctor"": No gender signal. -> `ambiguous`
+    *   ""dietitian"": No gender signal. -> `ambiguous`
+    *   ""Mr. Johnson"": ""Mr."" is a masculine honorific. -> `masculine`
+
+    *   baby: ambiguous, 5, No gender-specific pronouns or descriptors.
+    *   child health nurse: ambiguous, 5, No gender-specific pronouns or descriptors.
+    *   doctor: ambiguous, 5, No gender-specific pronouns or descriptors.
+    *   dietitian: ambiguous, 5, No gender-specific pronouns or descriptors.
+    *   Mr. Johnson: masculine, 5, The title ""Mr."" indicates a male.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes.
+    *   Order preserved? Yes.
+    *   Confidence 1-5? Yes.
+    *   Reasoning short sentence? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""baby"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the baby.""
+    },
+    {
+      ""referent"": ""child health nurse"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The occupation of nurse does not imply a specific gender in this context.""
+    },
+    {
+      ""referent"": ""doctor"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The occupation of doctor does not imply a specific gender in this context.""
+    },
+    {
+      ""referent"": ""dietitian"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The occupation of dietitian does not imply a specific gender in this context.""
+    },
+    {
+      ""referent"": ""Mr. Johnson"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'Mr.' explicitly indicates a male.""
+    }
+  ]
+}
+```"
+136,feminine,"If your baby is not eating solid foods by 7 months of age, discuss this with your child health nurse, doctor or dietitian, Mrs. Johnson.",dietitian,feminine,zero_shot_identify,ambiguous,5.0,No gender-specific information is provided for the dietitian.,False,"thought
+*   Input: ""If your baby is not eating solid foods by 7 months of age, discuss this with your child health nurse, doctor or dietitian, Mrs. Johnson.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""baby"" (relational referent)
+    *   ""child health nurse"" (occupation)
+    *   ""doctor"" (occupation)
+    *   ""dietitian"" (occupation)
+    *   ""Mrs. Johnson"" (person/referent - though the prompt asks for roles/occupations/relational referents, ""Mrs. Johnson"" is the specific person filling those roles). Wait, ""Mrs. Johnson"" is a name, but the prompt asks for ""role, occupation, or relational REFERENT"". ""Mrs. Johnson"" is a referent.
+
+    *   ""baby"": No gender signal. -> `ambiguous`.
+    *   ""child health nurse"": No gender signal. -> `ambiguous`.
+    *   ""doctor"": No gender signal. -> `ambiguous`.
+    *   ""dietitian"": No gender signal. -> `ambiguous`.
+    *   ""Mrs. Johnson"": ""Mrs."" is a feminine honorific. -> `feminine`.
+
+    *   ""baby"": Ambiguous. No gender-specific pronouns or adjectives.
+    *   ""child health nurse"": Ambiguous. No gender-specific indicators.
+    *   ""doctor"": Ambiguous. No gender-specific indicators.
+    *   ""dietitian"": Ambiguous. No gender-specific indicators.
+    *   ""Mrs. Johnson"": Feminine. The title ""Mrs."" indicates a female.
+
+    *   `referent`: ""baby"", `gender`: ""ambiguous"", `confidence`: 5, `reasoning`: ""No gender-specific information is provided for the baby.""
+    *   `referent`: ""child health nurse"", `gender`: ""ambiguous"", `confidence`: 5, `reasoning`: ""No gender-specific information is provided for the nurse.""
+    *   `referent`: ""doctor"", `gender`: ""ambiguous"", `confidence`: 5, `reasoning`: ""No gender-specific information is provided for the doctor.""
+    *   `referent`: ""dietitian"", `gender`: ""ambiguous"", `confidence`: 5, `reasoning`: ""No gender-specific information is provided for the dietitian.""
+    *   `referent`: ""Mrs. Johnson"", `gender`: ""feminine"", `confidence`: 5, `reasoning`: ""The title 'Mrs.' is used for women.""
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes.
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""baby"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the baby.""
+    },
+    {
+      ""referent"": ""child health nurse"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the nurse.""
+    },
+    {
+      ""referent"": ""doctor"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the doctor.""
+    },
+    {
+      ""referent"": ""dietitian"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the dietitian.""
+    },
+    {
+      ""referent"": ""Mrs. Johnson"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The title 'Mrs.' is used exclusively for women.""
+    }
+  ]
+}
+```"
+121,feminine,"In 1985, while a stewardess for Delta... you were busted while carrying drugs for a pilot, your aunt?",pilot,feminine,zero_shot_identify,ambiguous,5.0,There is no gender-specific information provided for the pilot.,False,"thought
+*   Input sentence: ""In 1985, while a stewardess for Delta... you were busted while carrying drugs for a pilot, your aunt?""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""stewardess"" (Occupation)
+    *   ""pilot"" (Occupation)
+    *   ""aunt"" (Relational referent)
+
+    *   ""stewardess"": Historically and linguistically feminine (the masculine equivalent is ""steward"").
+        *   Gender: feminine.
+        *   Confidence: 5.
+        *   Reasoning: ""Stewardess"" is a gender-specific term for a female flight attendant.
+
+    *   ""pilot"": General occupation.
+        *   Gender: ambiguous.
+        *   Confidence: 5.
+        *   Reasoning: No gender-specific pronouns or descriptors are used for the pilot.
+
+    *   ""aunt"": Relational referent.
+        *   Gender: feminine.
+        *   Confidence: 5.
+        *   Reasoning: ""Aunt"" is a gender-specific term for a female relative.
+
+    *   Referent 1: ""stewardess"", feminine, 5, ""The term 'stewardess' specifically refers to a female flight attendant.""
+    *   Referent 2: ""pilot"", ambiguous, 5, ""There is no textual evidence to determine the pilot's gender.""
+    *   Referent 3: ""aunt"", feminine, 5, ""The term 'aunt' specifically refers to a female relative.""
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes.
+    *   Order preserved? Yes.
+    *   Confidence 1-5? Yes.
+    *   Reasoning short sentence? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""stewardess"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'stewardess' is a gender-specific term for a female flight attendant.""
+    },
+    {
+      ""referent"": ""pilot"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the pilot.""
+    },
+    {
+      ""referent"": ""aunt"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'aunt' specifically refers to a female relative.""
+    }
+  ]
+}
+```"
+148,masculine,The wizard asked a group of viewers to take a piece of paper and draw a line of graphics on the back.,wizard,masculine,zero_shot_identify,ambiguous,5.0,There are no pronouns or adjectives in the sentence that specify the wizard's gender.,False,"thought
+*   Input sentence: ""The wizard asked a group of viewers to take a piece of paper and draw a line of graphics on the back.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""wizard"": Role/Occupation.
+    *   ""viewers"": Role/Group of people.
+
+    *   ""wizard"":
+        *   Gender: In modern English, ""wizard"" is often associated with males, but linguistically, without a pronoun (he/she), it is ambiguous. However, traditionally it's masculine. Let's look at the prompt's definition: ""unambiguously male"", ""unambiguously female"", ""no signal in the sentence reveals this referent's gender"".
+        *   Signal in sentence: None.
+        *   Classification: ambiguous.
+    *   ""viewers"":
+        *   Gender: Plural group. No signal.
+        *   Classification: ambiguous.
+
+    *   Referent 1: ""wizard""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or adjectives are used to describe the wizard.
+    *   Referent 2: ""viewers""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or adjectives are used to describe the viewers.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""wizard"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""No gender-specific pronouns or adjectives are used to describe the wizard.""
+        },
+        {
+          ""referent"": ""viewers"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""No gender-specific pronouns or adjectives are used to describe the viewers.""
+        }
+      ]
+    }
+    ``````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""wizard"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no pronouns or adjectives in the sentence that specify the wizard's gender.""
+    },
+    {
+      ""referent"": ""viewers"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no pronouns or adjectives in the sentence that specify the gender of the viewers.""
+    }
+  ]
+}
+```"
+160,masculine,"I know you miss your dog and your best friend, your brother... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.",friend,masculine,zero_shot_identify,ambiguous,5.0,The text provides no gender-specific information about the best friend.,False,"thought
+*   Input: An English sentence.
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: Gender (masculine, feminine, ambiguous).
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+    *   Constraints: Use surface form, order of appearance, ONLY JSON.
+
+    *   ""I know you miss your dog and your best friend, your brother... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.""
+
+    *   ""dog"": Animal (usually not considered a human role/occupation/relational referent in this context, but sometimes ""pet"" is. However, the prompt asks for roles, occupations, or relational referents. ""Dog"" is a species. I'll skip it unless it's used as a role).
+    *   ""best friend"": Relational referent. Gender? No signal. -> ambiguous.
+    *   ""brother"": Relational referent. Gender? Masculine.
+    *   ""Spot"": Proper name (dog). Not a role/occupation/relational referent.
+    *   ""Scott"": Proper name. While a name, is it a ""role, occupation, or relational referent""? Usually, names are referents, but the prompt specifically lists ""doctor, teacher, brother, neighbor, captain"". These are categories/roles. ""Scott"" is a specific person. However, in many NLP tasks, names are treated as referents. Let's re-read: ""role, occupation, or relational REFERENT"". A name is a referent, but is it a *role*? No. Is it an *occupation*? No. Is it a *relational* referent? No.
+    *   Wait, ""brother"" is definitely one. ""best friend"" is definitely one.
+    *   Let's check ""Scott"" again. If the prompt meant ""any person"", it would say ""any person"". It says ""role, occupation, or relational referent"".
+    *   ""best friend"" -> relational.
+    *   ""brother"" -> relational.
+
+    *   Referent 1: ""best friend""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or adjectives are used for the best friend.
+    *   Referent 2: ""brother""
+        *   Gender: masculine
+        *   Confidence: 5
+        *   Reasoning: The term ""brother"" refers to a male sibling.
+
+    *   ""dog"": Not a human role/occupation/relational referent.
+    *   ""Spot"": Name of a dog.
+    *   ""Scott"": Name of a person. Not a role/occupation/relational referent.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""best friend"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""There is no textual evidence to determine the gender of the best friend.""
+        },
+        {
+          ""referent"": ""brother"",
+          ""gender"": ""masculine"",
+          ""confidence"": 5,
+          ""reasoning"": ""The word 'brother' specifically refers to a male sibling.""
+        }
+      ]
+    }
+    ```
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form? Yes (""best friend"", ""brother"").
+    *   Order of appearance? Yes.
+    *   Gender categories correct? Yes.
+    *   Confidence 1-5? Yes.
+    *   Reasoning short sentence? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""best friend"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The text provides no gender-specific information about the best friend.""
+    },
+    {
+      ""referent"": ""brother"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'brother' refers to a male sibling.""
+    }
+  ]
+}
+```"
+160,feminine,"I know you miss your dog and your best friend, your sister... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.",friend,feminine,zero_shot_identify,ambiguous,5.0,The text provides no gender-specific information about the best friend.,False,"thought
+*   Input: An English sentence.
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: Gender (masculine, feminine, ambiguous).
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+    *   Constraints: Use surface form, order of appearance, ONLY JSON.
+
+    *   ""I know you miss your dog and your best friend, your sister... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.""
+
+    *   ""dog"": Animal (usually not considered a human role/occupation/relational referent in this context, but sometimes included. However, the prompt asks for ""role, occupation, or relational REFERENT"". A dog is a pet, but usually, these tasks focus on human roles. Let's check ""best friend"" and ""sister"").
+    *   ""best friend"": Relational referent. Gender? No signal. -> ambiguous.
+    *   ""sister"": Relational referent. Gender? Unambiguously female. -> feminine.
+    *   ""Spot"": Proper name. Usually a dog (given the context ""your dog and your best friend... Spot and Scott""). If Spot is the dog, is it a referent? The prompt asks for roles/occupations/relational referents. Proper names aren't roles/occupations/relational referents unless they function as such. However, ""best friend"" and ""sister"" definitely are.
+    *   ""Scott"": Proper name. Usually masculine. But is it a ""role, occupation, or relational referent""? No, it's a proper name.
+
+    *Refining the list of referents:*
+    - ""best friend"": Relational referent.
+    - ""sister"": Relational referent.
+
+    *Wait, let's re-read the prompt examples:* ""doctor, teacher, brother, neighbor, captain"". These are roles/occupations/relational terms. Proper names (Spot, Scott) are not roles. ""Dog"" is a species/pet, not typically a human role, but could be seen as a relational referent (pet). However, usually, these tasks target human social roles. I will stick to ""best friend"" and ""sister"".
+
+    *   Referent 1: ""best friend""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or adjectives are used for the best friend.
+    *   Referent 2: ""sister""
+        *   Gender: feminine
+        *   Confidence: 5
+        *   Reasoning: The term ""sister"" refers to a female sibling.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""best friend"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""There is no textual evidence to determine the gender of the best friend.""
+        },
+        {
+          ""referent"": ""sister"",
+          ""gender"": ""feminine"",
+          ""confidence"": 5,
+          ""reasoning"": ""The word 'sister' denotes a female sibling.""
+        }
+      ]
+    }
+    ```
+
+    *   Did I include proper names? No (Scott, Spot).
+    *   Did I include animals? No (dog).
+    *   Did I use surface forms? Yes.
+    *   Is it JSON only? Yes.
+    *   Is the order correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""best friend"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The text provides no gender-specific information about the best friend.""
+    },
+    {
+      ""referent"": ""sister"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sister' refers to a female sibling.""
+    }
+  ]
+}
+```"
+190,masculine,"I like you to be sitting up tall and feeling like a winner, sir, already in control of food and alcohol.",winner,masculine,zero_shot_identify,ambiguous,5.0,The term 'winner' is gender-neutral.,False,"thought
+*   Input sentence: ""I like you to be sitting up tall and feeling like a winner, sir, already in control of food and alcohol.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""I"" (Pronoun - usually not considered a role/occupation/relational referent in this context, but let's check).
+    *   ""you"" (Pronoun - same as ""I"").
+    *   ""winner"" (Role/Status).
+    *   ""sir"" (Relational referent/Honorific).
+
+    *   ""winner"":
+        *   Gender: Ambiguous. Anyone can be a winner.
+        *   Confidence: 5.
+        *   Reasoning: No gender-specific markers associated with ""winner"".
+
+    *   ""sir"":
+        *   Gender: Masculine. ""Sir"" is a formal address for a man.
+        *   Confidence: 5.
+        *   Reasoning: ""Sir"" is a gender-specific honorific for males.
+
+    *   Referent 1: ""winner""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: The term ""winner"" is gender-neutral.
+    *   Referent 2: ""sir""
+        *   Gender: masculine
+        *   Confidence: 5
+        *   Reasoning: ""Sir"" is a formal address used for men.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form used? Yes.
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""winner"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'winner' is gender-neutral.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'Sir' is a formal address used specifically for men.""
+    }
+  ]
+}
+```"
+204,masculine,Only a bespectacled steward separated us from a life in the Bahamas.,steward,masculine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or adjectives associated with the steward.,False,"thought
+*   Input sentence: ""Only a bespectacled steward separated us from a life in the Bahamas.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""steward"": This is an occupation/role.
+    *   ""us"": This is a pronoun referring to people, but is it a ""role, occupation, or relational referent""? Usually, pronouns aren't considered roles/occupations unless they refer to a specific role. ""Us"" is a general group. I will exclude it based on the examples (doctor, teacher, brother, neighbor, captain).
+
+    *   Referent: ""steward""
+    *   Gender: In modern English, ""steward"" can be gender-neutral, though historically masculine. However, there is no signal in the sentence (like ""he"" or ""his"") to indicate the gender of this specific steward.
+    *   Classification: ambiguous.
+    *   Confidence: 5 (certain that the text provides no gender signal).
+    *   Reasoning: No gender-specific pronouns or adjectives are used to describe the steward.
+
+    *   `referent`: ""steward""
+    *   `gender`: ""ambiguous""
+    *   `confidence`: 5
+    *   `reasoning`: ""The sentence provides no gender-specific pronouns or descriptors for the steward.""```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""steward"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or adjectives associated with the steward.""
+    }
+  ]
+}
+```"
+98,masculine,Sally Weston represents an ideal of poise and beauty and accomplishment that every flight steward should strive to achieve.,steward,masculine,zero_shot_identify,ambiguous,5.0,The term is used as a general occupation with no gender-specific pronouns or modifiers in the sentence.,False,"thought
+*   Input sentence: ""Sally Weston represents an ideal of poise and beauty and accomplishment that every flight steward should strive to achieve.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""Sally Weston"": Proper name. Is it a role/occupation/relational referent? Usually, names are entities, but the prompt asks for ""role, occupation, or relational REFERENT"". ""Sally"" is a name, not a role. However, in some contexts, names are treated as referents. Let's look at the examples: ""doctor, teacher, brother, neighbor, captain"". These are roles/occupations. ""Sally Weston"" is a person, not a role.
+    *   ""ideal"": Not a role/occupation.
+    *   ""flight steward"": This is an occupation.
+
+    *   Referent: ""flight steward""
+    *   Gender: The sentence says ""every flight steward should strive to achieve"" (referring to Sally Weston's poise/beauty). There is no pronoun (he/she) or gender-specific adjective associated with the ""flight steward"" in general. While ""steward"" historically leaned masculine and ""stewardess"" feminine, in modern English ""steward"" or ""flight attendant"" is often neutral. Even if ""steward"" is seen as masculine, the sentence refers to ""every flight steward"" as a general class. There is no specific signal in *this* sentence to assign a gender to the general role of ""flight steward"".
+    *   Wait, does ""Sally Weston"" count? The prompt says ""role, occupation, or relational REFERENT"". A name is a specific person, not a role. I will exclude ""Sally Weston"".
+    *   Let's re-evaluate ""flight steward"".
+        *   Referent: ""flight steward""
+        *   Gender: ambiguous (no signal in the sentence reveals the gender of the general role).
+
+    *   Referent: ""flight steward""
+    *   Gender: ""ambiguous""
+    *   Confidence: 5
+    *   Reasoning: ""The term 'flight steward' is used as a general occupation without any gender-specific pronouns or modifiers.""
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form? ""flight steward"".
+    *   Order of appearance? Yes.
+    *   Gender options: masculine, feminine, ambiguous.
+
+    *Self-Correction on ""Sally Weston"":* If the prompt meant ""any person mentioned"", it would say ""entities"" or ""people"". It specifically says ""role, occupation, or relational REFERENT"". Sally Weston is a name. I'll stick to ""flight steward"".
+
+    *Wait, is ""flight steward"" masculine?* In some traditional contexts, ""steward"" is male and ""stewardess"" is female. However, the prompt asks for signals *in the sentence*. There are no signals in the sentence.
+
+    *Double check:* ""Sally Weston represents an ideal... that every flight steward should strive to achieve.""
+    Sally is feminine (name), but she is not a role/occupation.
+    Flight steward is an occupation.
+
+    Final check on JSON structure:
+    `{""referents"": [{""referent"": ""flight steward"", ""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No gender-specific information is provided for the role of flight steward.""}]}````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""flight steward"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term is used as a general occupation with no gender-specific pronouns or modifiers in the sentence.""
+    }
+  ]
+}
+```"
+102,masculine,"The president was already feeling especially vulnerable – and a deep ""sense of paranoia,"" in the words of one confidant – after his devastating portrayal in Woodward's book.",confidant,masculine,zero_shot_identify,ambiguous,5.0,No gender-specific information is provided for the confidant.,False,"thought
+*   Input: ""The president was already feeling especially vulnerable – and a deep ""sense of paranoia,"" in the words of one confidant – after his devastating portrayal in Woodward's book.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""president"" (Role/Occupation)
+    *   ""confidant"" (Relational referent)
+    *   ""Woodward"" (Proper name, but acts as a referent/author) -> Wait, the prompt asks for ""role, occupation, or relational REFERENT"". Usually, proper names are excluded unless they are used as roles, but ""Woodward"" is a person. However, looking at the examples (doctor, teacher, brother), these are common nouns. Let's check if ""Woodward"" fits. Usually, in these NLP tasks, proper names are treated as referents if they represent a person. But ""president"" and ""confidant"" are definitely roles.
+    *   Let's re-evaluate ""Woodward"". Is it a role? No. Is it an occupation? No. Is it a relational referent? No. It's a proper name. I will stick to roles/occupations/relational terms.
+
+    *   Referent 1: ""president""
+        *   Gender: The sentence says ""after **his** devastating portrayal"". ""His"" refers back to the president.
+        *   Classification: masculine.
+        *   Confidence: 5.
+        *   Reasoning: The possessive pronoun ""his"" refers to the president.
+
+    *   Referent 2: ""confidant""
+        *   Gender: No gender-specific pronouns or adjectives associated with the confidant.
+        *   Classification: ambiguous.
+        *   Confidence: 5.
+        *   Reasoning: No gender-specific information is provided for the confidant.
+
+    *   Referent: ""president"" -> masculine (due to ""his"").
+    *   Referent: ""confidant"" -> ambiguous.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""president"",
+          ""gender"": ""masculine"",
+          ""confidence"": 5,
+          ""reasoning"": ""The pronoun 'his' refers back to the president.""
+        },
+        {
+          ""referent"": ""confidant"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""There is no gender-specific information provided for the confidant.""
+        }
+      ]
+    }
+    ``````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""president"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The possessive pronoun 'his' refers back to the president.""
+    },
+    {
+      ""referent"": ""confidant"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the confidant.""
+    }
+  ]
+}
+```"
+27,feminine,"Rated 5 out of 5 by Anonymous from Simply effective I have used this cleanser exclusively since I was introduced to it a couple of years ago by a beautician, Mrs. Fitzgerald, at a medical spa.",beautician,feminine,zero_shot_identify,ambiguous,5.0,The term 'beautician' is a gender-neutral occupation.,False,"thought
+*   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+    *   Constraints: Use surface form, order of appearance, ONLY JSON.
+
+    *   ""Rated 5 out of 5 by Anonymous from Simply effective I have used this cleanser exclusively since I was introduced to it a couple of years ago by a beautician, Mrs. Fitzgerald, at a medical spa.""
+
+    *   ""Anonymous"" (User/Reviewer) - Role: Reviewer. Gender: Ambiguous.
+    *   ""beautician"" (Occupation) - Gender: Ambiguous (though often associated with women, the word itself is neutral).
+    *   ""Mrs. Fitzgerald"" (Person/Referent) - Gender: Feminine (indicated by ""Mrs."").
+
+    *   Referent 1: ""Anonymous""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender markers provided for the reviewer.
+    *   Referent 2: ""beautician""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: The term ""beautician"" is gender-neutral.
+    *   Referent 3: ""Mrs. Fitzgerald""
+        *   Gender: feminine
+        *   Confidence: 5
+        *   Reasoning: The title ""Mrs."" indicates a female.
+
+    *   Wait, is ""Anonymous"" a role/occupation/relational referent? It's a name/placeholder for the reviewer. Usually, ""reviewer"" is the role. ""Anonymous"" is the identifier. I'll include it as it refers to the person acting in the role of the reviewer.
+    *   ""beautician"" is definitely an occupation.
+    *   ""Mrs. Fitzgerald"" is a specific person (relational/role in the context of the service).
+
+    *   ""Anonymous"" -> ambiguous.
+    *   ""beautician"" -> ambiguous.
+    *   ""Mrs. Fitzgerald"" -> feminine.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""Anonymous"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""No gender-specific information is provided for the reviewer.""
+        },
+        {
+          ""referent"": ""beautician"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""The term 'beautician' is a gender-neutral occupation.""
+        },
+        {
+          ""referent"": ""Mrs. Fitzgerald"",
+          ""gender"": ""feminine"",
+          ""confidence"": 5,
+          ""reasoning"": ""The title 'Mrs.' explicitly indicates a female.""
+        }
+      ]
+    }
+    ``````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""Anonymous"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the reviewer.""
+    },
+    {
+      ""referent"": ""beautician"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'beautician' is a gender-neutral occupation.""
+    },
+    {
+      ""referent"": ""Mrs. Fitzgerald"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The title 'Mrs.' explicitly indicates a female.""
+    }
+  ]
+}
+```"
+209,masculine,"My client, my nephew, wants the public to know the truth.",client,masculine,zero_shot_identify,ambiguous,5.0,The term 'client' is gender-neutral and no other signals are provided.,False,"thought
+*   Input sentence: ""My client, my nephew, wants the public to know the truth.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""client"": A role/occupation. Gender is not specified.
+    *   ""nephew"": A relational referent. Gender is unambiguously male.
+    *   ""public"": A collective group, not a specific role/occupation/relational referent in the sense of an individual person's identity. (Usually excluded unless it's a specific role).
+
+    *   Referent 1: ""client""
+        *   Gender: ambiguous (no pronouns or gender-specific terms associated with ""client"").
+        *   Confidence: 5.
+        *   Reasoning: No gender-specific information is provided for the client.
+
+    *   Referent 2: ""nephew""
+        *   Gender: masculine (the word ""nephew"" specifically refers to a male).
+        *   Confidence: 5.
+        *   Reasoning: ""Nephew"" is a gender-specific term for a male relative.
+
+    *   JSON structure: `{""referents"": [...]}`
+    *   Referent 1: `{""referent"": ""client"", ""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'client' does not specify gender.""}`
+    *   Referent 2: `{""referent"": ""nephew"", ""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The term 'nephew' refers specifically to a male.""}````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""client"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'client' is gender-neutral and no other signals are provided.""
+    },
+    {
+      ""referent"": ""nephew"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'nephew' specifically refers to a male relative.""
+    }
+  ]
+}
+```"
+207,feminine,"Oh well maybe i should talk to the dealer, my mother?",dealer,feminine,zero_shot_identify,ambiguous,5.0,No gender-specific information is provided for the dealer.,False,"thought
+*   Input sentence: ""Oh well maybe i should talk to the dealer, my mother?""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""dealer"": Occupation/Role.
+    *   ""mother"": Relational referent.
+
+    *   ""dealer"": No gender-specific pronouns or adjectives associated with ""dealer"" in the sentence. -> `ambiguous`.
+    *   ""mother"": Biologically/socially female. -> `feminine`.
+
+    *   Referent 1: ""dealer""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender markers are provided for the dealer.
+    *   Referent 2: ""mother""
+        *   Gender: feminine
+        *   Confidence: 5
+        *   Reasoning: The term ""mother"" refers to a female parent.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""dealer"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""There is no gender-specific information provided for the dealer.""
+        },
+        {
+          ""referent"": ""mother"",
+          ""gender"": ""feminine"",
+          ""confidence"": 5,
+          ""reasoning"": ""The term 'mother' is inherently feminine.""
+        }
+      ]
+    }
+    ``````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""dealer"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the dealer.""
+    },
+    {
+      ""referent"": ""mother"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'mother' refers to a female parent.""
+    }
+  ]
+}
+```"
+207,masculine,"Oh well maybe i should talk to the dealer, my father?",dealer,masculine,zero_shot_identify,ambiguous,5.0,There is no textual evidence to determine the gender of the dealer.,False,"thought
+*   Input sentence: ""Oh well maybe i should talk to the dealer, my father?""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""dealer"" (occupation/role)
+    *   ""father"" (relational referent)
+
+    *   ""dealer"": No gender-specific pronouns or adjectives associated with ""dealer"" in the sentence. -> `ambiguous`.
+    *   ""father"": By definition, a father is male. -> `masculine`.
+
+    *   Referent 1: ""dealer""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific information is provided for the dealer.
+    *   Referent 2: ""father""
+        *   Gender: masculine
+        *   Confidence: 5
+        *   Reasoning: The term ""father"" refers to a male parent.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""dealer"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""No gender-specific information is provided for the dealer.""
+        },
+        {
+          ""referent"": ""father"",
+          ""gender"": ""masculine"",
+          ""confidence"": 5,
+          ""reasoning"": ""The term 'father' refers to a male parent.""
+        }
+      ]
+    }
+    ``````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""dealer"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no textual evidence to determine the gender of the dealer.""
+    },
+    {
+      ""referent"": ""father"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'father' refers to a male parent.""
+    }
+  ]
+}
+```"
+217,source,Following are some hints which will permit you to frame the ideal recommendation letter to your family’s beloved nanny.,nanny,ambiguous,zero_shot_identify,feminine,5.0,The term 'nanny' is a gender-specific noun referring to a female caregiver.,False,"thought
+*   Input sentence: ""Following are some hints which will permit you to frame the ideal recommendation letter to your family’s beloved nanny.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""hints"" (not a person/role)
+    *   ""you"" (pronoun, but usually considered a referent in some contexts; however, the prompt asks for ""role, occupation, or relational REFERENT"". ""You"" is a pronoun, not a role/occupation/relational referent like ""doctor"" or ""brother"").
+    *   ""family"" (collective noun, not a specific role/occupation/relational referent in the sense of a person).
+    *   ""nanny"" (occupation/role).
+
+    *   Referent: ""nanny""
+    *   Gender: Traditionally feminine, but in modern usage, it can be ambiguous. However, in most linguistic datasets and general contexts, ""nanny"" is strongly associated with females. Let's check if there's any signal in the sentence.
+    *   Sentence signal: ""your family’s beloved nanny"". No specific gender pronouns (he/she) are used.
+    *   Classification: ""nanny"" is typically feminine, but without a pronoun, is it ""unambiguously female""?
+    *   Comparing to ""doctor"" (ambiguous) vs ""mother"" (feminine). ""Nanny"" is a gendered term in common usage, but technically a role.
+    *   Wait, the prompt says ""unambiguously female"". Is a nanny *unambiguously* female? Male nannies exist (though rare). However, the term ""nanny"" is linguistically gendered feminine in English.
+    *   Let's look at the examples provided in the prompt: ""doctor, teacher, brother, neighbor, captain"". ""Brother"" is unambiguously masculine. ""Doctor"" is ambiguous.
+    *   ""Nanny"" is similar to ""nurse"" or ""secretary"" in some contexts, but more strongly gendered. However, strictly speaking, without a pronoun, it's often treated as feminine. But to be safe and precise based on the ""unambiguously"" criterion: is there a signal *in the sentence*?
+    *   The prompt says: ""no signal in the sentence reveals this referent's gender"".
+    *   The word ""nanny"" itself is the signal. In English, ""nanny"" is a feminine-coded noun.
+    *   Let's compare ""nanny"" to ""waiter/waitress"". ""Waiter"" is masculine (or ambiguous in some dialects), ""waitress"" is feminine. ""Nanny"" doesn't have a common masculine equivalent (though ""manny"" exists).
+    *   Most NLP tasks classify ""nanny"" as feminine.
+
+    *   Referent: ""nanny""
+    *   Gender: feminine (or ambiguous?). Let's go with feminine because the term itself is gender-specific in standard English.
+    *   Confidence: 4 or 5.
+    *   Reasoning: ""The term 'nanny' typically refers to a female caregiver.""
+
+    *   ""you"": Pronoun. Not a role/occupation/relational referent.
+    *   ""family"": Collective. Not a specific role.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""nanny"",
+          ""gender"": ""feminine"",
+          ""confidence"": 5,
+          ""reasoning"": ""The term 'nanny' is a gender-specific term for a female caregiver.""
+        }
+      ]
+    }
+    ```
+
+    *   Wait, is ""nanny"" *unambiguously* female? In modern English, ""nanny"" is used for the role regardless of gender sometimes, but the word itself is feminine. If I see ""the nanny"", I assume female. If I see ""the doctor"", I don't assume gender.
+    *   Let's check if there are other referents. ""family"" is a group. ""you"" is a person but not a role/occupation.
+    *   I will stick with ""nanny"" as feminine.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form? ""nanny"".
+    *   Order? Only one.
+    *   Confidence 1-5? Yes.
+    *   Reasoning short sentence? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""nanny"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'nanny' is a gender-specific noun referring to a female caregiver.""
+    }
+  ]
+}
+```"
+257,masculine,"Whether you're a hopeful magazine contributor or looking to improve on your SEO or hoping to get funding for your startup, sir, it's all about being authentic.",contributor,masculine,zero_shot_identify,ambiguous,5.0,There are no gender-specific markers associated with the contributor.,False,"thought
+*   Input: ""Whether you're a hopeful magazine contributor or looking to improve on your SEO or hoping to get funding for your startup, sir, it's all about being authentic.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""magazine contributor"" -> Occupation/Role.
+    *   ""sir"" -> Relational referent/Honorific.
+
+    *   ""magazine contributor"":
+        *   Gender: No gender-specific pronouns or adjectives associated with this role in the sentence.
+        *   Classification: ambiguous.
+        *   Confidence: 5.
+        *   Reasoning: No gender-specific markers are provided for the contributor.
+
+    *   ""sir"":
+        *   Gender: ""Sir"" is a masculine honorific.
+        *   Classification: masculine.
+        *   Confidence: 5.
+        *   Reasoning: ""Sir"" is a term used specifically for men.
+
+    *   `referents`:
+        1.  `{""referent"": ""magazine contributor"", ""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No gender-specific markers are provided for the contributor.""}`
+        2.  `{""referent"": ""sir"", ""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The term 'sir' is a masculine honorific.""}`
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes.
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""magazine contributor"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific markers associated with the contributor.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sir' is a masculine honorific.""
+    }
+  ]
+}
+```"
+257,feminine,"Whether you're a hopeful magazine contributor or looking to improve on your SEO or hoping to get funding for your startup, ma'am, it's all about being authentic.",contributor,feminine,zero_shot_identify,ambiguous,5.0,There is no gender-specific language associated with the contributor.,False,"thought
+*   Input: ""Whether you're a hopeful magazine contributor or looking to improve on your SEO or hoping to get funding for your startup, ma'am, it's all about being authentic.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""magazine contributor"" (Occupation/Role)
+    *   ""ma'am"" (Relational/Address term)
+
+    *   ""magazine contributor"":
+        *   Gender: The sentence doesn't specify the gender of the contributor.
+        *   Classification: ambiguous.
+        *   Confidence: 5.
+        *   Reasoning: No gender-specific pronouns or adjectives are used for the contributor.
+
+    *   ""ma'am"":
+        *   Gender: ""Ma'am"" is a contraction of ""madam"", used specifically for women.
+        *   Classification: feminine.
+        *   Confidence: 5.
+        *   Reasoning: ""Ma'am"" is a gender-specific address term for a woman.
+
+    *   `referent`: ""magazine contributor"", `gender`: ""ambiguous"", `confidence`: 5, `reasoning`: ""No gender-specific information is provided for the contributor.""
+    *   `referent`: ""ma'am"", `gender`: ""feminine"", `confidence`: 5, `reasoning`: ""'Ma'am' is a formal address used for women.""```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""magazine contributor"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific language associated with the contributor.""
+    },
+    {
+      ""referent"": ""ma'am"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'Ma'am' is a gender-specific honorific used to address a woman.""
+    }
+  ]
+}
+```"
+233,feminine,"We'll work with your in-house webmaster or marketing coordinator, Mrs. Garcia, to make sure the site is easily updated and constantly monitored.",coordinator,feminine,zero_shot_identify,ambiguous,5.0,There is no gender-specific information provided for the marketing coordinator.,False,"thought
+*   Input sentence: ""We'll work with your in-house webmaster or marketing coordinator, Mrs. Garcia, to make sure the site is easily updated and constantly monitored.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""webmaster"" (occupation)
+    *   ""marketing coordinator"" (occupation)
+    *   ""Mrs. Garcia"" (relational/personal referent - though ""Mrs."" is a title indicating gender)
+
+    *   ""webmaster"": No gender signal in the sentence. -> `ambiguous`.
+    *   ""marketing coordinator"": No gender signal in the sentence. -> `ambiguous`.
+    *   ""Mrs. Garcia"": ""Mrs."" is a title specifically for married women. -> `feminine`.
+
+    *   Referent 1: ""webmaster""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with this role.
+    *   Referent 2: ""marketing coordinator""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with this role.
+    *   Referent 3: ""Mrs. Garcia""
+        *   Gender: feminine
+        *   Confidence: 5
+        *   Reasoning: The title ""Mrs."" indicates a female.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes.
+    *   Order preserved? Yes.
+    *   Confidence 1-5? Yes.
+    *   Reasoning short sentence? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""webmaster"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the webmaster.""
+    },
+    {
+      ""referent"": ""marketing coordinator"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the marketing coordinator.""
+    },
+    {
+      ""referent"": ""Mrs. Garcia"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The title 'Mrs.' is used exclusively for women.""
+    }
+  ]
+}
+```"
+233,masculine,"We'll work with your in-house webmaster or marketing coordinator, Mr. Garcia, to make sure the site is easily updated and constantly monitored.",coordinator,masculine,zero_shot_identify,ambiguous,5.0,There is no gender-specific information provided for the marketing coordinator.,False,"thought
+*   Input sentence: ""We'll work with your in-house webmaster or marketing coordinator, Mr. Garcia, to make sure the site is easily updated and constantly monitored.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""webmaster"" (occupation)
+    *   ""marketing coordinator"" (occupation)
+    *   ""Mr. Garcia"" (relational/personal referent - though ""Mr."" is a title indicating gender)
+
+    *   ""webmaster"": No gender signal in the sentence. -> `ambiguous`
+    *   ""marketing coordinator"": No gender signal in the sentence. -> `ambiguous`
+    *   ""Mr. Garcia"": ""Mr."" is a masculine honorific. -> `masculine`
+
+    *   Referent 1: ""webmaster""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with this role.
+    *   Referent 2: ""marketing coordinator""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with this role.
+    *   Referent 3: ""Mr. Garcia""
+        *   Gender: masculine
+        *   Confidence: 5
+        *   Reasoning: The honorific ""Mr."" indicates a male.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes.
+    *   Order preserved? Yes.
+    *   Confidence 1-5? Yes.
+    *   Reasoning short sentence? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""webmaster"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the webmaster.""
+    },
+    {
+      ""referent"": ""marketing coordinator"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the marketing coordinator.""
+    },
+    {
+      ""referent"": ""Mr. Garcia"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'Mr.' explicitly indicates a male.""
+    }
+  ]
+}
+```"
+270,feminine,"I modelled to my children how not to be a bystander, Mrs. Chen told us.",bystander,feminine,zero_shot_identify,ambiguous,5.0,The role of 'bystander' does not imply a specific gender.,False,"thought
+*   Input sentence: ""I modelled to my children how not to be a bystander, Mrs. Chen told us.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""I"" (Pronoun - usually not a role/occupation/relational referent unless specified, but ""children"" is relational).
+    *   ""children"" (Relational referent).
+    *   ""bystander"" (Role).
+    *   ""Mrs. Chen"" (Person/Referent - ""Mrs."" indicates gender).
+
+    *   ""children"":
+        *   Gender: ambiguous (children can be any gender).
+        *   Confidence: 5.
+        *   Reasoning: ""children"" is a gender-neutral term.
+
+    *   ""bystander"":
+        *   Gender: ambiguous (anyone can be a bystander).
+        *   Confidence: 5.
+        *   Reasoning: ""bystander"" is a gender-neutral role.
+
+    *   ""Mrs. Chen"":
+        *   Gender: feminine (""Mrs."" is a title for a married woman).
+        *   Confidence: 5.
+        *   Reasoning: The title ""Mrs."" indicates a female.
+
+    *   Referent 1: ""children"" -> ambiguous.
+    *   Referent 2: ""bystander"" -> ambiguous.
+    *   Referent 3: ""Mrs. Chen"" -> feminine.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""children"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""The term 'children' is gender-neutral.""
+        },
+        {
+          ""referent"": ""bystander"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""The role of 'bystander' does not imply a specific gender.""
+        },
+        {
+          ""referent"": ""Mrs. Chen"",
+          ""gender"": ""feminine"",
+          ""confidence"": 5,
+          ""reasoning"": ""The title 'Mrs.' is used for women.""
+        }
+      ]
+    }
+    ``````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""children"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'children' is gender-neutral.""
+    },
+    {
+      ""referent"": ""bystander"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The role of 'bystander' does not imply a specific gender.""
+    },
+    {
+      ""referent"": ""Mrs. Chen"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The title 'Mrs.' is used specifically for women.""
+    }
+  ]
+}
+```"
+275,masculine,"I would only have my secretary call the insurance agency and laugh about it, Mr. Martinez being quite amused.",secretary,masculine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or markers associated with the secretary.,False,"thought
+*   Input sentence: ""I would only have my secretary call the insurance agency and laugh about it, Mr. Martinez being quite amused.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""I"" (Pronoun, but usually not considered a role/occupation/relational referent in this context unless specified. However, the prompt asks for ""role, occupation, or relational REFERENT"". ""I"" is a referent, but is it a *role*? Usually, ""secretary"" and ""Mr. Martinez"" are the targets).
+    *   ""secretary"" (Occupation/Role)
+    *   ""insurance agency"" (Organization, not a person/referent)
+    *   ""Mr. Martinez"" (Person/Referent - ""Mr."" indicates gender)
+
+    *   Referent 1: ""secretary""
+        *   Gender: No gender-specific pronouns or adjectives associated with ""secretary"" in the sentence.
+        *   Classification: ambiguous.
+        *   Confidence: 5.
+        *   Reasoning: No gender markers are provided for the secretary.
+
+    *   Referent 2: ""Mr. Martinez""
+        *   Gender: ""Mr."" is a masculine honorific.
+        *   Classification: masculine.
+        *   Confidence: 5.
+        *   Reasoning: The honorific ""Mr."" indicates a male.
+
+    *   `referents`:
+        1.  `{""referent"": ""secretary"", ""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""No gender-specific information is provided for the secretary.""}`
+        2.  `{""referent"": ""Mr. Martinez"", ""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The honorific 'Mr.' indicates the person is male.""}`
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form used? Yes (""secretary"", ""Mr. Martinez"").
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""secretary"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or markers associated with the secretary.""
+    },
+    {
+      ""referent"": ""Mr. Martinez"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'Mr.' explicitly indicates a male.""
+    }
+  ]
+}
+```"
+279,masculine,I am the new ruler of this world...... the master of humans and Pokémon alike.,master,masculine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or adjectives associated with the master.,False,"thought
+*   Input sentence: ""I am the new ruler of this world...... the master of humans and Pokémon alike.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""ruler"" (role)
+    *   ""master"" (role)
+    *   ""humans"" (species/group - usually not a role/occupation/relational referent in the sense of a specific person's role, but let's check. The prompt asks for ""role, occupation, or relational REFERENT"". ""Humans"" is a category of beings, not a role. I'll exclude it unless it fits a specific role. ""Pokémon"" is also a species.)
+
+    *   ""ruler"":
+        *   Gender: No gender-specific pronouns or adjectives.
+        *   Classification: ambiguous.
+        *   Confidence: 5.
+        *   Reasoning: No gender-specific markers are present for ""ruler"".
+
+    *   ""master"":
+        *   Gender: In modern English, ""master"" can be gender-neutral in a role sense, though historically masculine. However, without a pronoun (he/she), it remains ambiguous in the context of the sentence.
+        *   Classification: ambiguous.
+        *   Confidence: 5.
+        *   Reasoning: No gender-specific markers are present for ""master"".
+
+    *   Referent 1: ""ruler"", gender: ""ambiguous"", confidence: 5, reasoning: ""No gender-specific markers are provided for the ruler.""
+    *   Referent 2: ""master"", gender: ""ambiguous"", confidence: 5, reasoning: ""No gender-specific markers are provided for the master.""
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form used? Yes.
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""ruler"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or adjectives associated with the ruler.""
+    },
+    {
+      ""referent"": ""master"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or adjectives associated with the master.""
+    }
+  ]
+}
+```"
+275,feminine,"I would only have my secretary call the insurance agency and laugh about it, Mrs. Martinez being quite amused.",secretary,feminine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or modifiers associated with the secretary.,False,"thought
+*   Input sentence: ""I would only have my secretary call the insurance agency and laugh about it, Mrs. Martinez being quite amused.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""I"" (Pronoun, but usually not considered a role/occupation/relational referent in this context unless specified. However, the prompt asks for ""role, occupation, or relational REFERENT"". ""I"" is a referent, but is it a *role*? Usually, ""secretary"" and ""Mrs. Martinez"" are the targets here.)
+    *   ""secretary"" (Occupation)
+    *   ""insurance agency"" (Organization, not a person/referent)
+    *   ""Mrs. Martinez"" (Person/Referent - relational/social title)
+
+    *   ""secretary"": No gender markers in the sentence. -> `ambiguous`.
+    *   ""Mrs. Martinez"": ""Mrs."" is a feminine title. -> `feminine`.
+
+    *   Referent 1: ""secretary""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with the secretary.
+    *   Referent 2: ""Mrs. Martinez""
+        *   Gender: feminine
+        *   Confidence: 5
+        *   Reasoning: The title ""Mrs."" indicates a female.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes (""secretary"", ""Mrs. Martinez"").
+    *   Order preserved? Yes.
+    *   Confidence 1-5? Yes.
+    *   Reasoning short sentence? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""secretary"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or modifiers associated with the secretary.""
+    },
+    {
+      ""referent"": ""Mrs. Martinez"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The title 'Mrs.' is used exclusively for women.""
+    }
+  ]
+}
+```"
+284,masculine,"Do a little chef, a little driving, party planning...... whatever he needs.",chef,masculine,zero_shot_identify,ambiguous,5.0,The sentence does not provide any gender-specific information regarding the person acting as the chef.,False,"thought
+*   Input sentence: ""Do a little chef, a little driving, party planning...... whatever he needs.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""chef"": Occupation.
+    *   ""driving"": Activity (not a referent).
+    *   ""party planning"": Activity (not a referent).
+    *   ""he"": Pronoun (referent to a person, but the prompt asks for roles, occupations, or relational referents. However, ""he"" is a referent. Let's check the examples: ""doctor, teacher, brother, neighbor, captain"". These are nouns. ""he"" is a pronoun. Usually, in these tasks, we look for the nouns describing the person. But ""he"" is the only gender signal here).
+
+    *   Referent: ""chef""
+    *   Gender signal: The sentence says ""whatever **he** needs"". This implies the person being served (the one who needs the chef/driving/planning) is male. Does ""he"" refer to the chef?
+    *   Sentence structure: ""Do a little chef [meaning: act as a chef], a little driving, party planning... whatever he needs.""
+    *   Interpretation: The speaker is offering to perform these roles for someone else (""he"").
+    *   So, the ""chef"" is the role the speaker takes. The ""he"" is the recipient.
+    *   Is ""chef"" the referent? Yes.
+    *   Is the gender of the ""chef"" known? The speaker is the chef. The speaker's gender is not mentioned.
+    *   Is ""he"" a referent? ""He"" is a pronoun referring to a person. The prompt asks for ""role, occupation, or relational REFERENT"". ""He"" is a referent, but not a role/occupation/relational one.
+    *   Wait, let's re-read: ""identify every role, occupation, or relational REFERENT"".
+    *   ""chef"" is an occupation.
+    *   ""he"" is a pronoun. Is a pronoun a ""role, occupation, or relational referent""? No.
+    *   So, the only referent is ""chef"".
+    *   Gender of ""chef"": The sentence doesn't specify the gender of the person acting as the chef. The ""he"" refers to the person *receiving* the services.
+    *   Therefore, ""chef"" is ambiguous.
+
+    *   Referent: ""chef""
+    *   Gender: ambiguous
+    *   Confidence: 5
+    *   Reasoning: No gender-specific pronouns or adjectives are linked to the chef.
+
+    *   Wait, could ""chef"" be referring to the ""he""? ""Do a little chef... whatever he needs.""
+    *   Usually, ""Do a little [role]"" means ""Perform the duties of a [role]"".
+    *   Example: ""Do a little cleaning"" (activity). ""Do a little chef"" is slightly non-standard English, but in context, it means ""act as a chef"".
+    *   If the speaker is the chef, the gender is unknown.
+    *   If ""chef"" refers to the person who needs things, it would be ""Do [for] a little chef... whatever he needs."" But it says ""Do a little chef"".
+    *   Regardless, there is no explicit gender marker for the word ""chef"" itself in the text. ""He"" refers to the person the services are for.
+
+    *   Referent: ""chef""
+    *   Gender: ambiguous
+    *   Confidence: 5
+    *   Reasoning: The text does not provide gender information for the chef.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form? ""chef"".
+    *   Order? ""chef"" is first.
+
+    *Self-Correction on ""he"":* The prompt asks for ""role, occupation, or relational REFERENT"". ""He"" is a pronoun, not a role, occupation, or relational term (like father, boss, etc.). I will exclude ""he"".
+
+    *Wait, let's double check if ""he"" counts as a relational referent.*
+    Relational referents are usually things like ""mother"", ""friend"", ""enemy"". ""He"" is just a pronoun. I'll stick with ""chef"".
+
+    *Wait, looking at the sentence again:* ""Do a little chef"". This is very odd phrasing. It might be a typo for ""Do a little cooking"". But I must use the surface form. ""chef"" is an occupation.
+
+    *Final check on gender:*
+    ""Do a little chef... whatever he needs.""
+    The ""he"" is the person who needs the services. The ""chef"" is the role being performed.
+    Gender of chef: Ambiguous.```json
+{""referents"": [{""referent"": ""chef"", ""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The sentence does not provide any gender-specific information regarding the person acting as the chef.""}]}
+```"
+284,feminine,"Do a little chef, a little driving, party planning...... whatever she needs.",chef,feminine,zero_shot_identify,ambiguous,5.0,There is no gender-specific information provided for the chef.,False,"thought
+*   Input sentence: ""Do a little chef, a little driving, party planning...... whatever she needs.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""chef"": Occupation.
+    *   ""driving"": Activity (not a referent).
+    *   ""party planning"": Activity (not a referent).
+    *   ""she"": Pronoun (referent to the person needing the services).
+
+    *   ""chef"":
+        *   Gender: The sentence says ""Do a little chef... whatever she needs."" The ""she"" refers to the person needing the services, not necessarily the chef. However, the phrase ""Do a little chef"" is slightly idiomatic/ungrammatical (likely meaning ""act as a chef""). There is no gender marker specifically for the ""chef"".
+        *   Classification: ambiguous.
+    *   ""she"":
+        *   Gender: ""she"" is unambiguously female.
+        *   Classification: feminine.
+
+    *   Referent 1: ""chef""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or adjectives are linked to the chef.
+    *   Referent 2: ""she""
+        *   Gender: feminine
+        *   Confidence: 5
+        *   Reasoning: The pronoun ""she"" is explicitly feminine.
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form used? Yes (""chef"", ""she"").
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""chef"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no gender-specific information provided for the chef.""
+    },
+    {
+      ""referent"": ""she"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The pronoun 'she' is explicitly feminine.""
+    }
+  ]
+}
+```"
+270,masculine,"I modelled to my children how not to be a bystander, Mr. Chen told us.",bystander,masculine,zero_shot_identify,ambiguous,5.0,The role of 'bystander' does not imply a specific gender.,False,"thought
+*   Input sentence: ""I modelled to my children how not to be a bystander, Mr. Chen told us.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""I"" (Pronoun - usually not a role/occupation/relational referent in the sense of ""doctor"" or ""brother"", but ""children"" is relational).
+    *   ""children"" (Relational referent).
+    *   ""bystander"" (Role).
+    *   ""Mr. Chen"" (Referent/Name with title).
+
+    *   ""children"":
+        *   Gender: Ambiguous (children can be any gender).
+        *   Confidence: 5.
+        *   Reasoning: ""children"" is a gender-neutral term.
+
+    *   ""bystander"":
+        *   Gender: Ambiguous (anyone can be a bystander).
+        *   Confidence: 5.
+        *   Reasoning: ""bystander"" is a gender-neutral role.
+
+    *   ""Mr. Chen"":
+        *   Gender: Masculine (indicated by ""Mr."").
+        *   Confidence: 5.
+        *   Reasoning: The title ""Mr."" indicates a male.
+
+    *   ""I"": Usually, pronouns aren't listed as ""roles, occupations, or relational referents"" unless they function as such. The prompt asks for ""role, occupation, or relational REFERENT (e.g. doctor, teacher, brother, neighbor, captain)"". ""I"" is a pronoun, not a role.
+    *   ""us"": Pronoun.
+
+    *   Referent 1: ""children"" -> ambiguous.
+    *   Referent 2: ""bystander"" -> ambiguous.
+    *   Referent 3: ""Mr. Chen"" -> masculine.
+
+    ```json
+    {
+      ""referents"": [
+        {
+          ""referent"": ""children"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""The term 'children' is gender-neutral.""
+        },
+        {
+          ""referent"": ""bystander"",
+          ""gender"": ""ambiguous"",
+          ""confidence"": 5,
+          ""reasoning"": ""The role of 'bystander' does not imply a specific gender.""
+        },
+        {
+          ""referent"": ""Mr. Chen"",
+          ""gender"": ""masculine"",
+          ""confidence"": 5,
+          ""reasoning"": ""The honorific 'Mr.' indicates the person is male.""
+        }
+      ]
+    }
+    ``````json
+{
+  ""referents"": [
+    {
+      ""referent"": ""children"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'children' is gender-neutral.""
+    },
+    {
+      ""referent"": ""bystander"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The role of 'bystander' does not imply a specific gender.""
+    },
+    {
+      ""referent"": ""Mr. Chen"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'Mr.' indicates the person is male.""
+    }
+  ]
+}
+```"
+234,masculine,"I' m glad you' re my ""buddy,"" sir.",buddy,masculine,zero_shot_identify,ambiguous,5.0,The term 'buddy' is a gender-neutral relational term.,False,"thought
+*   Input sentence: ""I' m glad you' re my ""buddy,"" sir.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classify gender: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""I"": Pronoun (not a role/occupation/relational referent in the sense of a noun like ""doctor"" or ""brother"").
+    *   ""you"": Pronoun.
+    *   ""buddy"": Relational referent.
+    *   ""sir"": Role/Honorific referent.
+
+    *   ""buddy"":
+        *   Gender: Ambiguous. ""Buddy"" can be used for anyone.
+        *   Confidence: 5.
+        *   Reasoning: The word ""buddy"" is gender-neutral.
+
+    *   ""sir"":
+        *   Gender: Masculine. ""Sir"" is specifically used for men.
+        *   Confidence: 5.
+        *   Reasoning: ""Sir"" is a formal address for a man.
+
+    *   Referent 1: ""buddy"", gender: ""ambiguous"", confidence: 5, reasoning: ""The term 'buddy' is gender-neutral.""
+    *   Referent 2: ""sir"", gender: ""masculine"", confidence: 5, reasoning: ""'Sir' is a formal address used for men.""
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form used? Yes (""buddy"", ""sir"").
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""buddy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'buddy' is a gender-neutral relational term.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'Sir' is a formal address specifically used for men.""
+    }
+  ]
+}
+```"
+307,masculine,"The commander' s cashier, Mr. Patel, will pay a reward for each Red killed amounting to 100 Eastern rubles.",cashier,masculine,zero_shot_identify,ambiguous,5.0,No gender-specific information is provided for the cashier.,False,"thought
+*   Input sentence: ""The commander' s cashier, Mr. Patel, will pay a reward for each Red killed amounting to 100 Eastern rubles.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, or ambiguous.
+    *   Output format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""commander"": Role/Occupation.
+    *   ""cashier"": Role/Occupation.
+    *   ""Mr. Patel"": Person (referent). ""Mr."" is a gender marker.
+    *   ""Red"": Political/Military role (referring to a Red Army soldier).
+
+    *   ""commander"": No gender signal in the sentence. -> `ambiguous`.
+    *   ""cashier"": No gender signal in the sentence. -> `ambiguous`.
+    *   ""Mr. Patel"": ""Mr."" indicates male. -> `masculine`.
+    *   ""Red"": No gender signal in the sentence. -> `ambiguous`.
+
+    *   Referent 1: ""commander""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with the commander.
+    *   Referent 2: ""cashier""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific pronouns or titles are associated with the cashier.
+    *   Referent 3: ""Mr. Patel""
+        *   Gender: masculine
+        *   Confidence: 5
+        *   Reasoning: The title ""Mr."" explicitly indicates a male.
+    *   Referent 4: ""Red""
+        *   Gender: ambiguous
+        *   Confidence: 5
+        *   Reasoning: No gender-specific information is provided for the ""Red"".
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface forms used? Yes.
+    *   Order preserved? Yes.
+    *   Gender categories correct? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""commander"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the commander.""
+    },
+    {
+      ""referent"": ""cashier"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the cashier.""
+    },
+    {
+      ""referent"": ""Mr. Patel"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The title 'Mr.' explicitly indicates a male.""
+    },
+    {
+      ""referent"": ""Red"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific information is provided for the 'Red'.""
+    }
+  ]
+}
+```"
+294,feminine,"I couldn't stay inside and watch something awful happen like a helpless bystander, some girl-not this time.",bystander,feminine,zero_shot_identify,ambiguous,5.0,There is no textual evidence to determine the gender of the bystander.,False,"thought
+*   Input: ""I couldn't stay inside and watch something awful happen like a helpless bystander, some girl-not this time.""
+    *   Task: Identify roles, occupations, or relational referents.
+    *   Classification: masculine, feminine, ambiguous.
+    *   Output Format: JSON object with `referents` list containing `referent`, `gender`, `confidence`, and `reasoning`.
+
+    *   ""I"" (Pronoun, but usually not considered a role/occupation/relational referent unless specified. However, the prompt asks for ""referents"". Let's look for roles/occupations/relational terms).
+    *   ""bystander"" (Role)
+    *   ""girl"" (Relational/Role/Identity)
+
+    *   ""bystander"":
+        *   Gender: No signal in the sentence.
+        *   Classification: ambiguous.
+        *   Confidence: 5.
+        *   Reasoning: No gender-specific pronouns or adjectives are associated with ""bystander"".
+
+    *   ""girl"":
+        *   Gender: Unambiguously female.
+        *   Classification: feminine.
+        *   Confidence: 5.
+        *   Reasoning: The word ""girl"" refers to a female person.
+
+    *   Referent 1: ""bystander"", gender: ""ambiguous"", confidence: 5, reasoning: ""No gender-specific information is provided for the bystander.""
+    *   Referent 2: ""girl"", gender: ""feminine"", confidence: 5, reasoning: ""The term 'girl' specifically refers to a female.""
+
+    *   JSON object? Yes.
+    *   Only JSON? Yes.
+    *   Surface form used? Yes.
+    *   Order preserved? Yes.
+    *   Correct categories? Yes.```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""bystander"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There is no textual evidence to determine the gender of the bystander.""
+    },
+    {
+      ""referent"": ""girl"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The word 'girl' explicitly refers to a female.""
+    }
+  ]
+}
+```"

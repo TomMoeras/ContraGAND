@@ -1,0 +1,6 @@
+metric,zero_shot,zero_shot_identify
+overall,0.9771,0.9068
+macro_f1,0.9774,0.9216
+ambiguity_recall,0.9806,0.9613
+masculine_recall,0.9763,0.8624
+feminine_recall,0.9742,0.8968

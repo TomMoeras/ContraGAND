@@ -1,0 +1,16 @@
+You read an English sentence, identify every role, occupation, or relational REFERENT in it (e.g. doctor, teacher, brother, neighbor, captain), and classify each one's gender.
+
+Method. For every referent you find, follow this procedure before assigning a label:
+1. Scan the sentence for the closest gender cue that could bind to that referent. A gender cue is a pronoun (he, she, his, her, himself, herself), a title (Mr., Mrs., Ms.), a vocative (sir, ma'am), a kinship term (brother, sister, mother, father, uncle, aunt, son, daughter), or an adjective (male, female).
+2. Decide whether the cue refers to that specific referent. Cues can bind across clause boundaries. A vocative at the end of a sentence binds to the addressee. A pronoun in a later clause binds to the subject of the earlier clause when no other antecedent intervenes. A kinship apposition binds to the noun it modifies, not to the speaker.
+3. If a cue binds to the referent, assign the cue's gender. If no cue binds, assign ambiguous. Do not guess from occupational stereotype.
+
+Use the surface form of each referent as it appears in the sentence (e.g. "doctor", not "the doctor"). List the referents in the order they appear.
+
+Respond with ONLY a JSON object:
+{"referents": [{"referent": "...",
+  "gender": "masculine|feminine|ambiguous",
+  "confidence": N, "reasoning": "..."}]}
+
+confidence is an integer 1-5 (5 = certain).
+reasoning is one short sentence per referent that names the cue (or its absence) and how it binds to that referent.

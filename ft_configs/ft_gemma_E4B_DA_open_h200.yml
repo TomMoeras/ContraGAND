@@ -1,0 +1,108 @@
+# Open-task LoRA FT for gender-referent classification (H200 GPU node).
+# Student: google/gemma-4-E4B-it
+# Condition: DA-open (enumerate-all-referents task on 2/2/2 contrastive synthetic data)
+# Derived from ft_qwen35_4b_DA_open.yml; ONLY the model/adapter/paths differ:
+#   - plain LoRA (bf16 base) instead of QLoRA — Gemma4ClippableLinear is BnB-incompatible
+#   - llama3 fallback chat template (Gemma native template glitches under axolotl)
+#   - cluster paths + save_total_limit 1
+# PEFT patch for Gemma4ClippableLinear must be active at train/merge time.
+
+base_model: google/gemma-4-E4B-it
+chat_template: tokenizer_default_fallback_llama3
+
+datasets:
+  - path: ./ft_data/open_DA_train.jsonl
+    type: chat_template
+    system: ""
+
+test_datasets:
+  - path: ./ft_data/open_DA_val.jsonl
+    type: chat_template
+    split: train
+    system: ""
+
+dataset_prepared_path: ./ft_outputs/ft_gemma_E4B_DA_open_smoke/prepared
+
+output_dir: ./ft_outputs/ft_gemma_E4B_DA_open
+
+# LoRA configuration (plain LoRA, bf16 base — no QLoRA/4-bit)
+adapter: lora
+lora_r: 64
+lora_alpha: 128
+lora_dropout: 0.05
+lora_target_modules:              # explicit 7-name list (text decoder only)
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+# THE Gemma-4 FIX: q_proj/k_proj/... also exist in the vision_tower + audio_tower,
+# where they are Gemma4ClippableLinear (an nn.Module wrapping nn.Linear, not a
+# Linear subclass) which PEFT cannot wrap -> "Target module Gemma4ClippableLinear
+# is not supported". We do NOT want to adapt those towers anyway, so exclude them
+# by path. Axolotl passes lora_exclude_modules straight to PEFT LoraConfig.exclude_modules.
+lora_exclude_modules: '.*(vision_tower|audio_tower|multi_modal_projector)\..*'
+
+# Sequence and packing
+sequence_len: 1024
+sample_packing: false                  # DDP+LoRA stride bug under packed batches; cheap on 12k rows
+eval_sample_packing: false
+
+# Training
+train_on_inputs: false                   # only learn the assistant turn
+gradient_accumulation_steps: 2
+micro_batch_size: 8
+eval_batch_size: 4
+num_epochs: 5
+
+dataloader_num_workers: 4
+dataloader_pin_memory: true
+dataloader_prefetch_factor: 2
+
+# Optimiser
+optimizer: adamw_torch
+lr_scheduler: cosine
+learning_rate: 2.0e-5
+weight_decay: 0.01
+max_grad_norm: 0.5
+cosine_min_lr_ratio: 0.05
+warmup_steps: 100
+
+# Mixed precision
+bf16: true
+tf32: false
+
+# Memory optimisation
+gradient_checkpointing: false          # DDP+LoRA reentrant-backward incompat; 4B LoRA fits on 141GB easily
+attn_implementation: eager             # sdpa NaNs on Gemma4 hybrid attn (head_dim=512 global); eager is stable (verified in smoke)
+
+# DDP fix for non-uniform parameter usage across LoRA modules
+ddp_find_unused_parameters: true
+
+# Eval / save / early stopping
+eval_strategy: steps
+eval_steps: 100
+save_strategy: steps
+save_steps: 100
+logging_steps: 10
+early_stopping_patience: 3
+load_best_model_at_end: true
+metric_for_best_model: eval_loss
+greater_is_better: false
+save_total_limit: 1
+
+# Loss
+label_smoothing_factor: 0.001
+
+# Loss watchdog (catastrophic-spike detection)
+loss_watchdog_threshold: 5.0
+loss_watchdog_patience: 5
+
+# wandb (optional; left blank by default)
+wandb_project:
+wandb_entity:
+wandb_watch:
+wandb_name: ft_gemma_E4B_DA_open_h200
+wandb_log_model:

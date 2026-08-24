@@ -1,0 +1,24 @@
+strategy,variant,n,accuracy
+(source rows - ambiguous),source,465,0.5978
+adjective,feminine,62,0.5484
+adjective,masculine,62,0.4677
+appositive_dash,feminine,4,0.0
+appositive_dash,masculine,4,0.25
+combination,feminine,1,0.0
+combination,masculine,1,0.0
+context_modifier,feminine,16,0.1875
+context_modifier,masculine,16,0.0
+pronoun_insertion,feminine,55,0.4545
+pronoun_insertion,masculine,55,0.4364
+pronoun_swap,feminine,89,0.0787
+pronoun_swap,masculine,89,0.0787
+referent_swap,feminine,21,0.5714
+referent_swap,masculine,21,0.2857
+relational_insertion,feminine,25,0.0
+relational_insertion,masculine,25,0.04
+sir_maam,feminine,77,0.026
+sir_maam,masculine,77,0.039
+title_insertion,feminine,110,0.0909
+title_insertion,masculine,110,0.0727
+unknown,feminine,5,0.0
+unknown,masculine,5,0.0

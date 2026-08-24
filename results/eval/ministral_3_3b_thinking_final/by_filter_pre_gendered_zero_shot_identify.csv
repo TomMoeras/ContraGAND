@@ -1,0 +1,3 @@
+filter_pre_gendered,n,accuracy
+False,1371,0.3253
+True,24,0.1667

@@ -1,0 +1,14 @@
+# Optional dependencies for running open-source models locally on HPC.
+# Install ONLY what you need - vLLM and HF transformers are heavy.
+
+# Hugging Face transformers (smaller models, simple API)
+transformers>=4.40
+torch>=2.1
+accelerate>=0.25
+sentencepiece>=0.1.99
+
+# vLLM (preferred for batched inference on GPUs; large download)
+# vllm>=0.6
+
+# Tokenizers helper (if not pulled in by transformers)
+tokenizers>=0.15

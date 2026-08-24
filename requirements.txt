@@ -1,0 +1,12 @@
+# Core data
+pandas>=2.0
+pyarrow>=14.0
+numpy>=1.24
+
+# Anthropic Claude API (used to GENERATE the contrastive variants and to run
+# the Claude-based classification baseline). Open-source local-model paths do
+# not need this - see requirements-local.txt.
+anthropic>=0.40
+
+# Testing
+pytest>=7.0

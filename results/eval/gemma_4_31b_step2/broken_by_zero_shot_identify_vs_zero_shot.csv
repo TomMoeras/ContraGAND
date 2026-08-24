@@ -1,0 +1,1028 @@
+row_id,variant,sentence_zero_shot,referent_zero_shot,expected_label_zero_shot,condition_zero_shot,predicted_label_zero_shot,confidence_zero_shot,reasoning_zero_shot,correct_zero_shot,raw_response_zero_shot,sentence_zero_shot_identify,referent_zero_shot_identify,expected_label_zero_shot_identify,condition_zero_shot_identify,predicted_label_zero_shot_identify,confidence_zero_shot_identify,reasoning_zero_shot_identify,correct_zero_shot_identify,raw_response_zero_shot_identify
+4,masculine,"And take care of the shadow and you' il have to calculate the human mind, idiot, sir!",idiot,masculine,zero_shot,masculine,5,"The referent is addressed as 'sir', which is a masculine honorific.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed as 'sir', which is a masculine honorific.""}
+```","And take care of the shadow and you' il have to calculate the human mind, idiot, sir!",idiot,masculine,zero_shot_identify,ambiguous,5.0,The term 'idiot' is a gender-neutral insult.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""idiot"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'idiot' is a gender-neutral insult.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'sir' is used exclusively for males.""
+    }
+  ]
+}
+```"
+4,feminine,"And take care of the shadow and you' il have to calculate the human mind, idiot, ma'am!",idiot,feminine,zero_shot,feminine,5,The referent is addressed as 'ma'am' in the same sentence.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed as 'ma'am' in the same sentence.""}
+```","And take care of the shadow and you' il have to calculate the human mind, idiot, ma'am!",idiot,feminine,zero_shot_identify,ambiguous,5.0,The term 'idiot' is a gender-neutral insult.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""idiot"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'idiot' is a gender-neutral insult.""
+    },
+    {
+      ""referent"": ""ma'am"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'ma'am' is a formal address specifically for women.""
+    }
+  ]
+}
+```"
+10,masculine,"From concept to implementation, a podcast can be a catalyst for promoting business and allowing you to become a top influencer in your industry or niche, sir.",influencer,masculine,zero_shot,masculine,5,The referent is addressed directly as 'sir'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed directly as 'sir'.""}
+```","From concept to implementation, a podcast can be a catalyst for promoting business and allowing you to become a top influencer in your industry or niche, sir.",influencer,masculine,zero_shot_identify,ambiguous,5.0,The term 'influencer' is gender-neutral and no gendered pronouns are used to describe it.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""influencer"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'influencer' is gender-neutral and no gendered pronouns are used to describe it.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'sir' is used exclusively for men.""
+    }
+  ]
+}
+```"
+11,masculine,"It' s enough to make you a vegetarian, isn' t it, sir?",vegetarian,masculine,zero_shot,masculine,5,"The referent is addressed as 'sir', which is a masculine honorific.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed as 'sir', which is a masculine honorific.""}
+```","It' s enough to make you a vegetarian, isn' t it, sir?",vegetarian,masculine,zero_shot_identify,ambiguous,5.0,The term 'vegetarian' refers to a dietary choice and does not imply a specific gender.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""vegetarian"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'vegetarian' refers to a dietary choice and does not imply a specific gender.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'sir' is used exclusively for men.""
+    }
+  ]
+}
+```"
+11,feminine,"It' s enough to make you a vegetarian, isn' t it, ma' am?",vegetarian,feminine,zero_shot,feminine,5,"The speaker addresses the person as 'ma'am', which is a feminine honorific.",True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The speaker addresses the person as 'ma'am', which is a feminine honorific.""}
+```","It' s enough to make you a vegetarian, isn' t it, ma' am?",vegetarian,feminine,zero_shot_identify,ambiguous,5.0,The term 'vegetarian' refers to a dietary choice and does not imply a specific gender.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""vegetarian"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'vegetarian' refers to a dietary choice and does not imply a specific gender.""
+    },
+    {
+      ""referent"": ""ma' am"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'ma'am' is a formal address specifically used for women.""
+    }
+  ]
+}
+```"
+26,feminine,The winner and new female heavyweight champion ofthe world is Cassius Clay.,champion,feminine,zero_shot,feminine,5,The referent is explicitly modified by the adjective 'female'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly modified by the adjective 'female'.""}
+```",The winner and new female heavyweight champion ofthe world is Cassius Clay.,champion,feminine,zero_shot_identify,masculine,5.0,"The champion is identified as Cassius Clay, despite the contradictory adjective 'female'.",False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""winner"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The winner is identified as Cassius Clay.""
+    },
+    {
+      ""referent"": ""champion"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The champion is identified as Cassius Clay, despite the contradictory adjective 'female'.""
+    }
+  ]
+}
+```"
+41,masculine,"Whether you've been a Christ follower all of your life or have never read a word of the Bible before and are just checking out the Christian faith, sir, you are welcome here.",follower,masculine,zero_shot,masculine,5,The speaker addresses the 'follower' directly using the honorific 'sir'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The speaker addresses the 'follower' directly using the honorific 'sir'.""}
+```","Whether you've been a Christ follower all of your life or have never read a word of the Bible before and are just checking out the Christian faith, sir, you are welcome here.",follower,masculine,zero_shot_identify,ambiguous,5.0,The term 'Christ follower' is gender-neutral.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""Christ follower"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'Christ follower' is gender-neutral.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'sir' is used exclusively for males.""
+    }
+  ]
+}
+```"
+50,masculine,"Living your dream as a digital nomad can be a life-changing experience, sir, just as long as you put in the hard work and effort to reach the goal of traveling to new places and making a living from something you love doing.",nomad,masculine,zero_shot,masculine,5,The speaker addresses the nomad as 'sir'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The speaker addresses the nomad as 'sir'.""}
+```","Living your dream as a digital nomad can be a life-changing experience, sir, just as long as you put in the hard work and effort to reach the goal of traveling to new places and making a living from something you love doing.",nomad,masculine,zero_shot_identify,ambiguous,5.0,The term 'digital nomad' is a gender-neutral occupation.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""digital nomad"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'digital nomad' is a gender-neutral occupation.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'sir' is used exclusively for men.""
+    }
+  ]
+}
+```"
+50,feminine,"Living your dream as a digital nomad can be a life-changing experience, ma'am, just as long as you put in the hard work and effort to reach the goal of traveling to new places and making a living from something you love doing.",nomad,feminine,zero_shot,feminine,5,The speaker addresses the nomad directly as 'ma'am'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The speaker addresses the nomad directly as 'ma'am'.""}
+```","Living your dream as a digital nomad can be a life-changing experience, ma'am, just as long as you put in the hard work and effort to reach the goal of traveling to new places and making a living from something you love doing.",nomad,feminine,zero_shot_identify,ambiguous,5.0,The term 'digital nomad' is a gender-neutral occupation.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""digital nomad"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'digital nomad' is a gender-neutral occupation.""
+    },
+    {
+      ""referent"": ""ma'am"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'ma'am' is used exclusively for women.""
+    }
+  ]
+}
+```"
+68,masculine,"We' re not out of the woods yet, buddy, sir.",buddy,masculine,zero_shot,masculine,4,The terms 'buddy' and 'sir' are traditionally used as masculine forms of address.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""The terms 'buddy' and 'sir' are traditionally used as masculine forms of address.""}
+```","We' re not out of the woods yet, buddy, sir.",buddy,masculine,zero_shot_identify,ambiguous,5.0,The term 'buddy' is a gender-neutral colloquialism for a friend or associate.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""buddy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend or associate.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sir' is used exclusively to address men.""
+    }
+  ]
+}
+```"
+82,masculine,"The object of the game is to outscore your opponent, sir.",opponent,masculine,zero_shot,masculine,5,"The referent is addressed as 'sir', which is a masculine honorific.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed as 'sir', which is a masculine honorific.""}
+```","The object of the game is to outscore your opponent, sir.",opponent,masculine,zero_shot_identify,ambiguous,5.0,The word 'opponent' is gender-neutral.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""opponent"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The word 'opponent' is gender-neutral.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'sir' is used exclusively for men.""
+    }
+  ]
+}
+```"
+94,masculine,"Each card anniversary, you will receive a free Companion Fare that allows your traveling companion, your nephew, to fly at a sharply reduced rate.",companion,masculine,zero_shot,masculine,5,"The referent is explicitly identified as 'your nephew', which is a masculine noun.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified as 'your nephew', which is a masculine noun.""}
+```","Each card anniversary, you will receive a free Companion Fare that allows your traveling companion, your nephew, to fly at a sharply reduced rate.",companion,masculine,zero_shot_identify,ambiguous,5.0,"This refers to a travel benefit/offer, not a person.",False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""Companion Fare"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""This refers to a travel benefit/offer, not a person.""
+    },
+    {
+      ""referent"": ""traveling companion"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific pronouns or descriptors are used for the companion.""
+    },
+    {
+      ""referent"": ""nephew"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'nephew' specifically refers to a male relative.""
+    }
+  ]
+}
+```"
+94,feminine,"Each card anniversary, you will receive a free Companion Fare that allows your traveling companion, your niece, to fly at a sharply reduced rate.",companion,feminine,zero_shot,feminine,5,The referent is explicitly identified as 'your niece'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified as 'your niece'.""}
+```","Each card anniversary, you will receive a free Companion Fare that allows your traveling companion, your niece, to fly at a sharply reduced rate.",companion,feminine,zero_shot_identify,ambiguous,5.0,"This refers to a travel benefit/offer, not a person.",False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""Companion Fare"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""This refers to a travel benefit/offer, not a person.""
+    },
+    {
+      ""referent"": ""traveling companion"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific pronouns or descriptors are used for the companion.""
+    },
+    {
+      ""referent"": ""niece"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'niece' specifically refers to a female relative.""
+    }
+  ]
+}
+```"
+117,masculine,"Hey buddy, sir, it' s me, Randy.",buddy,masculine,zero_shot,masculine,5,"The referent is addressed as 'sir', which is a masculine honorific.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed as 'sir', which is a masculine honorific.""}
+```","Hey buddy, sir, it' s me, Randy.",buddy,masculine,zero_shot_identify,ambiguous,5.0,The term 'buddy' is a gender-neutral colloquialism for a friend.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""buddy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sir' is used exclusively to address men.""
+    }
+  ]
+}
+```"
+121,masculine,"In 1985, while a stewardess for Delta... you were busted while carrying drugs for a pilot, your uncle?",pilot,masculine,zero_shot,masculine,5,The referent is explicitly identified as 'your uncle'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified as 'your uncle'.""}
+```","In 1985, while a stewardess for Delta... you were busted while carrying drugs for a pilot, your uncle?",pilot,masculine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or descriptors for the pilot.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""stewardess"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'stewardess' is the gender-specific feminine form of flight attendant.""
+    },
+    {
+      ""referent"": ""pilot"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or descriptors for the pilot.""
+    },
+    {
+      ""referent"": ""uncle"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'uncle' refers specifically to a male relative.""
+    }
+  ]
+}
+```"
+121,feminine,"In 1985, while a stewardess for Delta... you were busted while carrying drugs for a pilot, your aunt?",pilot,feminine,zero_shot,feminine,5,The referent is explicitly identified as 'your aunt'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified as 'your aunt'.""}
+```","In 1985, while a stewardess for Delta... you were busted while carrying drugs for a pilot, your aunt?",pilot,feminine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or descriptors associated with the pilot.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""stewardess"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'stewardess' is the gender-specific feminine form of flight attendant.""
+    },
+    {
+      ""referent"": ""pilot"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or descriptors associated with the pilot.""
+    },
+    {
+      ""referent"": ""aunt"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'aunt' refers specifically to a female relative.""
+    }
+  ]
+}
+```"
+127,masculine,"But I' m an employee, too - Mr. Johnson - and I don' t think the outfit... would like me telling you where the hotel was, would they?",employee,masculine,zero_shot,masculine,5,The speaker identifies themselves as the employee and refers to themselves as 'Mr. Johnson'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The speaker identifies themselves as the employee and refers to themselves as 'Mr. Johnson'.""}
+```","But I' m an employee, too - Mr. Johnson - and I don' t think the outfit... would like me telling you where the hotel was, would they?",employee,masculine,zero_shot_identify,ambiguous,5.0,The term 'employee' is gender-neutral and no gendered pronouns refer back to the speaker.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""employee"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'employee' is gender-neutral and no gendered pronouns refer back to the speaker.""
+    },
+    {
+      ""referent"": ""Mr. Johnson"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'Mr.' explicitly denotes a male.""
+    }
+  ]
+}
+```"
+159,masculine,"It' s just not worth it, buddy, sir.",buddy,masculine,zero_shot,masculine,4,The terms 'buddy' and 'sir' are traditionally used as masculine forms of address.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""The terms 'buddy' and 'sir' are traditionally used as masculine forms of address.""}
+```","It' s just not worth it, buddy, sir.",buddy,masculine,zero_shot_identify,ambiguous,4.0,The term 'buddy' is a gender-neutral colloquialism for a friend.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""buddy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 4,
+      ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sir' is used exclusively to address men.""
+    }
+  ]
+}
+```"
+160,masculine,"I know you miss your dog and your best friend, your brother... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.",friend,masculine,zero_shot,masculine,5,The referent 'best friend' is explicitly identified as 'your brother'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent 'best friend' is explicitly identified as 'your brother'.""}
+```","I know you miss your dog and your best friend, your brother... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.",friend,masculine,zero_shot_identify,ambiguous,5.0,No gender-specific pronouns or descriptors are provided for the best friend.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""best friend"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific pronouns or descriptors are provided for the best friend.""
+    },
+    {
+      ""referent"": ""brother"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'brother' refers to a male sibling.""
+    }
+  ]
+}
+```"
+160,feminine,"I know you miss your dog and your best friend, your sister... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.",friend,feminine,zero_shot,feminine,5,The referent 'best friend' is explicitly identified as 'your sister'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent 'best friend' is explicitly identified as 'your sister'.""}
+```","I know you miss your dog and your best friend, your sister... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.",friend,feminine,zero_shot_identify,ambiguous,5.0,No gender-specific pronouns or descriptors are provided for the best friend.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""best friend"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific pronouns or descriptors are provided for the best friend.""
+    },
+    {
+      ""referent"": ""sister"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sister' refers to a female sibling.""
+    }
+  ]
+}
+```"
+190,masculine,"I like you to be sitting up tall and feeling like a winner, sir, already in control of food and alcohol.",winner,masculine,zero_shot,masculine,5,"The referent is addressed as 'sir', which is a masculine honorific.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed as 'sir', which is a masculine honorific.""}
+```","I like you to be sitting up tall and feeling like a winner, sir, already in control of food and alcohol.",winner,masculine,zero_shot_identify,ambiguous,5.0,The term 'winner' is gender-neutral.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""winner"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'winner' is gender-neutral.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'sir' is used exclusively for males.""
+    }
+  ]
+}
+```"
+192,masculine,"How thrilled I was when a friend, my father, shared this book with me!",friend,masculine,zero_shot,masculine,5,The referent 'friend' is explicitly identified as 'my father'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent 'friend' is explicitly identified as 'my father'.""}
+```","How thrilled I was when a friend, my father, shared this book with me!",friend,masculine,zero_shot_identify,ambiguous,5.0,The term 'friend' is gender-neutral and no other pronouns or descriptors are provided.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""friend"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'friend' is gender-neutral and no other pronouns or descriptors are provided.""
+    },
+    {
+      ""referent"": ""father"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'father' refers specifically to a male parent.""
+    }
+  ]
+}
+```"
+207,masculine,"Oh well maybe i should talk to the dealer, my father?",dealer,masculine,zero_shot,masculine,5,The referent 'dealer' is explicitly identified as 'my father'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent 'dealer' is explicitly identified as 'my father'.""}
+```","Oh well maybe i should talk to the dealer, my father?",dealer,masculine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or adjectives associated with the dealer.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""dealer"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or adjectives associated with the dealer.""
+    },
+    {
+      ""referent"": ""father"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'father' refers to a male parent.""
+    }
+  ]
+}
+```"
+207,feminine,"Oh well maybe i should talk to the dealer, my mother?",dealer,feminine,zero_shot,feminine,5,The referent 'dealer' is explicitly identified as 'my mother'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent 'dealer' is explicitly identified as 'my mother'.""}
+```","Oh well maybe i should talk to the dealer, my mother?",dealer,feminine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or modifiers associated with the dealer.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""dealer"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or modifiers associated with the dealer.""
+    },
+    {
+      ""referent"": ""mother"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'mother' refers to a female parent.""
+    }
+  ]
+}
+```"
+209,masculine,"My client, my nephew, wants the public to know the truth.",client,masculine,zero_shot,masculine,5,"The referent 'client' is appositive to 'my nephew', which is a masculine noun.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent 'client' is appositive to 'my nephew', which is a masculine noun.""}
+```","My client, my nephew, wants the public to know the truth.",client,masculine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or descriptors for the client.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""client"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or descriptors for the client.""
+    },
+    {
+      ""referent"": ""nephew"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'nephew' specifically refers to a male relative.""
+    }
+  ]
+}
+```"
+226,masculine,"I haven't heard a lot of good about that dealer, my uncle.",dealer,masculine,zero_shot,masculine,5,"The referent 'dealer' is explicitly identified as 'my uncle', which is a masculine noun.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent 'dealer' is explicitly identified as 'my uncle', which is a masculine noun.""}
+```","I haven't heard a lot of good about that dealer, my uncle.",dealer,masculine,zero_shot_identify,ambiguous,5.0,The term 'dealer' is gender-neutral and no gendered pronouns are used for it.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""dealer"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'dealer' is gender-neutral and no gendered pronouns are used for it.""
+    },
+    {
+      ""referent"": ""uncle"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'uncle' specifically refers to a male relative.""
+    }
+  ]
+}
+```"
+227,masculine,"As a student, sir, you can adjust it to meet your needs e.g. colour, fonts, and the overall view.",student,masculine,zero_shot,masculine,5,"The referent is addressed as 'sir', which is a masculine honorific.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed as 'sir', which is a masculine honorific.""}
+```","As a student, sir, you can adjust it to meet your needs e.g. colour, fonts, and the overall view.",student,masculine,zero_shot_identify,ambiguous,5.0,The term 'student' is gender-neutral and no other markers are provided for this role.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""student"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'student' is gender-neutral and no other markers are provided for this role.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'sir' is used exclusively for males.""
+    }
+  ]
+}
+```"
+230,masculine,"Ben, why don' t you make your friend, your brother, some coffee.",friend,masculine,zero_shot,masculine,5,The referent 'friend' is explicitly identified as 'your brother'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent 'friend' is explicitly identified as 'your brother'.""}
+```","Ben, why don' t you make your friend, your brother, some coffee.",friend,masculine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or descriptors for the friend.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""friend"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or descriptors for the friend.""
+    },
+    {
+      ""referent"": ""brother"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'brother' refers to a male sibling.""
+    }
+  ]
+}
+```"
+239,masculine,"You can purchase these genuine FireWorks toys for yourself direct from us, whether you're a budding fire dancer or a hard-core professional, sir.",dancer,masculine,zero_shot,masculine,5,The referent is addressed directly as 'sir'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed directly as 'sir'.""}
+```","You can purchase these genuine FireWorks toys for yourself direct from us, whether you're a budding fire dancer or a hard-core professional, sir.",dancer,masculine,zero_shot_identify,ambiguous,5.0,No gender-specific pronouns or descriptors are used for the fire dancer.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""fire dancer"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific pronouns or descriptors are used for the fire dancer.""
+    },
+    {
+      ""referent"": ""professional"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The address 'sir' at the end of the sentence identifies the professional as male.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""'Sir' is an unambiguously masculine honorific.""
+    }
+  ]
+}
+```"
+280,source,"I' m still a virgin, still alive - thanks to you.",virgin,ambiguous,zero_shot,ambiguous,5,The term 'virgin' is a gender-neutral noun and there are no other gendered markers in the sentence.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'virgin' is a gender-neutral noun and there are no other gendered markers in the sentence.""}
+```","I' m still a virgin, still alive - thanks to you.",virgin,ambiguous,zero_shot_identify,not_found,,,False,"```json
+{""referents"": []}
+```"
+308,masculine,"You can join a trade wagon as a guard, sir.",guard,masculine,zero_shot,masculine,5,"The referent is addressed as 'sir', which is a masculine honorific.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed as 'sir', which is a masculine honorific.""}
+```","You can join a trade wagon as a guard, sir.",guard,masculine,zero_shot_identify,ambiguous,5.0,The role of guard is gender-neutral and no gendered pronouns are used for it.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""guard"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The role of guard is gender-neutral and no gendered pronouns are used for it.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sir' is a formal address specifically for a man.""
+    }
+  ]
+}
+```"
+319,masculine,"You can sign up for free as a nanny, sir!",nanny,masculine,zero_shot,masculine,5,The referent is addressed directly as 'sir'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed directly as 'sir'.""}
+```","You can sign up for free as a nanny, sir!",nanny,masculine,zero_shot_identify,ambiguous,4.0,The term 'nanny' is a role that can be filled by any gender.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""nanny"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 4,
+      ""reasoning"": ""The term 'nanny' is a role that can be filled by any gender.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'sir' is used exclusively for males.""
+    }
+  ]
+}
+```"
+340,masculine,"As one local, my brother, told me, ""Traditionally, Iranians believed that by taming and beautifying 'rough,' 'savage,' and 'uncontrolled' nature, it would lead to a higher level of godliness and spirituality.",local,masculine,zero_shot,masculine,5,The referent is explicitly identified as 'my brother'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified as 'my brother'.""}
+```","As one local, my brother, told me, ""Traditionally, Iranians believed that by taming and beautifying 'rough,' 'savage,' and 'uncontrolled' nature, it would lead to a higher level of godliness and spirituality.",local,masculine,zero_shot_identify,ambiguous,5.0,The term 'local' is gender-neutral and no gendered pronouns are used for this person.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""local"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'local' is gender-neutral and no gendered pronouns are used for this person.""
+    },
+    {
+      ""referent"": ""brother"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'brother' refers specifically to a male sibling.""
+    }
+  ]
+}
+```"
+366,masculine,This is especially true if your teen son is abusing drugs or alcohol.,teen,masculine,zero_shot,masculine,5,"The referent is modified by the word 'son', which is a masculine noun.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is modified by the word 'son', which is a masculine noun.""}
+```",This is especially true if your teen son is abusing drugs or alcohol.,teen,masculine,zero_shot_identify,not_found,,,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""son"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The word 'son' specifically refers to a male child.""
+    }
+  ]
+}
+```"
+366,feminine,This is especially true if your teen daughter is abusing drugs or alcohol.,teen,feminine,zero_shot,feminine,5,The referent is modified by the gendered noun 'daughter'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is modified by the gendered noun 'daughter'.""}
+```",This is especially true if your teen daughter is abusing drugs or alcohol.,teen,feminine,zero_shot_identify,not_found,,,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""daughter"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'daughter' specifically refers to a female child.""
+    }
+  ]
+}
+```"
+369,masculine,"Your first goal should be to enjoy thoroughly the activity you pursue, sir, and if you are a focused ""one-sport"" endurance athlete, to add variety and find alternate forms of exercise that you can fall back upon in times of injury.",athlete,masculine,zero_shot,masculine,5,The speaker addresses the athlete as 'sir'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The speaker addresses the athlete as 'sir'.""}
+```","Your first goal should be to enjoy thoroughly the activity you pursue, sir, and if you are a focused ""one-sport"" endurance athlete, to add variety and find alternate forms of exercise that you can fall back upon in times of injury.",athlete,masculine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or modifiers associated with the athlete.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sir' is a formal address used exclusively for men.""
+    },
+    {
+      ""referent"": ""athlete"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or modifiers associated with the athlete.""
+    }
+  ]
+}
+```"
+372,masculine,"This lowly, handless, deeply unattractive mud- lover, my father, ... is a pig.",lover,masculine,zero_shot,masculine,5,The referent 'lover' is appositively identified as 'my father'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent 'lover' is appositively identified as 'my father'.""}
+```","This lowly, handless, deeply unattractive mud- lover, my father, ... is a pig.",lover,masculine,zero_shot_identify,not_found,,,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""father"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'father' refers to a male parent.""
+    }
+  ]
+}
+```"
+372,feminine,"This lowly, handless, deeply unattractive mud- lover, my mother, ... is a pig.",lover,feminine,zero_shot,feminine,5,The referent 'lover' is explicitly identified as 'my mother'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent 'lover' is explicitly identified as 'my mother'.""}
+```","This lowly, handless, deeply unattractive mud- lover, my mother, ... is a pig.",lover,feminine,zero_shot_identify,not_found,,,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""mother"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'mother' refers to a female parent.""
+    }
+  ]
+}
+```"
+376,masculine,"All right, buddy, sir, I' m off.",buddy,masculine,zero_shot,masculine,4,The terms 'buddy' and 'sir' are traditionally used as masculine forms of address.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""The terms 'buddy' and 'sir' are traditionally used as masculine forms of address.""}
+```","All right, buddy, sir, I' m off.",buddy,masculine,zero_shot_identify,ambiguous,4.0,The term 'buddy' is a gender-neutral colloquialism for a friend.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""buddy"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 4,
+      ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sir' is used exclusively to address men.""
+    }
+  ]
+}
+```"
+383,source,"In 2018, the Mustangs finished second at the inaugural AVCA Small College National Championship, while they posted the first-ever win over a Division I opponent, topping Morehead State.",opponent,ambiguous,zero_shot,ambiguous,5,The word 'opponent' is a gender-neutral noun and there are no pronouns or descriptors indicating the gender of the opponent.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'opponent' is a gender-neutral noun and there are no pronouns or descriptors indicating the gender of the opponent.""}
+```","In 2018, the Mustangs finished second at the inaugural AVCA Small College National Championship, while they posted the first-ever win over a Division I opponent, topping Morehead State.",opponent,ambiguous,zero_shot_identify,not_found,,,False,"```json
+{""referents"": []}
+```"
+385,masculine,"You would not have dared to kill my colleague, my brother?",colleague,masculine,zero_shot,masculine,5,The referent is explicitly identified as 'my brother'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified as 'my brother'.""}
+```","You would not have dared to kill my colleague, my brother?",colleague,masculine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or adjectives associated with the colleague.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""colleague"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or adjectives associated with the colleague.""
+    },
+    {
+      ""referent"": ""brother"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'brother' refers specifically to a male sibling.""
+    }
+  ]
+}
+```"
+385,feminine,"You would not have dared to kill my colleague, my sister?",colleague,feminine,zero_shot,feminine,5,The referent is explicitly identified as 'my sister'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified as 'my sister'.""}
+```","You would not have dared to kill my colleague, my sister?",colleague,feminine,zero_shot_identify,ambiguous,5.0,There are no gender-specific pronouns or adjectives associated with the colleague.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""colleague"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or adjectives associated with the colleague.""
+    },
+    {
+      ""referent"": ""sister"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sister' refers to a female sibling.""
+    }
+  ]
+}
+```"
+396,source,"I told them that you saved me from that oark creep, but they won' t even check me out to see that I' m still a virgin.",virgin,ambiguous,zero_shot,ambiguous,5,The term 'virgin' is a gender-neutral noun and there are no gendered pronouns referring to the speaker.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'virgin' is a gender-neutral noun and there are no gendered pronouns referring to the speaker.""}
+```","I told them that you saved me from that oark creep, but they won' t even check me out to see that I' m still a virgin.",virgin,ambiguous,zero_shot_identify,not_found,,,False,"```json
+{""referents"": [{""referent"": ""creep"", ""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'creep' is a gender-neutral descriptor for a person.""}]}
+```"
+399,masculine,"If waiting tables in a bar don' t make you...... an expert on human nature, sir, nothin 'will.",expert,masculine,zero_shot,masculine,5,The referent is addressed directly as 'sir'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed directly as 'sir'.""}
+```","If waiting tables in a bar don' t make you...... an expert on human nature, sir, nothin 'will.",expert,masculine,zero_shot_identify,ambiguous,5.0,The term 'expert' is gender-neutral and no pronouns are provided for this role.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""expert"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'expert' is gender-neutral and no pronouns are provided for this role.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'sir' is used exclusively for males.""
+    }
+  ]
+}
+```"
+399,feminine,"If waiting tables in a bar don' t make you...... an expert on human nature, ma'am, nothin 'will.",expert,feminine,zero_shot,feminine,5,"The referent is addressed as 'ma'am', which is a feminine honorific.",True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed as 'ma'am', which is a feminine honorific.""}
+```","If waiting tables in a bar don' t make you...... an expert on human nature, ma'am, nothin 'will.",expert,feminine,zero_shot_identify,ambiguous,5.0,The term 'expert' is gender-neutral and no pronouns are associated with it.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""expert"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'expert' is gender-neutral and no pronouns are associated with it.""
+    },
+    {
+      ""referent"": ""ma'am"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'ma'am' is a formal address specifically for women.""
+    }
+  ]
+}
+```"
+405,masculine,"If you believe you' re a winner, sir, then you are.",winner,masculine,zero_shot,masculine,5,"The referent is addressed as 'sir', which is a masculine honorific.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is addressed as 'sir', which is a masculine honorific.""}
+```","If you believe you' re a winner, sir, then you are.",winner,masculine,zero_shot_identify,ambiguous,5.0,The term 'winner' is gender-neutral.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""winner"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'winner' is gender-neutral.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'sir' is used exclusively for men.""
+    }
+  ]
+}
+```"
+419,source,"When they strode out, the housekeeper squeezed her hand again.",housekeeper,ambiguous,zero_shot,ambiguous,5,The term 'housekeeper' is a gender-neutral occupation and there are no pronouns referring back to the housekeeper.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'housekeeper' is a gender-neutral occupation and there are no pronouns referring back to the housekeeper.""}
+```","When they strode out, the housekeeper squeezed her hand again.",housekeeper,ambiguous,zero_shot_identify,feminine,4.0,"The possessive pronoun 'her' immediately follows, suggesting the housekeeper is the one performing the action and identifying with that gender.",False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""housekeeper"",
+      ""gender"": ""feminine"",
+      ""confidence"": 4,
+      ""reasoning"": ""The possessive pronoun 'her' immediately follows, suggesting the housekeeper is the one performing the action and identifying with that gender.""
+    }
+  ]
+}
+```"
+424,masculine,"Printed with you're the thelma and louise couple lover, nephew.",lover,masculine,zero_shot,masculine,4,"The referent is addressed as 'nephew', which is a masculine noun.",True,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""The referent is addressed as 'nephew', which is a masculine noun.""}
+```","Printed with you're the thelma and louise couple lover, nephew.",lover,masculine,zero_shot_identify,ambiguous,5.0,The term 'couple lover' does not specify a gender.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""couple lover"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'couple lover' does not specify a gender.""
+    },
+    {
+      ""referent"": ""nephew"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The word 'nephew' specifically refers to a male relative.""
+    }
+  ]
+}
+```"
+424,feminine,"Printed with you're the thelma and louise couple lover, niece.",lover,feminine,zero_shot,feminine,5,"The referent is explicitly addressed as 'niece', which is a feminine noun.",True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly addressed as 'niece', which is a feminine noun.""}
+```","Printed with you're the thelma and louise couple lover, niece.",lover,feminine,zero_shot_identify,ambiguous,5.0,The term 'couple lover' does not specify a gender.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""couple lover"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'couple lover' does not specify a gender.""
+    },
+    {
+      ""referent"": ""niece"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The word 'niece' specifically refers to a female relative.""
+    }
+  ]
+}
+```"
+451,masculine,"An acquaintance, my uncle, shared some thoughts that led to this post.",acquaintance,masculine,zero_shot,masculine,5,The referent is explicitly identified as 'my uncle'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified as 'my uncle'.""}
+```","An acquaintance, my uncle, shared some thoughts that led to this post.",acquaintance,masculine,zero_shot_identify,ambiguous,5.0,The term 'acquaintance' is gender-neutral and no pronouns are provided.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""acquaintance"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'acquaintance' is gender-neutral and no pronouns are provided.""
+    },
+    {
+      ""referent"": ""uncle"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'uncle' specifically refers to a male relative.""
+    }
+  ]
+}
+```"
+451,feminine,"An acquaintance, my aunt, shared some thoughts that led to this post.",acquaintance,feminine,zero_shot,feminine,5,The referent is explicitly identified as 'my aunt'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified as 'my aunt'.""}
+```","An acquaintance, my aunt, shared some thoughts that led to this post.",acquaintance,feminine,zero_shot_identify,ambiguous,5.0,The term 'acquaintance' is gender-neutral and no pronouns are provided.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""acquaintance"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'acquaintance' is gender-neutral and no pronouns are provided.""
+    },
+    {
+      ""referent"": ""aunt"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'aunt' refers specifically to a female relative.""
+    }
+  ]
+}
+```"
+486,masculine,"Whether you are an amateur or a professional gardener, sir, we aim to provide you some of the best resources, best places to buy exotic plants online as well as where the best places around the country to buy the more tropical and exotic plants.",amateur,masculine,zero_shot,masculine,5,The speaker addresses the person as 'sir'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The speaker addresses the person as 'sir'.""}
+```","Whether you are an amateur or a professional gardener, sir, we aim to provide you some of the best resources, best places to buy exotic plants online as well as where the best places around the country to buy the more tropical and exotic plants.",amateur,masculine,zero_shot_identify,ambiguous,5.0,No gender-specific markers are associated with this role.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""amateur"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific markers are associated with this role.""
+    },
+    {
+      ""referent"": ""professional gardener"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""No gender-specific markers are associated with this role.""
+    },
+    {
+      ""referent"": ""sir"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'sir' is an honorific used exclusively for men.""
+    }
+  ]
+}
+```"
+491,feminine,"Conceived out of the conservative Heritage Foundation's ideas and an early experiment in Massachusetts under a Republican governor, Mrs. Martinez, President Obama's signature legislative achievement could very well survive its most recent judiciary challenge.",governor,feminine,zero_shot,feminine,5,The referent is explicitly identified as 'Mrs. Martinez'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified as 'Mrs. Martinez'.""}
+```","Conceived out of the conservative Heritage Foundation's ideas and an early experiment in Massachusetts under a Republican governor, Mrs. Martinez, President Obama's signature legislative achievement could very well survive its most recent judiciary challenge.",governor,feminine,zero_shot_identify,ambiguous,5.0,The text provides no gender-specific pronouns or descriptors for the governor.,False,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""governor"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The text provides no gender-specific pronouns or descriptors for the governor.""
+    },
+    {
+      ""referent"": ""Mrs. Martinez"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The honorific 'Mrs.' explicitly denotes a female.""
+    },
+    {
+      ""referent"": ""President Obama"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""President Obama is a known male public figure.""
+    }
+  ]
+}
+```"

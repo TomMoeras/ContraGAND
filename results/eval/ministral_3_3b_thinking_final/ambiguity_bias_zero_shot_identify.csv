@@ -1,0 +1,7 @@
+referent,n_confident_guesses,guessed_masculine,guessed_feminine,male_share
+soldier,2,2,0,1.0
+beautician,1,0,1,0.0
+captain,1,1,0,1.0
+housekeeper,1,0,1,0.0
+pilot,1,1,0,1.0
+virgin,1,0,1,0.0

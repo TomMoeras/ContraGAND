@@ -1,0 +1,4 @@
+model,accuracy,macro_f1,masc_recall,fem_recall,ambig_recall
+Qwen3.5-4B / FT D-AUTH-open,0.3305,0.1912,0.0086,0.0301,0.9527
+Qwen3.5-4B / FT D-A-open,0.9584,0.973,0.9699,0.9699,0.9355
+Qwen3.5-4B / FT D-MULTI-open,0.9763,0.9785,0.9699,0.9763,0.9828

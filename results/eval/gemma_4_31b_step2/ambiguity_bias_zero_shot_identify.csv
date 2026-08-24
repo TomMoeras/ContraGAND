@@ -1,0 +1,11 @@
+referent,n_confident_guesses,guessed_masculine,guessed_feminine,male_share
+champion,1,1,0,1.0
+chief,1,1,0,1.0
+housekeeper,1,0,1,0.0
+nanny,1,0,1,0.0
+neighbor,1,0,1,0.0
+nurse,1,0,1,0.0
+scientist,1,1,0,1.0
+soldier,1,1,0,1.0
+tailor,1,1,0,1.0
+virgin,1,0,1,0.0

@@ -1,0 +1,4 @@
+,masculine,feminine,ambiguous,parse_error,not_found
+masculine,422,0,42,1,0
+feminine,1,426,36,2,0
+ambiguous,6,7,452,0,0

@@ -1,0 +1,9 @@
+referent,n_confident_guesses,guessed_masculine,guessed_feminine,male_share
+nanny,5,0,5,0.0
+champion,1,1,0,1.0
+housekeeper,1,0,1,0.0
+influencer,1,0,1,0.0
+roommate,1,1,0,1.0
+scientist,1,1,0,1.0
+skipper,1,1,0,1.0
+virgin,1,0,1,0.0

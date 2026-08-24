@@ -1,0 +1,143 @@
+row_id,variant,sentence,referent,expected_label,condition,predicted_label,confidence,reasoning,correct,raw_response
+68,masculine,"We' re not out of the woods yet, buddy, sir.",buddy,masculine,zero_shot,ambiguous,2,The term 'buddy' is a gender-neutral term of address and does not inherently indicate the gender of the person being addressed.,False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 2,
+  ""reasoning"": ""The term 'buddy' is a gender-neutral term of address and does not inherently indicate the gender of the person being addressed.""
+}"
+159,masculine,"It' s just not worth it, buddy, sir.",buddy,masculine,zero_shot,ambiguous,2,"The term 'buddy' is a gender-neutral colloquialism that can refer to a male or female friend, and the accompanying 'sir' is ambiguous as it can be used ironically or as a generic address.",False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 2,
+  ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism that can refer to a male or female friend, and the accompanying 'sir' is ambiguous as it can be used ironically or as a generic address.""
+}"
+376,masculine,"All right, buddy, sir, I' m off.",buddy,masculine,zero_shot,ambiguous,2,The term 'buddy' is a gender-neutral term of address and does not inherently indicate the gender of the person being addressed.,False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 2,
+  ""reasoning"": ""The term 'buddy' is a gender-neutral term of address and does not inherently indicate the gender of the person being addressed.""
+}"
+376,feminine,"All right, buddy, ma'am, I' m off.",buddy,feminine,zero_shot,ambiguous,2,The term 'buddy' is a gender-neutral term of address and does not inherently indicate the gender of the person being addressed.,False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 2,
+  ""reasoning"": ""The term 'buddy' is a gender-neutral term of address and does not inherently indicate the gender of the person being addressed.""
+}"
+471,masculine,This will be the last thing I can do for my master.,master,masculine,zero_shot,ambiguous,3,"The noun 'master' is gender-neutral in modern English and can refer to a person of any gender, lacking specific pronouns or context to indicate male or female.",False,"{""gender"": ""ambiguous"", ""confidence"": 3, ""reasoning"": ""The noun 'master' is gender-neutral in modern English and can refer to a person of any gender, lacking specific pronouns or context to indicate male or female.""}"
+382,feminine,"The cause of this vague feeling of distrust which had gone abroad concerning the old soldier, a lady of some repute, was no very easy matter to define.",soldier,feminine,zero_shot,ambiguous,3,"The noun 'soldier' is gender-neutral in English, and the sentence does not provide any pronouns or other descriptors to specify the gender of this individual.",False,"{""gender"": ""ambiguous"", ""confidence"": 3, ""reasoning"": ""The noun 'soldier' is gender-neutral in English, and the sentence does not provide any pronouns or other descriptors to specify the gender of this individual.""}"
+159,feminine,"It' s just not worth it, buddy, ma'am.",buddy,feminine,zero_shot,ambiguous,3,"The term 'buddy' is a gender-neutral colloquialism that can be used to address anyone, regardless of gender.",False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 3,
+  ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism that can be used to address anyone, regardless of gender.""
+}"
+117,feminine,"Hey buddy, ma'am, it' s me, Randy.",buddy,feminine,zero_shot,ambiguous,3,The term 'buddy' is a gender-neutral colloquialism for a friend or companion and does not inherently indicate the gender of the person being addressed.,False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 3,
+  ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend or companion and does not inherently indicate the gender of the person being addressed.""
+}"
+490,source,"I met a dashing, handsome...... genius scientist...... and three months later, I was married.",scientist,ambiguous,zero_shot,masculine,4,The adjectives 'dashing' and 'handsome' are traditionally and predominantly used to describe men.,False,"{
+  ""gender"": ""masculine"",
+  ""confidence"": 4,
+  ""reasoning"": ""The adjectives 'dashing' and 'handsome' are traditionally and predominantly used to describe men.""
+}"
+28,source,"AFP reported Feb. 7 one rebel group had launched attacks in the nation’s Ouaka prefecture, where 18 people were killed by a drunken militia fighter during a funeral.",fighter,ambiguous,zero_shot,masculine,5,"The noun 'fighter' is historically and conventionally used as a masculine term for a combatant, and the lack of a feminine marker like 'female' or 'woman' implies a male referent in this context.",False,"{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The noun 'fighter' is historically and conventionally used as a masculine term for a combatant, and the lack of a feminine marker like 'female' or 'woman' implies a male referent in this context.""}"
+35,masculine,"I don' t care if you' re a virgin, sir, all right?",virgin,masculine,zero_shot,ambiguous,5,"The noun 'virgin' is gender-neutral and does not inherently indicate male or female, and the address 'sir' applies to the listener ('you'), not the referent 'virgin'.",False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 5,
+  ""reasoning"": ""The noun 'virgin' is gender-neutral and does not inherently indicate male or female, and the address 'sir' applies to the listener ('you'), not the referent 'virgin'.""
+}"
+29,masculine,I was a flight steward for 30 years and spent 3 decades of my life staying in various hotels in 60 countries worldwide.,steward,masculine,zero_shot,ambiguous,5,The term 'steward' is a gender-neutral occupational title that does not inherently indicate the gender of the speaker.,False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'steward' is a gender-neutral occupational title that does not inherently indicate the gender of the speaker.""}"
+19,source,"Popular legend lays blame for the town’s string of early disasters on Fernie, who, the story goes, promised to marry the daughter of a Ktunaxa chief in 1897 if he would reveal the source of the region’s coal.",chief,ambiguous,zero_shot,masculine,5,"The pronoun 'he' in the clause 'if he would reveal' refers back to the chief, explicitly identifying the referent as male.",False,"{
+  ""gender"": ""masculine"",
+  ""confidence"": 5,
+  ""reasoning"": ""The pronoun 'he' in the clause 'if he would reveal' refers back to the chief, explicitly identifying the referent as male.""
+}"
+19,feminine,"Popular legend lays blame for the town's string of early disasters on Fernie, who, the story goes, promised to marry the daughter of a Ktunaxa chief in 1897 if she would reveal the source of the region's coal.",chief,feminine,zero_shot,masculine,5,The title 'chief' in the context of a tribal leader is traditionally and unambiguously masculine.,False,"{
+  ""gender"": ""masculine"",
+  ""confidence"": 5,
+  ""reasoning"": ""The title 'chief' in the context of a tribal leader is traditionally and unambiguously masculine.""
+}"
+4,masculine,"And take care of the shadow and you' il have to calculate the human mind, idiot, sir!",idiot,masculine,zero_shot,ambiguous,5,The noun 'idiot' is gender-neutral and the sentence contains no pronouns or other linguistic cues to indicate the gender of the person being addressed.,False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'idiot' is gender-neutral and the sentence contains no pronouns or other linguistic cues to indicate the gender of the person being addressed.""}"
+4,feminine,"And take care of the shadow and you' il have to calculate the human mind, idiot, ma'am!",idiot,feminine,zero_shot,ambiguous,5,The noun 'idiot' is gender-neutral and does not contain any linguistic markers indicating the gender of the referent.,False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'idiot' is gender-neutral and does not contain any linguistic markers indicating the gender of the referent.""}"
+67,masculine,"If you are commencing therapy on Powder for injection, you should speak to your doctor or MS nurse, Mr. Patel, as to how to gradually increase your dose.",nurse,masculine,zero_shot,ambiguous,5,"The noun 'nurse' is gender-neutral, and the title 'Mr.' applies to the preceding noun 'doctor' (Patel), not the nurse.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'nurse' is gender-neutral, and the title 'Mr.' applies to the preceding noun 'doctor' (Patel), not the nurse.""}"
+59,masculine,"Health Always seek medical advice from your doctor or travel nurse, Mr. Martinez, before you travel and make sure your vaccinations are up-to-date, especially when travelling to Asia.",nurse,masculine,zero_shot,ambiguous,5,The noun 'nurse' is gender-neutral and the sentence provides no pronouns or other descriptors to indicate the gender of the travel nurse.,False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'nurse' is gender-neutral and the sentence provides no pronouns or other descriptors to indicate the gender of the travel nurse.""}"
+82,masculine,"The object of the game is to outscore your opponent, sir.",opponent,masculine,zero_shot,ambiguous,5,"The word 'opponent' is a gender-neutral noun, and the vocative 'sir' addresses the listener rather than describing the opponent.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'opponent' is a gender-neutral noun, and the vocative 'sir' addresses the listener rather than describing the opponent.""}"
+68,feminine,"We' re not out of the woods yet, buddy, ma'am.",buddy,feminine,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism that does not indicate the gender of the person being addressed.,False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism that does not indicate the gender of the person being addressed.""}"
+83,feminine,"I pray thee, do not mock me, fellow student, ma'am.",student,feminine,zero_shot,ambiguous,5,"The noun 'student' is gender-neutral, and the address 'ma'am' applies to the speaker or a third party, not the referent 'student'.",False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 5,
+  ""reasoning"": ""The noun 'student' is gender-neutral, and the address 'ma'am' applies to the speaker or a third party, not the referent 'student'.""
+}"
+98,masculine,Sally Weston represents an ideal of poise and beauty and accomplishment that every flight steward should strive to achieve.,steward,masculine,zero_shot,ambiguous,5,"The noun 'steward' is a gender-neutral occupational title, and the sentence contains no pronouns or other descriptors that specify the gender of the steward.",False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 5,
+  ""reasoning"": ""The noun 'steward' is a gender-neutral occupational title, and the sentence contains no pronouns or other descriptors that specify the gender of the steward.""
+}"
+101,masculine,"If you are a gamer, sir, then you will need a different phone than the average person, just like someone who likes to take a lot of pictures will need a different phone.",gamer,masculine,zero_shot,ambiguous,5,"The noun 'gamer' is gender-neutral, and the address 'sir' is directed at the listener ('you') rather than defining the gender of the referent 'gamer'.",False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 5,
+  ""reasoning"": ""The noun 'gamer' is gender-neutral, and the address 'sir' is directed at the listener ('you') rather than defining the gender of the referent 'gamer'.""
+}"
+82,feminine,"The object of the game is to outscore your opponent, ma'am.",opponent,feminine,zero_shot,ambiguous,5,"The word 'opponent' is a gender-neutral noun, and the vocative 'ma'am' refers to the listener, not the opponent.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'opponent' is a gender-neutral noun, and the vocative 'ma'am' refers to the listener, not the opponent.""}"
+102,masculine,"The president was already feeling especially vulnerable – and a deep ""sense of paranoia,"" in the words of one confidant – after his devastating portrayal in Woodward's book.",confidant,masculine,zero_shot,ambiguous,5,The noun 'confidant' is gender-neutral and the sentence provides no pronouns or other descriptors to indicate the specific gender of this individual.,False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'confidant' is gender-neutral and the sentence provides no pronouns or other descriptors to indicate the specific gender of this individual.""}"
+112,masculine,"About six months ago, the day Jonesy got hit...... i did something terrible with a patient, Mr. Johnson.",patient,masculine,zero_shot,ambiguous,5,The noun 'patient' is gender-neutral and the sentence provides no pronouns or other descriptors to indicate the patient's gender.,False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'patient' is gender-neutral and the sentence provides no pronouns or other descriptors to indicate the patient's gender.""}"
+112,feminine,"About six months ago, the day Jonesy got hit...... i did something terrible with a patient, Mrs. Johnson.",patient,feminine,zero_shot,ambiguous,5,"The noun 'patient' is gender-neutral, and the sentence provides no pronouns or other descriptors to indicate the gender of the patient.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'patient' is gender-neutral, and the sentence provides no pronouns or other descriptors to indicate the gender of the patient.""}"
+41,masculine,"Whether you've been a Christ follower all of your life or have never read a word of the Bible before and are just checking out the Christian faith, sir, you are welcome here.",follower,masculine,zero_shot,ambiguous,5,"The noun 'follower' is gender-neutral, and the sentence uses the second-person pronoun 'you' rather than a gendered third-person pronoun to refer to the individual.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'follower' is gender-neutral, and the sentence uses the second-person pronoun 'you' rather than a gendered third-person pronoun to refer to the individual.""}"
+41,feminine,"Whether you've been a Christ follower all of your life or have never read a word of the Bible before and are just checking out the Christian faith, ma'am, you are welcome here.",follower,feminine,zero_shot,ambiguous,5,"The noun 'follower' is gender-neutral, and the sentence uses the gender-neutral pronoun 'you' to refer to the addressee.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'follower' is gender-neutral, and the sentence uses the gender-neutral pronoun 'you' to refer to the addressee.""}"
+48,feminine,"Emergency services launched a search for the pilot, Mrs. Smith, and passenger of the plane at about 7.30pm last night (Wednesday), after it crashed one mile short of its runway at Beverley Airfield.",pilot,feminine,zero_shot,ambiguous,5,"The sentence identifies 'Mrs. Smith' as a separate individual from the pilot, and provides no gendered pronouns or titles for the pilot.",False,"{
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The sentence identifies 'Mrs. Smith' as a separate individual from the pilot, and provides no gendered pronouns or titles for the pilot.""
+}"
+10,masculine,"From concept to implementation, a podcast can be a catalyst for promoting business and allowing you to become a top influencer in your industry or niche, sir.",influencer,masculine,zero_shot,ambiguous,5,"The noun 'influencer' is gender-neutral, and the vocative 'sir' addresses the listener rather than the referent 'influencer'.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'influencer' is gender-neutral, and the vocative 'sir' addresses the listener rather than the referent 'influencer'.""}"
+11,masculine,"It' s enough to make you a vegetarian, isn' t it, sir?",vegetarian,masculine,zero_shot,ambiguous,5,The noun 'vegetarian' is gender-neutral and does not indicate the gender of the person it describes.,False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'vegetarian' is gender-neutral and does not indicate the gender of the person it describes.""}"
+129,feminine,"Topical anesthesia is available over the counter (check with your physician, Mrs. Nguyen).",physician,feminine,zero_shot,ambiguous,5,"The noun 'physician' is gender-neutral, and the sentence provides no pronouns or other contextual clues to indicate the gender of the physician.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'physician' is gender-neutral, and the sentence provides no pronouns or other contextual clues to indicate the gender of the physician.""}"
+121,feminine,"In 1985, while a stewardess for Delta... you were busted while carrying drugs for a pilot, your aunt?",pilot,feminine,zero_shot,ambiguous,5,The noun 'pilot' is gender-neutral and the sentence provides no pronouns or other descriptors to indicate the pilot's gender.,False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'pilot' is gender-neutral and the sentence provides no pronouns or other descriptors to indicate the pilot's gender.""}"
+134,source,There' s an old witch of a nurse out there with an ear like radar and a tongue like a fire bell.,nurse,ambiguous,zero_shot,feminine,5,"The referent is explicitly described as a 'witch', which is a gendered noun referring to a female.",False,"{
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The referent is explicitly described as a 'witch', which is a gendered noun referring to a female.""
+}"
+136,masculine,"If your baby is not eating solid foods by 7 months of age, discuss this with your child health nurse, doctor or dietitian, Mr. Johnson.",dietitian,masculine,zero_shot,ambiguous,5,"The noun 'dietitian' is gender-neutral, and the title 'Mr. Johnson' applies to the person being addressed, not the dietitian.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'dietitian' is gender-neutral, and the title 'Mr. Johnson' applies to the person being addressed, not the dietitian.""}"
+137,feminine,"In case you certainly are a correct vehicle lover who needs to all the time update your understanding about automobiles, ma'am, you should bookmark my web site.",lover,feminine,zero_shot,ambiguous,5,"The noun 'lover' is gender-neutral, and the vocative 'ma'am' addresses the listener rather than defining the gender of the referent 'lover'.",False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 5,
+  ""reasoning"": ""The noun 'lover' is gender-neutral, and the vocative 'ma'am' addresses the listener rather than defining the gender of the referent 'lover'.""
+}"
+140,masculine,"If you're a mainstream gamer who's after an affordable, feature-packed gaming motherboard that won't break your bank, sir, … then there's NO excuse not to consider the Asus ROG Strix B360-F Gaming motherboard.",gamer,masculine,zero_shot,ambiguous,5,"The noun 'gamer' is gender-neutral, and the vocative 'sir' addresses the reader rather than defining the gender of the referent 'gamer'.",False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 5,
+  ""reasoning"": ""The noun 'gamer' is gender-neutral, and the vocative 'sir' addresses the reader rather than defining the gender of the referent 'gamer'.""
+}"
+136,feminine,"If your baby is not eating solid foods by 7 months of age, discuss this with your child health nurse, doctor or dietitian, Mrs. Johnson.",dietitian,feminine,zero_shot,ambiguous,5,"The noun 'dietitian' is gender-neutral, and the title 'Mrs.' applies to the addressee 'Johnson', not the dietitian.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'dietitian' is gender-neutral, and the title 'Mrs.' applies to the addressee 'Johnson', not the dietitian.""}"
+137,masculine,"In case you certainly are a correct vehicle lover who needs to all the time update your understanding about automobiles, sir, you should bookmark my web site.",lover,masculine,zero_shot,ambiguous,5,"The noun 'lover' is gender-neutral, and the vocative 'sir' addresses the reader rather than defining the gender of the referent 'lover' itself.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'lover' is gender-neutral, and the vocative 'sir' addresses the reader rather than defining the gender of the referent 'lover' itself.""}"
+148,masculine,The wizard asked a group of viewers to take a piece of paper and draw a line of graphics on the back.,wizard,masculine,zero_shot,ambiguous,5,The noun 'wizard' is gender-neutral in this context and no gendered pronouns or titles are used to specify the referent's sex.,False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'wizard' is gender-neutral in this context and no gendered pronouns or titles are used to specify the referent's sex.""}"
+140,feminine,"If you're a mainstream gamer who's after an affordable, feature-packed gaming motherboard that won't break your bank, ma'am, … then there's NO excuse not to consider the Asus ROG Strix B360-F Gaming motherboard.",gamer,feminine,zero_shot,ambiguous,5,"The noun 'gamer' is gender-neutral, and the vocative 'ma'am' addresses the reader rather than defining the gender of the referent 'gamer'.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'gamer' is gender-neutral, and the vocative 'ma'am' addresses the reader rather than defining the gender of the referent 'gamer'.""}"
+148,feminine,The witch asked a group of viewers to take a piece of paper and draw a line of graphics on the back.,witch,feminine,zero_shot,ambiguous,5,The noun 'witch' is gender-neutral in modern English and the sentence contains no pronouns or other descriptors to specify the referent's gender.,False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 5,
+  ""reasoning"": ""The noun 'witch' is gender-neutral in modern English and the sentence contains no pronouns or other descriptors to specify the referent's gender.""
+}"
+149,masculine,"The best thing about capturing small weddings such as Jihane & Rabih is that we are usually given the time to take off from the guests and to explore (or be led around by him, your photographer) some of the most beautiful locations in Prague.",photographer,masculine,zero_shot,ambiguous,5,"The noun 'photographer' is gender-neutral, and the pronoun 'him' in the parenthetical phrase refers to the subject 'we' (the photographers) or is a generic example, but does not definitively assign a specific gender to the referent 'photographer' in a way that excludes the other gender for the role itself.",False,"{
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The noun 'photographer' is gender-neutral, and the pronoun 'him' in the parenthetical phrase refers to the subject 'we' (the photographers) or is a generic example, but does not definitively assign a specific gender to the referent 'photographer' in a way that excludes the other gender for the role itself.""
+}"
+156,masculine,"To the absolute disbelief of the spectator, bit by bit you start to hum the tune he is thinking of, and then suddenly you name the selected song!",spectator,masculine,zero_shot,ambiguous,5,"The noun 'spectator' is gender-neutral, and the pronoun 'he' in the sentence refers to the subject 'you' (the performer), not the spectator.",False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 5,
+  ""reasoning"": ""The noun 'spectator' is gender-neutral, and the pronoun 'he' in the sentence refers to the subject 'you' (the performer), not the spectator.""
+}"
+153,feminine,"You' re a senator' s daughter... sister to the future governor, Mrs. Nguyen.",governor,feminine,zero_shot,ambiguous,5,The title 'governor' is gender-neutral and the sentence provides no pronouns or other descriptors to indicate the gender of the future governor.,False,"{
+  ""gender"": ""ambiguous"",
+  ""confidence"": 5,
+  ""reasoning"": ""The title 'governor' is gender-neutral and the sentence provides no pronouns or other descriptors to indicate the gender of the future governor.""
+}"
+156,feminine,"To the absolute disbelief of the spectator, bit by bit you start to hum the tune she is thinking of, and then suddenly you name the selected song!",spectator,feminine,zero_shot,ambiguous,5,"The noun 'spectator' is gender-neutral, and the pronoun 'she' in the sentence refers to a different entity (the person thinking of the tune), not the spectator.",False,"{
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The noun 'spectator' is gender-neutral, and the pronoun 'she' in the sentence refers to a different entity (the person thinking of the tune), not the spectator.""
+}"
+160,masculine,"I know you miss your dog and your best friend, your brother... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.",friend,masculine,zero_shot,ambiguous,5,"The noun 'friend' is gender-neutral, and the sentence provides no pronouns or other descriptors to indicate the friend's gender.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'friend' is gender-neutral, and the sentence provides no pronouns or other descriptors to indicate the friend's gender.""}"
+160,feminine,"I know you miss your dog and your best friend, your sister... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.",friend,feminine,zero_shot,ambiguous,5,"The word 'friend' is a gender-neutral noun, and the sentence provides no pronouns or other descriptors to indicate the friend's gender.",False,"{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'friend' is a gender-neutral noun, and the sentence provides no pronouns or other descriptors to indicate the friend's gender.""}"
+164,feminine,"She understood later from her mother that the soldier had snatched away an unexploded pipe bomb from her friend, as she, the soldier, shouted angrily at her.",soldier,feminine,zero_shot,ambiguous,5,"The noun 'soldier' is gender-neutral, and the sentence does not provide any pronouns or descriptors that specify the soldier's gender.",False,"{
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The noun 'soldier' is gender-neutral, and the sentence does not provide any pronouns or descriptors that specify the soldier's gender.""
+}"

@@ -1,0 +1,5 @@
+referent,n_confident_guesses,guessed_masculine,guessed_feminine,male_share
+champion,2,2,0,1.0
+housekeeper,1,0,1,0.0
+investigator,1,1,0,1.0
+programmer,1,1,0,1.0

@@ -1,0 +1,1023 @@
+row_id,variant,sentence,referent,expected_label,condition,predicted_label,confidence,reasoning,correct,raw_response
+3,masculine,And the publisher's bankers promoted a layoff plan as part of his sales process.,publisher,masculine,zero_shot_identify,ambiguous,5.0,"The word 'publisher' is a gender-neutral occupation, and the possessive 'publisher's' does not indicate gender.",False,"{
+""referents"": [
+{
+""referent"": ""publisher"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'publisher' is a gender-neutral occupation, and the possessive 'publisher's' does not indicate gender.""
+},
+{
+""referent"": ""bankers"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'bankers' is a gender-neutral occupation with no gendered pronouns or modifiers attached.""
+},
+{
+""referent"": ""his"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The possessive pronoun 'his' explicitly indicates a male referent.""
+}
+]
+}"
+3,feminine,And the publisher's bankers promoted a layoff plan as part of her sales process.,publisher,feminine,zero_shot_identify,ambiguous,5.0,"The term 'publisher' is a gender-neutral occupation, and the possessive 'publisher's' does not indicate gender.",False,"{
+""referents"": [
+{
+""referent"": ""publisher"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'publisher' is a gender-neutral occupation, and the possessive 'publisher's' does not indicate gender.""
+},
+{
+""referent"": ""bankers"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'bankers' is a gender-neutral occupation with no gendered pronouns or modifiers attached.""
+},
+{
+""referent"": ""her"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The possessive pronoun 'her' explicitly indicates a feminine referent.""
+}
+]
+}"
+500,masculine,"The crazed, sadistic soldier...... who flips out and kills people - he's beyond saving.",soldier,masculine,zero_shot_identify,ambiguous,5.0,"The noun 'soldier' is gender-neutral, and while the pronoun 'he' is used later, it refers to the specific individual described rather than defining the occupation itself as inherently male in this context, though the pronoun strongly implies the specific referent is male; however, strictly classifying the role 'soldier' based on the word alone is ambiguous, but the prompt asks for the referent in the sentence. The sentence uses 'he' to refer to the soldier. Let's re-evaluate. The prompt asks to classify the referent. The referent is the soldier. The sentence says 'he's beyond saving'. This explicitly genders the specific soldier as male. Therefore, the gender is masculine.",False,"{
+""referents"": [
+{
+""referent"": ""soldier"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The noun 'soldier' is gender-neutral, and while the pronoun 'he' is used later, it refers to the specific individual described rather than defining the occupation itself as inherently male in this context, though the pronoun strongly implies the specific referent is male; however, strictly classifying the role 'soldier' based on the word alone is ambiguous, but the prompt asks for the referent in the sentence. The sentence uses 'he' to refer to the soldier. Let's re-evaluate. The prompt asks to classify the referent. The referent is the soldier. The sentence says 'he's beyond saving'. This explicitly genders the specific soldier as male. Therefore, the gender is masculine.""
+}
+]
+}"
+499,feminine,"You cannot avoid dealing with them when you' re the guard for a circus, ma'am",guard,feminine,zero_shot_identify,ambiguous,5.0,The word 'guard' is a gender-neutral occupation and no pronouns or adjectives in the sentence specify the gender of the person holding this role.,False,"{
+""referents"": [
+{
+""referent"": ""guard"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'guard' is a gender-neutral occupation and no pronouns or adjectives in the sentence specify the gender of the person holding this role.""
+},
+{
+""referent"": ""ma'am"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""'Ma'am' is a contraction of 'madam', which is a title used exclusively for women.""
+}
+]
+}"
+499,masculine,"You cannot avoid dealing with them when you' re the guard for a circus, sir",guard,masculine,zero_shot_identify,ambiguous,5.0,The word 'guard' is a gender-neutral occupation with no pronouns or adjectives in the sentence indicating male or female gender.,False,"{
+""referents"": [
+{
+""referent"": ""guard"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'guard' is a gender-neutral occupation with no pronouns or adjectives in the sentence indicating male or female gender.""
+},
+{
+""referent"": ""sir"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""'Sir' is a title used exclusively to address a man.""
+}
+]
+}"
+497,source,"Someone left a dildo in my neighbor' s wishing well, right on her front lawn.",neighbor,ambiguous,zero_shot_identify,feminine,5.0,"The possessive pronoun 'her' in 'her front lawn' refers back to the neighbor, indicating she is female.",False,"{
+""referents"": [
+{
+""referent"": ""neighbor"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The possessive pronoun 'her' in 'her front lawn' refers back to the neighbor, indicating she is female.""
+}
+]
+}"
+495,feminine,"The first of these has now settled and substantial damages have been recovered for the client, Mrs. Fitzgerald.",client,feminine,zero_shot_identify,ambiguous,5.0,The word 'client' is a gender-neutral occupational/relational term with no gendered modifiers attached to it directly.,False,"{
+""referents"": [
+{
+""referent"": ""client"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'client' is a gender-neutral occupational/relational term with no gendered modifiers attached to it directly.""
+},
+{
+""referent"": ""Mrs."",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The title 'Mrs.' is exclusively used for married women, unambiguously indicating female gender.""
+}
+]
+}"
+494,masculine,"The petition was supported by a letter from five other scientists, including two former members of the National Toxicology Program and one researcher, Mr. Chen, still working there.",researcher,masculine,zero_shot_identify,ambiguous,5.0,The term 'researcher' is gender-neutral and does not inherently indicate male or female.,False,"{
+""referents"": [
+{
+""referent"": ""scientists"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'scientists' is gender-neutral and no pronouns or other cues in the sentence specify the gender of the group.""
+},
+{
+""referent"": ""members"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'members' is gender-neutral and refers to a subset of the previously mentioned scientists, whose gender is not specified.""
+},
+{
+""referent"": ""researcher"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'researcher' is gender-neutral and does not inherently indicate male or female.""
+},
+{
+""referent"": ""Mr. Chen"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The title 'Mr.' is exclusively used for males.""
+}
+]
+}"
+39,feminine,"Well, she is an executive assistant...... at a major pet products company.",assistant,feminine,zero_shot_identify,ambiguous,5.0,The occupation 'executive assistant' has no inherent gender and the sentence provides no additional gendered cues for this role itself.,False,"{
+""referents"": [
+{
+""referent"": ""she"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'she' is explicitly feminine.""
+},
+{
+""referent"": ""executive assistant"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'executive assistant' has no inherent gender and the sentence provides no additional gendered cues for this role itself.""
+}
+]
+}"
+41,feminine,"Whether you've been a Christ follower all of your life or have never read a word of the Bible before and are just checking out the Christian faith, ma'am, you are welcome here.",follower,feminine,zero_shot_identify,ambiguous,5.0,The term 'Christ follower' is a religious identifier that does not specify gender.,False,"{
+""referents"": [
+{
+""referent"": ""Christ follower"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'Christ follower' is a religious identifier that does not specify gender.""
+},
+{
+""referent"": ""ma'am"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""'Ma'am' is a contraction of 'madam', which is a title used specifically for women.""
+}
+]
+}"
+45,masculine,Is that the officer that is to take charge of the prisoner? - he was pointed out,officer,masculine,zero_shot_identify,ambiguous,5.0,The term 'officer' is gender-neutral and no pronouns in the sentence refer to this specific noun.,False,"{
+""referents"": [
+{
+""referent"": ""officer"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'officer' is gender-neutral and no pronouns in the sentence refer to this specific noun.""
+},
+{
+""referent"": ""prisoner"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'prisoner' is gender-neutral and no pronouns in the sentence refer to this specific noun.""
+},
+{
+""referent"": ""he"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'he' is explicitly masculine.""
+}
+]
+}"
+45,feminine,Is that the officer that is to take charge of the prisoner? - she was pointed out,officer,feminine,zero_shot_identify,ambiguous,5.0,The term 'officer' is gender-neutral and no pronouns or context in the sentence specify the gender of this individual.,False,"{
+""referents"": [
+{
+""referent"": ""officer"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'officer' is gender-neutral and no pronouns or context in the sentence specify the gender of this individual.""
+},
+{
+""referent"": ""prisoner"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'prisoner' is gender-neutral and no pronouns or context in the sentence specify the gender of this individual.""
+},
+{
+""referent"": ""she"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'she' explicitly indicates a female referent.""
+}
+]
+}"
+48,feminine,"Emergency services launched a search for the pilot, Mrs. Smith, and passenger of the plane at about 7.30pm last night (Wednesday), after it crashed one mile short of its runway at Beverley Airfield.",pilot,feminine,zero_shot_identify,ambiguous,5.0,The word 'pilot' is a gender-neutral occupation and no pronouns or titles link it to a specific gender in this sentence.,False,"{
+""referents"": [
+{
+""referent"": ""pilot"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'pilot' is a gender-neutral occupation and no pronouns or titles link it to a specific gender in this sentence.""
+},
+{
+""referent"": ""Mrs. Smith"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The title 'Mrs.' is exclusively used for married women, unambiguously indicating female gender.""
+},
+{
+""referent"": ""passenger"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'passenger' is a gender-neutral role and no further information reveals the gender of this individual.""
+}
+]
+}"
+435,masculine,"You know, he' s not a doctor or a scientist.",scientist,masculine,zero_shot_identify,ambiguous,5.0,The occupation 'scientist' has no inherent gender and the sentence provides no gendered descriptors for this role.,False,"{
+""referents"": [
+{
+""referent"": ""he"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'he' is explicitly masculine.""
+},
+{
+""referent"": ""doctor"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'doctor' has no inherent gender and the sentence provides no gendered descriptors for this role.""
+},
+{
+""referent"": ""scientist"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'scientist' has no inherent gender and the sentence provides no gendered descriptors for this role.""
+}
+]
+}"
+435,feminine,"You know, she' s not a doctor or a scientist.",scientist,feminine,zero_shot_identify,ambiguous,5.0,The occupation 'scientist' has no inherent gender and the sentence does not specify the gender of the hypothetical scientist.,False,"{
+""referents"": [
+{
+""referent"": ""she"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'she' is explicitly feminine.""
+},
+{
+""referent"": ""doctor"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'doctor' has no inherent gender and the sentence does not specify the gender of the hypothetical doctor.""
+},
+{
+""referent"": ""scientist"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'scientist' has no inherent gender and the sentence does not specify the gender of the hypothetical scientist.""
+}
+]
+}"
+438,masculine,He wasn't a spectator anymore in the same way.,spectator,masculine,zero_shot_identify,ambiguous,5.0,"The word 'spectator' is a gender-neutral noun, and while the pronoun 'He' refers to the subject, it does not change the inherent gender neutrality of the role 'spectator' itself, nor does the sentence provide information about the gender of other potential spectators.",False,"{
+""referents"": [
+{
+""referent"": ""spectator"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'spectator' is a gender-neutral noun, and while the pronoun 'He' refers to the subject, it does not change the inherent gender neutrality of the role 'spectator' itself, nor does the sentence provide information about the gender of other potential spectators.""
+}
+]
+}"
+438,feminine,She wasn't a spectator anymore in the same way.,spectator,feminine,zero_shot_identify,ambiguous,5.0,"The word 'spectator' is a gender-neutral noun, and while the pronoun 'She' refers to the subject, it does not change the inherent gender neutrality of the role 'spectator' itself.",False,"{
+""referents"": [
+{
+""referent"": ""spectator"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'spectator' is a gender-neutral noun, and while the pronoun 'She' refers to the subject, it does not change the inherent gender neutrality of the role 'spectator' itself.""
+}
+]
+}"
+440,masculine,"Are you the author of ""The Visit"", sir?",author,masculine,zero_shot_identify,ambiguous,5.0,The word 'author' is gender-neutral and does not inherently indicate male or female.,False,"{
+""referents"": [
+{
+""referent"": ""author"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'author' is gender-neutral and does not inherently indicate male or female.""
+},
+{
+""referent"": ""sir"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""'Sir' is a title used exclusively to address a man.""
+}
+]
+}"
+445,masculine,"A new-to-Parkallen gardener, my brother, has asked me when the date to plant seedlings and sow seeds directly in the garden is in Edmonton?",gardener,masculine,zero_shot_identify,ambiguous,5.0,The occupation 'gardener' is gender-neutral and the sentence provides no pronouns or descriptors to indicate the gender of the person holding this role.,False,"{
+""referents"": [
+{
+""referent"": ""gardener"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'gardener' is gender-neutral and the sentence provides no pronouns or descriptors to indicate the gender of the person holding this role.""
+},
+{
+""referent"": ""brother"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The term 'brother' explicitly denotes a male sibling.""
+}
+]
+}"
+450,masculine,"As a hairstylist, sir, you may find yourself bonding with your customers to the point where they come to you for advice concerning their personal lives.",hairstylist,masculine,zero_shot_identify,ambiguous,5.0,"The occupation 'hairstylist' is gender-neutral, and the sentence does not provide any gendered pronouns or descriptors for this role.",False,"{
+""referents"": [
+{
+""referent"": ""hairstylist"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'hairstylist' is gender-neutral, and the sentence does not provide any gendered pronouns or descriptors for this role.""
+},
+{
+""referent"": ""sir"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""'Sir' is a title used exclusively to address a man.""
+},
+{
+""referent"": ""customers"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The noun 'customers' is gender-neutral, and the subsequent pronoun 'they' is used as a singular gender-neutral pronoun, providing no specific gender signal.""
+}
+]
+}"
+451,masculine,"An acquaintance, my uncle, shared some thoughts that led to this post.",acquaintance,masculine,zero_shot_identify,ambiguous,5.0,The word 'acquaintance' is gender-neutral and the sentence provides no pronouns or other cues to indicate gender.,False,"{
+""referents"": [
+{
+""referent"": ""acquaintance"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'acquaintance' is gender-neutral and the sentence provides no pronouns or other cues to indicate gender.""
+},
+{
+""referent"": ""uncle"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The term 'uncle' specifically denotes a male relative (the brother or brother-in-law of one's parent).""
+}
+]
+}"
+451,feminine,"An acquaintance, my aunt, shared some thoughts that led to this post.",acquaintance,feminine,zero_shot_identify,ambiguous,5.0,The word 'acquaintance' is gender-neutral and the sentence provides no pronouns or other cues to indicate gender.,False,"{
+""referents"": [
+{
+""referent"": ""acquaintance"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'acquaintance' is gender-neutral and the sentence provides no pronouns or other cues to indicate gender.""
+},
+{
+""referent"": ""aunt"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The term 'aunt' specifically denotes a female relative (sister or sister-in-law of one's parent).""
+}
+]
+}"
+452,masculine,"You' d be placed in the custody of the FBI where you' d serve out the remainder of your sentence as an employee of the federal government, sir.",employee,masculine,zero_shot_identify,ambiguous,5.0,The word 'employee' is a gender-neutral occupation and the sentence provides no pronouns or descriptors to indicate the gender of this specific individual.,False,"{
+""referents"": [
+{
+""referent"": ""employee"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'employee' is a gender-neutral occupation and the sentence provides no pronouns or descriptors to indicate the gender of this specific individual.""
+},
+{
+""referent"": ""sir"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""'Sir' is a title used exclusively to address a male.""
+}
+]
+}"
+455,masculine,"At length, if you're writing your paper for a course or for a particular novel, make sure to remember any particular instructions provided by your instructor or from the journal editor, Mr. Martinez.",editor,masculine,zero_shot_identify,ambiguous,5.0,The word 'editor' is a gender-neutral occupational title with no accompanying pronouns or modifiers indicating gender.,False,"{
+""referents"": [
+{
+""referent"": ""instructor"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'instructor' is a gender-neutral occupational title with no accompanying pronouns or modifiers indicating gender.""
+},
+{
+""referent"": ""editor"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'editor' is a gender-neutral occupational title with no accompanying pronouns or modifiers indicating gender.""
+},
+{
+""referent"": ""Mr. Martinez"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The honorific 'Mr.' is exclusively used for males.""
+}
+]
+}"
+481,masculine,"The darkly humorous short novel by Nicolai Gogol (1842) tells of the life of a lowly and impoverished government clerk, Mr. Davis, whose existence is briefly transformed by a new coat.",clerk,masculine,zero_shot_identify,ambiguous,5.0,The occupation 'government clerk' is gender-neutral and contains no inherent gender markers.,False,"{
+""referents"": [
+{
+""referent"": ""Nicolai Gogol"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""Nicolai is a traditionally male given name, and Nicolai Gogol is a historically known male author.""
+},
+{
+""referent"": ""government clerk"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'government clerk' is gender-neutral and contains no inherent gender markers.""
+},
+{
+""referent"": ""Mr. Davis"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The title 'Mr.' is exclusively used for men.""
+}
+]
+}"
+482,masculine,"As an entrepreneur, sir, an idea can hit at any time - and when it does, you have to be ready.",entrepreneur,masculine,zero_shot_identify,ambiguous,5.0,The term 'entrepreneur' is gender-neutral and the sentence provides no pronouns or descriptors to indicate the gender of the person holding this role.,False,"{
+""referents"": [
+{
+""referent"": ""entrepreneur"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'entrepreneur' is gender-neutral and the sentence provides no pronouns or descriptors to indicate the gender of the person holding this role.""
+},
+{
+""referent"": ""sir"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""'Sir' is a title of address used exclusively for men.""
+}
+]
+}"
+482,feminine,"As an entrepreneur, ma'am, an idea can hit at any time - and when it does, you have to be ready.",entrepreneur,feminine,zero_shot_identify,ambiguous,5.0,The term 'entrepreneur' is gender-neutral and the sentence provides no pronouns or descriptors to indicate the gender of the person holding this role.,False,"{
+""referents"": [
+{
+""referent"": ""entrepreneur"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'entrepreneur' is gender-neutral and the sentence provides no pronouns or descriptors to indicate the gender of the person holding this role.""
+},
+{
+""referent"": ""ma'am"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""'Ma'am' is a contraction of 'madam', which is a title used specifically for women.""
+}
+]
+}"
+485,masculine,"Guys, he thinks he's found his new calling in life - he thinks he wants to be a florist.",florist,masculine,zero_shot_identify,ambiguous,5.0,The occupation 'florist' has no inherent gender and the sentence provides no gendered descriptors for this role.,False,"{
+""referents"": [
+{
+""referent"": ""Guys"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The term 'Guys' is used here as a direct address to a group, traditionally and predominantly referring to males, though it can be gender-neutral in casual speech; however, without further context implying mixed gender, it leans masculine in traditional classification, but given modern usage, it is often ambiguous. Let's look closer. 'Guys' is often used for mixed groups. However, strictly speaking, it is a male term. But in modern English, it is frequently gender-neutral. Let's classify as ambiguous because it can refer to a mixed group or just males, and the sentence doesn't specify the gender of the listeners.""
+},
+{
+""referent"": ""he"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'he' is explicitly masculine.""
+},
+{
+""referent"": ""he"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'he' is explicitly masculine.""
+},
+{
+""referent"": ""his"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The possessive pronoun 'his' refers to a male antecedent.""
+},
+{
+""referent"": ""he"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'he' is explicitly masculine.""
+},
+{
+""referent"": ""he"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'he' is explicitly masculine.""
+},
+{
+""referent"": ""florist"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'florist' has no inherent gender and the sentence provides no gendered descriptors for this role.""
+}
+]
+}"
+485,feminine,"Guys, she thinks she's found her new calling in life - she thinks she wants to be a florist.",florist,feminine,zero_shot_identify,ambiguous,5.0,The occupation 'florist' has no inherent gender markers in English.,False,"{
+""referents"": [
+{
+""referent"": ""Guys"",
+""gender"": ""ambiguous"",
+""confidence"": 3,
+""reasoning"": ""While 'guys' is often used informally to address a mixed group, the word itself is historically masculine but contextually ambiguous without further specification of the audience's composition.""
+},
+{
+""referent"": ""she"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'she' is explicitly feminine.""
+},
+{
+""referent"": ""she"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'she' is explicitly feminine.""
+},
+{
+""referent"": ""her"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The possessive pronoun 'her' refers to a feminine antecedent.""
+},
+{
+""referent"": ""she"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'she' is explicitly feminine.""
+},
+{
+""referent"": ""she"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'she' is explicitly feminine.""
+},
+{
+""referent"": ""florist"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'florist' has no inherent gender markers in English.""
+}
+]
+}"
+486,masculine,"Whether you are an amateur or a professional gardener, sir, we aim to provide you some of the best resources, best places to buy exotic plants online as well as where the best places around the country to buy the more tropical and exotic plants.",amateur,masculine,zero_shot_identify,ambiguous,5.0,The term 'amateur' is a general descriptor for skill level and does not indicate gender.,False,"{
+""referents"": [
+{
+""referent"": ""amateur"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'amateur' is a general descriptor for skill level and does not indicate gender.""
+},
+{
+""referent"": ""professional"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'professional' is a general descriptor for employment status and does not indicate gender.""
+},
+{
+""referent"": ""gardener"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'gardener' is gender-neutral and has no gender-specific markers in this context.""
+},
+{
+""referent"": ""sir"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""'Sir' is a title of address used exclusively for men.""
+}
+]
+}"
+486,feminine,"Whether you are an amateur or a professional gardener, ma'am, we aim to provide you some of the best resources, best places to buy exotic plants online as well as where the best places around the country to buy the more tropical and exotic plants.",amateur,feminine,zero_shot_identify,ambiguous,5.0,The term 'amateur' is a general descriptor for skill level and does not indicate gender.,False,"{
+""referents"": [
+{
+""referent"": ""amateur"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'amateur' is a general descriptor for skill level and does not indicate gender.""
+},
+{
+""referent"": ""professional"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'professional' is a general descriptor for employment status and does not indicate gender.""
+},
+{
+""referent"": ""gardener"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'gardener' is gender-neutral in English.""
+},
+{
+""referent"": ""ma'am"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""'Ma'am' is a contraction of 'madam', which is a title used specifically for women.""
+}
+]
+}"
+18,masculine,"She grew roses and tended them carefully (with the help of a once a week gardener, Mr. Kim).",gardener,masculine,zero_shot_identify,ambiguous,5.0,The occupation 'gardener' is gender-neutral and has no gendered modifiers in this context.,False,"{
+""referents"": [
+{
+""referent"": ""She"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'She' is explicitly feminine.""
+},
+{
+""referent"": ""gardener"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'gardener' is gender-neutral and has no gendered modifiers in this context.""
+},
+{
+""referent"": ""Mr. Kim"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The title 'Mr.' is exclusively used for males.""
+}
+]
+}"
+23,source,"My brother has two jobs, to cook and to marry a Greek virgin.",virgin,ambiguous,zero_shot_identify,feminine,5.0,"The context of 'to marry a Greek virgin' implies a female partner, as 'virgin' in this marital context traditionally refers to a woman.",False,"{
+""referents"": [
+{
+""referent"": ""brother"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The term 'brother' explicitly denotes a male sibling.""
+},
+{
+""referent"": ""virgin"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The context of 'to marry a Greek virgin' implies a female partner, as 'virgin' in this marital context traditionally refers to a woman.""
+}
+]
+}"
+25,masculine,"The former political guard, Mr. Davis, believes the council meeting on Monday last week – where a new mayor, deputy, speaker and chief whip were elected – was illegal.",guard,masculine,zero_shot_identify,ambiguous,5.0,"The term 'political guard' is a job title that does not inherently indicate gender, and while 'Mr. Davis' follows, the role itself is gender-neutral.",False,"{
+""referents"": [
+{
+""referent"": ""political guard"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'political guard' is a job title that does not inherently indicate gender, and while 'Mr. Davis' follows, the role itself is gender-neutral.""
+},
+{
+""referent"": ""Mr. Davis"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The honorific 'Mr.' is exclusively used for males.""
+},
+{
+""referent"": ""mayor"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The title 'mayor' is gender-neutral and no pronouns or adjectives specify the gender of the new mayor.""
+},
+{
+""referent"": ""deputy"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The title 'deputy' is gender-neutral and no context specifies the gender of this individual.""
+},
+{
+""referent"": ""speaker"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The title 'speaker' is gender-neutral and no context specifies the gender of this individual.""
+},
+{
+""referent"": ""chief whip"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The title 'chief whip' is gender-neutral and no context specifies the gender of this individual.""
+}
+]
+}"
+25,feminine,"The former political guard, Mrs. Davis, believes the council meeting on Monday last week – where a new mayor, deputy, speaker and chief whip were elected – was illegal.",guard,feminine,zero_shot_identify,ambiguous,5.0,"The term 'political guard' is a job title that does not inherently indicate gender, and while 'Mrs. Davis' follows, the sentence structure allows for the guard to be a separate entity or the title itself is gender-neutral.",False,"{
+""referents"": [
+{
+""referent"": ""political guard"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'political guard' is a job title that does not inherently indicate gender, and while 'Mrs. Davis' follows, the sentence structure allows for the guard to be a separate entity or the title itself is gender-neutral.""
+},
+{
+""referent"": ""Mrs. Davis"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The honorific 'Mrs.' is exclusively used for married women.""
+},
+{
+""referent"": ""mayor"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The noun 'mayor' is a gender-neutral occupational title with no accompanying pronouns or descriptors to specify gender.""
+},
+{
+""referent"": ""deputy"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The noun 'deputy' is a gender-neutral occupational title with no accompanying pronouns or descriptors to specify gender.""
+},
+{
+""referent"": ""speaker"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The noun 'speaker' is a gender-neutral occupational title with no accompanying pronouns or descriptors to specify gender.""
+},
+{
+""referent"": ""chief whip"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The noun phrase 'chief whip' is a gender-neutral occupational title with no accompanying pronouns or descriptors to specify gender.""
+}
+]
+}"
+26,source,The winner and new heavyweight champion ofthe world is Cassius Clay.,champion,ambiguous,zero_shot_identify,masculine,5.0,"The referent 'champion' is appositional to 'winner' and 'Cassius Clay', who is male.",False,"{
+""referents"": [
+{
+""referent"": ""winner"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The referent 'winner' is identified as 'Cassius Clay', a male name, and the sentence uses the masculine pronoun 'is' (though 'is' is neutral, the name is the key indicator).""
+},
+{
+""referent"": ""champion"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The referent 'champion' is appositional to 'winner' and 'Cassius Clay', who is male.""
+}
+]
+}"
+26,feminine,The winner and new female heavyweight champion ofthe world is Cassius Clay.,champion,feminine,zero_shot_identify,masculine,5.0,"The champion is identified as Cassius Clay, a male name.",False,"{
+""referents"": [
+{
+""referent"": ""winner"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The sentence identifies the winner as Cassius Clay, a male name, and uses the singular pronoun 'is' referring to a male individual.""
+},
+{
+""referent"": ""champion"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The champion is identified as Cassius Clay, a male name.""
+}
+]
+}"
+27,masculine,"Rated 5 out of 5 by Anonymous from Simply effective I have used this cleanser exclusively since I was introduced to it a couple of years ago by a beautician, Mr. Fitzgerald, at a medical spa.",beautician,masculine,zero_shot_identify,ambiguous,5.0,The occupation 'beautician' is gender-neutral and does not inherently specify male or female.,False,"{
+""referents"": [
+{
+""referent"": ""Anonymous"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'Anonymous' explicitly indicates that the identity and gender of the reviewer are unknown.""
+},
+{
+""referent"": ""beautician"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'beautician' is gender-neutral and does not inherently specify male or female.""
+},
+{
+""referent"": ""Mr. Fitzgerald"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The title 'Mr.' is exclusively used for men.""
+}
+]
+}"
+27,feminine,"Rated 5 out of 5 by Anonymous from Simply effective I have used this cleanser exclusively since I was introduced to it a couple of years ago by a beautician, Mrs. Fitzgerald, at a medical spa.",beautician,feminine,zero_shot_identify,ambiguous,5.0,"The occupation 'beautician' is not gender-specific in English, although it is later identified as Mrs. Fitzgerald.",False,"{
+""referents"": [
+{
+""referent"": ""Anonymous"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'Anonymous' explicitly indicates that the identity and gender of the reviewer are unknown.""
+},
+{
+""referent"": ""beautician"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'beautician' is not gender-specific in English, although it is later identified as Mrs. Fitzgerald.""
+},
+{
+""referent"": ""Mrs. Fitzgerald"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The title 'Mrs.' is exclusively used for married women, unambiguously indicating female gender.""
+}
+]
+}"
+471,masculine,This will be the last thing I can do for my master.,master,masculine,zero_shot_identify,ambiguous,5.0,"The term 'master' can refer to a male or female person in positions of authority or ownership, and the sentence provides no gender-specific pronouns or context to disambiguate.",False,"{
+""referents"": [
+{
+""referent"": ""master"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'master' can refer to a male or female person in positions of authority or ownership, and the sentence provides no gender-specific pronouns or context to disambiguate.""
+}
+]
+}"
+472,masculine,"If you are an ambitioned athlete, sir, you might need some more natural carbs (e.g. sweet potatoe, yam, quinoa).",athlete,masculine,zero_shot_identify,ambiguous,5.0,The term 'athlete' is gender-neutral and the sentence provides no pronouns or descriptors to indicate the gender of the athlete.,False,"{
+""referents"": [
+{
+""referent"": ""athlete"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'athlete' is gender-neutral and the sentence provides no pronouns or descriptors to indicate the gender of the athlete.""
+},
+{
+""referent"": ""sir"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""'Sir' is a title of address used exclusively for men.""
+}
+]
+}"
+477,masculine,"Chris–It's pretty simple, trust me, as I'm not much of a baker - a man who prefers to buy his bread - either.",baker,masculine,zero_shot_identify,ambiguous,5.0,"The term 'baker' is a gender-neutral occupation, and the pronoun 'his' refers to 'a man' later in the sentence, not necessarily to the baker role itself, although the speaker identifies as not being a baker.",False,"{
+""referents"": [
+{
+""referent"": ""baker"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'baker' is a gender-neutral occupation, and the pronoun 'his' refers to 'a man' later in the sentence, not necessarily to the baker role itself, although the speaker identifies as not being a baker.""
+},
+{
+""referent"": ""man"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The word 'man' explicitly denotes a male adult, and the subsequent possessive pronoun 'his' confirms the masculine gender.""
+}
+]
+}"
+477,feminine,"Chris–It's pretty simple, trust me, as I'm not much of a baker - a woman who prefers to buy her bread - either.",baker,feminine,zero_shot_identify,ambiguous,5.0,"The term 'baker' is a gender-neutral occupation, and the speaker's gender is not specified in the text.",False,"{
+""referents"": [
+{
+""referent"": ""baker"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'baker' is a gender-neutral occupation, and the speaker's gender is not specified in the text.""
+},
+{
+""referent"": ""woman"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The word 'woman' explicitly denotes a female adult.""
+}
+]
+}"
+478,masculine,"See yourself as the champion He created you to be, sir!",champion,masculine,zero_shot_identify,ambiguous,5.0,The word 'champion' is a gender-neutral occupation/role with no gendered modifiers in the sentence.,False,"{
+""referents"": [
+{
+""referent"": ""champion"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'champion' is a gender-neutral occupation/role with no gendered modifiers in the sentence.""
+},
+{
+""referent"": ""He"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'He' is explicitly masculine.""
+},
+{
+""referent"": ""sir"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The term 'sir' is a title used exclusively for men.""
+}
+]
+}"
+478,feminine,"See yourself as the champion He created you to be, ma'am!",champion,feminine,zero_shot_identify,ambiguous,5.0,"The word 'champion' is a gender-neutral occupation/role, and the sentence provides no pronouns or descriptors to indicate the gender of the person being addressed as the champion.",False,"{
+""referents"": [
+{
+""referent"": ""champion"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The word 'champion' is a gender-neutral occupation/role, and the sentence provides no pronouns or descriptors to indicate the gender of the person being addressed as the champion.""
+},
+{
+""referent"": ""He"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'He' is explicitly masculine.""
+},
+{
+""referent"": ""ma'am"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""'Ma'am' is a contraction of 'madam', which is a title used specifically for women.""
+}
+]
+}"
+480,masculine,He bets a lot of moms would like to exchange places with him considering the fact that he is a homemaker.,homemaker,masculine,zero_shot_identify,ambiguous,5.0,The occupation 'homemaker' is gender-neutral and does not specify gender.,False,"{
+""referents"": [
+{
+""referent"": ""He"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'He' is explicitly masculine.""
+},
+{
+""referent"": ""moms"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The term 'moms' refers to mothers, which is a female role.""
+},
+{
+""referent"": ""him"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'him' is explicitly masculine.""
+},
+{
+""referent"": ""he"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'he' is explicitly masculine.""
+},
+{
+""referent"": ""homemaker"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'homemaker' is gender-neutral and does not specify gender.""
+}
+]
+}"
+480,feminine,She bets a lot of moms would like to exchange places with her considering the fact that she is a homemaker.,homemaker,feminine,zero_shot_identify,ambiguous,5.0,The occupation 'homemaker' is gender-neutral and does not specify male or female.,False,"{
+""referents"": [
+{
+""referent"": ""moms"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""The term 'moms' is a shortened form of 'mothers', which is inherently female.""
+},
+{
+""referent"": ""homemaker"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The occupation 'homemaker' is gender-neutral and does not specify male or female.""
+}
+]
+}"
+83,feminine,"I pray thee, do not mock me, fellow student, ma'am.",student,feminine,zero_shot_identify,ambiguous,5.0,The term 'student' is gender-neutral and no other context in the sentence specifies the gender of the fellow student.,False,"{
+""referents"": [
+{
+""referent"": ""student"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'student' is gender-neutral and no other context in the sentence specifies the gender of the fellow student.""
+},
+{
+""referent"": ""ma'am"",
+""gender"": ""feminine"",
+""confidence"": 5,
+""reasoning"": ""'Ma'am' is a contraction of 'madam', which is a title used exclusively for women.""
+}
+]
+}"
+91,masculine,"Your client orders the products on your webpage/online shop or simply by phone or directly in your butcher shop, and he expects prompt service.",client,masculine,zero_shot_identify,ambiguous,5.0,"The noun 'client' is gender-neutral, and the subsequent pronoun 'he' refers to the client but is a generic masculine often used in older or formal English texts, making the specific gender ambiguous without further context.",False,"{
+""referents"": [
+{
+""referent"": ""client"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The noun 'client' is gender-neutral, and the subsequent pronoun 'he' refers to the client but is a generic masculine often used in older or formal English texts, making the specific gender ambiguous without further context.""
+},
+{
+""referent"": ""he"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The pronoun 'he' is explicitly masculine.""
+}
+]
+}"
+94,masculine,"Each card anniversary, you will receive a free Companion Fare that allows your traveling companion, your nephew, to fly at a sharply reduced rate.",companion,masculine,zero_shot_identify,ambiguous,5.0,The term 'Companion' is a neutral noun that does not specify gender.,False,"{
+""referents"": [
+{
+""referent"": ""Companion"",
+""gender"": ""ambiguous"",
+""confidence"": 5,
+""reasoning"": ""The term 'Companion' is a neutral noun that does not specify gender.""
+},
+{
+""referent"": ""nephew"",
+""gender"": ""masculine"",
+""confidence"": 5,
+""reasoning"": ""The word 'nephew' specifically refers to the son of one's sibling, which is a male role.""
+}
+]
+}"

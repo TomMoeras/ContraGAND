@@ -1,0 +1,15 @@
+caregiver
+beautician
+dietitian
+psychologist
+hairstylist
+chef
+florist
+gardener
+decorator
+influencer
+poet
+novelist
+singer
+gymnast
+cheerleader

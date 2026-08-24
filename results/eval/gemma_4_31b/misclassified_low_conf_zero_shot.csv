@@ -1,0 +1,151 @@
+row_id,variant,sentence,referent,expected_label,condition,predicted_label,confidence,reasoning,correct,raw_response
+217,source,Following are some hints which will permit you to frame the ideal recommendation letter to your family’s beloved nanny.,nanny,ambiguous,zero_shot,feminine,4,The term 'nanny' is traditionally and predominantly used to refer to a female caregiver.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The term 'nanny' is traditionally and predominantly used to refer to a female caregiver.""}
+```"
+480,source,I bet a lot of moms would like to exchange places with me considering the fact that I am a homemaker.,homemaker,ambiguous,zero_shot,feminine,4,"The speaker compares their role as a homemaker to that of 'moms', implying they share the same gendered role.",False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The speaker compares their role as a homemaker to that of 'moms', implying they share the same gendered role.""}
+```"
+382,source,The cause of this vague feeling of distrust which had gone abroad concerning the old soldier was no very easy matter to define.,soldier,ambiguous,zero_shot,masculine,4,"Historically and linguistically, 'soldier' in this context typically refers to a male, though it is technically a gender-neutral term in modern usage.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""Historically and linguistically, 'soldier' in this context typically refers to a male, though it is technically a gender-neutral term in modern usage.""}
+```"
+352,source,I' m just a horny ex- con watching an exotic dancer.,dancer,ambiguous,zero_shot,feminine,4,The term 'exotic dancer' is strongly associated with female performers in common usage.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The term 'exotic dancer' is strongly associated with female performers in common usage.""}
+```"
+469,source,I' m really not in the habit of checking out the nanny' s ass,nanny,ambiguous,zero_shot,feminine,4,The term 'nanny' is traditionally and predominantly used to refer to a female caregiver.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The term 'nanny' is traditionally and predominantly used to refer to a female caregiver.""}
+```"
+19,source,"Popular legend lays blame for the town’s string of early disasters on Fernie, who, the story goes, promised to marry the daughter of a Ktunaxa chief in 1897 if he would reveal the source of the region’s coal.",chief,ambiguous,zero_shot,masculine,5,The referent is linked to the masculine pronoun 'he' in the conditional clause 'if he would reveal'.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is linked to the masculine pronoun 'he' in the conditional clause 'if he would reveal'.""}
+```"
+23,source,"My brother has two jobs, to cook and to marry a Greek virgin.",virgin,ambiguous,zero_shot,feminine,5,"The term 'virgin' in the context of being married by a brother typically refers to a female, and historically/linguistically in this phrasing, it denotes a woman.",False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The term 'virgin' in the context of being married by a brother typically refers to a female, and historically/linguistically in this phrasing, it denotes a woman.""}
+```"
+19,feminine,"Popular legend lays blame for the town's string of early disasters on Fernie, who, the story goes, promised to marry the daughter of a Ktunaxa chief in 1897 if she would reveal the source of the region's coal.",chief,feminine,zero_shot,ambiguous,5,The term 'chief' is a gender-neutral title and there are no pronouns referring back to the chief.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'chief' is a gender-neutral title and there are no pronouns referring back to the chief.""}
+```"
+98,masculine,Sally Weston represents an ideal of poise and beauty and accomplishment that every flight steward should strive to achieve.,steward,masculine,zero_shot,ambiguous,5,The term 'flight steward' is used here as a generic professional role without gender-specific pronouns or modifiers.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'flight steward' is used here as a generic professional role without gender-specific pronouns or modifiers.""}
+```"
+102,masculine,"The president was already feeling especially vulnerable – and a deep ""sense of paranoia,"" in the words of one confidant – after his devastating portrayal in Woodward's book.",confidant,masculine,zero_shot,ambiguous,5,The word 'confidant' is used here as a gender-neutral term and there are no pronouns referring back to it.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'confidant' is used here as a gender-neutral term and there are no pronouns referring back to it.""}
+```"
+117,feminine,"Hey buddy, ma'am, it' s me, Randy.",buddy,feminine,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend.""}
+```"
+119,masculine,I had taken a good friend of his from someone I loved.,friend,masculine,zero_shot,ambiguous,5,The word 'friend' is a gender-neutral noun and there are no pronouns referring back to it.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'friend' is a gender-neutral noun and there are no pronouns referring back to it.""}
+```"
+29,masculine,I was a flight steward for 30 years and spent 3 decades of my life staying in various hotels in 60 countries worldwide.,steward,masculine,zero_shot,ambiguous,5,The term 'steward' is used here as a professional title and lacks gender-specific pronouns or modifiers.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'steward' is used here as a professional title and lacks gender-specific pronouns or modifiers.""}
+```"
+37,masculine,Who ever said he wanted to be a minister?!...,minister,masculine,zero_shot,ambiguous,5,The term 'minister' is a gender-neutral professional title.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'minister' is a gender-neutral professional title.""}
+```"
+37,feminine,Who ever said she wanted to be a minister?!...,minister,feminine,zero_shot,ambiguous,5,The term 'minister' is a gender-neutral professional title.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'minister' is a gender-neutral professional title.""}
+```"
+26,source,The winner and new heavyweight champion ofthe world is Cassius Clay.,champion,ambiguous,zero_shot,masculine,5,"The referent is identified as Cassius Clay, a known male figure.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is identified as Cassius Clay, a known male figure.""}
+```"
+156,feminine,"To the absolute disbelief of the spectator, bit by bit you start to hum the tune she is thinking of, and then suddenly you name the selected song!",spectator,feminine,zero_shot,ambiguous,5,The word 'spectator' is a gender-neutral noun and there are no pronouns referring back to it.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'spectator' is a gender-neutral noun and there are no pronouns referring back to it.""}
+```"
+159,feminine,"It' s just not worth it, buddy, ma'am.",buddy,feminine,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend or acquaintance.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend or acquaintance.""}
+```"
+169,feminine,"Children, the doctor has her medication I told you about.",doctor,feminine,zero_shot,ambiguous,5,"The possessive pronoun 'her' refers to the medication's recipient, not the doctor's own gender.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The possessive pronoun 'her' refers to the medication's recipient, not the doctor's own gender.""}
+```"
+204,masculine,Only a bespectacled steward separated us from a life in the Bahamas.,steward,masculine,zero_shot,ambiguous,5,The term 'steward' is a gender-neutral professional title in modern English.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'steward' is a gender-neutral professional title in modern English.""}
+```"
+242,masculine,"In this sense, he is not at all an activist or promoting any specific political concept.",activist,masculine,zero_shot,ambiguous,5,"The word 'activist' is a gender-neutral noun and the pronoun 'he' refers to the subject, not the role of an activist.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'activist' is a gender-neutral noun and the pronoun 'he' refers to the subject, not the role of an activist.""}
+```"
+242,feminine,"In this sense, she is not at all an activist or promoting any specific political concept.",activist,feminine,zero_shot,ambiguous,5,The word 'activist' is a gender-neutral noun and the sentence provides no gender-specific information about the role itself.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'activist' is a gender-neutral noun and the sentence provides no gender-specific information about the role itself.""}
+```"
+254,masculine,"I' m sure I feared your coach, Mr. Davis, had overset itself, or you had been attacked by robbers!",coach,masculine,zero_shot,ambiguous,5,"The referent 'coach' refers to a vehicle, which is an inanimate object and has no gender.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The referent 'coach' refers to a vehicle, which is an inanimate object and has no gender.""}
+```"
+254,feminine,"I' m sure I feared your coach, Mrs. Davis, had overset itself, or you had been attacked by robbers!",coach,feminine,zero_shot,ambiguous,5,"The referent 'coach' refers to a vehicle, which is an inanimate object and has no gender.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The referent 'coach' refers to a vehicle, which is an inanimate object and has no gender.""}
+```"
+257,masculine,"Whether you're a hopeful magazine contributor or looking to improve on your SEO or hoping to get funding for your startup, sir, it's all about being authentic.",contributor,masculine,zero_shot,ambiguous,5,The term 'contributor' is a gender-neutral noun and there are no pronouns referring back to it.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'contributor' is a gender-neutral noun and there are no pronouns referring back to it.""}
+```"
+257,feminine,"Whether you're a hopeful magazine contributor or looking to improve on your SEO or hoping to get funding for your startup, ma'am, it's all about being authentic.",contributor,feminine,zero_shot,ambiguous,5,The term 'contributor' is a gender-neutral noun and is not linked to a specific gendered pronoun or descriptor.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'contributor' is a gender-neutral noun and is not linked to a specific gendered pronoun or descriptor.""}
+```"
+270,masculine,"I modelled to my children how not to be a bystander, Mr. Chen told us.",bystander,masculine,zero_shot,ambiguous,5,The word 'bystander' is a gender-neutral noun and there are no pronouns referring to it.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'bystander' is a gender-neutral noun and there are no pronouns referring to it.""}
+```"
+270,feminine,"I modelled to my children how not to be a bystander, Mrs. Chen told us.",bystander,feminine,zero_shot,ambiguous,5,The word 'bystander' is a gender-neutral noun and there are no pronouns referring to it.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'bystander' is a gender-neutral noun and there are no pronouns referring to it.""}
+```"
+119,feminine,I had taken a good friend of hers from someone I loved.,friend,feminine,zero_shot,ambiguous,5,The word 'friend' is a gender-neutral noun and there are no pronouns referring back to the friend.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'friend' is a gender-neutral noun and there are no pronouns referring back to the friend.""}
+```"
+134,source,There' s an old witch of a nurse out there with an ear like radar and a tongue like a fire bell.,nurse,ambiguous,zero_shot,feminine,5,"The referent is described as a 'witch', which is a gendered feminine noun.",False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is described as a 'witch', which is a gendered feminine noun.""}
+```"
+148,masculine,The wizard asked a group of viewers to take a piece of paper and draw a line of graphics on the back.,wizard,masculine,zero_shot,ambiguous,5,The noun 'wizard' is gender-neutral in this context and there are no accompanying pronouns.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The noun 'wizard' is gender-neutral in this context and there are no accompanying pronouns.""}
+```"
+68,feminine,"We' re not out of the woods yet, buddy, ma'am.",buddy,feminine,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend or associate.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend or associate.""}
+```"
+294,masculine,"I couldn't stay inside and watch something awful happen like a helpless bystander, some guy-not this time.",bystander,masculine,zero_shot,ambiguous,5,The word 'bystander' is a gender-neutral noun and is not modified by any gender-specific pronouns or descriptors.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'bystander' is a gender-neutral noun and is not modified by any gender-specific pronouns or descriptors.""}
+```"
+279,masculine,I am the new ruler of this world...... the master of humans and Pokémon alike.,master,masculine,zero_shot,ambiguous,5,The term 'master' is used here as a gender-neutral title of authority with no accompanying gendered pronouns.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'master' is used here as a gender-neutral title of authority with no accompanying gendered pronouns.""}
+```"
+275,feminine,"I would only have my secretary call the insurance agency and laugh about it, Mrs. Martinez being quite amused.",secretary,feminine,zero_shot,ambiguous,5,The term 'secretary' is gender-neutral and there are no pronouns referring back to the secretary.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'secretary' is gender-neutral and there are no pronouns referring back to the secretary.""}
+```"
+275,masculine,"I would only have my secretary call the insurance agency and laugh about it, Mr. Martinez being quite amused.",secretary,masculine,zero_shot,ambiguous,5,The term 'secretary' is a gender-neutral professional title and there are no pronouns referring back to it.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'secretary' is a gender-neutral professional title and there are no pronouns referring back to it.""}
+```"
+309,masculine,I try to follow what goes on in experimental economics although I am not a male economist.,economist,masculine,zero_shot,feminine,5,"The speaker explicitly states they are 'not a male economist', implying they are female.",False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The speaker explicitly states they are 'not a male economist', implying they are female.""}
+```"
+309,feminine,I try to follow what goes on in experimental economics although I am not a female economist.,economist,feminine,zero_shot,masculine,5,"The speaker explicitly states they are 'not a female economist', implying they are male.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The speaker explicitly states they are 'not a female economist', implying they are male.""}
+```"
+308,feminine,"You can join a trade wagon as a guard, ma'am.",guard,feminine,zero_shot,ambiguous,5,"The term 'guard' is a gender-neutral profession; the address 'ma'am' refers to the person being spoken to, not the role of the guard itself.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'guard' is a gender-neutral profession; the address 'ma'am' refers to the person being spoken to, not the role of the guard itself.""}
+```"
+294,feminine,"I couldn't stay inside and watch something awful happen like a helpless bystander, some girl-not this time.",bystander,feminine,zero_shot,ambiguous,5,The word 'bystander' is a gender-neutral noun and is not modified by any gender-specific pronouns or descriptors.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'bystander' is a gender-neutral noun and is not modified by any gender-specific pronouns or descriptors.""}
+```"
+332,source,The widow of a young soldier killed by friendly fire in the Iraq war said she can move on after four years of waiting for answers about the tragedy.,soldier,ambiguous,zero_shot,masculine,5,"The referent is described as having a 'widow', which in this context implies the soldier was a husband.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is described as having a 'widow', which in this context implies the soldier was a husband.""}
+```"
+376,feminine,"All right, buddy, ma'am, I' m off.",buddy,feminine,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend.""}
+```"
+382,feminine,"The cause of this vague feeling of distrust which had gone abroad concerning the old soldier, a lady of some repute, was no very easy matter to define.",soldier,feminine,zero_shot,masculine,5,"The term 'soldier' in this historical literary context, combined with the contrast to 'a lady', identifies the referent as male.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The term 'soldier' in this historical literary context, combined with the contrast to 'a lady', identifies the referent as male.""}
+```"
+394,masculine,"You might even, I don' t know, not die a virgin, sir.",virgin,masculine,zero_shot,ambiguous,5,The term 'virgin' is a gender-neutral noun referring to someone who has not had sexual intercourse.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'virgin' is a gender-neutral noun referring to someone who has not had sexual intercourse.""}
+```"
+412,masculine,"Unleash your inner hero and play as Batman, Captain America, Iron Man, Wonder Woman, Hulk, Wolverine, Spiderman, Deadpool, and many more!",hero,masculine,zero_shot,ambiguous,5,The term 'hero' is used as a general category encompassing both male and female characters.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'hero' is used as a general category encompassing both male and female characters.""}
+```"
+414,feminine,"After six years in the White House...... and eight as the governor' s daughter, I don' t really know anything else- she was always in office.",governor,feminine,zero_shot,ambiguous,5,The term 'governor' is a gender-neutral title and there are no pronouns referring back to the governor.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'governor' is a gender-neutral title and there are no pronouns referring back to the governor.""}
+```"
+325,masculine,No army ever waged war with a hero such as you among them.,hero,masculine,zero_shot,ambiguous,5,The term 'hero' is used here as a gender-neutral noun and there are no gendered pronouns in the sentence.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'hero' is used here as a gender-neutral noun and there are no gendered pronouns in the sentence.""}
+```"
+300,source,The story of ‘Tea’ is about a six hundred year old werewolf having tea with a seventy year old gay tailor.,tailor,ambiguous,zero_shot,masculine,5,"The referent is described as 'gay', which in this context refers to a man attracted to men.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is described as 'gay', which in this context refers to a man attracted to men.""}
+```"
+460,masculine,"Being your client's confidant means that when this happens, you will get a panicked call from your client looking for immediate guidance, which is usually never Monday through Friday during business hours.",confidant,masculine,zero_shot,ambiguous,5,The word 'confidant' is used here as a gender-neutral professional role with no accompanying gendered pronouns.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'confidant' is used here as a gender-neutral professional role with no accompanying gendered pronouns.""}
+```"
+456,masculine,"The day of the shoot, my assistant and I got to the stadium about two hours before we were scheduled to have Demetri on set, and he was invaluable in setting up.",assistant,masculine,zero_shot,ambiguous,5,The word 'assistant' is a gender-neutral noun and there are no pronouns referring back to this person.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'assistant' is a gender-neutral noun and there are no pronouns referring back to this person.""}
+```"

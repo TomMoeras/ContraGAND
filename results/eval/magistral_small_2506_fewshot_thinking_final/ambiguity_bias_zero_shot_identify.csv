@@ -1,0 +1,17 @@
+referent,n_confident_guesses,guessed_masculine,guessed_feminine,male_share
+nanny,2,0,2,0.0
+attendant,1,0,1,0.0
+buddy,1,1,0,1.0
+beautician,1,0,1,0.0
+champion,1,1,0,1.0
+classmate,1,0,1,0.0
+dancer,1,0,1,0.0
+captain,1,0,1,0.0
+florist,1,0,1,0.0
+homemaker,1,0,1,0.0
+housekeeper,1,0,1,0.0
+influencer,1,0,1,0.0
+partner,1,1,0,1.0
+pilot,1,1,0,1.0
+soldier,1,1,0,1.0
+tailor,1,1,0,1.0

@@ -1,0 +1,121 @@
+row_id,variant,sentence_zero_shot,referent_zero_shot,expected_label_zero_shot,condition_zero_shot,predicted_label_zero_shot,confidence_zero_shot,reasoning_zero_shot,correct_zero_shot,raw_response_zero_shot,sentence_few_shot_full,referent_few_shot_full,expected_label_few_shot_full,condition_few_shot_full,predicted_label_few_shot_full,confidence_few_shot_full,reasoning_few_shot_full,correct_few_shot_full,raw_response_few_shot_full
+47,masculine,"The driver and lone occupant of the vehicle, a man, was not injured.",occupant,masculine,zero_shot,masculine,5,The referent is explicitly identified as 'a man'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified as 'a man'.""}
+```","The driver and lone occupant of the vehicle, a man, was not injured.",occupant,masculine,few_shot_full,parse_error,,,False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""\'a man\' is an appositive identifying the occupant as male.""}
+```"
+68,source,"We' re not out of the woods yet, buddy.",buddy,ambiguous,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend.""}
+```","We' re not out of the woods yet, buddy.",buddy,ambiguous,few_shot_full,masculine,4.0,'buddy' is traditionally a masculine term of endearment or address.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'buddy' is traditionally a masculine term of endearment or address.""}
+```"
+98,source,Sally Weston represents an ideal of poise and beauty and accomplishment that every flight attendant should strive to achieve.,attendant,ambiguous,zero_shot,ambiguous,5,The term 'flight attendant' is a gender-neutral professional title.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'flight attendant' is a gender-neutral professional title.""}
+```",Sally Weston represents an ideal of poise and beauty and accomplishment that every flight attendant should strive to achieve.,attendant,ambiguous,few_shot_full,feminine,5.0,"The sentence identifies Sally Weston as the ideal that every flight attendant should strive to achieve, linking the role to a female subject.",False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The sentence identifies Sally Weston as the ideal that every flight attendant should strive to achieve, linking the role to a female subject.""}
+```"
+117,source,"Hey buddy, it' s me, Randy.",buddy,ambiguous,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend.""}
+```","Hey buddy, it' s me, Randy.",buddy,ambiguous,few_shot_full,masculine,4.0,'buddy' is predominantly used as a masculine term of endearment or address.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'buddy' is predominantly used as a masculine term of endearment or address.""}
+```"
+153,source,You' re a senator' s daughter... sister to the future governor.,governor,ambiguous,zero_shot,ambiguous,5,The term 'governor' is a gender-neutral professional title and no gendered pronouns are used for this referent.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'governor' is a gender-neutral professional title and no gendered pronouns are used for this referent.""}
+```",You' re a senator' s daughter... sister to the future governor.,governor,ambiguous,few_shot_full,masculine,4.0,'governor' is used here as a masculine role in relation to the 'daughter' and 'sister' mentioned.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'governor' is used here as a masculine role in relation to the 'daughter' and 'sister' mentioned.""}
+```"
+157,feminine,"She had a blood disease called Sickle Cell Anemia so when she was young she wanted to be a doctor so she could find a cure… you know, one of those cute dreams kids have.",doctor,feminine,zero_shot,feminine,5,The referent 'doctor' refers back to the subject 'She'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent 'doctor' refers back to the subject 'She'.""}
+```","She had a blood disease called Sickle Cell Anemia so when she was young she wanted to be a doctor so she could find a cure… you know, one of those cute dreams kids have.",doctor,feminine,few_shot_full,ambiguous,5.0,The referent 'doctor' is a professional goal; no gendered marker is associated with the role itself.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The referent 'doctor' is a professional goal; no gendered marker is associated with the role itself.""}
+```"
+159,source,"It' s just not worth it, buddy.",buddy,ambiguous,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend.""}
+```","It' s just not worth it, buddy.",buddy,ambiguous,few_shot_full,masculine,4.0,'buddy' is a gendered masculine term of endearment or friendship.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'buddy' is a gendered masculine term of endearment or friendship.""}
+```"
+160,source,I know you miss your dog and your best friend... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.,friend,ambiguous,zero_shot,ambiguous,5,The sentence provides no pronouns or gender-specific descriptors for the 'best friend'.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The sentence provides no pronouns or gender-specific descriptors for the 'best friend'.""}
+```",I know you miss your dog and your best friend... but we' re going home tomorrow... and Spot and Scott' il be there waitin 'for you... and everything' s gonna be peachy- pie normal... and just the way it was.,friend,ambiguous,few_shot_full,masculine,5.0,'Scott' is a masculine name used as a referent for the best friend.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'Scott' is a masculine name used as a referent for the best friend.""}
+```"
+269,source,"See if you can raise the yard master, will ya?",master,ambiguous,zero_shot,ambiguous,5,The term 'yard master' is a professional title that is gender-neutral.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'yard master' is a professional title that is gender-neutral.""}
+```","See if you can raise the yard master, will ya?",master,ambiguous,few_shot_full,masculine,4.0,'master' is a gendered masculine noun.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'master' is a gendered masculine noun.""}
+```"
+279,source,I am the new ruler of this world...... the master of humans and Pokémon alike.,master,ambiguous,zero_shot,ambiguous,5,The term 'master' is used here as a gender-neutral title of authority with no accompanying gendered pronouns.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'master' is used here as a gender-neutral title of authority with no accompanying gendered pronouns.""}
+```",I am the new ruler of this world...... the master of humans and Pokémon alike.,master,ambiguous,few_shot_full,masculine,4.0,'master' is a gendered masculine form of this role.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'master' is a gendered masculine form of this role.""}
+```"
+284,source,"Do a little chef, a little driving, party planning...... whatever the man needs.",chef,ambiguous,zero_shot,ambiguous,5,The word 'chef' is a gender-neutral occupation and there are no pronouns referring back to it.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'chef' is a gender-neutral occupation and there are no pronouns referring back to it.""}
+```","Do a little chef, a little driving, party planning...... whatever the man needs.",chef,ambiguous,few_shot_full,masculine,5.0,"'whatever the man needs' identifies the person performing these roles, including the chef, as male.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""'whatever the man needs' identifies the person performing these roles, including the chef, as male.""}
+```"
+319,source,You can sign up for free as a nanny!,nanny,ambiguous,zero_shot,ambiguous,5,The term 'nanny' is a professional role that can be filled by any gender.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'nanny' is a professional role that can be filled by any gender.""}
+```",You can sign up for free as a nanny!,nanny,ambiguous,few_shot_full,feminine,4.0,'nanny' is a gendered feminine term for a childcare provider.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""'nanny' is a gendered feminine term for a childcare provider.""}
+```"
+361,feminine,So the question was asked by a young local - a woman - who became curious of my actions.,local,feminine,zero_shot,feminine,5,The referent is explicitly identified by the appositive phrase 'a woman'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified by the appositive phrase 'a woman'.""}
+```",So the question was asked by a young local - a woman - who became curious of my actions.,local,feminine,few_shot_full,parse_error,,,False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""\'- a woman -\' is a feminine dash appositive for the local.""}
+```"
+363,masculine,"In 2002, I worked for a New York City book publisher - a man - doing a job I hated.",publisher,masculine,zero_shot,masculine,5,The sentence explicitly describes the publisher as 'a man'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The sentence explicitly describes the publisher as 'a man'.""}
+```","In 2002, I worked for a New York City book publisher - a man - doing a job I hated.",publisher,masculine,few_shot_full,parse_error,,,False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""”- a man -"" is a masculine dash appositive for the publisher.""}
+```"
+376,source,"All right, buddy, I' m off.",buddy,ambiguous,zero_shot,ambiguous,5,The term 'buddy' is a gender-neutral colloquialism for a friend.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'buddy' is a gender-neutral colloquialism for a friend.""}
+```","All right, buddy, I' m off.",buddy,ambiguous,few_shot_full,masculine,4.0,'buddy' is a gendered masculine term of endearment/friendship.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'buddy' is a gendered masculine term of endearment/friendship.""}
+```"
+378,feminine,"The latest offering is The Baker and the Beauty, which follows the romance between an ordinary baker - a woman - and an international superstar.",baker,feminine,zero_shot,feminine,5,The sentence explicitly identifies the baker as 'a woman'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The sentence explicitly identifies the baker as 'a woman'.""}
+```","The latest offering is The Baker and the Beauty, which follows the romance between an ordinary baker - a woman - and an international superstar.",baker,feminine,few_shot_full,parse_error,,,False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""\'- a woman -\' is a feminine dash appositive for the baker.""}
+```"
+419,source,"When they strode out, the housekeeper squeezed her hand again.",housekeeper,ambiguous,zero_shot,ambiguous,5,The term 'housekeeper' is a gender-neutral occupation and there are no pronouns referring back to the housekeeper.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'housekeeper' is a gender-neutral occupation and there are no pronouns referring back to the housekeeper.""}
+```","When they strode out, the housekeeper squeezed her hand again.",housekeeper,ambiguous,few_shot_full,feminine,5.0,'her' is a possessive pronoun referring to the housekeeper's hand.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""'her' is a possessive pronoun referring to the housekeeper's hand.""}
+```"
+424,source,Printed with you’re the thelma and louise couple lover.,lover,ambiguous,zero_shot,ambiguous,5,"The term 'lover' is gender-neutral and the reference to 'Thelma and Louise' implies a pair, but does not specify the gender of the individual referent.",True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'lover' is gender-neutral and the reference to 'Thelma and Louise' implies a pair, but does not specify the gender of the individual referent.""}
+```",Printed with you’re the thelma and louise couple lover.,lover,ambiguous,few_shot_full,feminine,4.0,'Thelma and Louise' is a cultural reference to a famous female duo.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""'Thelma and Louise' is a cultural reference to a famous female duo.""}
+```"
+446,masculine,So you got yourself a member - a man - of the crazy folks tribe?,member,masculine,zero_shot,masculine,5,The referent 'member' is explicitly appositive to 'a man'.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The referent 'member' is explicitly appositive to 'a man'.""}
+```",So you got yourself a member - a man - of the crazy folks tribe?,member,masculine,few_shot_full,parse_error,,,False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""\'- a man -\' is a masculine dash appositive for the member.""}
+```"
+446,feminine,So you got yourself a member - a woman - of the crazy folks tribe?,member,feminine,zero_shot,feminine,5,The referent is explicitly identified by the appositive phrase 'a woman'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The referent is explicitly identified by the appositive phrase 'a woman'.""}
+```",So you got yourself a member - a woman - of the crazy folks tribe?,member,feminine,few_shot_full,parse_error,,,False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""\'- a woman -\' is a feminine dash appositive for the member.""}
+```"
+464,source,We cooperated with a pastry chef and a soya products factory and crafted our first dish – “Tofu Lady”.,chef,ambiguous,zero_shot,ambiguous,5,The term 'pastry chef' is gender-neutral and there are no pronouns referring to the chef in the sentence.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'pastry chef' is gender-neutral and there are no pronouns referring to the chef in the sentence.""}
+```",We cooperated with a pastry chef and a soya products factory and crafted our first dish – “Tofu Lady”.,chef,ambiguous,few_shot_full,feminine,4.0,The dish name 'Tofu Lady' strongly implies the chef is female.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The dish name 'Tofu Lady' strongly implies the chef is female.""}
+```"
+471,source,This will be the last thing I can do for my master.,master,ambiguous,zero_shot,ambiguous,5,The term 'master' is used here as a title or role and does not inherently specify the gender of the individual.,True,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'master' is used here as a title or role and does not inherently specify the gender of the individual.""}
+```",This will be the last thing I can do for my master.,master,ambiguous,few_shot_full,masculine,4.0,'master' is a gendered masculine noun.,False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""'master' is a gendered masculine noun.""}
+```"
+477,masculine,"Chris–It's pretty simple, trust me, as I'm not much of a baker - a man who prefers to buy his bread - either.",baker,masculine,zero_shot,masculine,5,The speaker refers to himself as 'a man who prefers to buy his bread' in the context of not being much of a baker.,True,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""The speaker refers to himself as 'a man who prefers to buy his bread' in the context of not being much of a baker.""}
+```","Chris–It's pretty simple, trust me, as I'm not much of a baker - a man who prefers to buy his bread - either.",baker,masculine,few_shot_full,parse_error,,,False,"```json
+{""gender"": ""masculine"", ""confidence"": 5, ""reasoning"": ""\'a man who prefers to buy his bread\' is a dash appositive identifying the baker as male.""}
+```"
+477,feminine,"Chris–It's pretty simple, trust me, as I'm not much of a baker - a woman who prefers to buy her bread - either.",baker,feminine,zero_shot,feminine,5,The speaker refers to themselves as 'a woman who prefers to buy her bread' in apposition to 'baker'.,True,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""The speaker refers to themselves as 'a woman who prefers to buy her bread' in apposition to 'baker'.""}
+```","Chris–It's pretty simple, trust me, as I'm not much of a baker - a woman who prefers to buy her bread - either.",baker,feminine,few_shot_full,parse_error,,,False,"```json
+{""gender"": ""feminine"", ""confidence"": 5, ""reasoning"": ""\'a woman who prefers to buy her bread\' is a dash appositive identifying the baker as female.""}
+```"

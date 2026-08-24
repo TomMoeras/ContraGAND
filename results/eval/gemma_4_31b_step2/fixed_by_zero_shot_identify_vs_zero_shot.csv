@@ -1,0 +1,159 @@
+row_id,variant,sentence_zero_shot,referent_zero_shot,expected_label_zero_shot,condition_zero_shot,predicted_label_zero_shot,confidence_zero_shot,reasoning_zero_shot,correct_zero_shot,raw_response_zero_shot,sentence_zero_shot_identify,referent_zero_shot_identify,expected_label_zero_shot_identify,condition_zero_shot_identify,predicted_label_zero_shot_identify,confidence_zero_shot_identify,reasoning_zero_shot_identify,correct_zero_shot_identify,raw_response_zero_shot_identify
+37,masculine,Who ever said he wanted to be a minister?!...,minister,masculine,zero_shot,ambiguous,5,The term 'minister' is a gender-neutral professional title.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'minister' is a gender-neutral professional title.""}
+```",Who ever said he wanted to be a minister?!...,minister,masculine,zero_shot_identify,masculine,5.0,The pronoun 'he' refers back to the person who wanted to be a minister.,True,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""minister"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The pronoun 'he' refers back to the person who wanted to be a minister.""
+    }
+  ]
+}
+```"
+37,feminine,Who ever said she wanted to be a minister?!...,minister,feminine,zero_shot,ambiguous,5,The term 'minister' is a gender-neutral professional title.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'minister' is a gender-neutral professional title.""}
+```",Who ever said she wanted to be a minister?!...,minister,feminine,zero_shot_identify,feminine,5.0,The pronoun 'she' refers to the person who wants to be a minister.,True,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""minister"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The pronoun 'she' refers to the person who wants to be a minister.""
+    }
+  ]
+}
+```"
+169,feminine,"Children, the doctor has her medication I told you about.",doctor,feminine,zero_shot,ambiguous,5,"The possessive pronoun 'her' refers to the medication's recipient, not the doctor's own gender.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The possessive pronoun 'her' refers to the medication's recipient, not the doctor's own gender.""}
+```","Children, the doctor has her medication I told you about.",doctor,feminine,zero_shot_identify,feminine,5.0,The possessive pronoun 'her' refers back to the doctor.,True,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""Children"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'Children' is a plural noun with no gender-specific markers.""
+    },
+    {
+      ""referent"": ""doctor"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The possessive pronoun 'her' refers back to the doctor.""
+    }
+  ]
+}
+```"
+204,masculine,Only a bespectacled steward separated us from a life in the Bahamas.,steward,masculine,zero_shot,ambiguous,5,The term 'steward' is a gender-neutral professional title in modern English.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The term 'steward' is a gender-neutral professional title in modern English.""}
+```",Only a bespectacled steward separated us from a life in the Bahamas.,steward,masculine,zero_shot_identify,masculine,4.0,"The term 'steward' is traditionally masculine, whereas 'stewardess' is used for females.",True,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""steward"",
+      ""gender"": ""masculine"",
+      ""confidence"": 4,
+      ""reasoning"": ""The term 'steward' is traditionally masculine, whereas 'stewardess' is used for females.""
+    }
+  ]
+}
+```"
+217,source,Following are some hints which will permit you to frame the ideal recommendation letter to your family’s beloved nanny.,nanny,ambiguous,zero_shot,feminine,4,The term 'nanny' is traditionally and predominantly used to refer to a female caregiver.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The term 'nanny' is traditionally and predominantly used to refer to a female caregiver.""}
+```",Following are some hints which will permit you to frame the ideal recommendation letter to your family’s beloved nanny.,nanny,ambiguous,zero_shot_identify,ambiguous,5.0,The term 'nanny' is a professional role and the sentence provides no gender-specific pronouns or descriptors.,True,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""nanny"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'nanny' is a professional role and the sentence provides no gender-specific pronouns or descriptors.""
+    }
+  ]
+}
+```"
+242,masculine,"In this sense, he is not at all an activist or promoting any specific political concept.",activist,masculine,zero_shot,ambiguous,5,"The word 'activist' is a gender-neutral noun and the pronoun 'he' refers to the subject, not the role of an activist.",False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'activist' is a gender-neutral noun and the pronoun 'he' refers to the subject, not the role of an activist.""}
+```","In this sense, he is not at all an activist or promoting any specific political concept.",activist,masculine,zero_shot_identify,masculine,5.0,The subject is referred to by the masculine pronoun 'he'.,True,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""activist"",
+      ""gender"": ""masculine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The subject is referred to by the masculine pronoun 'he'.""
+    }
+  ]
+}
+```"
+242,feminine,"In this sense, she is not at all an activist or promoting any specific political concept.",activist,feminine,zero_shot,ambiguous,5,The word 'activist' is a gender-neutral noun and the sentence provides no gender-specific information about the role itself.,False,"```json
+{""gender"": ""ambiguous"", ""confidence"": 5, ""reasoning"": ""The word 'activist' is a gender-neutral noun and the sentence provides no gender-specific information about the role itself.""}
+```","In this sense, she is not at all an activist or promoting any specific political concept.",activist,feminine,zero_shot_identify,feminine,5.0,The subject 'she' is identified as not being an activist.,True,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""activist"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The subject 'she' is identified as not being an activist.""
+    }
+  ]
+}
+```"
+352,source,I' m just a horny ex- con watching an exotic dancer.,dancer,ambiguous,zero_shot,feminine,4,The term 'exotic dancer' is strongly associated with female performers in common usage.,False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The term 'exotic dancer' is strongly associated with female performers in common usage.""}
+```",I' m just a horny ex- con watching an exotic dancer.,dancer,ambiguous,zero_shot_identify,ambiguous,5.0,The term 'exotic dancer' is gender-neutral in this context.,True,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""ex- con"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""There are no gender-specific pronouns or adjectives modifying 'ex- con'.""
+    },
+    {
+      ""referent"": ""exotic dancer"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'exotic dancer' is gender-neutral in this context.""
+    }
+  ]
+}
+```"
+382,source,The cause of this vague feeling of distrust which had gone abroad concerning the old soldier was no very easy matter to define.,soldier,ambiguous,zero_shot,masculine,4,"Historically and linguistically, 'soldier' in this context typically refers to a male, though it is technically a gender-neutral term in modern usage.",False,"```json
+{""gender"": ""masculine"", ""confidence"": 4, ""reasoning"": ""Historically and linguistically, 'soldier' in this context typically refers to a male, though it is technically a gender-neutral term in modern usage.""}
+```",The cause of this vague feeling of distrust which had gone abroad concerning the old soldier was no very easy matter to define.,soldier,ambiguous,zero_shot_identify,ambiguous,5.0,The term 'soldier' is gender-neutral and there are no pronouns or adjectives in the sentence to specify gender.,True,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""soldier"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'soldier' is gender-neutral and there are no pronouns or adjectives in the sentence to specify gender.""
+    }
+  ]
+}
+```"
+480,source,I bet a lot of moms would like to exchange places with me considering the fact that I am a homemaker.,homemaker,ambiguous,zero_shot,feminine,4,"The speaker compares their role as a homemaker to that of 'moms', implying they share the same gendered role.",False,"```json
+{""gender"": ""feminine"", ""confidence"": 4, ""reasoning"": ""The speaker compares their role as a homemaker to that of 'moms', implying they share the same gendered role.""}
+```",I bet a lot of moms would like to exchange places with me considering the fact that I am a homemaker.,homemaker,ambiguous,zero_shot_identify,ambiguous,5.0,The term 'homemaker' is gender-neutral and no other pronouns are provided for the speaker.,True,"```json
+{
+  ""referents"": [
+    {
+      ""referent"": ""moms"",
+      ""gender"": ""feminine"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'moms' refers specifically to female parents.""
+    },
+    {
+      ""referent"": ""homemaker"",
+      ""gender"": ""ambiguous"",
+      ""confidence"": 5,
+      ""reasoning"": ""The term 'homemaker' is gender-neutral and no other pronouns are provided for the speaker.""
+    }
+  ]
+}
+```"

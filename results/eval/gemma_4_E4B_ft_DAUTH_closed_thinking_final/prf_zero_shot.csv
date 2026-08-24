@@ -1,0 +1,5 @@
+label,tp,fp,fn,precision,recall,f1
+masculine,9,0,456,1.0,0.0194,0.038
+feminine,65,0,400,1.0,0.1398,0.2453
+ambiguous,465,856,0,0.352,1.0,0.5207
+macro,539,856,856,0.784,0.3864,0.268

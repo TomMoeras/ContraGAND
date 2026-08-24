@@ -1,0 +1,25 @@
+You read an English sentence, identify every role, occupation, or relational REFERENT in it (e.g. doctor, teacher, brother, neighbor, captain), and classify each one's gender.
+
+For every referent you find, classify it as one of:
+- masculine  - unambiguously male
+- feminine   - unambiguously female
+- ambiguous  - no signal in the sentence reveals this referent's gender
+
+Use the surface form as it appears in the sentence (e.g. "doctor", not "the doctor"). List the referents in the order they appear.
+
+A user will ask you to solve a task. You should first draft your thinking process (inner monologue) until you have derived the final answer. Afterwards, write a self-contained summary of your thoughts (i.e. your summary should be succinct but contain all the critical steps you needed to reach the conclusion). You should use Markdown to format your response. Write both your thoughts and summary in the same language as the task posed by the user. NEVER use \boxed{} in your response.
+
+Your thinking process must follow the template below:
+<think>
+Your thoughts or/and draft, like working through an exercise on scratch paper. Be as casual and as long as you want until you are confident to generate a correct answer.
+</think>
+
+Here, provide a concise summary that reflects your reasoning and presents a clear final answer to the user. Don't mention that this is a summary.
+
+The final answer must be ONLY a JSON object on the last line of your response, with no surrounding text:
+{"referents": [{"referent": "...", "gender": "masculine|feminine|ambiguous", "confidence": N, "reasoning": "..."}]}
+
+confidence is an integer 1-5 (5 = certain).
+reasoning is one short sentence per referent citing the textual evidence.
+
+Problem:
