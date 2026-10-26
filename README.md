@@ -240,9 +240,20 @@ python -m pytest tests/ -v
 
 ## Citing
 
-Moerman, Gkovedarou, and Hackenbuchner. *ContraGAND: Auditing and Repairing Gender Ambiguity Failures in LLMs with Neurosymbolic Contrastive Data Augmentation.* EMNLP 2026 (Main Conference).
+Thomas Moerman, Eleni Gkovedarou, and Janiça Hackenbuchner. 2026. *ContraGAND: Auditing and Repairing Gender Ambiguity Failures in LLMs with Neurosymbolic Contrastive Data Augmentation.* In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 11136–11159, Budapest, Hungary. Association for Computational Linguistics. [aclanthology.org/2026.emnlp-main.485](https://aclanthology.org/2026.emnlp-main.485/)
 
-Full bibliographic details (BibTeX) will be added once the proceedings are available.
+```bibtex
+@inproceedings{moerman2026contragand,
+  title     = {{ContraGAND}: Auditing and Repairing Gender Ambiguity Failures in {LLMs} with Neurosymbolic Contrastive Data Augmentation},
+  author    = {Moerman, Thomas and Gkovedarou, Eleni and Hackenbuchner, Jani{\c{c}}a},
+  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  pages     = {11136--11159},
+  address   = {Budapest, Hungary},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2026.emnlp-main.485/},
+  year      = {2026}
+}
+```
 
 The gender lexicon in `data/resources/lexical_gender_nouns.md` was compiled from:
 - Bartl, M. and Leavy, S. (2022). [marionbartl/lexical-gender](https://github.com/marionbartl/lexical-gender).

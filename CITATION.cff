@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the EMNLP 2026 paper."
+title: "ContraGAND: Auditing and Repairing Gender Ambiguity Failures in LLMs with Neurosymbolic Contrastive Data Augmentation"
+authors:
+  - family-names: Moerman
+    given-names: Thomas
+  - family-names: Gkovedarou
+    given-names: Eleni
+  - family-names: Hackenbuchner
+    given-names: Janiça
+repository-code: "https://github.com/TomMoeras/ContraGAND"
+license: ODC-By-1.0
+preferred-citation:
+  type: conference-paper
+  title: "ContraGAND: Auditing and Repairing Gender Ambiguity Failures in LLMs with Neurosymbolic Contrastive Data Augmentation"
+  authors:
+    - family-names: Moerman
+      given-names: Thomas
+    - family-names: Gkovedarou
+      given-names: Eleni
+    - family-names: Hackenbuchner
+      given-names: Janiça
+  collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+  publisher:
+    name: "Association for Computational Linguistics"
+  location:
+    name: "Budapest, Hungary"
+  start: 11136
+  end: 11159
+  year: 2026
+  month: 10
+  url: "https://aclanthology.org/2026.emnlp-main.485/"
