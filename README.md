@@ -240,7 +240,7 @@ python -m pytest tests/ -v
 
 ## Citing
 
-Thomas Moerman, Eleni Gkovedarou, and Janiça Hackenbuchner. 2026. *ContraGAND: Auditing and Repairing Gender Ambiguity Failures in LLMs with Neurosymbolic Contrastive Data Augmentation.* In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 11136–11159, Budapest, Hungary. Association for Computational Linguistics. [aclanthology.org/2026.emnlp-main.485](https://aclanthology.org/2026.emnlp-main.485/)
+Thomas Moerman, Eleni Gkovedarou, and Janiça Hackenbuchner. 2026. *ContraGAND: Auditing and Repairing Gender Ambiguity Failures in LLMs with Neurosymbolic Contrastive Data Augmentation.* In Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 11136–11159, Budapest, Hungary. Association for Computational Linguistics. [doi.org/10.18653/2026.emnlp-main.485](https://doi.org/10.18653/2026.emnlp-main.485)
 
 ```bibtex
 @inproceedings{moerman2026contragand,
@@ -251,6 +251,7 @@ Thomas Moerman, Eleni Gkovedarou, and Janiça Hackenbuchner. 2026. *ContraGAND: 
   address   = {Budapest, Hungary},
   publisher = {Association for Computational Linguistics},
   url       = {https://aclanthology.org/2026.emnlp-main.485/},
+  doi       = {10.18653/2026.emnlp-main.485},
   year      = {2026}
 }
 ```
